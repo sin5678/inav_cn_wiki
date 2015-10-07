@@ -1,5 +1,3 @@
-# Modes of operation
-
 Navigation system can function in several modes: ALTHOLD, POSHOLD_2D, POSHOLD_3D, RTH, RTH_2D, WP. These modes are exposed to pilot as different flight modes or their combination: POSHOLD, ALTHOLD, RTH, WP. Lets have a look at each mode of operation in detail.
 
 ## ALTHOLD - Altitude hold
