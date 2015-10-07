@@ -1,5 +1,3 @@
-# Inertial position estimator (INAV)
-
 Position estimator is a vital component for navigation subsystem. It takes data from all available sensors and fuses them together to figure out coordinates and velocities in the local frame of reference. All navigational decisions are made based on estimated position/velocity data. 
 
 It is currently desined for multirotors.
