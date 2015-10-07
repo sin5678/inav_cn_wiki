@@ -1,5 +1,3 @@
-# Coordinate systems
-
 Navigation operates in 3 different coordinate systems.
 
 ## LLH (Geographic) Coordinate System
