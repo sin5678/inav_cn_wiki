@@ -1,6 +1,8 @@
 ## PID regulators in ALTHOLD mode (Z-controller)
 
-ALTHOLD mode uses two PIDs - **ALT** and **VEL**
+ALTHOLD mode uses two PIDs - **ALT** and **VEL**. Navtigation Z-controller functional diagram is shown below:
+
+![](https://github.com/digitalentity/nav-rewrite-docs/blob/master/docs/assets/nav_althold_pids_diagram.jpg)
 
 ### ALT PID
 Actually ALT PID parameters control two P-controllers: Position-to-Velocity and Velocity-to-Acceleration
