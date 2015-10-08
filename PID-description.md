@@ -22,6 +22,8 @@ This PID-controller is an Acceleration-to-Throttle controller
 
 XY-controller uses two PIDs - **POS** and **POSR**
 
+![](https://github.com/digitalentity/nav-rewrite-docs/blob/master/docs/assets/nav_poshold_pids_diagram.jpg)
+
 ### POS PID
 This is a Position-to-Velocity P-controller active in POSHOLD, RTH and WP modes
 
