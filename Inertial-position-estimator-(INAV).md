@@ -12,6 +12,8 @@ When reference source is not available for some reason, estimated position error
 
 Using multiple sensors for estimation allows to filter noisy data (e.g. from barometer), interpolate between rare readings (e.g. from GPS), and immediately react on fast motion changes (using accelerometers) in the same time.
 
+![](https://github.com/digitalentity/nav-rewrite-docs/blob/master/docs/assets/inertial_estimator_diagram.jpg)
+
 ## Data soures
 
 The following reference sources (with corresponding parameters for weight) are available for altitude and climb rate:
