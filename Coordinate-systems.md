@@ -4,6 +4,8 @@ Navigation operates in 3 different coordinate systems.
 
 Represents position on or above earth with a latitude, longitude and height value. Height is defined as altitude above the mean sea level.
 
+![](https://upload.wikimedia.org/wikipedia/commons/6/62/Latitude_and_Longitude_of_the_Earth.svg)
+
 ## NEU Coordinate System
 
 * The x axis is aligned with the vector to the north pole (tangent to meridians).
@@ -11,6 +13,8 @@ Represents position on or above earth with a latitude, longitude and height valu
 * The z axis points up from the center of the earth
 
 This is a classical cartesian coordinate system where the 3 axes are orthogonal to each other.
+
+![](https://upload.wikimedia.org/wikipedia/commons/7/73/ECEF_ENU_Longitude_Latitude_relationships.svg)
 
 # Frames of reference
 
