@@ -19,7 +19,9 @@ nav_rth_altitude defines extra altitude margin
 ## Predefined altitude (NAV_RTH_CONST_ALT)
 nav_rth_alt_mode = 2
 
-nav_rth_altitude defines exact RTH altitude above launch point
+nav_rth_altitude defines exact RTH altitude above launch point.
+
+If the quadcopter is below nav_rth_altitude it will enter position hold and climb to desired altitude prior to flying back home. If the machine is above the desired altitude, it will turn and fly home and descend on the way.
 
 ![](https://github.com/digitalentity/nav-rewrite-docs/blob/master/docs/assets/NAV_RTH_CONST_ALT.jpg)
 
