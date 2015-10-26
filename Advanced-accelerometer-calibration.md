@@ -17,7 +17,7 @@ Proper accelerometer calibration does not guarantee copter being level. Chip mig
 
 **NOTE!** Unline in "official" Cleanflight firmware board alignment angles are set in degrees*10, so if you need to trim your board 1.5 degrees you should enter "15".
 
-**NOTE2!** To keep things compatible with official Configurator, angles more than 36 deg and less than -18 deg can only be set through CLI parameters: **align_board_pitch**, **align_board_roll **and **align_board_yaw**. 
+**NOTE2!** To keep things compatible with official Configurator, angles more than 36 deg and less than -18 deg can only be set through CLI parameters: **align_board_pitch**, **align_board_roll** and **align_board_yaw**. 
 
 This applies to mounting the flight controller at 90 degree to keep USB port accessible. You have to set **align_board_yaw=900** from CLI.
 
