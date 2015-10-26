@@ -7,7 +7,8 @@ Accelerometer calibration is mandatory if inertial position estimation is used. 
 0. Connect the copter to the "Configurator" software, select the "Setup" tab.
 1. Place copter level (pos 1), press "Calibrate Accelerometer" button. Advanced calibration has been activated and recorded the 1-st data point.
 2. Place copter to all sides in sequence (pos 2-6): on right side, left side, nose down, nose up and on its back. Press "Calibrate Accelerometer" button in every position. Advanced calibration algorythm will record 2-nd to 6-th data points.
-3. After all 6 positions have beed recorded advanced calibration will calculate offsets and gains and store them in EEPROM. Accelerometer calibration dopne.
+3. After all 6 positions have beed recorded advanced calibration will calculate offsets and gains and store them in EEPROM. Accelerometer calibration done.
+4. Use CLI to verify that **accgain_x**, **accgain_y** and **accgain_z** parameters and **NOT ZERO**. If they are, algorithm failed to converge, calibration failed and need to be repeated.
 
 There is no need to place copter perfectly aligned, the algorythm does not care about exact positions as long as they are close to 90 degree apart and copter is stationary in every position.
 
