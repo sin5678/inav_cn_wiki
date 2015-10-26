@@ -20,7 +20,3 @@ Proper accelerometer calibration does not guarantee copter being level. Chip mig
 **NOTE2!** To keep things compatible with official Configurator, angles more than 36 deg and less than -18 deg can only be set through CLI parameters: **align_board_pitch**, **align_board_roll** and **align_board_yaw**. 
 
 This applies to mounting the flight controller at 90 degree to keep USB port accessible. You have to set **align_board_yaw=900** from CLI.
-
-
-***
-Image copyright [Alexmos@Multiwii](http://www.multiwii.com/forum/viewtopic.php?f=7&t=1413&start=170#p16506)
