@@ -16,7 +16,7 @@ There is no need to place copter perfectly aligned, the algorithm does not care 
 
 Proper accelerometer calibration does not guarantee copter being level. Chip might be misaligned on board or the board itself might be mounted at some tiny angle. For level flight and navigation features to work you need to trim the firmware to level flight using "Board Alignment" on the "Configuration" tab. 
 
-**NOTE!** Unline in "official" Cleanflight firmware board alignment angles are set in degrees*10, so if you need to trim your board 1.5 degrees you should enter "15".
+**NOTE!** Unlike in "official" Cleanflight firmware board alignment angles are set in degrees*10, so if you need to trim your board 1.5 degrees you should enter "15".
 
 **NOTE2!** To keep things compatible with official Configurator, angles more than 36 deg and less than -18 deg can only be set through CLI parameters: **align_board_pitch**, **align_board_roll** and **align_board_yaw**. 
 
