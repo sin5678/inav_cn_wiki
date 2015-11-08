@@ -8,15 +8,15 @@ ALTHOLD mode uses two PIDs - **ALT** and **VEL**. Navtigation Z-controller funct
 Actually ALT PID parameters control two P-controllers: Position-to-Velocity and Velocity-to-Acceleration
 
 * **ALT_P** - defines how fast quad will attempt to compensate for altitude error, converts altitude error to desired vertical velocity (climb rate)
-* **ALT_I** - defines how fast quad will accelerate to reach desired climb rate, converts vertical velocity error to desired acceleration
+* **ALT_I** - not used
 * **ALT_D** - not used
 
 ### VEL PID
 This PID-controller is an Acceleration-to-Throttle controller
 
-* **VEL_P** - defined how much throttle quad will add/reduce to achieve desired acceleration
+* **VEL_P** - defined how much throttle quad will add/reduce to achieve desired velocity
 * **VEL_I** - controls compensation for hover throttle (and vertical air movement, termals). This can be zero if hover throttle is precisely 1500us. Too much VEL I will lead to vertical oscillations, too low VEL I will cause drops or jumps when ALTHOLD is enabled, very low VEL I can result in total inability to maintain altitude
-* **VEL_D** - acts as a dampener for VEL P and VEL I, will slower the response and reduce oscillations from too high VEL P and VEL I
+* **VEL_D** - acts as a dampener for acceleration. VEL D will resist any velocity change regardless of its nature (reqested by VEL P and VEL I or induced by wind).
 
 ## PID regulators in POSHOLD/RTH/WP modes (XY-controller)
 
