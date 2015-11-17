@@ -1,4 +1,4 @@
-Blackbox is a valuable tool for analyzing the flight dynamics of our airborne vechicles and as such it can be useful for troubleshooting and debugging purposes.
+Blackbox is a valuable tool for analyzing the flight dynamics of our airborne vehicles and as such it can be useful for troubleshooting and debugging purposes.
 
 In INAV we use a set of specific variables, each variable may contain multiple arrays, for example - navPos[0-2]. 
 
