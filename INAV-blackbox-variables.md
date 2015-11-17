@@ -1,6 +1,7 @@
 Blackbox is a valuable tool for analyzing the flight dynamics of our airborne vechicles and as such it can be useful for troubleshooting and debugging purposes.
 
 In INAV we use a set of specific variables, each variable may contain multiple arrays, for example - navPos[0-2]. 
+
 **navPos**, **navVel**, **navTgtPos** and **navTgtVel** each hold arrays [0-2], which represent distances due North [0], due East [1] and straight Up [2], all relative to the "point of origin".
 North and East are fused from accelerometer and GPS data, while Up is fused from accelerometer + baro for multicopters and accelerometer + gps for airplanes if no barometer is available.
 
