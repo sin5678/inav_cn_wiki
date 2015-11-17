@@ -20,9 +20,11 @@ Binary flags of iNav internal state: new data availability for altitude, positio
 * **navTgtPos** 
 Represents the desired position velocity as used/calculated by iNav. When you are in PH, navTgtPos will be set to hold position coordinates. 
 
-* **navPos** - array of latest NEU coordinates as provided by inertial estimator. Will be slightly different from GPS/baro readings for 99% of time. Units - cm. 
+* **navPos** 
+Array of latest NEU coordinates as provided by inertial estimator. Will be slightly different from GPS/baro readings for 99% of time. Units - cm. 
 
-* **navVel** - same as navPos, but for estimated velocity. Units - cm/s
+* **navVel** 
+Same as navPos, but for estimated velocity. Units - cm/s
 
 * **navTgtVel** 
 Represents the desired velocity as used/calculated by iNav. When you are in PH, navTgtVel will be set to calculated desired velocity to reach the target position.
