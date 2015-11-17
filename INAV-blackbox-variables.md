@@ -11,23 +11,23 @@ For further information about the coordinate system used please read the [[Coord
 
 Variables listed below with a short description of each:
 
-*  **navMode** (**navState** in newer code)
-Current mode of operation from iNav's point of view. Might be different from flight mode. Meaning vary by version, but navMode=0 and navState=1 means idle.
+*  **navMode** (**navState** in newer code):
+current mode of operation from iNav's point of view. Might be different from flight mode. Meaning vary by version, but navMode=0 and navState=1 means idle.
 
-* **navFlags** 
-Binary flags of iNav internal state: new data availability for altitude, position and heading, validity of altitude, surface distance and position, flags to indicate if pilot is adjusting altitude and position via rc input.
+* **navFlags**: 
+binary flags of iNav internal state: new data availability for altitude, position and heading, validity of altitude, surface distance and position, flags to indicate if pilot is adjusting altitude and position via rc input.
 
-* **navTgtPos** 
-Represents the desired position velocity as used/calculated by iNav. When you are in PH, navTgtPos will be set to hold position coordinates. 
+* **navTgtPos**:
+represents the desired position velocity as used/calculated by iNav. When you are in PH, navTgtPos will be set to hold position coordinates. 
 
-* **navPos** 
-Array of latest NEU coordinates as provided by inertial estimator. Will be slightly different from GPS/baro readings for 99% of time. Units - cm. 
+* **navPos**:
+array of latest NEU coordinates as provided by inertial estimator. Will be slightly different from GPS/baro readings for 99% of time. Units - cm. 
 
-* **navVel** 
-Same as navPos, but for estimated velocity. Units - cm/s
+* **navVel**:
+same as navPos, but for estimated velocity. Units - cm/s
 
-* **navTgtVel** 
-Represents the desired velocity as used/calculated by iNav. When you are in PH, navTgtVel will be set to calculated desired velocity to reach the target position.
+* **navTgtVel**:
+represents the desired velocity as used/calculated by iNav. When you are in PH, navTgtVel will be set to calculated desired velocity to reach the target position.
 
-* **navDebug** 
-As the name suggests it is used for debugging. Meaning of these values differ all the time depending on what part of the code is currently being debugged.
+* **navDebug**: 
+as the name suggests it is used for debugging. Meaning of these values differ all the time depending on what part of the code is currently being debugged.
