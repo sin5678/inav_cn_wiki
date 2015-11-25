@@ -9,5 +9,5 @@ Magnetometer measures magnetic field strength so it should be placed away from a
 
 # 2. Setting up the software
 ## Accelerometer calibration
-A proper accelerometer calibration is madnatory if you plan to use GPS-assisted flight moedes (POSHOLD, RTH, WP). Ple
+A proper accelerometer calibration is madnatory if you plan to use GPS-assisted flight moedes (POSHOLD, RTH, WP). Please refer to [[Advanced accelerometer calibration|Advanced-accelerometer-calibration]] page for detailed explanation on how to calibrate the accelerometer properly.
 
