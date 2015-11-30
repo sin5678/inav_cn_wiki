@@ -25,8 +25,8 @@ Cleanflight CLI variables related to navigation features
 | `nav_vel_p`                        | | | |
 | `nav_vel_i`                        | | | |
 | `nav_vel_d`                        | | | |
-| `nav_pos_p`                        | | | |
-| `nav_pos_i`                        | | | |
+| `nav_pos_p`                        | Controls how fast the drone will fly towards the target position. This is a multiplier to convert displacement to target velocity | | |
+| `nav_pos_i`                        | Controls deceleration time. Measured in 1/100 sec. Expected hold position is placed at a distance calculated as _decelerationTime * currentVelocity_ | | |
 | `nav_pos_d`                        | | | |
 | `nav_posr_p`                       | | | |
 | `nav_posr_i`                       | | | |
