@@ -35,7 +35,7 @@ Cleanflight CLI variables related to navigation features
 | `nav_navr_i`                       | | | |
 | `nav_navr_d`                       | | | |
 | `nav_use_midrc_for_althold`        | | OFF | ON |
-| `nav_throttle_tilt_comp`           | | OFF | ON |
+| `nav_extra_arming_safety`          | If set to ON drone won't arm if no GPS fix | OFF | ON |
 | `nav_user_control_mode`            | Defines how Pitch/Roll input from RC receiver affects flight in POSHOLD mode: ATTI - right stick controls attitude like in ANGLE mode; CRUISE - right stick controls velocity in forward and right direction. | | |
 | `nav_dterm_cut_hz`                 | | 0 | 100 |
 | `nav_wp_radius`                    | Waypoint radius. Waypoint would be considered reached if machine is within this radius | 100 | 2000 |
