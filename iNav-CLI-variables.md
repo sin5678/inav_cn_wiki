@@ -45,7 +45,9 @@ Cleanflight CLI variables related to navigation features
 | `nav_min_rth_distance`             | | | |
 | `nav_rth_alt_mode`                 | Altitude control mode: CURRENT, EXTRA, FIXED, MAX, AT_LEAST | | |
 | `nav_rth_altitude`                 | | | |
+| `nav_mc_bank_angle`                | Maximum banking andle (deg) that multicopter navigation is allowed to set. Machine must be able to satisfy this angle without loosing altitude | 15 | 45 |
 | `nav_mc_hover_thr`                 | Multicopter hover throttle hint for altitude controller. Should be set to approximate throttle value when drone is hovering. | 1000 | 2000 |
+| `mc_min_fly_throttle`              | Max throttle value treated as one of the conditions for landing detection. Must be sufficiently low to guarantee the "not flying" state even with full battery, but high enough for Altitude Hold controller to reach it. | 1000 | 2000 |
 | `nav_fw_cruise_thr`                | | | |
 | `nav_fw_min_thr`                   | | | |
 | `nav_fw_max_thr`                   | | | |
