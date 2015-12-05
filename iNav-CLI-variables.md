@@ -6,7 +6,6 @@ Cleanflight CLI variables related to navigation features
 | `gps_provider`                     | GPS hardware type: NMEA, UBLOX, I2C | | |
 | `failsafe_procedure`               | Failsafe type: SET-THR - set throttle to `failsafe_throttle`, RTH - execute RTH sequence if possible, land otherwise | | |
 | `inav_accz_unarmedcal`             | Controls if inertial position estimator should compute gravity offset on accelerometer Z-axis dynamically when drone is unarmed. Mostly affects accuracy of altitude estimation and althold performace. No real reason to disable this feature. | OFF | ON |
-| `inav_dead_reckoning`              | | OFF | ON |
 | `inav_gps_delay`                   | GPS position and velocity data usually arrive with a delay. This parameter defines this delay. Default should be reasonable for most GPS receivers. | 0 | 500 |
 | `inav_w_z_baro_p`                  | | 0 | 10 |
 | `inav_w_z_gps_p`                   | | 0 | 10 |
@@ -42,12 +41,14 @@ Cleanflight CLI variables related to navigation features
 | `nav_max_speed`                    | Maximum velocity firmware is allowed in full auto modes (POSHOLD, RTH, WP)  | 10 | 2000 |
 | `nav_manual_speed`                 | Maximum velocity firmware is allowed when processing pilot input for POSHOLD/CRUISE control mode | | |
 | `nav_manual_climb_rate`            | Maximum climb/descent rate firmware is allowed when processing pilot input for ALTHOLD control mode | | |
+| `nav_pos_hold_deadband`            | | 10 | 250 |
+| `nav_alt_hold_deadband`            | | 10 | 250 |
 | `nav_min_rth_distance`             | | | |
 | `nav_rth_alt_mode`                 | Altitude control mode: CURRENT, EXTRA, FIXED, MAX, AT_LEAST | | |
 | `nav_rth_altitude`                 | | | |
 | `nav_mc_bank_angle`                | Maximum banking andle (deg) that multicopter navigation is allowed to set. Machine must be able to satisfy this angle without loosing altitude | 15 | 45 |
 | `nav_mc_hover_thr`                 | Multicopter hover throttle hint for altitude controller. Should be set to approximate throttle value when drone is hovering. | 1000 | 2000 |
-| `mc_min_fly_throttle`              | Max throttle value treated as one of the conditions for landing detection. Must be sufficiently low to guarantee the "not flying" state even with full battery, but high enough for Altitude Hold controller to reach it. | 1000 | 2000 |
+| `nav_mc_min_fly_thr`               | Max throttle value treated as one of the conditions for landing detection. Must be sufficiently low to guarantee the "not flying" state even with full battery, but high enough for Altitude Hold controller to reach it. | 1000 | 2000 |
 | `nav_fw_cruise_thr`                | | | |
 | `nav_fw_min_thr`                   | | | |
 | `nav_fw_max_thr`                   | | | |
