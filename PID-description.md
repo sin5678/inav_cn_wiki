@@ -1,6 +1,6 @@
 ## PID regulators in ALTHOLD mode (Z-controller)
 
-ALTHOLD mode uses two PIDs - **ALT** and **VEL**. Navtigation Z-controller functional diagram is shown below:
+ALTHOLD mode uses two PIDs - **ALT** and **VEL**. Navigation Z-controller functional diagram is shown below:
 
 ![](https://github.com/digitalentity/nav-rewrite-docs/blob/master/docs/assets/nav_althold_pids_diagram.jpg)
 
@@ -15,8 +15,8 @@ Actually ALT PID parameters control two P-controllers: Position-to-Velocity and 
 This PID-controller is an Acceleration-to-Throttle controller
 
 * **VEL_P** - defined how much throttle quad will add/reduce to achieve desired velocity
-* **VEL_I** - controls compensation for hover throttle (and vertical air movement, termals). This can be zero if hover throttle is precisely 1500us. Too much VEL I will lead to vertical oscillations, too low VEL I will cause drops or jumps when ALTHOLD is enabled, very low VEL I can result in total inability to maintain altitude
-* **VEL_D** - acts as a dampener for acceleration. VEL D will resist any velocity change regardless of its nature (reqested by VEL P and VEL I or induced by wind).
+* **VEL_I** - controls compensation for hover throttle (and vertical air movement, thermals). This can be zero if hover throttle is precisely 1500us. Too much VEL I will lead to vertical oscillations, too low VEL I will cause drops or jumps when ALTHOLD is enabled, very low VEL I can result in total inability to maintain altitude
+* **VEL_D** - acts as a dampener for acceleration. VEL D will resist any velocity change regardless of its nature (requested by VEL P and VEL I or induced by wind).
 
 ## PID regulators in POSHOLD/RTH/WP modes (XY-controller)
 
