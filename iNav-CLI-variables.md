@@ -57,9 +57,7 @@ Cleanflight CLI variables related to navigation features
 | `nav_fw_climb_angle`               | | | |
 | `nav_fw_dive_angle`                | | | |
 | `nav_fw_pitch2thr`                 | | | |
-| `gyro_soft_filter`                 |Software-based filter to remove mechanical vibrations from the gyro signal.  
-Values: NONE, LOW, MED, HIGH (0, 250's, 450's, Larger)  
-[See Betaflight](http://www.rcgroups.com/forums/showpost.php?p=32229712&postcount=1) |NONE |HIGH |
+| `gyro_soft_filter`                 | | | |
 | `acc_soft_filter`                  | | | |
 | `baro_tab_size`                    | | | |
 | `baro_noise_lpf`                   | | | |
