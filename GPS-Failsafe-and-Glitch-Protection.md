@@ -1,10 +1,16 @@
 ## Overview
 
-GPS Systems can occasionally drop the signal or provide significantly inaccurate position information (aka “glitches”). While errors are more likely in conditions where the GPS signal can bounce off multiple paths before reaching the receiver (multipathing), errors can occasionally occur even with clear sky.
+GPS Systems can occasionally drop the signal (loose FIX) or provide significantly inaccurate position information (glitch). While errors are more likely in conditions where the GPS signal can bounce off multiple paths before reaching the receiver (multipathing), errors can occasionally occur even with clear sky.
 
 Without updates from GPS System, the inertial position estimation allow approximately 1.5 seconds of position information but after this the horizontal position drift becomes so large that the horizontal position cannot be maintained at all. At this point the position estimator will report invalid position to the navigation core. If you still have RC radio control it is recommended to take back control using ANGLE, HORIZON, ALTHOLD or ACRO as soon as possible.
 
 Action taken on invalid position is dependent on current flight mode.
+
+## GPS glitch protection
+
+Sometimes GPS provides very inaccurate position information despite having the fix and the good satellite count. This event is usually called a "GPS glitch". iNav has logic to detect and ignore inaccurate/inconsistent GPS position updates. GPS glitches are treated the same way as loosing GPS fix.
+
+**At the moment the code is experimental and "glitched" GPS positions are not ignored.**
 
 ## Action taken on invalid position event
 
