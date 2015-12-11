@@ -28,7 +28,7 @@ These modes are not GPS-dependent, nothing will happen but you will be unable to
 The copter will be forced into ANGLE mode, pilot will have complete control over copter attitude. If ALTHOLD mode was selected it will remain active. When failure clears POSHOLD more will resume.
 
 ### RTH and WP modes (including failsafe RTH)
-RTH and WP are considered full-auto modes. It is assumed that pilot might have no control over the copter so the best case scenario here is land. Copter will enter Emergency Landing state if failure is consistent for over 2 seconds.
+RTH and WP are considered full-auto modes. It is assumed that pilot might have no control over the copter so the safest action in case of invalid position is landing the machine. Copter will enter Emergency Landing state if failure is consistent for over 2 seconds.
 
 ## Emergency Landing
 In case of critical failure, Emergency Landing is triggered. In Emergency Landing state copter is forced into ANGLE mode, ROLL and PITCH input is centered to maintain level, pilot stick input is ignored and copter enters a controlled descent.
