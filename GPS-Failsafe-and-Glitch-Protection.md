@@ -34,3 +34,11 @@ RTH and WP are considered full-auto modes. It is assumed that pilot might have n
 In case of critical failure, Emergency Landing is triggered. In Emergency Landing state copter is forced into ANGLE mode, ROLL and PITCH input is centered to maintain level, pilot stick input is ignored and copter enters a controlled descent.
 
 While Emergency Landing is active pilot is unable to switch into ALTHOLD, POSHOLD, RTH or WP mode. If pilot wants to regain control of the copter he should switch to ANGLE, HORIZON or ACRO more.
+
+## Tips to improve GPS reception and avoid GPS outages and glitches
+
+1. Place the GPS module on the outside of your vehicle (in an elevated position or on a mast if appropriate) with a clear view of the sky. 
+1. If GPS module is combined with a compass sensor, place it as far as possible from the motors, ESCs and power wires (at lest 10 cm)
+1. 1.2-1.3 GHz FPV video transmitters are know to be interfering with GPS reception. If you use such transmitter place it as far as possible from GPS module and expect some degradation in GPS quality
+1. Select a GPS module with biggest GPS antenna. Bigger GPS antenna - better reception.
+1. Use a two-system receiver is possible. For example uBlox NEO-M8N is GPS/GLONASS capable receiver. More systems means better noise resistence, more satellites, better accuracy.
