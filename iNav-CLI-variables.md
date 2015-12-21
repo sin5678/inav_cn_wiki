@@ -40,7 +40,7 @@ Cleanflight CLI variables related to navigation features
 | `nav_use_midrc_for_althold`        | | OFF | ON |
 | `nav_extra_arming_safety`          | If set to ON drone won't arm if no GPS fix | OFF | ON |
 | `nav_user_control_mode`            | Defines how Pitch/Roll input from RC receiver affects flight in POSHOLD mode: ATTI - right stick controls attitude like in ANGLE mode; CRUISE - right stick controls velocity in forward and right direction. | | |
-| `nav_dterm_cut_hz`                 | | 0 | 100 |
+| `nav_position_timeout`             | If GPS fails wait for this much seconds before switching to emergency landing mode (0 - disable) | 0 | 10 |
 | `nav_wp_radius`                    | Waypoint radius. Waypoint would be considered reached if machine is within this radius | 100 | 2000 |
 | `nav_max_speed`                    | Maximum velocity firmware is allowed in full auto modes (POSHOLD, RTH, WP)  | 10 | 2000 |
 | `nav_manual_speed`                 | Maximum velocity firmware is allowed when processing pilot input for POSHOLD/CRUISE control mode | | |
