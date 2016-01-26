@@ -6,9 +6,11 @@ Cleanflight CLI variables related to navigation features
 | `align_board_roll`                 | Board alignment on ROLL axis (deg * 10) | -1800 | 3600 |
 | `align_board_pitch`                | Board alignment on PITCH axis (deg * 10) | -1800 | 3600 |
 | `align_board_yaw`                  | Board alignment on YAW axis (deg * 10) | -1800 | 3600 |
-| `gps_provider`                     | GPS hardware type: NMEA, UBLOX, I2C | | |
+| `gps_provider`                     | GPS hardware type: NMEA, UBLOX, NAZA, I2C-NAV | | |
+| `gps_nav_model`                    | GPS navigation model: LOW_G (Pedestrian), HIGH_G (Airborne<4G). Currently supported only of Ublox GPS modules | | |
 | `failsafe_procedure`               | Failsafe type: SET-THR - set throttle to `failsafe_throttle`, RTH - execute RTH sequence if possible, land otherwise | | |
 | `inav_accz_unarmedcal`             | Controls if inertial position estimator should compute gravity offset on accelerometer Z-axis dynamically when drone is unarmed. Mostly affects accuracy of altitude estimation and althold performace. No real reason to disable this feature. | OFF | ON |
+| `inav_use_gps_velned`              | Defined if iNav should use velocity data provided by GPS module for doing position and speed estimation. If set to OFF iNav will fallback to calculating velocity from GPS coordinates. Using native velocity data may improve performance on some GPS modules. Some GPS modules introduce significant delay and using native velocoty may actually result in much worse performance. Safe default is "OFF" | OFF | ON |
 | `inav_gps_delay`                   | GPS position and velocity data usually arrive with a delay. This parameter defines this delay. Default should be reasonable for most GPS receivers. | 0 | 500 |
 | `inav_gps_min_sats`                | Minimum number of GPS satellites in view to consider GPS position valid. Some GPS receivers appeared to be very inaccurate with low satellite count. | 5 | 10 |
 | `inav_w_z_baro_p`                  | | 0 | 10 |
