@@ -7,7 +7,7 @@ Cleanflight CLI variables related to navigation features
 | `align_board_pitch`                | Board alignment on PITCH axis (deg * 10) | -1800 | 3600 |
 | `align_board_yaw`                  | Board alignment on YAW axis (deg * 10) | -1800 | 3600 |
 | `gps_provider`                     | GPS hardware type: NMEA, UBLOX, NAZA, I2C-NAV | | |
-| `gps_nav_model`                    | GPS navigation model: LOW_G (Pedestrian), HIGH_G (Airborne<4G). Currently supported only of Ublox GPS modules | | |
+| `gps_nav_model`                    | GPS navigation model: LOW_G (Pedestrian), HIGH_G (Airborne<4G). Currently supported only of Ublox GPS modules. HIGH_G may increase accuracy, especially on fast and agile airplanes, but it requires much better satellite signal quality. Safe default is "LOW_G". | | |
 | `failsafe_procedure`               | Failsafe type: SET-THR - set throttle to `failsafe_throttle`, RTH - execute RTH sequence if possible, land otherwise | | |
 | `inav_accz_unarmedcal`             | Controls if inertial position estimator should compute gravity offset on accelerometer Z-axis dynamically when drone is unarmed. Mostly affects accuracy of altitude estimation and althold performace. No real reason to disable this feature. | OFF | ON |
 | `inav_use_gps_velned`              | Defined if iNav should use velocity data provided by GPS module for doing position and speed estimation. If set to OFF iNav will fallback to calculating velocity from GPS coordinates. Using native velocity data may improve performance on some GPS modules. Some GPS modules introduce significant delay and using native velocoty may actually result in much worse performance. Safe default is "OFF" | OFF | ON |
