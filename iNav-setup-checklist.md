@@ -1,5 +1,8 @@
+## 0. Setup hardware
+Balance props and motors, install FC on a vibration-damping mount if possible.
+
 ## 1. Set board and sensor alignment values
-WriteMe
+TODO
 
 ## 2. Calibrate accelerometer
 A proper accelerometer calibration is mandatory if you plan to use GPS-assisted flight moedes (POSHOLD, RTH, WP). Please refer to [[Advanced accelerometer calibration|Advanced-accelerometer-calibration]] page for detailed explanation on how to calibrate the accelerometer properly.
@@ -13,11 +16,15 @@ Point your copter to North, East, South and West. Observe **Heading** in the con
 ## 5. Set your TX midpoints
 Set trim on your TX to zero. Use subtrim to adjust your TX midpoints to be precisely 1500 when Roll/Pitch/Yaw sticks are centered.
 
-## 6. Trim copter to level flight
+## 6. Tune your copter's Pitch/Roll/Yaw/Level PIDs
+TODO.
+This section should cover general tuning as well as software filters for acc and gyri
+
+## 7. Trim copter to level flight
 DO NOT USE TRIM the copter to level flight on your transmitter. Use board alignment settings or accelerometer trim stick combos. 
 
-## 7. Determine and set hover throttle
+## 8. Determine and set hover throttle
 Use blackbox or Configurator to figure out throttle stick position when your copter is hovering. Set **nav_mc_hover_thr** CLI variable to that value.
 
-## 8. Setup and verify failsafe on TX and iNav
+## 9. Setup and verify failsafe on TX and iNav
 TODO: We need a thorough guide covering possible scenarios (TX + iNav, TX only, iNav only), guide how to setup failsafe in iNav properly.
