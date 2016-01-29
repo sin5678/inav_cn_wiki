@@ -18,3 +18,6 @@ DO NOT USE TRIM the copter to level flight on your transmitter. Use board alignm
 
 ## 7. Determine and set hover throttle
 Use blackbox or Configurator to figure out throttle stick position when your copter is hovering. Set **nav_mc_hover_thr** CLI variable to that value.
+
+## 8. Setup and verify failsafe on TX and iNav
+TODO: We need a thorough guide covering possible scenarios (TX + iNav, TX only, iNav only), guide how to setup failsafe in iNav properly.
