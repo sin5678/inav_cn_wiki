@@ -21,8 +21,8 @@ TODO.
 This section should cover general tuning as well as software filters for acc and gyri
 
 ## 7. Trim copter to level flight
-DO NOT USE TRIM the copter to level flight on your transmitter. Use board alignment settings or accelerometer trim stick combos. 
-
+DO NOT USE TRIM the copter to level flight on your transmitter. Use board alignment settings or accelerometer trim stick combos.
+[How to trim your Accelerometer](http://tldrify.com/elw)
 ## 8. Determine and set hover throttle
 Use blackbox or Configurator to figure out throttle stick position when your copter is hovering. Set **nav_mc_hover_thr** CLI variable to that value.
 
