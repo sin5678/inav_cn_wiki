@@ -2,7 +2,7 @@
 
 ALTHOLD mode uses two PIDs - **ALT** and **VEL**. Navigation Z-controller functional diagram is shown below:
 
-![](https://github.com/digitalentity/nav-rewrite-docs/blob/master/docs/assets/nav_althold_pids_diagram.jpg)
+![](images/nav_althold_pids_diagram.jpg)
 
 ### ALT PID
 Actually ALT PID parameters control two P-controllers: Position-to-Velocity and Velocity-to-Acceleration
@@ -22,7 +22,7 @@ This PID-controller is an Acceleration-to-Throttle controller
 
 XY-controller uses two PIDs - **POS** and **POSR**
 
-![](https://github.com/digitalentity/nav-rewrite-docs/blob/master/docs/assets/nav_poshold_pids_diagram.jpg)
+![](images/nav_poshold_pids_diagram.jpg)
 
 ### POS PID
 This is a Position-to-Velocity P-controller active in POSHOLD, RTH and WP modes
