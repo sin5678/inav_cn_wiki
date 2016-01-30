@@ -2,7 +2,7 @@ Accelerometer calibration is mandatory if inertial position estimation is used. 
 
 ## Accelerometer calibration steps
 
-![](https://github.com/digitalentity/nav-rewrite-docs/blob/master/docs/assets/acc-calibration-positions.jpg)
+![](images/acc-calibration-positions.jpg)
 
 0. Connect the copter to the "Configurator" software, select the "Setup" tab.
 1. Place copter level (pos 1) and press "Calibrate Accelerometer" button. Advanced calibration has been activated and recorded the 1-st data point.
