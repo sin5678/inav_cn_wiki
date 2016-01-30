@@ -32,4 +32,4 @@ This is a work in progress mode.
 
 A diagram to indicate flight modes relation to navigation modes and illustrate sensor requirements:
 
-![](https://github.com/digitalentity/nav-rewrite-docs/blob/master/docs/assets/nav_modes_diagram.jpg)
+![](images/nav_modes_diagram.jpg)
