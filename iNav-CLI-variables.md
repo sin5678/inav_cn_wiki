@@ -62,8 +62,8 @@ Cleanflight CLI variables related to navigation features
 | `nav_fw_climb_angle`               | | | |
 | `nav_fw_dive_angle`                | | | |
 | `nav_fw_pitch2thr`                 | | | |
-| `gyro_soft_lpf`                    | Software-based filter to remove mechanical vibrations from the gyro signal.  Values: NONE, LOW, MED, HIGH (0, 250's, 450's, Larger) | NONE | HIGH |
-| `acc_soft_lpf`                     | | | |
+| `gyro_soft_lpf_hz`                 | Software-based filter to remove mechanical vibrations from the gyro signal.  Value is cutoff frequency (Hz). For larger frames with bigger props set to lower value. Default 60Hz | 0 | 200 |
+| `acc_soft_lpf_hz`                  | Software-based filter to remove mechanical vibrations from the accelerometer measurements.  Value is cutoff frequency (Hz). For larger frames with bigger props set to lower value. Default 15Hz | 0 | 200 |
 | `baro_tab_size`                    | | | |
 | `baro_noise_lpf`                   | | | |
 | `magzero_x`                        | | | |
