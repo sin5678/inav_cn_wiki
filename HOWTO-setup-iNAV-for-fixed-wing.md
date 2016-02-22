@@ -142,7 +142,7 @@ Serial speed settings
 `#define BAUDRATE 115200`
 
 The screenshot of the MWOSD configuration is shown below:
-![MWOSD config](http://s8.hostingkartinok.com/uploads/images/2016/02/8f9fa1c9a03629d846171cd89526f626.png)
+![MWOSD config](http://s8.hostingkartinok.com/uploads/images/2016/02/17582422170a13c2169af18d16623129.png)
 
 You can find the demo video of the iNAV flight and RTH function [here](https://www.youtube.com/watch?v=GYd7mxGxNL8).
 
