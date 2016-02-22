@@ -39,11 +39,19 @@ It is done using Ports tab ![Ports tab](http://s8.hostingkartinok.com/uploads/im
 ### Configuration
 Next, connect your hardware according to the schemes:
 
-Parallel PWM Receiver (picture in construction)
+Parallel PWM Receiver
 
-PPM Receiver (picture in construction)
+<img src="http://s8.hostingkartinok.com/uploads/images/2016/02/31c89c8898ae70434c2f850f48644d33.png" width="400" height="300" />
 
-UART Receiver (picture in construction)
+PPM Receiver
+
+<img src="http://s8.hostingkartinok.com/uploads/images/2016/02/67d5ad8cba37d337e3eeeeeb5a889ff2.png" width="400" height="300" />
+
+Serial Receiver 
+
+<img src="http://s8.hostingkartinok.com/uploads/images/2016/02/c98cfcf64df8a8a7645429dc7ac4c0ea.png" width="400" height="300" />
+
+Of course, according to the receiver used you need to enable one of the features: `feature RX_PPM` for the PPM receiver or setup a software serial port and enable the Serial Receiver option for it. For more information about CC3D pinout check the [CC3D](https://github.com/iNavFlight/inav/blob/master/docs/Board%20-%20CC3D.md) page
 
 On the Configuration tab in the Mixer group select the Airplane.
 ![Airplane](http://s8.hostingkartinok.com/uploads/images/2016/02/1bf925af382a8746ae8395a0efe22342.png)
@@ -80,19 +88,39 @@ On the Modes tab set up the flight modes according to the position of the AUX ch
 - minimum channel value - do not select any mode - only gyros will work. The hand launch take off in this mode is excellent.
 - middle value - Angle or Horizon.
 - maximum value - RTH+Angle (or RTH+Horizon). Return to home with stabilization.
+
 ![Flight modes](http://s8.hostingkartinok.com/uploads/images/2016/02/6d23377ca96046a5f62542105b4ce878.png)
 
 ### Failsafe
 
 Coming soon
+For more information check the [failsafe](https://github.com/iNavFlight/inav/blob/master/docs/Failsafe.md) page
 
-### Servo setup
+###Transmitter setup
 
-Coming soon
+Next you need to setup channes' reverse in your transmitter according to the general rules: Elevator stick down - elevator goes up, Aileron stick to the left - left aileron is up, right aileron is down, Rudder stick to the left, rudder goes to the left)
 
 ### Motors
 
-Coming soon
+After this follow to the Motors tab, rock your plane and notice what levels are moving depending on PITCH, ROLL and YAW angles. You can remember it or write it down. ROLL - 4,5; PITCH - 3, YAW - 6.
+
+![Motors tab](http://s8.hostingkartinok.com/uploads/images/2016/02/bb1293fb31f72ea57b11487172a87407.png)
+
+Turn on your transmitter, switch to the Angle or Horizon flight mode and follow the Servos tab.
+
+### Servo setup
+
+[Servo tab](http://s8.hostingkartinok.com/uploads/images/2016/02/4774905124ad93e7fe9fe476baba3c1c.png)
+
+Here you need to be very attentive. In this tab you set up endpoints, neutral, rates and reverse for stabilization modes. Servo numbering in the tab starts from 0!
+
+For the Elevator, tilt the plain's tail down, and the Elevator should go down. If the elevator goes up, then you need to set the Rate (the right-most drop down list) Servo 2 with negative sign.
+
+Tilt the left wing down. Left Aileron should go down and right one should go up. If it is not so, then put negative Rate values for Servo 3 and Servo 4 (if your ailerons are connected by means of Y-cable, than you can change the settings for only one Servo or connect the Y-cable to other Servo out). 
+
+Turn the tail to the left, and the Rudder should go to the left. Otherwise switch the Servo 5 Rate to negative.
+
+Attention! all the endpoints, neutrals, trimmers should be done on this tab, not in transmitter!
 
 ### OSD setup
 You need to upload [MWOSD](http://www.mwosd.com/) firmware to your minimOSD. You can find pretty straight forward install guide following the [link](https://github.com/ShikOfTheRa/scarab-osd/blob/master/OTHER/DOCUMENTATION/FirmwareFlashing.md). As usual you use Arduino IDE for global OSD config. All changes are done in the Config.h file
