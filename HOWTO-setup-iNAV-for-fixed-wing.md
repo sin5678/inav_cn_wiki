@@ -110,7 +110,7 @@ Turn on your transmitter, switch to the Angle or Horizon flight mode and follow 
 
 ### Servo setup
 
-[Servo tab](http://s8.hostingkartinok.com/uploads/images/2016/02/4774905124ad93e7fe9fe476baba3c1c.png)
+![Servo tab](http://s8.hostingkartinok.com/uploads/images/2016/02/4774905124ad93e7fe9fe476baba3c1c.png)
 
 Here you need to be very attentive. In this tab you set up endpoints, neutral, rates and reverse for stabilization modes. Servo numbering in the tab starts from 0!
 
