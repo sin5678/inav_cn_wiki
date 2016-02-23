@@ -5,7 +5,7 @@ iNav firmware is using inertial navigation system (INS), this means that firmwar
 
 ## Magnetometer
 Accurately setting up the compass is vital because it is the primary source of heading information. Without an accurate heading the drone will not move in the correct direction in autopilot modes (POSHOLD, RTH, Waypoint). This can lead to circling (aka “toiletbowling”) or even fly-aways.
-Magnetometer measures magnetic field strength so it should be placed away from any sources of magnetic interference - power wires, ESCs, motors, beepers, metal parts of the frame. The best way is to place the compass on a mast along with GPS module.
+Magnetometer measures magnetic field strength so it should be placed away from any sources of magnetic interference - power wires, ESCs, motors, beepers, metal parts of the frame. The best way is to place the compass on a mast along with GPS module. When external compass is used remember to set correct "align_mag", see iNav CLI variables for more infomation.
 
 ## GPS
 iNav supports Ublox gps and NMEA (untested)
