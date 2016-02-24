@@ -144,6 +144,8 @@ Serial speed settings
 The screenshot of the MWOSD configuration is shown below:
 ![MWOSD config](http://s8.hostingkartinok.com/uploads/images/2016/02/17582422170a13c2169af18d16623129.png)
 
-You can find the demo video of the iNAV flight and RTH function [here](https://www.youtube.com/watch?v=GYd7mxGxNL8).
+Watch this demo video of the iNAV flight and RTH function:
+
+[![iNAV on FT Duster](http://img.youtube.com/vi/GYd7mxGxNL8/0.jpg)](https://www.youtube.com/watch?v=GYd7mxGxNL8)
 
 Good luck!
