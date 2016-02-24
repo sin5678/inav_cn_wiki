@@ -34,14 +34,14 @@ To save all the settings you did in the CLI it is needed to enter the command 's
 It is done using Ports tab ![Ports tab](http://s8.hostingkartinok.com/uploads/images/2016/02/6f1a56073c11418b2020b59e9d036c55.png).
 
 - UART1 - leave default value. You'll connect here either OSD or FTDI to setup the FC.
-- UART3 - for GPS. Switch on the option and select the correct port speed. Of course, previously you need to setup your GPS receiver to output NMEA or UBX (preferred) packets, UART speed, update rate.
+- UART3 - for GPS. Switch on the option and select the correct port speed. Of course, previously you need to setup your GPS receiver to output NMEA or UBX (preferred) packets, UART speed, update rate, according to the [Gps.md article](https://github.com/iNavFlight/inav/blob/master/docs/Gps.md)
 
 ### Configuration
 Next, connect your hardware according to the schemes:
 
-Parallel PWM Receiver
+Parallel PWM Receiver ([click here](http://s8.hostingkartinok.com/uploads/images/2016/02/a47fb019c7783371053239a3d23a8d46.jpg) to see the real hardware photo)
 
-<img src="http://s8.hostingkartinok.com/uploads/images/2016/02/31c89c8898ae70434c2f850f48644d33.png" width="400" height="300" />
+<img src="http://s8.hostingkartinok.com/uploads/images/2016/02/4e641362191528c42758d626757b747a.png" width="400" height="300" />
 
 PPM Receiver
 
