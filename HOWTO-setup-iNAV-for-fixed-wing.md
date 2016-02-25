@@ -47,11 +47,7 @@ PPM Receiver
 
 <img src="http://s8.hostingkartinok.com/uploads/images/2016/02/c98cfcf64df8a8a7645429dc7ac4c0ea.png" width="400" height="300" />
 
-Serial Receiver 
-
-<img src="http://s8.hostingkartinok.com/uploads/images/2016/02/67d5ad8cba37d337e3eeeeeb5a889ff2.png" width="400" height="300" />
-
-Of course, according to the receiver used you need to enable one of the features: `feature RX_PPM` for the PPM receiver or setup a software serial port and enable the Serial Receiver option for it. For more information about CC3D pinout check the [CC3D](https://github.com/iNavFlight/inav/blob/master/docs/Board%20-%20CC3D.md) page
+Of course, according to the receiver used you need to enable one of the features: `feature RX_PPM` for the PPM receiver. For more information about CC3D pinout check the [CC3D](https://github.com/iNavFlight/inav/blob/master/docs/Board%20-%20CC3D.md) page
 
 On the Configuration tab in the Mixer group select the Airplane.
 ![Airplane](http://s8.hostingkartinok.com/uploads/images/2016/02/1bf925af382a8746ae8395a0efe22342.png)
