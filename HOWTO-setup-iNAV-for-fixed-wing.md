@@ -94,17 +94,13 @@ For more information check the [failsafe](https://github.com/iNavFlight/inav/blo
 
 ###Transmitter setup
 
-You should adjust (normal or reverse) on your transmitter so sticks correspond to below
+You should adjust (normal or reverse) on your transmitter so sticks correspond to below:
 
 In reciever tab:
 Throttle stick push away - increased value
-
 Yaw (Rudder) stick right - increased value
-
 Pitch (Elevator) stick push away - increased value
-
 Roll (Ailerons) stick right - increased value
-
 
 Also use subtrim to get center value of 1500us and use travel adjustment to get at lowest value 1000us and highest 2000us when moving sticks.
 
