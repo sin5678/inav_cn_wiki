@@ -94,7 +94,15 @@ For more information check the [failsafe](https://github.com/iNavFlight/inav/blo
 
 ###Transmitter setup
 
-Next you need to setup channes' reverse in your transmitter according to the general rules: Elevator stick down - elevator goes up, Aileron stick to the left - left aileron is up, right aileron is down, Rudder stick to the left, rudder goes to the left)
+You should adjust (normal or reverse) on your transmitter so sticks correspond to below
+
+In reciever tab:
+Throttle stick push away - increased value
+Yaw (Rudder) stick right - increased value
+Pitch (Elevator) stick push away - increased value
+Roll (Ailerons) stick right - increased value
+
+Also use subtrim to get center value of 1500us and use travel adjustment to get at lowest value 1000us and highest 2000us when moving sticks.
 
 ### Motors
 
@@ -110,11 +118,13 @@ Turn on your transmitter, switch to the Angle or Horizon flight mode and follow 
 
 Here you need to be very attentive. In this tab you set up endpoints, neutral, rates and reverse for stabilization modes. Servo numbering in the tab starts from 0!
 
-For the Elevator, tilt the plain's tail down, and the Elevator should go down. If the elevator goes up, then you need to set the Rate (the right-most drop down list) Servo 2 with negative sign.
+For the Elevator, tilt the plane's tail down, and the Elevator should go down. If the elevator goes up, then you need to set the Rate (the right-most drop down list) Servo 2 with negative sign.
 
 Tilt the left wing down. Left Aileron should go down and right one should go up. If it is not so, then put negative Rate values for Servo 3 and Servo 4 (if your ailerons are connected by means of Y-cable, than you can change the settings for only one Servo or connect the Y-cable to other Servo out). 
 
 Turn the tail to the left, and the Rudder should go to the left. Otherwise switch the Servo 5 Rate to negative.
+
+After this stick movement should also move servos the correct way. (General rules: Elevator stick down - elevator goes up, Aileron stick to the left - left aileron is up, right aileron is down, Rudder stick to the left, rudder goes to the left)
 
 Attention! all the endpoints, neutrals, trimmers should be done on this tab, not in transmitter!
 
