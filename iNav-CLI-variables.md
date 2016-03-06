@@ -33,9 +33,9 @@ Cleanflight CLI variables related to navigation features
 | `nav_pos_p`                        | Controls how fast the drone will fly towards the target position. This is a multiplier to convert displacement to target velocity | | |
 | `nav_pos_i`                        | Controls deceleration time. Measured in 1/100 sec. Expected hold position is placed at a distance calculated as _decelerationTime * currentVelocity_ | | |
 | `nav_pos_d`                        | | | |
-| `nav_posr_p`                       | | | |
-| `nav_posr_i`                       | | | |
-| `nav_posr_d`                       | | | |
+| `nav_posr_p`                       | P gain of Position-Rate (Velocity to Acceleration) PID controller. Higher P means stronger response when position error occurs. Too much P might cause "nervous" behavior and oscillations | 0 | 255 |
+| `nav_posr_i`                       | I gain of Position-Rate (Velocity to Acceleration) PID controller. Used for drift compensation (caused by wind for example). Higher I means stronger response to drift. Too much I gain might cause target overshot | 0 | 255 |
+| `nav_posr_d`                       | D gain of Position-Rate (Velocity to Acceleration) PID controller. It can damp P and I. Increasing D might help when drone overshoots target. | 0 | 255 |
 | `nav_navr_p`                       | | | |
 | `nav_navr_i`                       | | | |
 | `nav_navr_d`                       | | | |
