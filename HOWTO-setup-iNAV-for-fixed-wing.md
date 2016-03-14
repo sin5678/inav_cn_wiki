@@ -128,6 +128,23 @@ After this stick movement should also move servos the correct way. (General rule
 
 Attention! all the endpoints, neutrals, trimmers should be done on this tab, not in transmitter!
 
+### Recommended power layout
+
+To prevent brownout its wise to power servos with one BEC and the flight controller + other equipment with another BEC.
+
+This is one way to accomplish it: 
+
+Glued a new row of pins onto the case of the flightcontroller, the must be connected together. (See the bottom of pins)
+
+All servos and ESC is connected to flightcontroller, except positive wire which goes to the new row. (This line gets its power from the BEC in the ESC)
+
+Another external BEC is connected at random positive and negativ pin on flight controller to power it, the receiver and GPS.
+
+This way if one servo get stuck and draws alot of amps you shouldnt risk your flight system to power down.
+
+Picture 1 Please add picture here
+Picture 2 Please add picture here
+
 ### OSD setup
 You need to upload [MWOSD](http://www.mwosd.com/) firmware to your minimOSD. You can find pretty straight forward install guide following the [link](https://github.com/ShikOfTheRa/scarab-osd/blob/master/OTHER/DOCUMENTATION/FirmwareFlashing.md). As usual you use Arduino IDE for global OSD config. All changes are done in the Config.h file
 
