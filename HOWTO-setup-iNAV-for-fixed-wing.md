@@ -5,9 +5,9 @@
 2. What is needed
 3. Flashing iNAV firmware to CC3D
 4. Basic settings
-   4,1 Flight controller orientation
-   4,2 Port settings
-   4,3 Configuration
+   4.2 Flight controller orientation
+   4.3 Port settings
+   4.4 Configuration
 5. Failsafe
 6. Transmitter setup
 7. Motors
