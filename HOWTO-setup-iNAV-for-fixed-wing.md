@@ -1,34 +1,32 @@
 # HOWTO setup iNAV for fixed wing
 
 ## Index
-[1. Features](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing#1-features)
+1. Features
 
-[2. What is needed](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing#2-what-is-needed)
+2. What is needed
 
-[3. Flashing iNAV firmware to CC3D.](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing#3-flashing-
-inav-firmware-to-cc3d)
+3. Flashing iNAV firmware to CC3D.
 
-[4. Basic settings](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing#4-basic-settings)
+4. Basic settings
 
-[Flight controller orientation.](Flight controller orientation.)
+Flight controller orientation.
 
-[Port settings](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing#port-settings)
+Port settings
 
-[Configuration](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing#configuration)
+Configuration
 
-[Failsafe](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing#failsafe)
+Failsafe
 
-[Transmitter setup](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing#transmitter-setup)
+Transmitter setup
 
-[Motors](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing#motors)
+Motors
 
-[Servo setup](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing#servo-setup)
+Servo setup
 
-[Recommended power layout](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing#recommended-power-
-layout)
+Recommended power layout
 
-[OSD setup](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing#osd-setup)
-[]()
+OSD setup
+
 
 
 ## 1. Features
