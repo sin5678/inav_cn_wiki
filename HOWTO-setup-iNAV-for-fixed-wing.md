@@ -1,7 +1,7 @@
 # HOWTO setup iNAV for fixed wing
 
 ## Index
-1. 
+1. [1. Features](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing#1-features)
 2. What is needed
 3. Flashing iNAV firmware to CC3D
 4. Basic settings
