@@ -1,5 +1,19 @@
 # HOWTO setup iNAV for fixed wing
-The guide is currently under construction
+
+## Index
+1. Features
+2. What is needed
+3. Flashing iNAV firmware to CC3D
+4. Basic settings
+* Flight controller orientation
+* Port settings
+* Configuration
+5. Failsafe
+6. Transmitter setup
+7. Motors
+8. Servo setup
+9. Recommended power layout
+10. OSD setup
 
 ## 1. Features
 - Stabilization (Angle, Horizon modes)
