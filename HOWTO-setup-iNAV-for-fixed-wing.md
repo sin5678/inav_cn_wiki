@@ -83,6 +83,8 @@ Do not pay attention on the servo numbering! It will be described later.
 
 If you don't want the motor rotation on arm, then switch on the MOTOR_STOP feature.
 
+By default iNav won't arm without GPS fix. To disable use CLI: "set nav_extra_arming_safety = OFF"
+
 Switch on the GPS feature, and select the protocol.
 ![GPS and other settings](http://s8.hostingkartinok.com/uploads/images/2016/02/4f30a0ab600a47fb19522436a98ce677.png)
 
