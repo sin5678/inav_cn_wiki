@@ -182,13 +182,21 @@ This way if one servo get stuck and draws alot of amps you shouldnt risk your fl
 "failsafe_procedure" Needs to be RTH if you want RTH failsafe.
 
 Fixed wing spesific parameters, adjust to something suitable for your plane. 
+
 set nav_fw_cruise_thr
+
 set nav_fw_min_thr
+
 set nav_fw_max_thr
+
 set nav_fw_bank_angle
+
 set nav_fw_climb_angle
+
 set nav_fw_dive_angle
+
 set nav_fw_pitch2thr
+
 set nav_fw_loiter_radius
 
 ### OSD setup
