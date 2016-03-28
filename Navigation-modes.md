@@ -28,6 +28,12 @@ Activated by **RTH** flight mode.
 
 This is a work in progress mode.
 
+## HEADING LOCK
+
+This flight mode affects on yaw axis and can be enabled together with any other flight mode. 
+It helps to maintain current heading without pilots input and  magnetometer's support. When yaw stick is neutral position, Heading Lock tries to keep total amount on rotation on yaw at zero. When pilot moves yaw stick, Heading Lock is not used.
+It is a equivalent of [TauLabs Axis Lock mode](https://github.com/TauLabs/TauLabs/wiki/Flightmode-Settings#axislock)
+ 
 ## Mode switch diagram
 
 A diagram to indicate flight modes relation to navigation modes and illustrate sensor requirements:
