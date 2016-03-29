@@ -43,7 +43,7 @@ Also, remember to set magnetic declination to a proper value on the "Configurati
 2. Set cli parameter "failsafe_procedure" to "RTH"
 Type in cli "set failsafe_procedure = RTH"
 
-3. 
+3. Set up modes for stage 1 failsafr
 
  3,1 In failsafe tab choose the aux channel where you have angle mode and instead of hold you set in to the value where "angle" mode is active.
 Do the same for nav alt hold mode and nav pos hold
