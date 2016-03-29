@@ -34,3 +34,24 @@ If the value is incorrect when copter is level, you likely don't have **align_ma
 Also, remember to set magnetic declination to a proper value on the "Configuration" screen.
 
 # 3. Setting flight modes
+
+
+# 4. Setting up failsafe with return to home.
+
+1. Make sure your radio receiver failsafe is set to "No pulses"
+
+2. Set cli parameter "failsafe_procedure" to "RTH"
+Type in cli "set failsafe_procedure = RTH"
+
+3. 
+3.1 In failsafe tab choose the aux channel where you have angle mode and instead of hold you set in to the value where "angle" mode is active.
+Do the same for nav alt hold mode and nav pos hold
+3.2 In failsafe tab set throttle to "hold". (If you are using an airplane it's probably safest to keep it at "auto" if your plane glide well without throttle.)
+
+4. Verify that your failsafe works. 
+4.1 Remove all props
+4.2 While still connected to computer arm, apply throttle and turn of controller. The modes we configured in section 3 should activate, the throttle should stay and the rest of the controller should go to theyr center posisition.
+
+4.3 Go outside, arm and apply throttle, walk with it 20meter away from home and then turn off transmitter. The aircraft should now try to climb (increase throttle) also verify that your able to regain control by turning on transmitter.
+
+4.4 Real test, take the props on again. Take off, fly at least 20 meters from home and turn of transmitter. Tip do this over soft grass. If it's an airplane it's better to have soem altitude.
