@@ -119,7 +119,8 @@ On the Modes tab set up the flight modes according to the position of the AUX ch
 
 ### Failsafe
 
-Coming soon
+See here for RTH failsafe https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide#4-setting-up-failsafe-with-return-to-home
+
 For more information check the [failsafe](https://github.com/iNavFlight/inav/blob/master/docs/Failsafe.md) page
 
 ###Transmitter setup
