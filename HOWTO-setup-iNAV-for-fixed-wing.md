@@ -58,6 +58,8 @@ If you need to place the FC with USB plug facing right, then:
 
 To save all the settings you did in the CLI it is needed to enter the command 'save' and hit enter.
 
+Follow steps in the [Quick setup guide](https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide)
+
 ### Port settings
 It is done using Ports tab ![Ports tab](http://s8.hostingkartinok.com/uploads/images/2016/02/6f1a56073c11418b2020b59e9d036c55.png).
 
