@@ -16,6 +16,8 @@
 **Template fixedwing:**
 
 1. Name of plane:
+1. Mixed used:
+1. iNav version:
 1. Additional infomation you see fit if not stock airplane:
 1. Screenshot or CLI dump of PID values
 
