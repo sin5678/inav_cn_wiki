@@ -4,8 +4,8 @@
 
 **Template multirotors:**
 
+1. **Name of frame:**
 1. Size of frame:
-1. Name of frame:
 1. Weight:
 1. Totalt thrust:
 1. Battery infomation:
@@ -15,7 +15,7 @@
 
 **Template fixedwing:**
 
-1. Name of plane:
+1. **Name of plane:**
 1. Mixed used:
 1. iNav version:
 1. Additional infomation you see fit if not stock airplane:
