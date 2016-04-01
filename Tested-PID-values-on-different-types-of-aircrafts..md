@@ -10,13 +10,14 @@
 1. Totalt thrust:
 1. Battery infomation:
 1. iNav version:
+1. Screenshot or CLI dump of PID values
 
 
 **Template fixedwing:**
 
 1. Name of plane:
 1. Additional infomation you see fit if not stock airplane:
-
+1. Screenshot or CLI dump of PID values
 
 ### Tricopters
 
