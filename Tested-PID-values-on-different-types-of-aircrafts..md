@@ -34,3 +34,11 @@
 
 
 ### Fixed wing
+
+1. Name of plane: FMS Easytrainer 1280
+1. Mixed used: Airplane
+1. iNav version: 1.0.1 Self compiled from master 24/3-2017
+1. Additional infomation you see fit if not stock airplane: 3s 2200maH battery on stock power system.
+1. Screenshot:
+
+![](http://s16.postimg.org/gjeadriet/PIDs.png)
