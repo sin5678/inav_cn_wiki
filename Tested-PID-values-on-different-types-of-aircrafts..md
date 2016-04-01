@@ -41,4 +41,4 @@
 1. Additional infomation you see fit if not stock airplane: 3s 2200maH battery on stock power system.
 1. Screenshot:
 
-![](http://s16.postimg.org/gjeadriet/PIDs.png)
+<a href='http://postimg.org/image/sau7qnijf/' target='_blank'><img src='http://s17.postimg.org/sau7qnijf/PIDs.jpg' border='0' alt="PIDs" /></a>
