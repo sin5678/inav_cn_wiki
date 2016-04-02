@@ -10,8 +10,8 @@ mmix 0 1.0 1.0 0.0 0.0 //left motor
 mmix 1 1.0 -1.0 0.0 0.0 //right motor
 
 smix reset
-smix 0 4 2 100 0 0 100 0
-smix 1 4 1 100 0 0 100 0
-smix 2 5 2 100 0 0 100 0
-smix 3 5 1 100 0 0 100 0
+smix 0 4 2 100 0 0 100 0 //Servo 4 for left motor pitch change
+smix 1 4 1 100 0 0 100 0 //Servo 4 for left motor pitch change
+smix 2 5 2 100 0 0 100 0 //Servo 5 for right motor pitch change
+smix 3 5 1 100 0 0 100 0 //Servo 5 for right motor pitch change
 ```
