@@ -182,25 +182,7 @@ This way if one servo get stuck and draws alot of amps you shouldnt risk your fl
 
 "nav_extra_arming_safety" Default is on. This requirres GPS lock to get the plane armed if any modes that requirres GPS are configured.
 
-"failsafe_procedure" Needs to be RTH if you want RTH failsafe.
-
-Fixed wing spesific parameters, adjust to something suitable for your plane. 
-
-set nav_fw_cruise_thr
-
-set nav_fw_min_thr
-
-set nav_fw_max_thr
-
-set nav_fw_bank_angle
-
-set nav_fw_climb_angle
-
-set nav_fw_dive_angle
-
-set nav_fw_pitch2thr
-
-set nav_fw_loiter_radius
+See iNav CLI variables page.
 
 ### OSD setup
 You need to upload [MWOSD](http://www.mwosd.com/) firmware to your minimOSD. You can find pretty straight forward install guide following the [link](https://github.com/ShikOfTheRa/scarab-osd/blob/master/OTHER/DOCUMENTATION/FirmwareFlashing.md). As usual you use Arduino IDE for global OSD config. All changes are done in the Config.h file
