@@ -28,6 +28,43 @@ mmix 2 1.0 1.0 0.0 1.0    // LEFT
 mmix 3 1.0 0.0 -1.0 -1.0  // Front
 ```
 
+## Hexa H6
+
+```
+mmix custom
+mmix reset
+mmix 0 1.0 -1.0 1.0 -1.0     // REAR_R
+mmix 1 1.0 -1.0 -1.0 1.0     // FRONT_R
+mmix 2 1.0 1.0 1.0 1.0       // REAR_L
+mmix 3 1.0 1.0 -1.0 -1.0     // FRONT_L
+mmix 4 1.0 0.0 0.0 0.0       // RIGHT
+mmix 5 1.0 0.0 0.0 0.0       // LEFT
+```
+
+## Quadcopter A-tail
+
+This configuration probably can be improved, similar to V-tail config
+
+```
+mmix custom
+mmix reset
+mmix 0 1.0 0.0 1.0 1.0          // REAR_R
+mmix 1 1.0 -1.0 -1.0 0.0          // FRONT_R
+mmix 2 1.0 0.0 1.0 -1.0          // REAR_L
+mmix 3 1.0 1.0 -1.0 -0.0          // FRONT_L
+```
+
+## Quadcopter V-tail
+
+```
+mmix custom
+mmix reset
+mmix 0 1.0 -0.58 0.58 1.0        // REAR_R
+mmix 1 1.0 -0.46 -0.39 -0.5      // FRONT_R
+mmix 2 1.0 0.58 0.58 -1.0        // REAR_L
+mmix 3 1.0 0.46 -0.39 0.5        // FRONT_L
+```
+
 ## HELI 120 CCPM
 
 Was never really implemented in CF and others
