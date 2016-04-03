@@ -178,11 +178,7 @@ This way if one servo get stuck and draws alot of amps you shouldnt risk your fl
 ![Connection Diagram](http://s13.postimg.org/5kpkb9ppz/Connection_Diagram.png)
 ![Real life example](http://s28.postimg.org/jjg5paz65/Real_life_example_power_supply.png)
 
-### CLI features worth mentioning.
 
-"nav_extra_arming_safety" Default is on. This requirres GPS lock to get the plane armed if any modes that requirres GPS are configured.
-
-See iNav CLI variables page.
 
 ### OSD setup
 You need to upload [MWOSD](http://www.mwosd.com/) firmware to your minimOSD. You can find pretty straight forward install guide following the [link](https://github.com/ShikOfTheRa/scarab-osd/blob/master/OTHER/DOCUMENTATION/FirmwareFlashing.md). As usual you use Arduino IDE for global OSD config. All changes are done in the Config.h file
