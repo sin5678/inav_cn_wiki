@@ -1,5 +1,7 @@
 Cleanflight CLI variables related to navigation features
 
+General/Shared Variables
+
 | `Variable`                      | Description/Units                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Min    | Max    |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|--------|
 | `align_mag`                        | When using an external magnetometer sensor this should be set to actual sensor alignment relative to board. Values: DEFAULT, CW0, CW90, CW180, CW270, CW0FLIP, CW90FLIP, CW180FLIP, CW270FLIP | | |
@@ -52,16 +54,6 @@ Cleanflight CLI variables related to navigation features
 | `nav_min_rth_distance`             | | | |
 | `nav_rth_alt_mode`                 | Altitude control mode: CURRENT, EXTRA, FIXED, MAX, AT_LEAST | | |
 | `nav_rth_altitude`                 | | | |
-| `nav_mc_bank_angle`                | Maximum banking angle (deg) that multicopter navigation is allowed to set. Machine must be able to satisfy this angle without loosing altitude | 15 | 45 |
-| `nav_mc_hover_thr`                 | Multicopter hover throttle hint for altitude controller. Should be set to approximate throttle value when drone is hovering. | 1000 | 2000 |
-| `nav_mc_min_fly_thr`               | Max throttle value treated as one of the conditions for landing detection. Must be sufficiently low to guarantee the "not flying" state even with full battery, but high enough for Altitude Hold controller to reach it. | 1000 | 2000 |
-| `nav_fw_cruise_thr`                | | | |
-| `nav_fw_min_thr`                   | | | |
-| `nav_fw_max_thr`                   | | | |
-| `nav_fw_bank_angle`                | | | |
-| `nav_fw_climb_angle`               | | | |
-| `nav_fw_dive_angle`                | | | |
-| `nav_fw_pitch2thr`                 | | | |
 | `gyro_soft_lpf_hz`                 | Software-based filter to remove mechanical vibrations from the gyro signal.  Value is cutoff frequency (Hz). For larger frames with bigger props set to lower value. Default 60Hz | 0 | 200 |
 | `acc_soft_lpf_hz`                  | Software-based filter to remove mechanical vibrations from the accelerometer measurements.  Value is cutoff frequency (Hz). For larger frames with bigger props set to lower value. Default 15Hz | 0 | 200 |
 | `baro_tab_size`                    | | | |
@@ -76,3 +68,25 @@ Cleanflight CLI variables related to navigation features
 | `accgain_y`                        | | | |
 | `accgain_z`                        | | | |
 | `throttle_tilt_comp_str`           | Can be used in ANGLE and HORIZON mode and will automatically boost throttle when banking. Setting is in percentage, 0=disabled. | 0 | 100 |
+
+
+Multirotor
+
+| `Variable`                      | Description/Units                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Min    | Max    |
+|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|--------|
+| `nav_mc_bank_angle`                | Maximum banking angle (deg) that multicopter navigation is allowed to set. Machine must be able to satisfy this angle without loosing altitude | 15 | 45 |
+| `nav_mc_hover_thr`                 | Multicopter hover throttle hint for altitude controller. Should be set to approximate throttle value when drone is hovering. | 1000 | 2000 |
+| `nav_mc_min_fly_thr`               | Max throttle value treated as one of the conditions for landing detection. Must be sufficiently low to guarantee the "not flying" state even with full battery, but high enough for Altitude Hold controller to reach it. | 1000 | 2000 |
+
+
+Fixed-Wing
+
+| `Variable`                      | Description/Units                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Min    | Max    |
+|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|--------|
+| `nav_fw_cruise_thr`                | | | |
+| `nav_fw_min_thr`                   | | | |
+| `nav_fw_max_thr`                   | | | |
+| `nav_fw_bank_angle`                | | | |
+| `nav_fw_climb_angle`               | | | |
+| `nav_fw_dive_angle`                | | | |
+| `nav_fw_pitch2thr`                 | | | |
