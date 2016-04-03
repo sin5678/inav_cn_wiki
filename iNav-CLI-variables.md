@@ -90,3 +90,4 @@ Cleanflight CLI variables related to navigation features
 | `nav_fw_climb_angle`               | | | |
 | `nav_fw_dive_angle`                | | | |
 | `nav_fw_pitch2thr`                 | | | |
+| `nav_fw_loiter_radius`             | | | |
