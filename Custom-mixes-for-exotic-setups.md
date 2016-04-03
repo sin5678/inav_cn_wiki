@@ -65,6 +65,30 @@ mmix 2 1.0 0.58 0.58 -1.0        // REAR_L
 mmix 3 1.0 0.46 -0.39 0.5        // FRONT_L
 ```
 
+## Hexa Y6
+
+```
+mmix custom
+mmix reset
+mmix 0 1.0 0.0 1.333333 1.0     // REAR
+mmix 1 1.0 -1.0 -0.666667 -1.0  // RIGHT
+mmix 2 1.0 1.0 -0.666667 -1.0   // LEFT
+mmix 3 1.0 0.0 1.333333 -1.0    // UNDER_REAR
+mmix 4 1.0 -1.0 -0.666667 1.0   // UNDER_RIGHT
+mmix 5 1.0 1.0 -0.666667 1.0   // UNDER_LEFT
+```
+
+## Quad Y4
+
+```
+mmix custom
+mmix reset
+mmix 0 1.0 0.0 1.0 -1.0         // REAR_TOP CW
+mmix 1 1.0 -1.0 -1.0 0.0        // FRONT_R CCW
+mmix 2 1.0 0.0 1.0 1.0          // REAR_BOTTOM CCW
+mmix 3 1.0 1.0 -1.0 0.0         // FRONT_L CW
+```
+
 ## HELI 120 CCPM
 
 Was never really implemented in CF and others
