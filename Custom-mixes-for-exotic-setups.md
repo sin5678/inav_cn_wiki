@@ -5,6 +5,7 @@ iNav removed native support for various exotic and not often used frames. They c
 Not yet ready for custom mixers, use predefined
 
 ```
+mmix custom
 mmix reset
 mmix 0 1.0 1.0 0.0 0.0 //left motor
 mmix 1 1.0 -1.0 0.0 0.0 //right motor
@@ -14,6 +15,17 @@ smix 0 4 2 100 0 0 100 0 //Servo 4 for left motor pitch change
 smix 1 4 1 100 0 0 100 0 //Servo 4 for left motor pitch change
 smix 2 5 2 100 0 0 100 0 //Servo 5 for right motor pitch change
 smix 3 5 1 100 0 0 100 0 //Servo 5 for right motor pitch change
+```
+
+## Quadcopter + configuration [Motors on front, rear, left and right]
+
+```
+mmix custom
+mmix reset
+mmix 0 1.0 0.0 1.0 -1.0   // REAR
+mmix 1 1.0 -1.0 0.0 1.0   // RIGHT
+mmix 2 1.0 1.0 0.0 1.0    // LEFT
+mmix 3 1.0 0.0 -1.0 -1.0  // Front
 ```
 
 ## HELI 120 CCPM
