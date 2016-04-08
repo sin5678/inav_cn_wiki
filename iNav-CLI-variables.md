@@ -11,6 +11,8 @@ Cleanflight CLI variables related to navigation features
 | `gps_provider`                     | GPS hardware type: NMEA, UBLOX, NAZA, I2C-NAV | | |
 | `gps_nav_model`                    | GPS navigation model: LOW_G (Pedestrian), HIGH_G (Airborne<4G). Currently supported only of Ublox GPS modules. HIGH_G may increase accuracy, especially on fast and agile airplanes, but it requires much better satellite signal quality. Safe default is "LOW_G". | | |
 | `failsafe_procedure`               | Failsafe type: SET-THR - set throttle to `failsafe_throttle`, RTH - execute RTH sequence if possible, land otherwise | | |
+| `max_angle_inclination_rll`        | Maximum inclination in level mode (ROLL axis) | 100 | 900 |
+| `max_angle_inclination_pit`        | Maximum inclination in level mode (PITCH axis) | 100 | 900 |
 | `inav_accz_unarmedcal`             | Controls if inertial position estimator should compute gravity offset on accelerometer Z-axis dynamically when drone is unarmed. Mostly affects accuracy of altitude estimation and althold performace. No real reason to disable this feature. | OFF | ON |
 | `inav_use_gps_velned`              | Defined if iNav should use velocity data provided by GPS module for doing position and speed estimation. If set to OFF iNav will fallback to calculating velocity from GPS coordinates. Using native velocity data may improve performance on some GPS modules. Some GPS modules introduce significant delay and using native velocity may actually result in much worse performance. Safe default is "OFF" | OFF | ON |
 | `inav_gps_delay`                   | GPS position and velocity data usually arrive with a delay. This parameter defines this delay. Default should be reasonable for most GPS receivers. | 0 | 500 |
@@ -42,6 +44,7 @@ Cleanflight CLI variables related to navigation features
 | `nav_navr_i`                       | | | |
 | `nav_navr_d`                       | | | |
 | `nav_use_midrc_for_althold`        | | OFF | ON |
+| `nav_disarm_on_landing`            | | OFF | ON |
 | `nav_extra_arming_safety`          | If set to ON drone won't arm if no GPS fix | OFF | ON |
 | `nav_user_control_mode`            | Defines how Pitch/Roll input from RC receiver affects flight in POSHOLD mode: ATTI - right stick controls attitude like in ANGLE mode; CRUISE - right stick controls velocity in forward and right direction. | | |
 | `nav_position_timeout`             | If GPS fails wait for this much seconds before switching to emergency landing mode (0 - disable) | 0 | 10 |
@@ -56,8 +59,7 @@ Cleanflight CLI variables related to navigation features
 | `nav_rth_altitude`                 | | | |
 | `gyro_soft_lpf_hz`                 | Software-based filter to remove mechanical vibrations from the gyro signal.  Value is cutoff frequency (Hz). For larger frames with bigger props set to lower value. Default 60Hz | 0 | 200 |
 | `acc_soft_lpf_hz`                  | Software-based filter to remove mechanical vibrations from the accelerometer measurements.  Value is cutoff frequency (Hz). For larger frames with bigger props set to lower value. Default 15Hz | 0 | 200 |
-| `baro_tab_size`                    | | | |
-| `baro_noise_lpf`                   | | | |
+| `baro_use_median_filter`           | | | |
 | `magzero_x`                        | | | |
 | `magzero_y`                        | | | |
 | `magzero_z`                        | | | |
@@ -90,4 +92,5 @@ Cleanflight CLI variables related to navigation features
 | `nav_fw_climb_angle`               | | | |
 | `nav_fw_dive_angle`                | | | |
 | `nav_fw_pitch2thr`                 | | | |
+| `nav_fw_roll2pitch`                | | | |
 | `nav_fw_loiter_radius`             | | | |
