@@ -42,15 +42,27 @@
 1. Dump:
 
 `set p_pitch = 200
+
 set i_pitch = 10
+
 set d_pitch = 40
+
 set p_roll = 200
+
 set i_roll = 10
+
 set d_roll = 40
+
 set p_yaw = 100
+
 set i_yaw = 0
+
 set d_yaw = 0
+
 set nav_navr_p = 14
+
 set nav_navr_i = 0
+
 set nav_navr_d = 0
+
 `
