@@ -39,6 +39,18 @@
 1. Mixed used: Airplane
 1. iNav version: 1.0.1 Self compiled from master 24/3-2017
 1. Additional infomation you see fit if not stock airplane: 3s 2200maH battery on stock power system.
-1. Screenshot:
+1. Dump:
 
-<a href='http://postimg.org/image/sau7qnijf/' target='_blank'><img src='http://s17.postimg.org/sau7qnijf/PIDs.jpg' border='0' alt="PIDs" /></a>
+`set p_pitch = 200
+set i_pitch = 10
+set d_pitch = 40
+set p_roll = 200
+set i_roll = 10
+set d_roll = 40
+set p_yaw = 100
+set i_yaw = 0
+set d_yaw = 0
+set nav_navr_p = 14
+set nav_navr_i = 0
+set nav_navr_d = 0
+`
