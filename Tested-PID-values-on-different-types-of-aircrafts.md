@@ -35,7 +35,7 @@
 1. Props: DAL T5040 (3 blade 5x4")
 1. Total weight: 550g with battery (Turnigy Graphene 1300mAh 3S)
 
-'''
+```
 set p_pitch = 82
 set i_pitch = 80
 set d_pitch = 145
