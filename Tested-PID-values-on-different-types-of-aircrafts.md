@@ -26,6 +26,30 @@
 
 ### Quadcopter
 
+#### ZMR250 on 3S
+
+1. iNav FP-PID controller
+1. Voltage: 3S
+1. FC: SPRacingF3
+1. Motors: Multistar 2206 2150KV "Baby beast"
+1. Props: DAL T5040 (3 blade 5x4")
+1. Total weight: 550g with battery (Turnigy Graphene 1300mAh 3S)
+
+'''
+set p_pitch = 82
+set i_pitch = 80
+set d_pitch = 145
+set p_roll = 55
+set i_roll = 60
+set d_roll = 110
+set p_yaw = 110
+set i_yaw = 30
+set d_yaw = 1
+set gyro_soft_lpf_hz = 90
+set dterm_lpf_hz = 42
+set looptime = 1000
+set gyro_lpf = 188HZ
+```
 
 ### Hexacopters
 
