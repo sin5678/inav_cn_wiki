@@ -12,10 +12,10 @@ Sometimes GPS provides very inaccurate position information despite having the f
 
 The new GPS position is accepted as “good” if:
 
-1. the two positions are within the hardcoded INAV_GPS_GLITCH_RADIUS (currently 2.5m)
+1. the two positions are within the hard coded INAV_GPS_GLITCH_RADIUS (currently 2.5m)
 1. the new position is within a radius that is 10m/s/s (INAV_GPS_GLITCH_ACCEL) * dt * dt.  Where “dt” is the time difference between the two GPS samples.
 
-GPS glitches are treated by the position estimator in the same way as loosing GPS fix.
+GPS glitches are treated by the position estimator in the same way as losing GPS fix.
 
 **At the moment the code is experimental and "glitched" GPS positions are not ignored.**
 
@@ -41,4 +41,4 @@ While Emergency Landing is active pilot is unable to switch into ALTHOLD, POSHOL
 1. If GPS module is combined with a compass sensor, place it as far as possible from the motors, ESCs and power wires (at lest 10 cm)
 1. 1.2-1.3 GHz FPV video transmitters are know to be interfering with GPS reception. If you use such transmitter place it as far as possible from GPS module and expect some degradation in GPS quality
 1. Select a GPS module with biggest GPS antenna. Bigger GPS antenna - better reception.
-1. Use a two-system receiver is possible. For example uBlox NEO-M8N is GPS/GLONASS capable receiver. More systems means better noise resistence, more satellites, better accuracy.
+1. Use a two-system receiver is possible. For example uBlox NEO-M8N is GPS/GLONASS capable receiver. More systems means better noise resistance, more satellites, better accuracy.
