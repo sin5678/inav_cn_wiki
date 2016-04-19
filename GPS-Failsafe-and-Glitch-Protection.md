@@ -1,6 +1,6 @@
 ## Overview
 
-GPS Systems can occasionally drop the signal (loose FIX) or provide significantly inaccurate position information (glitch). While errors are more likely in conditions where the GPS signal can bounce off multiple paths before reaching the receiver (multipathing), errors can occasionally occur even with clear sky.
+GPS Systems can occasionally drop the signal (lose FIX) or provide significantly inaccurate position information (glitch). While errors are more likely in conditions where the GPS signal can bounce off multiple paths before reaching the receiver (multipathing), errors can occasionally occur even with clear sky.
 
 Without updates from GPS System, the inertial position estimation allow approximately 1.5 seconds of position information but after this the horizontal position drift becomes so large that the horizontal position cannot be maintained at all. At this point the position estimator will report invalid position to the navigation core. If you still have RC radio control it is recommended to take back control using ANGLE, HORIZON, ALTHOLD or ACRO as soon as possible.
 
