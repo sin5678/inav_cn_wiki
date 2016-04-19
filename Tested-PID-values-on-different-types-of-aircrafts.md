@@ -10,7 +10,10 @@
 1. Totalt thrust:
 1. Battery infomation:
 1. iNav version:
-1. Screenshot or CLI dump of PID values
+
+```
+PID and other values from CLI
+```
 
 
 **Template fixedwing:**
@@ -19,7 +22,10 @@
 1. Mixed used:
 1. iNav version:
 1. Additional infomation you see fit if not stock airplane:
-1. Screenshot or CLI dump of PID values
+
+```
+PID and other values from CLI
+```
 
 ### Tricopters
 
@@ -63,7 +69,6 @@ set gyro_lpf = 188HZ
 1. Mixed used: Airplane
 1. iNav version: 1.0.1 Self compiled from master 24/3-2017
 1. Additional infomation you see fit if not stock airplane: 3s 2200maH battery on stock power system.
-1. Dump:
 
 ```
 set p_pitch = 200
