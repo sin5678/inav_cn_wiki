@@ -19,7 +19,7 @@ PID and other values from CLI
 **Template fixedwing:**
 
 1. **Name of plane:**
-1. Mixed used:
+1. Mixer used:
 1. iNav version:
 1. Additional infomation you see fit if not stock airplane:
 
@@ -66,9 +66,9 @@ set gyro_lpf = 188HZ
 ### Fixed wing
 
 1. **Name of plane: FMS Easytrainer 1280**
-1. Mixed used: Airplane
+1. Mixer used: Airplane
 1. iNav version: 1.0.1 Self compiled from master 24/3-2017
-1. 3s 2200maH battery on stock power system.
+1. 3S 2200mAh battery on stock power system.
 
 ```
 set p_pitch = 200
@@ -83,4 +83,32 @@ set d_yaw = 0
 set nav_navr_p = 14
 set nav_navr_i = 0
 set nav_navr_d = 0
+```
+
+1. **Name of plane: Multiplex Minimag**
+1. Mixer used: CUSTOMAIRPLANE
+1. iNav version: 1.1.0 Self compiled from master 5d556b0
+1. 4S 5000mAh battery
+1. Default PIDs and settings except the ones listed below:
+
+```
+set p_pitch = 120
+set p_roll = 55
+set p_yaw = 100
+set i_yaw = 0
+set nav_navr_p = 10
+set nav_navr_i = 5
+set gyro_sync = ON
+set min_throttle = 1075
+set gps_nav_model = HIGH_G
+set inav_use_gps_velned = ON
+set nav_rth_alt_mode = FIXED
+set nav_rth_altitude = 15000
+set nav_fw_cruise_thr = 1280
+set nav_fw_min_thr = 1120
+set nav_fw_max_thr = 1650
+set nav_fw_bank_angle = 20
+set nav_fw_pitch2thr = 15
+set nav_fw_roll2pitch = 75
+set nav_fw_loiter_radius = 7500
 ```
