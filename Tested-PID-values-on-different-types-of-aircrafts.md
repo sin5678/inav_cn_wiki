@@ -98,7 +98,7 @@ set d_level = 75
 
 set looptime = 2000
 ```
-
+Most notable is the nav_posr_d to 50. This seems to fix the wobble problems that bigger frames have in GPS hold
 
 ### Hexacopters
 
