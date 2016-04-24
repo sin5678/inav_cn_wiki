@@ -57,6 +57,49 @@ set looptime = 1000
 set gyro_lpf = 188HZ
 ```
 
+#### Diatone Whitesheep 500 on 3S
+1. iNav FP-PID controller
+1. Voltage: 3S
+1. FC: Seriously Dodo
+1. GPS: Ublox NEO-M8N
+1. Motors: Turnigy 2628 1200kv (don't buy those..)
+1. Props: GEMFAN 9x4.7
+1. Total weight: 1100 gram (with battery and gimbal + gopro)
+
+```
+set nav_alt_p = 50
+set nav_alt_i = 0
+set nav_alt_d = 0
+set nav_vel_p = 100
+set nav_vel_i = 50
+set nav_vel_d = 10
+set nav_pos_p = 65
+set nav_pos_i = 120
+set nav_pos_d = 10
+set nav_posr_p = 180
+set nav_posr_i = 15
+set nav_posr_d = 50
+set nav_navr_p = 14
+set nav_navr_i = 2
+set nav_navr_d = 8
+
+set p_pitch = 45
+set i_pitch = 50
+set d_pitch = 70
+set p_roll = 45
+set i_roll = 50
+set d_roll = 70
+set p_yaw = 100
+set i_yaw = 40
+set d_yaw = 0
+set p_level = 160
+set i_level = 10
+set d_level = 75
+
+set looptime = 2000
+```
+
+
 ### Hexacopters
 
 
