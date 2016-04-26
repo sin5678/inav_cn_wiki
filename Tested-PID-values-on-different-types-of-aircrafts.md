@@ -110,7 +110,7 @@ Most notable is the nav_posr_d to 50. This seems to fix the wobble problems that
 
 1. **Name of plane: FMS Easytrainer 1280**
 1. Mixer used: Airplane
-1. iNav version: 1.0.1 Self compiled from master 24/3-2017
+1. iNav version: 1.1 Self compiled 25/4-16
 1. 3S 2200mAh battery on stock power system.
 
 ```
