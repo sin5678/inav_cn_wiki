@@ -114,6 +114,50 @@ Most notable is the nav_posr_d to 50. This seems to fix the wobble problems that
 1. 3S 2200mAh battery on stock power system.
 
 ```
+set mid_rc = 1500
+set min_check = 1100
+set max_check = 1900
+
+set min_throttle = 1025
+set max_throttle = 1850
+set min_command = 1000
+
+set gps_provider = UBLOX
+set gps_sbas_mode = AUTO
+set gps_nav_model = HIGH_G
+set gps_auto_config = ON
+set gps_auto_baud = ON
+
+set nav_rth_altitude = 5000
+
+set nav_fw_cruise_thr = 1400
+set nav_fw_min_thr = 1300
+set nav_fw_max_thr = 1700
+set nav_fw_bank_angle = 40
+set nav_fw_climb_angle = 20
+set nav_fw_dive_angle = 15
+set nav_fw_pitch2thr = 20
+set nav_fw_roll2pitch = 50
+set nav_fw_loiter_radius = 5000
+
+set mag_hardware = 1
+
+set nav_alt_p = 50
+set nav_alt_i = 0
+set nav_alt_d = 0
+set nav_vel_p = 100
+set nav_vel_i = 50
+set nav_vel_d = 10
+set nav_pos_p = 65
+set nav_pos_i = 120
+set nav_pos_d = 10
+set nav_posr_p = 180
+set nav_posr_i = 150
+set nav_posr_d = 100
+set nav_navr_p = 200
+set nav_navr_i = 10
+set nav_navr_d = 0
+
 set p_pitch = 200
 set i_pitch = 10
 set d_pitch = 40
@@ -121,11 +165,31 @@ set p_roll = 200
 set i_roll = 10
 set d_roll = 40
 set p_yaw = 100
-set i_yaw = 0
-set d_yaw = 0
-set nav_navr_p = 14
-set nav_navr_i = 0
-set nav_navr_d = 0
+set i_yaw = 5
+set d_yaw = 20
+set p_level = 160
+set i_level = 10
+set d_level = 75
+set max_angle_inclination_rll = 400
+
+
+
+
+# dump rates
+
+# rateprofile
+rateprofile 0
+
+set rc_rate = 90
+set rc_expo = 70
+set rc_yaw_expo = 20
+set thr_mid = 50
+set thr_expo = 0
+set roll_rate = 5
+set pitch_rate = 5
+set yaw_rate = 5
+set tpa_rate = 0
+set tpa_breakpoint = 1500
 ```
 
 1. **Name of plane: Multiplex Minimag**
