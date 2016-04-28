@@ -7,6 +7,8 @@ iNav firmware is using inertial navigation system (INS), this means that firmwar
 Accurately setting up the compass is vital because it is the primary source of heading information. Without an accurate heading the drone will not move in the correct direction in autopilot modes (POSHOLD, RTH, Waypoint). This can lead to circling (aka “toiletbowling”) or even fly-aways.
 Magnetometer measures magnetic field strength so it should be placed away from any sources of magnetic interference - power wires, ESCs, motors, beepers, metal parts of the frame. The best way is to place the compass on a mast along with GPS module. When external compass is used remember to set correct "align_mag", see iNav CLI variables for more infomation.
 
+Also when using an external magnetometer 9/10 times you need to physically remove the internal one if you have on. You can't use two identical chips/magnetometers on the same I2C bus. The 1/10 time you dont need to physially remove your internal mag is when you have different magnetometers on the flight controller and the external one. Example you cant use two HMC5883L magnetometers.
+
 ## GPS
 iNav supports Ublox gps and NMEA (untested)
 
