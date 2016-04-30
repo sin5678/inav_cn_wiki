@@ -13,14 +13,14 @@ Find latest iNav release and flash it. It can be found at Github page or use Cle
 
 If your board is not aligned “normally”, with the printed arrow pointing to the quad’s front, you have to set board alignment. This can be needed to access the usb port from the side of the quad. iNav is different from cleanflight here, board alignment angles are set in degrees*10. So if your board is mounted 90 degrees clockwise to get USB port out to the side, you should type in CLI set align_board_yaw = 900
 
-Next you should do accelerometer calibration. This is different from cleanflight, follow the steps in this link: Accelerometer calibration steps
+Next you should do accelerometer calibration. This is different from cleanflight, follow the steps in the page "Accelerometer calibration steps"
 
 Then do the compass calibration
 
 Next you need to setup your craft normally as you would with cleanflight.
  
-		Painless360 video guide for multirotors
-		Wiki guide for fixed wing airplanes
+		[Painless360 video guide for multirotors](https://youtu.be/4OKGMhTrqOU)
+		[Wiki guide for fixed wing airplanes](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing)
 
 
 
@@ -30,7 +30,7 @@ Next you need to setup your craft normally as you would with cleanflight.
 Notes:	
 iNav has removed all other telemetry options when using Naze32 targets but LTM in official builds, if you need let's say Frsky telemetry you need to compile your own. See link. Eg. F3 board, which have more memory, have Frsky included.
 
-iNav has only one PID controller called fp-pid. This is a modified version of 		luxfloat, and will show up as luxfloat in cleanflight configurator.
+iNav has only one PID controller called fp-pid. This is a modified version of luxfloat, and will show up as luxfloat in cleanflight configurator.
 
 iNav has extra a safety feature that prevents you from arming your aircraft if no proper GPS lock is acquired. Nav_extra_arming_safety is turned ON by default
 
@@ -46,4 +46,3 @@ Checklist if you're having issue with something:
 Try and look through the wiki regarding the issue you have. You can also search the Wiki.
 Read the first post rcgroups Cleanflight iNav thread. Also read the last 5 pages in the thread to see if someone else has already mentioned it. Also try and search in the thread.
 Explain your issue, include CLI dump and blackbox log if you have a logger. Mention what you have tried, and also if it's working as intended in stock Cleanflight.
-
