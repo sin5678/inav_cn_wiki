@@ -18,9 +18,10 @@ Next you should do accelerometer calibration. This is different from cleanflight
 Then do the compass calibration
 
 Next you need to setup your craft normally as you would with cleanflight.
- 
-		[Painless360 video guide for multirotors](https://youtu.be/4OKGMhTrqOU)
-		[Wiki guide for fixed wing airplanes](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing)
+
+[Painless360 video guide for multirotors](https://youtu.be/4OKGMhTrqOU)
+
+[Wiki guide for fixed wing airplanes](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing)
 
 
 
