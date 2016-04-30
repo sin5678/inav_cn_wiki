@@ -42,8 +42,8 @@ If your copter is toilet-bowling, which means, in the beginning it holds it’s 
 This should get you in the air, but iNav is not “plug and play”.
 There are many important settings you need to change to get it flying the way you want it. You need to read through the Wiki and you should read through the iNav CLI variables, as there are variables that you may change to tailor iNav for your aircraft, and your preferences.
 
-Checklist if you're having issue with something:
+**Checklist if you're having issue with something:**
 
-Try and look through the wiki regarding the issue you have. You can also search the Wiki.
-Read the first post rcgroups Cleanflight iNav thread. Also read the last 5 pages in the thread to see if someone else has already mentioned it. Also try and search in the thread.
-Explain your issue, include CLI dump and blackbox log if you have a logger. Mention what you have tried, and also if it's working as intended in stock Cleanflight.
+1. Try and look through the wiki regarding the issue you have. You can also search the Wiki.
+1. Read the first post rcgroups Cleanflight iNav thread. Also read the last 5 pages in the thread to see if someone else has already mentioned it. Also try and search in the thread.
+1. Explain your issue, include CLI dump and blackbox log if you have a logger. Mention what you have tried, and also if it's working as intended in stock Cleanflight.
