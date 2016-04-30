@@ -78,15 +78,16 @@ set nav_pos_i = 120
 set nav_pos_d = 10
 set nav_posr_p = 180
 set nav_posr_i = 15
-set nav_posr_d = 50
+set nav_posr_d = 80
 set nav_navr_p = 14
 set nav_navr_i = 2
 set nav_navr_d = 8
+set deadband = 5
 
-set p_pitch = 45
-set i_pitch = 50
-set d_pitch = 70
-set p_roll = 45
+set p_pitch = 65
+set i_pitch = 30
+set d_pitch = 60
+set p_roll = 65
 set i_roll = 50
 set d_roll = 70
 set p_yaw = 100
@@ -98,7 +99,7 @@ set d_level = 75
 
 set looptime = 2000
 ```
-Most notable is the nav_posr_d to 50. This seems to fix the wobble problems that bigger frames have in GPS hold
+With default PIDs my craft had a strong wobble on the pitch axces. This is probably because much of the weight of the craft is at the front from the front mounted gimbal, and at the back from the battery. To fix this i had to mostly increase P_Pitch and decrease i_Pitch.
 
 ### Hexacopters
 
