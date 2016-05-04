@@ -6,7 +6,7 @@
 * Do [Advanced accelerometer calibration](https://github.com/iNavFlight/inav/wiki/Advanced-accelerometer-calibration)
 * Do [Compass calibration](https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide#compass-calibration)
 * Select your Mixer. (Mainly Airplane or fixed wing)
-* If you are planning to mount the flightcontroller other than default direction. Example USB to left side, you need to sit board alignment in CLI. See [this](https://github.com/iNavFlight/inav/wiki/Advanced-accelerometer-calibration#level-calibration) for more infomation.
+* If you are planning to mount the flightcontroller other than default direction, example USB to left side, you need to set board alignment in CLI. See [this](https://github.com/iNavFlight/inav/wiki/Advanced-accelerometer-calibration#level-calibration) for more infomation.
 
 ### Step 2, hooking everything up.
 
@@ -32,8 +32,8 @@ Output 6 Rudder
 ### Step 3, Setting up your remote, endpoinds and reverse of servos.
 
 * Setup receiver/transmitter according to what you are using.
-* If using GPS setup UART2 for GPS at baud 57500 and enable GPS if configurations.
-* Your TX should no NO mixing at all, check that when moving the sticks, the right channels moves in the receiver window. Also everything should be centered at 1500us, and full stick movement should be 1000-2000us use subtrim and travel range on TX to set this up. 
+* If using GPS setup UART2 for GPS at baud 57500 and enable GPS in configurations.
+* Your TX should use NO mixing at all, check that when moving the sticks, the right channels moves in the receiver window. Also everything should be centered at 1500us, and full stick movement should be 1000-2000us. Use subtrim and travel range on TX to set this up. 
 
 The correct way is:
 
@@ -45,7 +45,7 @@ Pitch (Elevator) stick push away - increased value
 
 Roll (Ailerons) stick right - increased value
 
-* Next up is making sure the servo's is moving the correct way when moving the sticks on the TX. If something is not right. Use the Servo tab to get them center, adjust movement range and reverse of servo.
+* Next up is making sure the servos are moving the correct way when moving the sticks on the TX. If something is not right, use the Servo tab to get them center, adjust movement, range and reverse of servo.
 
 Servo 2: Elevator
 
