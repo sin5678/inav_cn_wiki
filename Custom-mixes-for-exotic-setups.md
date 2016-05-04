@@ -135,7 +135,7 @@ mmix 1 1.0 -1.0 0.0 0.0 # right motor
 smix reset
 smix 0 4 2 100 0 0 100 0 # Servo 4 for left motor pitch change
 smix 1 4 1 100 0 0 100 0 # Servo 4 for left motor pitch change
-smix 2 5 2 100 0 0 100 0 # Servo 5 for right motor pitch change
+smix 2 5 2 -100 0 0 100 0 # Servo 5 for right motor pitch change
 smix 3 5 1 100 0 0 100 0 # Servo 5 for right motor pitch change
 ```
 
@@ -146,8 +146,8 @@ Mixer configuration below is reverse engineered from CF code.
 ```
 mixer CUSTOM
 mmix reset
-mmix 0 1.0 0.0 0.0 -1.0  #LEFT
-mmix 1 1.0 0.0 0.0 1.0   # RIGHT
+mmix 0 1.0 0.0 0.0 -1.0  # Left
+mmix 1 1.0 0.0 0.0 1.0   # Right
 
 smix reset
 smix 0 4 1 100 0 0 100 0
