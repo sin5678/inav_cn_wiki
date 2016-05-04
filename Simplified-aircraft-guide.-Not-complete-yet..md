@@ -5,7 +5,7 @@
 * Flash newest iNav
 * Do [Advanced accelerometer calibration](https://github.com/iNavFlight/inav/wiki/Advanced-accelerometer-calibration)
 * Do Compass calibration. ( Move/point it in all direction/axis )
-* Select your Mixer. (Mainly Aircraft or fixed wing)
+* Select your Mixer. (Mainly Airplane or fixed wing)
 
 ### Step 2, hooking everything up.
 
