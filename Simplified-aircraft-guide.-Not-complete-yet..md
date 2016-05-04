@@ -44,13 +44,14 @@ Pitch (Elevator) stick push away - increased value
 
 Roll (Ailerons) stick right - increased value
 
-* Next up is making sure the servo's is moving the correct way. If something is not right. Use the Servo tab to get them center, adjust movement range and reverse of servo.
+* Next up is making sure the servo's is moving the correct way when moving the sticks on the TX. If something is not right. Use the Servo tab to get them center, adjust movement range and reverse of servo.
 
 Servo 2: Elevator
 
 Servo 3&4: Ailerons
 
 Servo 5: Rudder
+
 
 ### Step 4, Replace default PIDs.
 
