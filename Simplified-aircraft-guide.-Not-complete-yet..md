@@ -55,7 +55,7 @@ Servo 5: Rudder
 
 ### Step 4, Replace default PIDs.
 
-Default PIDs in iNav are mainly for multirotors. Find some PIDs [here](https://github.com/iNavFlight/inav/wiki/Tested-PID-values-on-different-types-of-aircrafts#fixed-wing) to use instead and tune from there.
+* Default PIDs in iNav are mainly for multirotors. Find some PIDs [here](https://github.com/iNavFlight/inav/wiki/Tested-PID-values-on-different-types-of-aircrafts#fixed-wing) to use instead and tune from there.
 
 
 ### Step 5, optional. Setting up failsafe RTH.
