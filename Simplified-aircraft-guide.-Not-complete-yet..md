@@ -4,7 +4,7 @@
 
 * Flash newest iNav
 * Do [Advanced accelerometer calibration](https://github.com/iNavFlight/inav/wiki/Advanced-accelerometer-calibration)
-* Do [https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide#compass-calibration](https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide#compass-calibration)
+* Do [Compass calibration](https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide#compass-calibration)
 * Select your Mixer. (Mainly Airplane or fixed wing)
 * If you are planning to mount the flightcontroller other than default direction. Example USB to left side, you need to side board alignment in CLI. See [this](https://github.com/iNavFlight/inav/wiki/Advanced-accelerometer-calibration#level-calibration) for more infomation.
 
