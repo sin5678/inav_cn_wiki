@@ -9,9 +9,9 @@
 
 ### Step 2, hooking everything up.
 
-* Servo and throttle. 
+* Servo and ESC/MOTOR. 
 
-Output 1 Throttle/ESC
+Output 1 Motor/ESC
 
 Output 2 Empty
 
