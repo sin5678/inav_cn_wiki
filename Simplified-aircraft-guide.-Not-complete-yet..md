@@ -29,6 +29,8 @@ Output 6 Rudder
 
 ### Step 3, Setting up your remote, endpoinds and reverse of servos.
 
+* Setup receiver/transmitter according to what you are using.
+* If using GPS setup UART2 for GPS at baud 56000 and enable GPS if configurations.
 * Your TX should no NO mixing at all, check that when moving the sticks, the right channels moves in the receiver window. Also everything should be centered at 1500us, and full stick movement should be 1000-2000us use subtrim and travel range on TX to set this up. 
 
 The correct way is:
