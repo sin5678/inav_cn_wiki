@@ -27,6 +27,7 @@ Output 6 Rudder
 * If using GPS connect it to UART 2.
 * If using Sbus connect it to UART 3. (Note this requirres newer board like spracing f3)
 * If using regular PPM connect it to IO 1 pin 1.
+* If using telemetry connect it with softserial.
 
 ### Step 3, Setting up your remote, endpoinds and reverse of servos.
 
