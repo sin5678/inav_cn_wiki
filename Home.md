@@ -1,7 +1,7 @@
 ![](http://static.rcgroups.net/forums/attachments/1/5/9/3/2/7/a8809082-59-inav.png)
 
 iNav is a fork of cleanflight with focus on GPS features.
-It currently supports position hold, RTH with predefined climb height and waypoints. Both with airplanes & multirotors.
+It currently supports position hold, RTH with predefined climb height, waypoints and follow-me. Both with airplanes & multirotors.
 
 iNav have some settings that are different than stock cleanflight, and simply restoring settings from older cleanflight won't work.
 
