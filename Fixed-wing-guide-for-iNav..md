@@ -1,6 +1,6 @@
 # The basic of getting iNav working on airplane
 
-* For more detailed Howto and for CC3D see [https://github.com/iNavFlight/inav/wiki/Howto:-CC3D-flight-controller,-minimOSD-and-GPS-for-fixed-wing.#howto-setup-inav-for-fixed-wing](this link.)
+* For more detailed Howto and for CC3D see [this link.](https://github.com/iNavFlight/inav/wiki/Howto:-CC3D-flight-controller,-minimOSD-and-GPS-for-fixed-wing.#howto-setup-inav-for-fixed-wing)
 
 ### Step 1, getting your flight controller ready.
 
