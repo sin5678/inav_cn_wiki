@@ -23,8 +23,9 @@ Next you need to setup your craft normally as you would with cleanflight.
 
 [Painless360 video guide for multirotors](https://youtu.be/4OKGMhTrqOU)
 
-[Wiki guide for fixed wing airplanes](https://github.com/iNavFlight/inav/wiki/Simplified-aircraft-guide)  
-[Wiki guide for fixed wing airplanes using CC3D](https://github.com/iNavFlight/inav/wiki/HOWTO-setup-iNAV-for-fixed-wing)
+[Wiki guide for fixed wing airplanes](https://github.com/iNavFlight/inav/wiki/Fixed-wing-guide-for-iNav.#the-basic-of-getting-inav-working-on-airplane)
+
+[Wiki guide for fixed wing airplanes using CC3D](https://github.com/iNavFlight/inav/wiki/Howto:-CC3D-flight-controller,-minimOSD-and-GPS-for-fixed-wing.#howto-setup-inav-for-fixed-wing)
 
 
 
