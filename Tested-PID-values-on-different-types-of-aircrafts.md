@@ -32,6 +32,49 @@ PID and other values from CLI
 
 ### Quadcopter
 
+#### QAV280 on 4S
+
+1. iNav 1.2 pre-release (built from a2c791a8)
+1. Battery: 1800mAh 4S 45C
+1. FC: SPRacingF3 (Chinese clone, MAG removed with hot air station)
+1. Motors: T-Motor 2205 F40 2300kv
+1. Props: DAL 5045BN
+1. GPS: Crappy Ublox7 from Banggood
+1. Total weight: 600g with battery
+
+```
+set p_pitch = 55
+set i_pitch = 20
+set d_pitch = 40
+set p_roll = 40
+set i_roll = 20
+set d_roll = 45
+set p_yaw = 100
+set i_yaw = 40
+set d_yaw = 0
+set p_level = 160
+set i_level = 10
+set d_level = 75
+set nav_alt_p = 50
+set nav_alt_i = 0
+set nav_alt_d = 0
+set nav_vel_p = 150
+set nav_vel_i = 50
+set nav_vel_d = 25
+set nav_pos_p = 55
+set nav_pos_i = 170
+set nav_pos_d = 0
+set nav_posr_p = 150
+set nav_posr_i = 15
+set nav_posr_d = 80
+set gyro_soft_lpf_hz = 80
+set dterm_lpf_hz = 60
+set looptime = 1000
+set gyro_sync = ON
+set gyro_sync_denom = 1
+set gyro_lpf = 188HZ
+```
+
 #### ZMR250 on 3S
 
 1. iNav FP-PID controller
