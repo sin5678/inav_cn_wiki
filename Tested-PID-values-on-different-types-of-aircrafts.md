@@ -57,6 +57,37 @@ set looptime = 1000
 set gyro_lpf = 188HZ
 ```
 
+### Transporter Q7.6
+
+![Krogulec](https://quadmeup.com/wp-content/uploads/2016/05/krogulec.jpg)
+
+1. iNav FP-PID controller
+1. Voltage: 3S
+1. FC: SPRacingF3 Acro
+1. Baro: external BMP280
+1. GPS: Beitian BN-880 with external MAG
+1. Motors: Emax GT2812/09 1100kV
+1. Props: APC 1045 MR (10x4.5")
+1. Total weight: 1800g with battery and gimbal
+
+```
+set p_pitch = 85
+set i_pitch = 60
+set d_pitch = 75
+set p_roll = 70
+set i_roll = 40
+set d_roll = 75
+set p_yaw = 170
+set i_yaw = 30
+set d_yaw = 0
+set p_level = 65
+set i_level = 10
+set d_level = 75
+set gyro_lpf = 188HZ
+set looptime = 2000
+set yaw_jump_prevention_limit = 150
+```
+
 #### Diatone Whitesheep 500 on 3S
 1. iNav FP-PID controller
 1. Voltage: 3S
