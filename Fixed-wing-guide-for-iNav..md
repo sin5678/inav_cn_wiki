@@ -61,6 +61,8 @@ Servo 5: Rudder
 * Default PIDs in iNav are mainly for multirotors. Find some PIDs [here](https://github.com/iNavFlight/inav/wiki/Tested-PID-values-on-different-types-of-aircrafts#fixed-wing) to use instead and tune from there.
 
 
-### Step 5, optional. Setting up failsafe RTH.
+### Step 5, optional things to set up.
 
 * [Setting up failsafe with return to home.](https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide#4-setting-up-failsafe-with-return-to-home)
+* Using a seperate BEC for servos. [Example](https://github.com/iNavFlight/inav/wiki/Howto:-CC3D-flight-controller,-minimOSD-and-GPS-for-fixed-wing.#recommended-power-layout)
+* [Using an minimosd](https://github.com/iNavFlight/inav/wiki/Howto:-CC3D-flight-controller,-minimOSD-and-GPS-for-fixed-wing.#osd-setup)
