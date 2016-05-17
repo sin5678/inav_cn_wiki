@@ -175,6 +175,37 @@ set looptime = 2000
 ```
 With default PIDs my craft had a strong wobble on the pitch axces. This is probably because much of the weight of the craft is at the front from the front mounted gimbal, and at the back from the battery. To fix this i had to mostly increase P_Pitch and decrease i_Pitch.
 
+
+#### H-Quad 450mm on 4S
+
+1. iNav 1.1 RC3
+1. Battery: 5000mAh 4S 25C
+1. FC: Flip32+ 10dof (external HMC5883L)
+1. Motors: Multistar 2216 - 800KV
+1. Props: HQ1045
+1. GPS: Ublox7
+1. Total weight: 1500g with battery
+
+```
+set p_pitch = 120
+set i_pitch = 45
+set d_pitch = 125
+set p_roll = 90
+set i_roll = 40
+set d_roll = 115
+set p_yaw = 150
+set i_yaw = 50
+set d_yaw = 0
+set p_level = 120
+set i_level = 15
+set d_level = 75
+set imu_dcm_ki = 0
+set gyro_sync = ON
+set gyro_sync_denom = 2
+set gyro_lpf = 42HZ
+set mag_hardware = 2
+```
+
 ### Hexacopters
 
 
