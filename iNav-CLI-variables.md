@@ -94,4 +94,4 @@ Cleanflight CLI variables related to navigation features
 | `nav_fw_dive_angle`                | Max negative pitch angle when diving in automated modes| | |
 | `nav_fw_pitch2thr`                 | Amount if throttle applied related to pitch attitude| | |
 | `nav_fw_roll2pitch`                | Amount of positive pitch (nose up) when the plane turns by ailerons in auto-navigation modes. With high wind is better lowering this| | |
-| `nav_fw_loiter_radius`             | Poshold radius. 3000 or 500 is ok here| | |
+| `nav_fw_loiter_radius`             | Poshold radius. 3000 or 5000 is ok here| | |
