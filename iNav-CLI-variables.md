@@ -51,7 +51,7 @@ Cleanflight CLI variables related to navigation features
 | `nav_alt_hold_deadband`            | | 10 | 250 |
 | `nav_min_rth_distance`             | | | |
 | `nav_rth_alt_mode`                 | Altitude control mode: CURRENT, EXTRA, FIXED, MAX, AT_LEAST | | |
-| `nav_rth_altitude`                 | | | |
+| `nav_rth_altitude`                 | Used in EXTRA, FIXED and AT_LEAST rth alt modes| | |
 | `gyro_soft_lpf_hz`                 | Software-based filter to remove mechanical vibrations from the gyro signal.  Value is cutoff frequency (Hz). For larger frames with bigger props set to lower value. Default 60Hz | 0 | 200 |
 | `acc_soft_lpf_hz`                  | Software-based filter to remove mechanical vibrations from the accelerometer measurements.  Value is cutoff frequency (Hz). For larger frames with bigger props set to lower value. Default 15Hz | 0 | 200 |
 | `baro_use_median_filter`           | | | |
