@@ -28,15 +28,15 @@ Cleanflight CLI variables related to navigation features
 | `inav_w_acc_bias`                  | | 0 | 1 |
 | `inav_max_eph_epv`                 | | 0 | 9999 |
 | `inav_baro_epv`                    | | 0 | 9999 |
-| `nav_alt_p`                        | | | |
-| `nav_alt_i`                        | | | |
-| `nav_alt_d`                        | | | |
-| `nav_vel_p`                        | | | |
-| `nav_vel_i`                        | | | |
-| `nav_vel_d`                        | | | |
-| `nav_navr_p`                       | | | |
-| `nav_navr_i`                       | | | |
-| `nav_navr_d`                       | | | |
+| `nav_alt_p`                        | P gain of altitude PID controller| | |
+| `nav_alt_i`                        | I gain of altitude PID controller| | |
+| `nav_alt_d`                        | D gain of altitude PID controller| | |
+| `nav_vel_p`                        | P gain of velocity PID controller| | |
+| `nav_vel_i`                        | I gain of velocity PID controller| | |
+| `nav_vel_d`                        | D gain of velocity PID controller| | |
+| `nav_navr_p`                       | P gain of 2D trajectory PID controller. Play with this | | |
+| `nav_navr_i`                       | I gain of 2D trajectory PID controller. Too high and there will be overshoot in trajectory. Better start tunning with zero| | |
+| `nav_navr_d`                       | D gain of 2D trajectory PID controller. Too high and there will be overshoot in trajectory. Better start tunning with zero| | |
 | `nav_use_midrc_for_althold`        | | OFF | ON |
 | `nav_use_midthr_for_althold`        | | OFF | ON |
 | `nav_disarm_on_landing`            | | OFF | ON |
