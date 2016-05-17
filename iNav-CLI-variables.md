@@ -58,12 +58,12 @@ Cleanflight CLI variables related to navigation features
 | `magzero_x`                        | | | |
 | `magzero_y`                        | | | |
 | `magzero_z`                        | | | |
-| `acczero_x`                        | | | |
-| `acczero_y`                        | | | |
-| `acczero_z`                        | | | |
-| `accgain_x`                        | | | |
-| `accgain_y`                        | | | |
-| `accgain_z`                        | | | |
+| `acczero_x`                        | Calculated value after '6 position avanced calibration'. See Wiki page. | | |
+| `acczero_y`                        | Calculated value after '6 position avanced calibration'. See Wiki page. | | |
+| `acczero_z`                        | Calculated value after '6 position avanced calibration'. See Wiki page. | | |
+| `accgain_x`                        | Calculated value after '6 position avanced calibration'. See Wiki page. | | |
+| `accgain_y`                        | Calculated value after '6 position avanced calibration'. See Wiki page. | | |
+| `accgain_z`                        | Calculated value after '6 position avanced calibration'. See Wiki page. | | |
 
 
 **Multirotor**
