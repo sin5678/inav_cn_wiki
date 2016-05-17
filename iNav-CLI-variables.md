@@ -34,7 +34,7 @@ Cleanflight CLI variables related to navigation features
 | `nav_vel_p`                        | P gain of velocity PID controller| | |
 | `nav_vel_i`                        | I gain of velocity PID controller| | |
 | `nav_vel_d`                        | D gain of velocity PID controller| | |
-| `nav_navr_p`                       | P gain of 2D trajectory PID controller. Play with this | | |
+| `nav_navr_p`                       | P gain of 2D trajectory PID controller. Play with this to get a straigh line between waypoints or a straight RTH| | |
 | `nav_navr_i`                       | I gain of 2D trajectory PID controller. Too high and there will be overshoot in trajectory. Better start tunning with zero| | |
 | `nav_navr_d`                       | D gain of 2D trajectory PID controller. Too high and there will be overshoot in trajectory. Better start tunning with zero| | |
 | `nav_use_midrc_for_althold`        | | OFF | ON |
