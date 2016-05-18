@@ -11,7 +11,7 @@ It is ABSOLUTELY mandatory to read this page, and the pages that it links to.
 
 ### Getting started
 
-Download the *.hex file for your flight controller from the [latest stable iNav relase](https://github.com/iNavFlight/inav/releases/latest) and use the chrome app [Cleanflight Configurator](https://chrome.google.com/webstore/detail/cleanflight-configurator/enacoimjcgeinfnnnpajinjgmkahmfgb) to flash it.
+Download the *.hex file for your flight controller from the [latest stable iNav release page](https://github.com/iNavFlight/inav/releases/latest) and use the chrome app [Cleanflight Configurator](https://chrome.google.com/webstore/detail/cleanflight-configurator/enacoimjcgeinfnnnpajinjgmkahmfgb) to flash it.
 
 Find latest iNav release and flash it. It can be found at [Github page](https://github.com/iNavFlight/inav/releases) or use Cleanflight flasher to directly download newest version and flash.
 
