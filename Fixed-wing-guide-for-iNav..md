@@ -60,9 +60,9 @@ Servo 5: Rudder
 
 * Default PIDs in iNav are mainly for multirotors. Find some PIDs [here](https://github.com/iNavFlight/inav/wiki/Tested-PID-values-on-different-types-of-aircrafts#fixed-wing) to use instead and tune from there.
 * If you are flying a plane with rudder, use "set i_yaw = 0".
-* If your plane over corrects when RTH is engaged, try lowering "nav_navr_p" and/or increasing "nav_navr_i". Good values to start: "set nav_navr_p = 10"; "set nav_navr_i = 5". Also you can lowering "nav_nav_r_d". The behaviour of the plane is very different with or w/o wind, so is necessary to test and tweak parameters in both scenaries.
-* You can see that the plane levels itself fine, but may be that your servos (mainly aileron servos) are working hardly. This is a problem for the life of them, and an added draining of overall current. To reduce these problems you may want to reduce p_roll, or increase d_roll. For pitch servo is the same, but there are less oscillations. With rudder servo are almost inexistant. Play with the values and test. 
-* A good tool for optimize your system is the blackbox logger. Some FCs have it and in others is an accesory. After the flight you can analize in 'Crhome blackbox explorer' the behaviour of many parameters of your plane and later solve issues or ask for help in the forums. With a blackbox log you can also replay all your flight  in linux with [mwp tools](https://github.com/stronnag/mwptools).
+* If your plane over corrects when RTH is engaged, try lowering "nav_navr_p" and/or increasing "nav_navr_i". Good values to start: "set nav_navr_p = 10"; "set nav_navr_i = 5". Also you can lower "nav_navr_d". The behaviour of the plane is very different with or w/o wind, so it is necessary to test and tweak parameters in both scenarios.
+* In "Angle" Mode you don't need high steering surface deflection. Set "p_roll" and "p_pitch" just as high that you have 25% of full travel. That is a good point to start tweaking the gains from. If you use to high values, the plane will oscillate.
+* A good tool for optimize your system is the blackbox logger. Some FCs have it and in others it is an accessory. After the flight you can analyze in 'Chrome blackbox explorer' the behaviour of many parameters of your plane and later solve issues or ask for help in the forums. With a blackbox log you can also replay all your flight in linux with [mwp tools](https://github.com/stronnag/mwptools).
 
 
 ### Step 5, optional things to set up.
