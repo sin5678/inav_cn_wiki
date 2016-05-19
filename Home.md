@@ -13,6 +13,8 @@ It is ABSOLUTELY mandatory to read this page, and the pages that it links to.
 
 Download the *.hex file for your flight controller from the [latest stable iNav release page](https://github.com/iNavFlight/inav/releases/latest) and use the chrome app [Cleanflight Configurator](https://chrome.google.com/webstore/detail/cleanflight-configurator/enacoimjcgeinfnnnpajinjgmkahmfgb) to flash it. You can also buy the android app [Cleanflight flasher](https://play.google.com/store/apps/details?id=com.eziosoft.cleanflight_flasher) to directly download newest version and flash.
 
+You can also install in Chrome the [INAV Configurator](https://github.com/iNavFlight/inav-configurator). This is a better option, as you can download the releases directly. INAV Configurator, wich is designed for INAV, has some diferences and improvements over Cleanflight configurator.
+
 If your board is not aligned “normally”, with the printed arrow pointing to the quad’s front, you have to set board alignment. This can be needed to access the usb port from the side of the quad. iNav is different from cleanflight here, board alignment angles are set in degrees*10. So if your board is mounted 90 degrees clockwise to get USB port out to the side, you should type in CLI set align_board_yaw = 900
 
 Next you should do accelerometer calibration. This is different from cleanflight, follow the steps in the page  ["Advanced accelerometer calibration"](https://github.com/iNavFlight/inav/wiki/Advanced-accelerometer-calibration)
