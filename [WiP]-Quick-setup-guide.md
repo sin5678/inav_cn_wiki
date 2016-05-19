@@ -40,6 +40,7 @@ Also, remember to set magnetic declination to a proper value on the "Configurati
 
 # 4. Setting up failsafe with return to home.
 
+## Using iNav/FC Board Failsafe detection
 1. Make sure your radio receiver failsafe is set to "No pulses"
 
 2. Set cli parameter "failsafe_procedure" to "RTH"
@@ -62,3 +63,19 @@ Do the same for nav alt hold mode and nav pos hold
  4,3 Go outside, arm and apply throttle, walk with it 20meter away from home and then turn off transmitter. The aircraft should now try to climb (increase throttle) also verify that your able to regain control by turning on transmitter.
 
  4,4 Real test, take the props on again. Take off, fly at least 20 meters from home and turn of transmitter. Tip do this over soft grass. If it's an airplane it's better to have soem altitude.
+
+## Using receiver's own failsafe
+1. Disable all Failsafe functions in iNav.
+
+2. In "Modes" tab select a switch for RTH
+
+3. Set your switches and sticks of your radio to the following conditions:
+
+* Throttle: approx. 25% (does not really matter, just not zero)
+* Aileron: 0% (no input, stick center)
+* Rudder: 0% (no input, stick center)
+* Elevator: 0% (no input, stick center)
+* RTH switch: activated
+* Arm switch: activated (just if you use switch to arm)
+
+4. Press your Failsafe button on the RC TX or RC RX to save this stick/switch configuration for link loss.
