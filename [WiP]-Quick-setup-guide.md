@@ -69,13 +69,17 @@ Do the same for nav alt hold mode and nav pos hold
 
 2. In "Modes" tab select a switch for RTH
 
-3. Set your switches and sticks of your radio to the following conditions:
+3. Set your switches and sticks of your radio to the following conditions:  
 
-* Throttle: approx. 25% (does not really matter, just not zero)
-* Aileron: 0% (no input, stick center)
-* Rudder: 0% (no input, stick center)
-* Elevator: 0% (no input, stick center)
-* RTH switch: activated
-* Arm switch: activated (just if you use switch to arm)
+ `Throttle: approx. 25% (does not really matter, just not zero)`  
 
+ `Aileron: 0% (no input, stick center)`  
+
+ `Rudder: 0% (no input, stick center)`  
+
+ `Elevator: 0% (no input, stick center)`  
+
+ `RTH switch: activated`  
+
+ `Arm switch: activated (just if you use switch to arm)`  
 4. Press your Failsafe button on the RC TX or RC RX to save this stick/switch configuration for link loss.
