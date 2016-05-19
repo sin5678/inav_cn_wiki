@@ -32,6 +32,7 @@ OSD setup
 ## 1. Features
 - Stabilization (Angle, Horizon modes)
 - RTH (baro and mag are not needed for fixed wing)
+- Waypoint missions (with EZGUI android apk).
 - Battery monitoring
 - RSSI monitoring
 - Failsafe
