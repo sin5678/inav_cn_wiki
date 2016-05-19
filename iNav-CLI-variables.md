@@ -97,4 +97,4 @@ Cleanflight CLI variables related to navigation features
 | `nav_fw_dive_angle`                | Max negative pitch angle when diving in GPS assisted modes| | |
 | `nav_fw_pitch2thr`                 | Amount of throttle applied related to pitch attitude in GPS assisted modes| | |
 | `nav_fw_roll2pitch`                | Amount of positive pitch (nose up) when the plane turns by ailerons in GPS assisted modes. With high wind is better lowering this| | |
-| `nav_fw_loiter_radius`             | Poshold radius. 3000 or 5000 is ok here| | |
+| `nav_fw_loiter_radius`             | PosHold radius in cm. 3000 to 7500 is a good value (30-75m)| | |
