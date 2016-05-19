@@ -11,6 +11,7 @@ Accelerometer calibration is mandatory if inertial position estimation is used. 
 4. Use CLI to verify that **accgain_x**, **accgain_y** and **accgain_z** parameters are **NOT ZERO**. If they are, algorithm failed to converge, calibration failed and needs to be repeated.
 
 There is no need to place copter perfectly aligned, the algorithm does not care about exact positions as long as they are close to 90 degree apart and copter is stationary in every position.
+If the flightcontroller is mounted in another angle or upside down, do the calibration steps with the flightcontroller pointing as shown in the pictures, not the quad (otherwise calibration won´t work).
 
 ## Level calibration
 
