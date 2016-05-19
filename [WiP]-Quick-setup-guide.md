@@ -71,7 +71,7 @@ Do the same for nav alt hold mode and nav pos hold
 
 3. Set your switches and sticks of your radio to the following conditions:  
 
- `Throttle: approx. 25% (does not really matter, just not zero)`  
+ `Throttle: approx. 50% (hover throttle/cruise throttle)`  
 
  `Aileron: 0% (no input, stick center)`  
 
