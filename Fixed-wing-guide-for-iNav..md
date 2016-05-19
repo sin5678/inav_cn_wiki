@@ -59,6 +59,8 @@ Servo 5: Rudder
 ### Step 4, Replace default PIDs.
 
 * Default PIDs in iNav are mainly for multirotors. Find some PIDs [here](https://github.com/iNavFlight/inav/wiki/Tested-PID-values-on-different-types-of-aircrafts#fixed-wing) to use instead and tune from there.
+* If you are flying a plane with rudder, use "set i_yaw = 0".
+* If your plane over corrects when RTH is engaged, try lowering "nav_navr_p" and/or increasing "nav_navr_i". Good values to start: "set nav_navr_p = 10"; "set nav_navr_i = 5"
 
 
 ### Step 5, optional things to set up.
