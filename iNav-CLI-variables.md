@@ -39,17 +39,17 @@ Cleanflight CLI variables related to navigation features
 | `nav_navr_d`                       | D gain of 2D trajectory PID controller. Too high and there will be overshoot in trajectory. Better start tunning with zero| | |
 | `nav_use_midrc_for_althold`        | | OFF | ON |
 | `nav_use_midthr_for_althold`        | | OFF | ON |
-| `nav_disarm_on_landing`            | | OFF | ON |
+| `nav_disarm_on_landing`            | If set to ON, iNav disarms the FC after landing| OFF | ON |
 | `nav_extra_arming_safety`          | If set to ON drone won't arm if no GPS fix | OFF | ON |
 | `nav_user_control_mode`            | Defines how Pitch/Roll input from RC receiver affects flight in POSHOLD mode: ATTI - right stick controls attitude like in ANGLE mode; CRUISE - right stick controls velocity in forward and right direction. | | |
 | `nav_position_timeout`             | If GPS fails wait for this much seconds before switching to emergency landing mode (0 - disable) | 0 | 10 |
-| `nav_wp_radius`                    | Waypoint radius. Waypoint would be considered reached if machine is within this radius | 100 | 2000 |
+| `nav_wp_radius`                    | Waypoint radius. Waypoint would be considered reached if machine is within this radius | 10 | 2000 |
 | `nav_max_speed`                    | Maximum velocity firmware is allowed in full auto modes (POSHOLD, RTH, WP)  | 10 | 2000 |
 | `nav_manual_speed`                 | Maximum velocity firmware is allowed when processing pilot input for POSHOLD/CRUISE control mode | | |
 | `nav_manual_climb_rate`            | Maximum climb/descent rate firmware is allowed when processing pilot input for ALTHOLD control mode | | |
 | `nav_pos_hold_deadband`            | | 10 | 250 |
 | `nav_alt_hold_deadband`            | | 10 | 250 |
-| `nav_min_rth_distance`             | | | |
+| `nav_min_rth_distance`             | Minimum distance from homepoint when RTH can be activated | | |
 | `nav_rth_alt_mode`                 | Altitude control mode: CURRENT, EXTRA, FIXED, MAX, AT_LEAST | | |
 | `nav_rth_altitude`                 | Used in EXTRA, FIXED and AT_LEAST rth alt modes| | |
 | `gyro_soft_lpf_hz`                 | Software-based filter to remove mechanical vibrations from the gyro signal.  Value is cutoff frequency (Hz). For larger frames with bigger props set to lower value. Default 60Hz | 0 | 200 |
@@ -61,9 +61,9 @@ Cleanflight CLI variables related to navigation features
 | `acczero_x`                        | Calculated value after '6 position avanced calibration'. See Wiki page. | | |
 | `acczero_y`                        | Calculated value after '6 position avanced calibration'. See Wiki page. | | |
 | `acczero_z`                        | Calculated value after '6 position avanced calibration'. See Wiki page. | | |
-| `accgain_x`                        | Calculated value after '6 position avanced calibration'. See Wiki page. | | |
-| `accgain_y`                        | Calculated value after '6 position avanced calibration'. See Wiki page. | | |
-| `accgain_z`                        | Calculated value after '6 position avanced calibration'. See Wiki page. | | |
+| `accgain_x`                        | Calculated value after '6 position avanced calibration'. Uncalibrated value is 4096. See Wiki page. | | |
+| `accgain_y`                        | Calculated value after '6 position avanced calibration'. Uncalibrated value is 4096. See Wiki page. | | |
+| `accgain_z`                        | Calculated value after '6 position avanced calibration'. Uncalibrated value is 4096. See Wiki page. | | |
 
 
 **Multirotor**
