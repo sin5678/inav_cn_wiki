@@ -36,6 +36,8 @@ Next you need to setup your craft normally as you would with cleanflight.
 
 * iNav has removed all other telemetry options when using Naze32 targets but LTM in official builds, if you need let's say Frsky telemetry you need to compile your own. See link. Eg. F3 board, which have more memory, have Frsky included.
 
+* iNav does not show "GPS Signal Strength" for each satellite in the Cleanflight configurator, instead only the first one is used to show [HDOP](https://en.wikipedia.org/wiki/Dilution_of_precision_%28GPS%29)
+
 * iNav has only one PID controller called fp-pid. This is a modified version of luxfloat, and will show up as luxfloat in cleanflight configurator.
 
 * iNav has an extra safety feature that prevents you from arming your aircraft if no proper GPS lock is acquired. Nav_extra_arming_safety is turned ON by default.
