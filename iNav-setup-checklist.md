@@ -31,3 +31,10 @@ DO NOT USE TRIM the copter to level flight on your transmitter. Use board alignm
 ## 9. Determine and set hover throttle
 Use blackbox or Configurator to figure out throttle stick position when your copter is hovering. Set **nav_mc_hover_thr** CLI variable to that value.
 
+
+## 10. Get to know the CLI values.
+iNav offers a lot of customization trough CLI variables. Its strongly recommended to read trough [iNav CLI variables](https://github.com/iNavFlight/inav/wiki/iNav-CLI-variables)
+
+Some important ones are:
+
+| `nav_user_control_mode`            | Defines how Pitch/Roll input from RC receiver affects flight in POSHOLD mode: ATTI - right stick controls attitude like in ANGLE mode; CRUISE - right stick controls velocity in forward and right direction. | | |
