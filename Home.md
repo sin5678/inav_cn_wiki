@@ -34,7 +34,7 @@ Next you need to setup your craft normally as you would with cleanflight.
 
 
 
-**Notes**
+### Notes
 
 * iNav has removed all other telemetry options when using Naze32 targets but LTM in official builds, if you need let's say Frsky telemetry you need to compile your own. See link. Eg. F3 board, which have more memory, have Frsky included.
 
