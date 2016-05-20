@@ -24,8 +24,10 @@ Set trim on your TX to zero. Use subtrim to adjust your TX midpoints to be preci
 ## 7. Trim copter to level flight
 DO NOT USE TRIM the copter to level flight on your transmitter. Use board alignment settings or accelerometer trim stick combos.
 [How to trim your Accelerometer](http://tldrify.com/elw)
-## 8. Determine and set hover throttle
+
+## 8. Setup and verify failsafe on TX and iNav
+[Guide for setting up failsafe](https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide#4-setting-up-failsafe-with-return-to-home)
+
+## 9. Determine and set hover throttle
 Use blackbox or Configurator to figure out throttle stick position when your copter is hovering. Set **nav_mc_hover_thr** CLI variable to that value.
 
-## 9. Setup and verify failsafe on TX and iNav
-[Guide for setting up failsafe](https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide#4-setting-up-failsafe-with-return-to-home)
