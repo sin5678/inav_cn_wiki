@@ -9,8 +9,7 @@ Cleanflight CLI variables related to navigation features
 | `align_board_pitch`                | Board alignment on PITCH axis (deg * 10) | -1800 | 3600 |
 | `align_board_yaw`                  | Board alignment on YAW axis (deg * 10) | -1800 | 3600 |
 | `gps_provider`                     | GPS hardware type: NMEA, UBLOX, NAZA, I2C-NAV | | |
-| `gps_nav_model`                    | GPS navigation model: LOW_G (Pedestrian), HIGH_G (Airborne<4G). Currently supported only of Ublox GPS modules. HIGH_G may increase accuracy, especially on fast and agile airplanes, but it requires much better satellite signal quality. Safe default is "LOW_G". | | |
-| `gps_dyn_model`                    | same as gps_nav_model, used in recent firmware. Default is AIR_1G. | | |
+| `gps_dyn_model`                    | GPS navigation model: Pedestrian, Air_1g, Air_4g. Default is AIR_1G. Use pedestrian with caution, can cause flyaways with fast flying.| | |
 | `gps_auto_config`                  | If set to ON, iNav configures the GPS automatically | | |
 | `gps_auto_baud`                    | If set to ON, iNav configures the baudrate of the GPS automatically | | |
 | `failsafe_procedure`               | Failsafe type: SET-THR - set throttle to `failsafe_throttle`, RTH - execute RTH sequence if possible, land otherwise | | |
