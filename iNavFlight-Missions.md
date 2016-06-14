@@ -73,6 +73,9 @@ Other solutions include OpenLRS and Dragonlink. Contributions to the wiki solici
 Data is transferred between the GCS and the FC using a "Telemetry Protocol". Currently, iNav offers two protocols (MSP and LTM), both of which are supported by ezgui and mwp. In the future, a minimal implementation of MAVLink will be offered (mwp already supports this MAVLink subset).
 
 ## MSP - MultiWii Serial Protocol
+
+MSP is the 'native' messaging protocol for iNav. It is well supported by the configurator, ezgui, mwp and many OSDs. It is all you need to upload missions and monitor flights.
+
 ## LTM - Light Telemetry
 ## MAVLink (integration pending. [PR#186](https://github.com/iNavFlight/inav/pull/186))
 
