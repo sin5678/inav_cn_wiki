@@ -19,7 +19,7 @@ ezgui can be downloaded from the [Google Play store](https://play.google.com/sto
 
 ## mwp (Linux)
 
-mwp can be downloaded from [Github](<https://github.com/stronnag/mwptools>). It is available only as a source distribution and it is necessary to compile and install the application. Build instructions and dependencies are provided for Ubuntu and Fedora. Arch Linux users can install mwp from the AUR ([Arch User Repository](https://aur.archlinux.org/packages/mwptools-git/)). 
+mwp can be downloaded from [Github](<https://github.com/stronnag/mwptools>). mwp is open source (GPL 2). It is available only as a source distribution and it is necessary to compile and install the application. Build instructions and dependencies are provided for Ubuntu and Fedora. Arch Linux users can install mwp from the AUR ([Arch User Repository](https://aur.archlinux.org/packages/mwptools-git/)). 
 
 In addition to mission planning and logger, mwp also supports the replay of blackbox logs against a geospatial background (requires [blackbox-tools](https://github.com/cleanflight/blackbox-tools)). mwp also includes numerous poorly documented scripts for mission and blackbox analysis.
 
@@ -29,7 +29,7 @@ mwp can be run in a virtual machine on MS Windows and OSX / macOS, using virtual
 
 Mobile Flight: Configuration and ground control app for Cleanflight on iPhone http://www.rcgroups.com/forums/showthread.php?t=2601895&highlight=ios appears to have some support for iNav an GPS logging at least. This application is in an early stage of development.
 
-WinGUI is a Windows program developed for Multiwii nav. It is currently somewhat abandoned, but would be a viable basis for developing a Windows program for iNav navigation (or better, supporting both Multiwii and iNav, as do the other tools described here.
+WinGUI is a Windows program developed for Multiwii nav. It is currently somewhat abandoned, but would be a viable basis for developing a Windows program for iNav navigation (or better, supporting both Multiwii and iNav, as do the other tools described here. Should anyone wish to rescue this fine application, the source code (GPL v3) may be found at https://code.google.com/archive/p/mw-wingui/.
 
 # Telemetry Protocols
 ## MSP
