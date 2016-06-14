@@ -31,12 +31,23 @@ Mobile Flight: Configuration and ground control app for Cleanflight on iPhone ht
 
 WinGUI is a Windows program developed for Multiwii nav. It is currently somewhat abandoned, but would be a viable basis for developing a Windows program for iNav navigation (or better, supporting both Multiwii and iNav, as do the other tools described here. Should anyone wish to rescue this fine application, the source code (GPL v3) may be found at https://code.google.com/archive/p/mw-wingui/.
 
+# Telemetry Hardware
+
+In order to transfer missions from the GCS to the flight controller, and to monitor / log flight data, it is necessary to   establish a data link between the GCS and the multirotor. Some popular technologies include:
+
+* Bluetooth
+* 3DR (433Mhz / 915Mhz)
+* WiFi (ESP8266)
+* HR-12 (433Mhz, similar to 3DR)
+ 
+## Bluetooth
+
+Bluetooth is the easiest solution to get working with minimal effort. A cheap HC-06 BT module is all that is needed (the phone or laptop built-in BT is used on the ground station). It's disadvantage is the range, for most users data loss / dropout will occur over 20m. It's thus useful for testing out configurations, but for many users the limitation of range will call for another solution. 
+
 # Telemetry Protocols
 ## MSP
 ## LTM
 ## MAVLink
-
-# Telemetry Hardware
 
 # Configuring the Flight Controller
 ## Ports & port sharing
