@@ -62,7 +62,7 @@ ESP8266 is a small WiFi to serial bridge. It can be used to transport the serial
 
 Advanced configuration for ESP8266 will (eventually) be detailed at the end of this wiki page, some preliminary data http://www.rcgroups.com/forums/showpost.php?p=35007195&postcount=6645. This demonstrates excellent coverage out to 150m using mwp, ESP07 and ESP01 modules and the standard vendor firmware.
 
-Another, highly detailed how-to for ESP8266 and Cleanflight/Baseflight/INAV is available [here](https://quadmeup.com/wifi-telemetry-for-cleanflight-with-ez-gui-and-esp8266/). This reports very poor results, perhaps down the native WiFi capability in the phone hosting ezgui.
+Another, highly detailed how-to for ESP8266 and Cleanflight/Baseflight/INAV is available [here](https://quadmeup.com/wifi-telemetry-for-cleanflight-with-ez-gui-and-esp8266/). This reports very poor results, possibly due to the native WiFi capability in the phone hosting ezgui (vice the laptop adaptor for the mwp test).
 
 ## HR-12
 
@@ -74,7 +74,7 @@ Other solutions include OpenLRS and Dragonlink. Contributions to the wiki solici
 
 # Telemetry Protocols
 
-Data is transferred between the GCS and the FC using a "Telemetry Protocol". Currently, iNav offers two protocols (MSP and LTM), both of which are supported by ezgui and mwp. In the future, a minimal implementation of MAVLink will be offered (mwp already supports this MAVLink subset).
+Data is transferred between the GCS and the FC using a "Telemetry Protocol". Currently, iNav offers two protocols (MSP and LTM), both of which are supported by ezgui and mwp. In the future, a minimal implementation of MAVLink will be offered (mwp already supports this MAVLink subset), this will allow other tools to be used, such as the cross-platform [QGroundControl](http://qgroundcontrol.org/).
 
 ## MSP - MultiWii Serial Protocol
 
