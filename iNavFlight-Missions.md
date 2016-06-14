@@ -44,7 +44,7 @@ In order to transfer missions from the GCS to the flight controller, and to moni
  
 ## Bluetooth
 
-Bluetooth is the easiest solution to get working with minimal effort. A cheap HC-06 BT module is all that is needed (the phone or laptop built-in BT is used on the ground station). It's disadvantage is the range, for most users data loss / dropout will occur over 20m. It's thus useful for testing out configurations, but for many users the limitation of range will call for another solution. 
+Bluetooth is the easiest solution to get working with minimal effort. A cheap HC-06 BT module is all that is needed (the phone or laptop built-in BT is used on the ground station). Its disadvantage is the range, for most users data loss / dropout will occur over 20m. Its thus useful for testing out configurations, but for many users the limitation of range will call for another solution. 
 
 [Setup guide](https://quadmeup.com/adding-bluetooth-telemetry-to-flip32-and-cleanflight/)
 
