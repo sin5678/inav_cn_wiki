@@ -25,7 +25,11 @@ In addition to mission planning and logger, mwp also supports the replay of blac
 
 ## Potential solutions for other platforms
 
+mwp can be run in a virtual machine on MS Windows and OSX / macOS, using virtualisation tools such as VirtualBox and Parallels. 
 
+Mobile Flight: Configuration and ground control app for Cleanflight on iPhone http://www.rcgroups.com/forums/showthread.php?t=2601895&highlight=ios appears to have some support for iNav an GPS logging at least. This application is in an early stage of development.
+
+WinGUI is a Windows program developed for Multiwii nav. It is currently somewhat abandoned, but would be a viable basis for developing a Windows program for iNav navigation (or better, supporting both Multiwii and iNav, as do the other tools described here.
 
 # Telemetry Protocols
 ## MSP
