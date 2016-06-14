@@ -56,12 +56,17 @@ Advanced configuration for 3DR will (eventually) be detailed at the end of this 
 
 ESP8266 is a small WiFi to serial bridge. It can be used to transport the serial data link over WiFi. It offers reasonable range (c. 300m) and convenience. The author has seen no evidence of interference between ESP8266 devices and 2.4GHz RC links.
 
-Advanced configuration for ESP8266 will (eventually) be detailed at the end of this wiki page.
+Advanced configuration for ESP8266 will (eventually) be detailed at the end of this wiki page, some preliminary data http://www.rcgroups.com/forums/showpost.php?p=35007195&postcount=6645.
+
+## HR-12
+
+HR-12 is a comparable radio technology to 3DR with similar range and performance characteristics. Its configuration and usage with iNav is well documented https://quadmeup.com/diy-wireless-telemetry-link-for-uav/ and https://quadmeup.com/hc-12-433mhz-wireless-serial-communication-module-configuration/. The configuration documented would work equally well in ezgui and mwp.
+
 
 # Telemetry Protocols
 ## MSP - MultiWii Serial Protocol
 ## LTM - Light Telemetry
-## MAVLink
+## MAVLink (integration pending. [PR#186](https://github.com/iNavFlight/inav/pull/186))
 
 # Configuring the Flight Controller
 ## Ports & port sharing
