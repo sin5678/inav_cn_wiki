@@ -44,6 +44,10 @@ In order to transfer missions from the GCS to the flight controller, and to moni
 
 Bluetooth is the easiest solution to get working with minimal effort. A cheap HC-06 BT module is all that is needed (the phone or laptop built-in BT is used on the ground station). It's disadvantage is the range, for most users data loss / dropout will occur over 20m. It's thus useful for testing out configurations, but for many users the limitation of range will call for another solution. 
 
+## 3DR
+
+3DR radios operate in the regionally unlicensed 433Mhz and 915Mhz. They are widely available from online retailers. Detailed documentation is available at from [Ardupilot.org](http://ardupilot.org/copter/docs/common-3dr-radio-advanced-configuration-and-technical-information.html). There is a fork of the firmware available for the MSP (Multiwii Serial Protocol) used by iNav https://github.com/stronnag/SiK-MSP.
+
 # Telemetry Protocols
 ## MSP - MultiWii Serial Protocol
 ## LTM - Light Telemetry
@@ -56,3 +60,6 @@ Bluetooth is the easiest solution to get working with minimal effort. A cheap HC
 
 # Mission / Flight Monitoring
 
+# Advanced configuration
+## 3DR
+## ESP8266
