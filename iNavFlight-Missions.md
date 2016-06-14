@@ -21,7 +21,7 @@ ezgui can be downloaded from the [Google Play store](https://play.google.com/sto
 
 mwp can be downloaded from [Github](<https://github.com/stronnag/mwptools>). mwp is open source (GPL 2). It is available only as a source distribution and it is necessary to compile and install the application. Build instructions and dependencies are provided for Ubuntu and Fedora. Arch Linux users can install mwp from the AUR ([Arch User Repository](https://aur.archlinux.org/packages/mwptools-git/)). 
 
-In addition to mission planning and logger, mwp also supports the replay of blackbox logs against a geospatial background (requires [blackbox-tools](https://github.com/cleanflight/blackbox-tools)). mwp also includes numerous poorly documented scripts for mission and blackbox analysis.
+In addition to mission planning and logger, mwp also supports the replay of blackbox logs against a geospatial background (requires [blackbox-tools](https://github.com/cleanflight/blackbox-tools)). mwp also includes numerous poorly documented scripts for mission and blackbox analysis, as well as an over-comprehensive user guide.
 
 ## Potential solutions for other platforms
 
@@ -62,8 +62,14 @@ Advanced configuration for ESP8266 will (eventually) be detailed at the end of t
 
 HR-12 is a comparable radio technology to 3DR with similar range and performance characteristics. Its configuration and usage with iNav is well documented https://quadmeup.com/diy-wireless-telemetry-link-for-uav/ and https://quadmeup.com/hc-12-433mhz-wireless-serial-communication-module-configuration/. The configuration documented would work equally well in ezgui and mwp.
 
+## Other solutions
+
+Other solutions include OpenLRS and Dragonlink. Contributions to the wiki solicited!
 
 # Telemetry Protocols
+
+Data is transferred between the GCS and the FC using a "Telemetry Protocol". Currently, iNav offers two protocols (MSP and LTM), both of which are supported by ezgui and mwp. In the future, a minimal implementation of MAVLink will be offered (mwp already supports this MAVLink subset).
+
 ## MSP - MultiWii Serial Protocol
 ## LTM - Light Telemetry
 ## MAVLink (integration pending. [PR#186](https://github.com/iNavFlight/inav/pull/186))
