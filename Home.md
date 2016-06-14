@@ -1,4 +1,4 @@
-![](http://static.rcgroups.net/forums/attachments/1/5/9/3/2/7/a8809082-59-inav.png)
+![](http://static.rcgroups.net/forums/attachments/6/1/0/3/7/6/a9088858-102-inav.png)
 
 iNav is a fork of cleanflight with focus on GPS features.
 It currently supports position hold, RTH with predefined climb height, waypoints and follow-me. Both with airplanes & multirotors.
@@ -14,4 +14,3 @@ It is ABSOLUTELY mandatory to read these pages.
 - [Multirotor guide](https://github.com/iNavFlight/inav/wiki/2.-Multirotor-guide) if your going to use it in a multirotor.
 
 - [Fixed wing guide](https://github.com/iNavFlight/inav/wiki/3.-Fixed-wing-guide) if your going to use it in a fixed wing.
-
