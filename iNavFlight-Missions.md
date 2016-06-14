@@ -17,6 +17,8 @@ ezgui and mwp both support mission planning (they share a common mission definit
 
 ezgui can be downloaded from the [Google Play store](https://play.google.com/store/apps/details?id=com.ezio.multiwii&hl=en_GB). There is a free version and a (very reasonably priced) paid-for version with additional functionality. The application is not open source. 
 
+Basic tutorial for EZ-GUI and INAV mission setup is available [here](https://quadmeup.com/inav-cleanflight-learned-how-to-do-missions/)
+
 ## mwp (Linux)
 
 mwp can be downloaded from [Github](<https://github.com/stronnag/mwptools>). mwp is open source (GPL 2). It is available only as a source distribution and it is necessary to compile and install the application. Build instructions and dependencies are provided for Ubuntu and Fedora. Arch Linux users can install mwp from the AUR ([Arch User Repository](https://aur.archlinux.org/packages/mwptools-git/)). 
