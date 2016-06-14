@@ -74,11 +74,13 @@ Other solutions include OpenLRS and Dragonlink. Contributions to the wiki solici
 
 # Telemetry Protocols
 
-Data is transferred between the GCS and the FC using a "Telemetry Protocol". Currently, iNav offers two protocols (MSP and LTM), both of which are supported by ezgui and mwp. In the future, a minimal implementation of MAVLink will be offered (mwp already supports this MAVLink subset), this will allow other tools to be used, such as the cross-platform [QGroundControl](http://qgroundcontrol.org/).
+Data is transferred between the GCS and the FC using a "Telemetry Protocol". Currently, iNav offers two protocols (MSP and LTM), both of which are supported by ezgui and mwp. In the future, a minimal implementation of MAVLink will be offered (mwp already supports this MAVLink subset), this will allow other tools to be used, such as the cross-platform [QGroundControl](http://qgroundcontrol.org/). The implementation currently proposed will only support push telemetry (i.e. mission monitoring, not mission planning).
 
 ## MSP - MultiWii Serial Protocol
 
-MSP is the 'native' messaging protocol for iNav. It is well supported by the configurator, ezgui, mwp and many OSDs. It is all you need to upload missions and monitor flights.
+MSP is the 'native' messaging protocol for iNav. It is well supported by the configurator, ezgui, mwp and many OSDs. It is all you need to upload missions and monitor flights. It's one disadvantage for mission monitoring is that it is a polled protocol, that is the GCS has to request data and the FC responds. This is not really an issue for data links such as BT and WiFi, but the half-duplex nature of 3DR where there is significant time cost is switching between receive and transmit limits the performance for mission monitoring.
+
+ezgui and mwp get over this performance hit by using MSP for configuration, mission upload / verification and monitoring prior to arming, and when configured in the FC, LTM for mission monitoring when armed. This switchover is automatic and transparent to the user.
 
 ## LTM - Light Telemetry
 ## MAVLink (integration pending. [PR#186](https://github.com/iNavFlight/inav/pull/186))
