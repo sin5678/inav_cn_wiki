@@ -8,6 +8,9 @@ iNav supports autonomous flight using waypoints. In order to use this capability
 This wiki topic describes the software currently available and some of the telemetry options. 
 
 # Ground Control Stations
+
+Currently there are two GCS applications widely used for iNav mission management, ezgui <http://ez-gui.com/> (Android) and mwp <https://github.com/stronnag/mwptools> (Linux). In future, other options may become available, particularly if the MAVLink protocol becomes supported by iNav.
+
 ## EZGui (Android)
 ## mwp (Linux)
 ## Potential solutions for other platforms
@@ -15,7 +18,7 @@ This wiki topic describes the software currently available and some of the telem
 # Telemetry Protocols
 ## MSP
 ## LTM
-## MavLink
+## MAVLink
 
 # Telemetry Hardware
 
