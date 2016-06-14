@@ -32,6 +32,9 @@ In addition to mission planning and logger, mwp also supports the replay of blac
 
 # Telemetry Hardware
 
+# Configuring the Flight Controller
+## Ports & port sharing
+
 # Mission Planning
 
 # Mission / Flight Monitoring
