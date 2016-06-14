@@ -19,7 +19,7 @@ ezgui can be downloaded from the [Google Play store](https://play.google.com/sto
 
 A basic tutorial for EZ-GUI and iNav mission setup is available [here](https://quadmeup.com/inav-cleanflight-learned-how-to-do-missions/).
 
-There is a support RC Groups [forum](http://www.rcgroups.com/forums/showthread.php?t=2511917)
+There is a [RC Groups support forum](http://www.rcgroups.com/forums/showthread.php?t=2511917)
 
 ## mwp (Linux)
 
@@ -27,7 +27,7 @@ mwp can be downloaded from [Github](<https://github.com/stronnag/mwptools>). mwp
 
 In addition to mission planning and logger, mwp also supports the replay of blackbox logs against a geospatial background (requires [blackbox-tools](https://github.com/cleanflight/blackbox-tools)). mwp also includes numerous poorly documented scripts for mission and blackbox analysis, as well as an overly comprehensive user guide.
 
-There is a support RC Groups [forum](http://www.rcgroups.com/forums/showthread.php?t=2633708)
+There is a [RC Groups support forum](http://www.rcgroups.com/forums/showthread.php?t=2633708)
 
 ## Potential solutions for other platforms
 
