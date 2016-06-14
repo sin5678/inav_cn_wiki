@@ -46,6 +46,8 @@ In order to transfer missions from the GCS to the flight controller, and to moni
 
 Bluetooth is the easiest solution to get working with minimal effort. A cheap HC-06 BT module is all that is needed (the phone or laptop built-in BT is used on the ground station). It's disadvantage is the range, for most users data loss / dropout will occur over 20m. It's thus useful for testing out configurations, but for many users the limitation of range will call for another solution. 
 
+[Setup guide](https://quadmeup.com/adding-bluetooth-telemetry-to-flip32-and-cleanflight/)
+
 ## 3DR
 
 3DR radios operate in the regionally unlicensed 433Mhz and 915Mhz. They are widely available from online retailers. Detailed documentation is available at from [Ardupilot.org](http://ardupilot.org/copter/docs/common-3dr-radio-advanced-configuration-and-technical-information.html). The standard 3DR firmware is designed for the MAVLink protocol; there is a fork of the firmware available for the MSP (Multiwii Serial Protocol) used by iNav https://github.com/stronnag/SiK-MSP.
@@ -59,6 +61,8 @@ Advanced configuration for 3DR will (eventually) be detailed at the end of this 
 ESP8266 is a small WiFi to serial bridge. It can be used to transport the serial data link over WiFi. It offers reasonable range (c. 300m) and convenience. The author has seen no evidence of interference between ESP8266 devices and 2.4GHz RC links.
 
 Advanced configuration for ESP8266 will (eventually) be detailed at the end of this wiki page, some preliminary data http://www.rcgroups.com/forums/showpost.php?p=35007195&postcount=6645.
+
+Different how-to for ESP8266 and Cleanflight/Baseflight/INAV is available [here](https://quadmeup.com/wifi-telemetry-for-cleanflight-with-ez-gui-and-esp8266/)
 
 ## HR-12
 
