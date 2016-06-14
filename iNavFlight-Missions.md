@@ -21,9 +21,11 @@ ezgui can be downloaded from the [Google Play store](https://play.google.com/sto
 
 mwp can be downloaded from [Github](<https://github.com/stronnag/mwptools>). It is available only as a source distribution and it is necessary to compile and install the application. Build instructions and dependencies are provided for Ubuntu and Fedora. Arch Linux users can install mwp from the AUR ([Arch User Repository](https://aur.archlinux.org/packages/mwptools-git/)). 
 
-In addition to mission planning and logger, mwp also supports the replay of blackbox logs against a geospatial background (requires [blackbox-tools](https://github.com/cleanflight/blackbox-tools) and includes numerous poorly documented scripts for mission and blackbox analysis.
+In addition to mission planning and logger, mwp also supports the replay of blackbox logs against a geospatial background (requires [blackbox-tools](https://github.com/cleanflight/blackbox-tools)). mwp also includes numerous poorly documented scripts for mission and blackbox analysis.
 
 ## Potential solutions for other platforms
+
+
 
 # Telemetry Protocols
 ## MSP
