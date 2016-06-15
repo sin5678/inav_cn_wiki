@@ -66,6 +66,8 @@ ESP8266 is a small WiFi to serial bridge. It can be used to transport the serial
 
 Advanced configuration for ESP8266 will (eventually) be detailed at the end of this wiki page, some preliminary data http://www.rcgroups.com/forums/showpost.php?p=35007195&postcount=6645. This demonstrates excellent coverage out to 150m using mwp, ESP07 and ESP01 modules and the standard vendor firmware.
 
+There is an ezgui [howto](http://ez-gui.com/manual/multiwii-clearflight-wifi-to-ezi-gui-how-to/) on ESP8266 devices.
+
 Another, highly detailed how-to for ESP8266 and Cleanflight/Baseflight/INAV is available [here](https://quadmeup.com/wifi-telemetry-for-cleanflight-with-ez-gui-and-esp8266/). This reports very poor results, possibly due to the native WiFi capability in the phone hosting ezgui (vice the laptop adaptor for the mwp test).
 
 ## HR-12
