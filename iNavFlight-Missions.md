@@ -119,10 +119,12 @@ From this, some configuration examples; both these examples assume a PPM RX:
 ### Simple, short range 'park flyer'
 * UART1 MSP (USB and Bluetooth)
 * UART2 GPS
+
 ### Advanced, black box and telemetry F1 hardware
 * UART1 MSP (unarmed), Blackbox (armed). The baud rates may differ (e.g. 115200 MSP, 250000 BBox);
 * UART2 GPS
 * Softserial MSP and LTM (MSP unarmed, LTM armed), 19200 baud.
+
 ### Advanced, black box and telemetry F3 hardware
 * UART1 MSP (unarmed), Blackbox (armed). The baud rates may differ (e.g. 115200 MSP, 250000 BBox);
 * UART2 GPS
