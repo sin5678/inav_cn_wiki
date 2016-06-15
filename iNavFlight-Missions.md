@@ -228,5 +228,21 @@ udp://:14014/esp-air:14014
 ````
 It is possible to access the CLI over a WiFi device, and with some `socat` tricks, also the configurator, which is highly convenient for tuning in the field.
 
-
- 
+* Access CLI over the UDP link
+````
+nc -p 14014 -u esp-air 14014
+````
+* Access CLI over TCP link
+````
+nc 192.168.4.1 23
+````
+* Accessing the configurator is a little more complex, `socat` is used to create a pseudo device (pseudo-terminal) linked to the IP connection. The configurator is then connected to the 'Manual Selection' port `/tmp/vc0`.
+* For UDP (esp-air is the ESP8266 on the vehicle, esp-gcs is the computer / WLAN interface host name).
+````
+socat  pty,link=/tmp/vc0,raw  udp-datagram:esp-air:14014,bind=esp-gcs:14014
+````
+* For TCP 
+````
+socat  pty,link=/tmp/vc0,raw  tcp:192.168.4.1:23
+````
+It is necessary to kill the socat process to use telemetry again.
