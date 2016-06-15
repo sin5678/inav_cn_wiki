@@ -163,6 +163,15 @@ ATS2 = 24
 
 These settings are more than adequate for both MSP and LTM.
 
+* Another useful setting in the MAX_WINDOW (ATS15). If you only intend to MSP (no LTM), then set this to a small value, the minimum is 33; this minimises latency.
+````
+ATS15 = 33
+````
+* However, if you intend to also use LTM, set this to highest permitted value (131) to maximise throughput:
+````
+ATS15 = 131
+````
+
 
 
 
