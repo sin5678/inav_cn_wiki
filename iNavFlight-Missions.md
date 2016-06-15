@@ -117,18 +117,18 @@ If order to use mission planning or just flight monitoring, it is necessary to c
 
 From this, some configuration examples; both these examples assume a PPM RX:
 ### Simple, short range 'park flyer'
-* UART1 MSP (USB and Bluetooth)
+* UART1 MSP (USB and Bluetooth), same baud rate (typically 115200)
 * UART2 GPS
 
-### Advanced, black box and telemetry F1 hardware
+### Advanced, black box and telemetry: F1 hardware
 * UART1 MSP (unarmed), Blackbox (armed). The baud rates may differ (e.g. 115200 MSP, 250000 BBox);
 * UART2 GPS
-* Softserial MSP and LTM (MSP unarmed, LTM armed), 19200 baud.
+* Softserial MSP and LTM (MSP unarmed, LTM armed), maximum 19200 baud.
 
-### Advanced, black box and telemetry F3 hardware
+### Advanced, black box and telemetry: F3 hardware
 * UART1 MSP (unarmed), Blackbox (armed). The baud rates may differ (e.g. 115200 MSP, 250000 BBox);
 * UART2 GPS
-* UART3 MSP and LTM (MSP unarmed, LTM armed).
+* UART3 MSP and LTM (MSP unarmed, LTM armed). No speed limit, but 3DR / HR-12  will have better range at low rates, and there is no benefit to higher rates. 
 
 # Mission Planning
 
