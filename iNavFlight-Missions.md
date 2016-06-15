@@ -107,6 +107,27 @@ The initial implementation proposed for iNav is supported by ezgui, mwp and QGro
 # Configuring the Flight Controller
 ## Ports & port sharing
 
+If order to use mission planning or just flight monitoring, it is necessary to configure a port on the flight controller. Due to the often limited number of ports, devices and potential baud rate clashes, some compromises may have to be made. 
+
+* Most users will want MSP on UART1 at 115200 baud (or better) for the typically shared USB connection for flashing and configuration;
+* For reliable GPS performance, it is recommended to run the GPS on a hardware serial port;
+* A Blackbox logger typically requires a high baud;
+* You can only have MSP enabled on two ports;
+* Telemetry can run at a slow rate, even on soft serial.
+
+From this, some configuration examples; both these examples assume a PPM RX:
+### Simple, short range 'park flyer'
+* UART1 MSP (USB and Bluetooth)
+* UART2 GPS
+### Advanced, black box and telemetry F1 hardware
+* UART1 MSP (unarmed), Blackbox (armed). The baud rates may differ (e.g. 115200 MSP, 250000 BBox);
+* UART2 GPS
+* Softserial MSP and LTM (MSP unarmed, LTM armed), 19200 baud.
+### Advanced, black box and telemetry F3 hardware
+* UART1 MSP (unarmed), Blackbox (armed). The baud rates may differ (e.g. 115200 MSP, 250000 BBox);
+* UART2 GPS
+* UART3 MSP and LTM (MSP unarmed, LTM armed).
+
 # Mission Planning
 
 # Mission / Flight Monitoring
