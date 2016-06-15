@@ -78,7 +78,7 @@ Other solutions include OpenLRS and Dragonlink. Contributions to the wiki solici
 
 # Telemetry Protocols
 
-Data is transferred between the GCS and the FC using a "Telemetry Protocol". Currently, iNav offers two protocols (MSP and LTM), both of which are supported by ezgui and mwp. In the future, a minimal implementation of MAVLink will be offered (mwp already supports this MAVLink subset), this will allow other tools to be used, such as the cross-platform [QGroundControl](http://qgroundcontrol.org/). The implementation currently proposed will only support push telemetry (i.e. mission monitoring, not mission planning).
+Data is transferred between the GCS and the FC using a "Telemetry Protocol". Currently, iNav offers two protocols (MSP and LTM), both of which are supported by ezgui and mwp. In the future, a minimal implementation of MAVLink will be offered (mwp already supports this MAVLink subset), this will allow other tools to be used, such as the cross-platform [QGroundControl](http://qgroundcontrol.org/). The MAVLink implementation currently proposed will only support push telemetry (i.e. mission monitoring, not mission planning).
 
 ## MSP - MultiWii Serial Protocol
 
@@ -87,6 +87,12 @@ MSP is the 'native' messaging protocol for iNav. It is well supported by the con
 ezgui and mwp can mitigate this performance hit by using MSP for configuration, mission upload / verification and monitoring prior to arming, and when configured in the FC, switching to LTM for mission monitoring when armed. This switch-over is automatic and transparent to the user.
 
 ## LTM - Light Telemetry
+
+LTM is a 'push' telemetry protocol; that is the FC sends data unsolicited to the GCS. This avoids the 'half-duplex' time penalty of MSP on 3DR radios. Unlike MSP, LTM only provides flight data, thus if you need the GCS to select a vehicle icon based on the multirotor type (QUADX, TRI etc), offer additional functions based in the FC firmware version or upload waypoints, then it is necessary to share the serial port on the FC between MSP and LTM; MSP is used when unarmed and LTM when armed. Both ezgui and mwp handle the switch-over automatically.
+
+You can find documentation on the LTM implementation in Inav in the [mwp documentation](https://raw.githubusercontent.com/stronnag/mwptools/master/docs/ltm-definition.txt). 
+
+
 ## MAVLink (integration pending. [PR#186](https://github.com/iNavFlight/inav/pull/186))
 
 # Configuring the Flight Controller
