@@ -94,7 +94,13 @@ You can find documentation / specification for the LTM implementation in Inav in
 
 LTM will operate effectively over low data rate links. Currently the iNav implementation pushes c. 300 bytes /sec, so in theory a 4800 over the air rate would suffice. There is a proposal in the comments for [PR 184](https://github.com/iNavFlight/inav/pull/184) that would provide a 'slow' mode down to 2400 baud (pushing approximately 170 byes/sec). Please note that iNav serial ports currently have a minimum speed of 9600 baud, so are more than adequate for LTM, even on soft serial.
 
+LTM is supported by ezgui, mwp and ([for OSD, ltm-osd-simple](https://github.com/digitalentity/ltm-osd-simple))
+
 ## MAVLink (integration pending. [PR#186](https://github.com/iNavFlight/inav/pull/186))
+
+[MAVLink[(http://qgroundcontrol.org/mavlink/start) is a full-feature, highly capable protocol used by PX4, PIXHAWK, APM and Parrot AR.Drone platforms (inter alia). The proposed implementation for iNav is 'push telemetry' only, so it can only be used for flight monitoring, not mission planning.
+
+The initial implementation proposed for iNav is supported by ezgui, mwp and QGroundControl.
 
 # Configuring the Flight Controller
 ## Ports & port sharing
