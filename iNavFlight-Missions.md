@@ -154,13 +154,11 @@ or both MSP framing and MSP radio status reporting:
 ````
 ATS6 = 2
 ````  
-
 * You will get better range at lower speeds, it is also good practice to set the air speed and the ground speed to close rates, in order to minimise the probability of serial overruns. Here we set air speed to 24000 baud and ground speed to 19200 baud.
 ````
 ATS1 = 19
 ATS2 = 24
 ````
-
 These settings are more than adequate for both MSP and LTM.
 
 * Another useful setting in the MAX_WINDOW (ATS15). If you only intend to MSP (no LTM), then set this to a small value, the minimum is 33; this minimises latency.
@@ -171,8 +169,28 @@ ATS15 = 33
 ````
 ATS15 = 131
 ````
+* As MSP and LTM provide checksums, we can disable some error checking / correction:
+````
+ATS5 = 1
+````
+* It is necessary to have the same settings on both the air and ground side for the majority of settings (otherwise the radios will not connect). Repeat the settings using RT rather than AT, then save and reboot both device: do the remote first, e.g.:
+````
+RTS15 = 131
+RT&W
+RTZ
 
+ATS15 = 131
+AT&W
+ATZ
+````
+If you use Linux and a USB connected ground side (rather than the USB bridge), you can use `udev` to set the device name. You will need to use `lsusb`to find the `serial` parameter for your device.
+````
+### /etc/udev/rules.d/66-3dr.rules
+# Hextronic radio
+KERNEL=="ttyUSB*", ATTRS{serial}=="A7032PAY", SYMLINK+="3dr"
 
-
+# GLB radio
+KERNEL=="ttyUSB*", ATTRS{serial}=="A8005McD", SYMLINK+="3dr"
+````
 
 ## ESP8266
