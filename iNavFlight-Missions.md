@@ -90,8 +90,9 @@ ezgui and mwp can mitigate this performance hit by using MSP for configuration, 
 
 LTM is a 'push' telemetry protocol; that is the FC sends data unsolicited to the GCS. This avoids the 'half-duplex' time penalty of MSP on 3DR radios. Unlike MSP, LTM only provides flight data, thus if you need the GCS to select a vehicle icon based on the multirotor type (QUADX, TRI etc), offer additional functions based in the FC firmware version or upload waypoints, then it is necessary to share the serial port on the FC between MSP and LTM; MSP is used when unarmed and LTM when armed. Both ezgui and mwp handle the switch-over automatically.
 
-You can find documentation on the LTM implementation in Inav in the [mwp documentation](https://raw.githubusercontent.com/stronnag/mwptools/master/docs/ltm-definition.txt). 
+You can find documentation / specification for the LTM implementation in Inav in the [mwp documentation](https://raw.githubusercontent.com/stronnag/mwptools/master/docs/ltm-definition.txt). 
 
+LTM will operate effectively over low data rate links. Currently the iNav implementation pushes c. 300 bytes /sec, so in theory a 4800 over the air rate would suffice. 
 
 ## MAVLink (integration pending. [PR#186](https://github.com/iNavFlight/inav/pull/186))
 
