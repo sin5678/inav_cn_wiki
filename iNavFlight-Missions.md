@@ -136,8 +136,34 @@ From this, some configuration examples; both these examples assume a PPM RX:
 
 # Advanced configuration
 ## 3DR
-
+### Hardware
 3DR radios are sold either as a pair of air station  / ground station or individually. Functionally, the air / ground radios are identical, the air side having a tty/serial connection and the ground side having a USB interface for connecting to a computer. For ezgui (and mwp), it is easier to use a Bluetooth bridge. This bridge is also recommended for mwp, as it avoids any potential RF interference from the USB cable and allows the more flexible placement of the ground antenna. In order to use the 3DR / BT bridge, it is necessary to have 'air side' devices at both ends of the link. It is then necessary to 'back-to-back' the ground 3DR and the BT device [example field setup](http://www.rcgroups.com/forums/showthread.php?t=2495732&page=65) and provide power. A voltage regulator and an old lipo works really well. The [HR-12](https://quadmeup.com/diy-wireless-telemetry-link-for-uav/) description provides the canonical connection diagram, a 5V regulator or BEC may be used.
+
+### Firmware
+The 3DR radios will ship with a version of the [Sik Firmware](https://github.com/Dronecode/SiK). This firmware is optimised for MAVLink (it understands MAVLink framing, reports RSSI to a MAVLink GCS). There is a fork (of an older version) that provides similar capabilities (understands MSP framing, reports RSSI to a MSP GCS (ezgui, mwp) for [MSP](https://github.com/stronnag/SiK-MSP).
+
+### Configuration
+
+Prior to use, it is advisable to configure the 3DR radio to meet local regulations for unlicensed use and to optimise the air speed for maximum range. This can be done either through a [graphical user interface](http://vps.oborne.me/3drradioconfig.zip) or a serial terminal interface using tools such as picocom / screen / putty. For the following discussion, the serial AT command set is used.
+
+* If you use the modified MSP aware firmware, then you can enable MSP framing:
+````
+ATS6 = 1
+````
+or both MSP framing and MSP radio status reporting:
+````
+ATS6 = 2
+````  
+
+* You will get better range at lower speeds, it is also good practice to set the air speed and the ground speed to close rates, in order to minimise the probability of serial overruns. Here we set air speed to 24000 baud and ground speed to 19200 baud.
+````
+ATS1 = 19
+ATS2 = 24
+````
+
+These settings are more than adequate for both MSP and LTM.
+
+
 
 
 ## ESP8266
