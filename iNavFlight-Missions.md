@@ -131,8 +131,10 @@ From this, some configuration examples; both these examples assume a PPM RX:
 * UART3 MSP and LTM (MSP unarmed, LTM armed). No speed limit, but 3DR / HR-12  will have better range at low rates, and there is no benefit to higher rates. 
 
 # Mission Planning
+/* to be written */
 
 # Mission / Flight Monitoring
+/* to be written */
 
 # Advanced configuration
 ## 3DR
@@ -196,10 +198,9 @@ KERNEL=="ttyUSB*", ATTRS{serial}=="A8005McD", SYMLINK+="3dr"
 ## ESP8266
 
 ### Firmware
-The ESP8266 devices will usually ship with [vendor firmware](http://bbs.espressif.com/). Follow the link to SDKs, find the latest ESP8266_NONOS_SDK version. There is a Windows specfic flashing tool, or you can use the [portable tool](https://github.com/themadinventor/esptool/). This firm is recommended for mwp, as you can use it as a transparent UDP / serial bridge.
+The ESP8266 devices will usually ship with [vendor firmware](http://bbs.espressif.com/). Follow the link to SDKs, find the latest ESP8266_NONOS_SDK version. There is a Windows specfic flashing tool, or you can use the [portable tool](https://github.com/themadinventor/esptool/). This firmware is recommended for mwp, as you can use it as a transparent UDP / serial bridge (but you can also use the [3rd party firmware](https://github.com/jeelabs/esp-link/releases) TCP bridge.
 
 For ezgui it is necessary to use [3rd party firmware](https://github.com/jeelabs/esp-link/releases) that provides a a transparent TCP / serial bridge. This firmware may also be used in mwp.
-
 
 ### Configuration
 
@@ -212,7 +213,9 @@ So using the ezgui example verbatim:
 tcp://192.168.4.1:23
 ````
 
-For the vendor firmware, UDP connection, confirm the device as an Access Point (AP) with your own ESSID and [strong passphrase](https://xkcd.com/936/). It is necessary to define both the local and remote UDP ports (14014 in this example).
+For the vendor firmware, UDP connection, configure the device as an Access Point (AP) with your own ESSID and [strong passphrase](https://xkcd.com/936/). It is necessary to define both the local and remote UDP ports (14014 in this example). See the latest [firmware documentation](https://espressif.com/en/support/download/documents?keys=&field_type_tid%5B%5D=14) for the AT commands.
+
+
 ````
 AT+CWSAP_DEF="I'mMandyFlyMe","correct horse battery staple",11,4,2,1
 AT+CWDHCP=2,0
