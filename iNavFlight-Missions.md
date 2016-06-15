@@ -222,6 +222,11 @@ AT+SAVETRANSLINK=1,"192.168.100.101",14014,"UDP",14014
 AT+UART_DEF=57600,8,1,0,0
 AT+RFPOWER=60
 ````
+Then in mwp, define the connection as (if esp-air is the host name of the air platform device):
+````
+udp://:14014/esp-air:14014
+````
+It is possible to access the CLI over a WiFi device, and with some `socat` tricks, also the configurator, which is highly convenient for tuning in the field.
 
 
  
