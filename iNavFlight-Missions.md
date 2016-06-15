@@ -98,7 +98,7 @@ LTM is supported by ezgui, mwp and ([for OSD, ltm-osd-simple](https://github.com
 
 ## MAVLink (integration pending. [PR#186](https://github.com/iNavFlight/inav/pull/186))
 
-[MAVLink[(http://qgroundcontrol.org/mavlink/start) is a full-feature, highly capable protocol used by PX4, PIXHAWK, APM and Parrot AR.Drone platforms (inter alia). The proposed implementation for iNav is 'push telemetry' only, so it can only be used for flight monitoring, not mission planning.
+[MAVLink](http://qgroundcontrol.org/mavlink/start) is a full-feature, highly capable protocol used by PX4, PIXHAWK, APM and Parrot AR.Drone platforms (inter alia). The proposed implementation for iNav is 'push telemetry' only, so it can only be used for flight monitoring, not mission planning.
 
 The initial implementation proposed for iNav is supported by ezgui, mwp and QGroundControl.
 
