@@ -92,7 +92,7 @@ LTM is a 'push' telemetry protocol; that is the FC sends data unsolicited to the
 
 You can find documentation / specification for the LTM implementation in Inav in the [mwp documentation](https://raw.githubusercontent.com/stronnag/mwptools/master/docs/ltm-definition.txt). 
 
-LTM will operate effectively over low data rate links. Currently the iNav implementation pushes c. 300 bytes /sec, so in theory a 4800 over the air rate would suffice. 
+LTM will operate effectively over low data rate links. Currently the iNav implementation pushes c. 300 bytes /sec, so in theory a 4800 over the air rate would suffice. There is a proposal in the comments for [PR 184](https://github.com/iNavFlight/inav/pull/184) that would provide a 'slow' mode down to 2400 baud (pushing approximately 170 byes/sec). Please note that iNav serial ports currently have a minimum speed of 9600 baud, so are more than adequate for LTM, even on soft serial.
 
 ## MAVLink (integration pending. [PR#186](https://github.com/iNavFlight/inav/pull/186))
 
