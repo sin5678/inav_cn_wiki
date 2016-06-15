@@ -136,4 +136,8 @@ From this, some configuration examples; both these examples assume a PPM RX:
 
 # Advanced configuration
 ## 3DR
+
+3DR radios are sold either as a pair of air station  / ground station or individually. Functionally, the air / ground radios are identical, the air side having a tty/serial connection and the ground side, a USB interface for connecting to a computer. For ezgui, it is easier to use a Bluetooth bridge, and this is also recommended for mwp, as it avoids any potential RF interference for the USB cable, and allows the more flexible placement of the ground antenna. In order to use the 3DR / BT bridge, it is necessary to have 'air side' devices at both ends of the link. It is then necessary to 'back-to-back' the ground 3DR and the BT device [example field setup](http://www.rcgroups.com/forums/showthread.php?t=2495732&page=65).
+
+
 ## ESP8266
