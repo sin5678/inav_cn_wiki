@@ -144,7 +144,7 @@ The 3DR radios will ship with a version of the [Sik Firmware](https://github.com
 
 ### Configuration
 
-Prior to use, it is advisable to configure the 3DR radio to meet local regulations for unlicensed use and to optimise the air speed for maximum range. This can be done either through a [graphical user interface](http://vps.oborne.me/3drradioconfig.zip) or a serial terminal interface using tools such as picocom / screen / putty. For the following discussion, the serial AT command set is used.
+Prior to use, it is advisable to configure the 3DR radio to meet local regulations for unlicensed use and to optimise the air speed for maximum range. This can be done either through a [graphical user interface](http://vps.oborne.me/3drradioconfig.zip) or a serial terminal interface using tools such as `picocom` / `screen` / `putty`. For the following discussion, the serial AT command set is used.
 
 * If you use the modified MSP aware firmware, then you can enable MSP framing:
 ````
@@ -161,7 +161,7 @@ ATS2 = 24
 ````
 These settings are more than adequate for both MSP and LTM.
 
-* Another useful setting in the MAX_WINDOW (ATS15). If you only intend to MSP (no LTM), then set this to a small value, the minimum is 33; this minimises latency.
+* Another useful setting in the MAX_WINDOW (`ATS15`). If you only intend to MSP (no LTM), then set this to a small value, the minimum is 33; this minimises latency.
 ````
 ATS15 = 33
 ````
@@ -171,7 +171,7 @@ ATS15 = 131
 ````
 * As MSP and LTM provide checksums, we can disable some error checking / correction:
 ````
-ATS5 = 1
+ATS5 = 0
 ````
 * It is necessary to have the same settings on both the air and ground side for the majority of settings (otherwise the radios will not connect). Repeat the settings using RT rather than AT, then save and reboot both device: do the remote first, e.g.:
 ````
@@ -183,7 +183,7 @@ ATS15 = 131
 AT&W
 ATZ
 ````
-If you use Linux and a USB connected ground side (rather than the USB bridge), you can use `udev` to set the device name. You will need to use `lsusb`to find the `serial` parameter for your device.
+If you use Linux and a USB connected ground side (rather than the USB bridge), you can use `udev` to set the device name. You will need to use `lsusb`to find the `serial` parameter for your device. The rule below links the `/dev/ttyUSBx` name to `/dev/3dr`.
 ````
 ### /etc/udev/rules.d/66-3dr.rules
 # Hextronic radio
