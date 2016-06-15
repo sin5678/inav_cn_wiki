@@ -107,11 +107,11 @@ The initial implementation proposed for iNav is supported by ezgui, mwp and QGro
 # Configuring the Flight Controller
 ## Ports & port sharing
 
-If order to use mission planning or just flight monitoring, it is necessary to configure a port on the flight controller. Due to the often limited number of ports, devices and potential baud rate clashes, some compromises may have to be made. 
+If order to use mission planning or just flight monitoring, it is necessary to configure a port on the flight controller. Due to the often limited number of ports, multiple devices and potential baud rate clashes, some compromises may have to be made. 
 
 * Most users will want MSP on UART1 at 115200 baud (or better) for the typically shared USB connection for flashing and configuration;
 * For reliable GPS performance, it is recommended to run the GPS on a hardware serial port;
-* A Blackbox logger typically requires a high baud;
+* A Blackbox logger typically requires a high baud rate;
 * You can only have MSP enabled on two ports;
 * Telemetry can run at a slow rate, even on soft serial.
 
@@ -146,7 +146,8 @@ The 3DR radios will ship with a version of the [Sik Firmware](https://github.com
 
 ### Configuration
 
-Prior to use, it is advisable to configure the 3DR radio to meet local regulations for unlicensed use and to optimise the air speed for maximum range. This can be done either through a [graphical user interface](http://vps.oborne.me/3drradioconfig.zip) or a serial terminal interface using tools such as `picocom` / `screen` / `putty`. For the following discussion, the serial AT command set is used.
+Prior to use, it is advisable to configure the 3DR radio to meet local regulations for unlicensed use and to optimise the air speed for maximum range. This can be done either through a [graphical user interface](http://vps.oborne.me/3drradioconfig.zip) or a serial terminal interface using tools such as `picocom` / `screen` / `putty`.  The graphical tool will run on Linux using 'mono'.
+For the following discussion, the serial AT command set is used.
 
 * If you use the modified MSP aware firmware, then you can enable MSP framing:
 ````
