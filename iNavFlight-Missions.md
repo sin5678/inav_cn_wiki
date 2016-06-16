@@ -222,13 +222,13 @@ KERNEL=="ttyUSB*", ATTRS{serial}=="A8005McD", SYMLINK+="3dr"
 ## ESP8266
 
 ### Firmware
-The ESP8266 devices will usually ship with [vendor firmware](http://bbs.espressif.com/). Follow the link to SDKs, find the latest ESP8266_NONOS_SDK version. There is a Windows specfic flashing tool, or you can use the [portable tool](https://github.com/themadinventor/esptool/). This firmware is recommended for mwp, as you can use it as a transparent UDP / serial bridge (but you can also use the [3rd party firmware](https://github.com/jeelabs/esp-link/releases) TCP bridge.
+The ESP8266 devices will usually ship with [vendor firmware](http://bbs.espressif.com/). Follow the link to SDKs, find the latest ESP8266_NONOS_SDK version. There is a Windows specfic flashing tool, or you can use the [portable tool](https://github.com/themadinventor/esptool/). This firmware is recommended for mwp, as you can use it as a transparent UDP / serial bridge (but you can also use the [3rd party firmware](https://github.com/jeelabs/esp-link/releases) TCP bridge).
 
-For ezgui it is necessary to use [3rd party firmware](https://github.com/jeelabs/esp-link/releases) that provides a a transparent TCP / serial bridge. This firmware may also be used in mwp.
+For ezgui it is recommended to use [3rd party firmware](https://github.com/jeelabs/esp-link/releases) that provides a a transparent TCP / serial bridge. This firmware may also be used in mwp.
 
 ### Configuration
 
-Configuration of the TCP bridge is described in the ezgui [howto](http://ez-gui.com/manual/multiwii-clearflight-wifi-to-ezi-gui-how-to/). For mwp, this device would be defined as:
+Configuration of the 3rd party TCP bridge is described in the ezgui [howto](http://ez-gui.com/manual/multiwii-clearflight-wifi-to-ezi-gui-how-to/). For mwp, this device would be defined as:
 ````
 tcp://host:port
 ````
@@ -237,8 +237,7 @@ So using the ezgui example verbatim:
 tcp://192.168.4.1:23
 ````
 
-For the vendor firmware, UDP connection, configure the device as an Access Point (AP) with your own ESSID and [strong passphrase](https://xkcd.com/936/). It is necessary to define both the local and remote UDP ports (14014 in this example). See the latest [firmware documentation](https://espressif.com/en/support/download/documents?keys=&field_type_tid%5B%5D=14) for the AT commands.
-
+For the vendor firmware, UDP connection, configure the device as an Access Point (AP) with your own ESSID and [strong passphrase](https://xkcd.com/936/). It is necessary to define both the local and remote UDP ports (14014 in this example). See the latest [firmware documentation](https://espressif.com/en/support/download/documents?keys=&field_type_tid%5B%5D=14) for an explanation of the AT commands:
 
 ````
 AT+CWSAP_DEF="I'mMandyFlyMe","correct horse battery staple",11,4,2,1
@@ -249,7 +248,7 @@ AT+SAVETRANSLINK=1,"192.168.100.101",14014,"UDP",14014
 AT+UART_DEF=57600,8,1,0,0
 AT+RFPOWER=60
 ````
-Then in mwp, define the connection as (if esp-air is the host name of the air platform device):
+Then in mwp, define the connection as (where esp-air is the host name of the air platform device):
 ````
 udp://:14014/esp-air:14014
 ````
