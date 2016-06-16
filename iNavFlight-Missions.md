@@ -130,6 +130,8 @@ From this, some configuration examples; both these examples assume a PPM RX:
 * UART2 GPS
 * UART3 MSP and LTM (MSP unarmed, LTM armed). No speed limit, but 3DR / HR-12  will have better range at low rates, and there is no benefit to higher rates. 
 
+Using a serial RX is more difficult, particularly for F1 devices. For F3, in the final example, putting the serial RX (Sbus, SpekSat) on UART3 and using soft serial for for MSP+LTM would be an acceptable solution.
+
 # Mission Planning
 
 iNav currently supports a subset of the WP / Mission MSP
@@ -152,9 +154,9 @@ ezgui and mwp support iNav WP navigation; they both use the mission definition o
 
 ezgui and mwp both provide interactive WP editing on a geospatial background and mission upload to / download from the multicopter. At least for mwp (to be confirmed for ezgui), the mission upload process also downloads the mission and compares the two. **You should not attempt to fly a mission unless it has validated**.
 
-Missions are initiated by a switch setting on the RC RX.
+Missions are initiated by a switch setting on the RC TX.
 
-A mission is terminated by RTH, infinite position hold or reaching the end of the waypoint list. In the latter case, the vehicle will enter a position hold state until the pilot takes manual control (by negating the RX WP state).
+A mission is terminated by RTH, infinite position hold or reaching the end of the waypoint list. In the latter case, the vehicle will enter a position hold state until the pilot takes manual control (by negating the TX WP state).
 
 # Mission / Flight Monitoring
 /* to be written */
