@@ -131,7 +131,30 @@ From this, some configuration examples; both these examples assume a PPM RX:
 * UART3 MSP and LTM (MSP unarmed, LTM armed). No speed limit, but 3DR / HR-12  will have better range at low rates, and there is no benefit to higher rates. 
 
 # Mission Planning
-/* to be written */
+
+iNav currently supports a subset of the WP / Mission MSP
+["specification"](https://docs.google.com/document/d/16ZfS_qwc-rJeA7N5Tx0DA6wtgxl6HdGgaz-jE3lHBWs). The
+following waypoint types are available (iNav 1.1).
+
+* Waypoint (leg speed addition)
+* Infinite position hold
+* RTH (auto land not available)
+
+The following MW-NAV / MSP functions are **not** yet implemented:
+
+* Timed Position Hold
+* Set POI
+* Jump
+* Set Heading
+* Land
+
+ezgui and mwp support iNav WP navigation; they both use the mission definition originally implemented in WinGui, thus mission definitions are interchangeable between these application (and mw-nav if you limit the mission features to the common subset).
+
+ezgui and mwp both provide interactive WP editing on a geospatial background and mission upload to / download from the multicopter. At least for mwp (to be confirmed for ezgui), the mission upload process also downloads the mission and compares the two. **You should not attempt to fly a mission unless it has validated**.
+
+Missions are initiated by a switch setting on the RC RX.
+
+A mission is terminated by RTH, infinite position hold or reaching the end of the waypoint list. In the latter case, the vehicle will enter a position hold state until the pilot takes manual control (by negating the RX WP state).
 
 # Mission / Flight Monitoring
 /* to be written */
