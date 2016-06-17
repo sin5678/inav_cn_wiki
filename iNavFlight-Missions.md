@@ -77,9 +77,13 @@ HR-12 is a comparable radio technology to 3DR with similar range and performance
 
 ## Openlrsng
 
-[Openlrsng](https://github.com/openLRSng/openLRSng) is a full radio control system, mainly used for LRS (long range systems). It supports radio beacon for lost models, failsafe and other characteristics. For telemetry data, it offers a bi-directional channel, and Frsky, S.Port (both simulated protocols) and serial transparent telemetry are allowed. The telemetry range in this system depends on power, antennas and baudrate. Lowering baudrate, and with good antennas, very long distances have been acchieved with full telemetry at ground station.
+[Openlrsng](https://github.com/openLRSng/openLRSng) is a full radio control system, mainly used for LRS (long range systems). It supports radio beacon for lost models, failsafe and other characteristics. 
+
+For telemetry data, it offers a bi-directional channel, and Frsky, S.Port (both simulated protocols) and serial transparent telemetry are allowed. The telemetry range in this system depends on power, antennas and baudrate. Lowering baudrate, and with good antennas, very long distances have been acchieved with full telemetry at ground station.
 
 OPenlrsng can be combined with bluetooth devices at GCS, so you could connect to the model in flight with your phone, tablet or PC. In this case, depending on the protocol used or the complexity of your transmitter or the software in your android device, there are many options, like seeing the data on the LCD screen of the transmitter(er9x, LUA scripts for Taranis..), using of an antenna tracker, practicing a 'follow-me' performance...
+
+A great number of compatible openlrsng devices can be found, from Hobbyking (UHF/LRS orangerx) to ebay and other suppliers.
 
 ## Other solutions
 
