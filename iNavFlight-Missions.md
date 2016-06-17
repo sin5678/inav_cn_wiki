@@ -87,7 +87,7 @@ A great number of compatible openlrsng devices can be found, from Hobbyking (UHF
 
 ## Other solutions
 
-Other solutions include OpenLRS and Dragonlink. Contributions to the wiki solicited!
+Other solutions include Dragonlink. Contributions to the wiki solicited!
 
 # Telemetry Protocols
 
