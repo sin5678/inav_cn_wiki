@@ -16,3 +16,5 @@ It is ABSOLUTELY mandatory to read these pages.
 - [Fixed wing guide](https://github.com/iNavFlight/inav/wiki/3.-Fixed-wing-guide) if your going to use it in a fixed wing.
 
 - [Rates conversion for INAV 1.2](https://github.com/iNavFlight/inav/wiki/Rate-conversion-for-INAV-1.2)
+
+- [PID conversion for INAV 1.2](https://github.com/iNavFlight/inav/wiki/PID-conversion-from-pre-1.2-to-1.2)
