@@ -4,7 +4,7 @@ When migrating from ***pre 1.2*** to 1.2, use following conversion:
 
 ## ROLL/PICH/YAW
 
-`INAV 1.2 P_gain = Pre_1.2_P_gain * 0,775`
+`INAV 1.2 P_gain = Pre_1.2_P_gain / 1.3`
 
 `INAV 1.2 I_gain = Pre_1.2_I_gain / 2.5`
 
