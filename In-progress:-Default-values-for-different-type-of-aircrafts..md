@@ -1,3 +1,7 @@
+**Values written here must be based on pre 1.2!**
+When 1.2 is offically released I will convert all PIDs here to new 1.2 values
+
+
 History: **PLEASE WRITE HERE IF YOU CHANGE ANYTHING AND WHY.**
 ```
 24.06.2016 oleost: Created first version of this wiki
