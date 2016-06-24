@@ -5,6 +5,15 @@ History: **PLEASE WRITE HERE IF YOU CHANGE ANYTHING AND WHY.**
 
 ```
 
+# Change to default iNav settings 
+
+Changes **you** think that should be done to iNav globally:
+
+```
+24.06.2016 oleost: Change default to velned on because it generally looks like a better solution. (use_gps_velned = 1)
+
+```
+
 # Multirotor
 
 **150 Size:**
