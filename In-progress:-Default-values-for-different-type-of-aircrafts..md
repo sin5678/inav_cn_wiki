@@ -1,4 +1,4 @@
-History: PLEASE WRITE HERE IF YOU CHANGE ANYTHING AND WHY.
+History: **PLEASE WRITE HERE IF YOU CHANGE ANYTHING AND WHY.**
 ```
 24.06.2016 oleost: Created first version of this wiki
 24.06.2016 oleost: Changed default to "mag_hardware = 1" on regular regular airplane because airplanes flies better with gps heading instead of mag heading.
