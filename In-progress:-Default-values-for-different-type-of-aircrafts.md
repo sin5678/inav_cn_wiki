@@ -7,6 +7,7 @@ When 1.2 is offically released I will convert all PIDs here to new 1.2 values
 ```
 24.06.2016 oleost: Created first version of this wiki
 24.06.2016 oleost: Changed default to "mag_hardware = 1" on regular regular airplane because airplanes flies better with gps heading instead of mag heading.
+24.06.2016 oleost: removed looptime 1000, to low for f1 targets.
 
 ```
 
@@ -54,7 +55,6 @@ _Other Values:_
 ```
 set gyro_soft_lpf_hz = 90
 set dterm_lpf_hz = 42
-set looptime = 1000
 set gyro_lpf = 188HZ
 ```
 
