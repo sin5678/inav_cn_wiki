@@ -39,6 +39,8 @@ INAV 1.2 changes how rates (rotation speed at maximum stick deflection) is store
 
 Latest INAV Configurator detects INAV 1.2 and allows to enter rates scaled to degrees per second
 
+//TODO: explain how rates works in servo setups (airplanes mainly).
+
 ## Conversion
 
 | Old Rate | INAV 1.2 New Rate |
