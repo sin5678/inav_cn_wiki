@@ -65,7 +65,7 @@ Advanced configuration for 3DR will (eventually) be detailed at the end of this 
 
 ESP8266 is a small WiFi to serial bridge. It can be used to transport the serial data link over WiFi. It offers reasonable range (c. 300m) and convenience. The author has seen no evidence of interference between ESP8266 devices and 2.4GHz RC links.
 
-Advanced configuration for ESP8266 will (eventually) be detailed at the end of this wiki page, some preliminary data http://www.rcgroups.com/forums/showpost.php?p=35007195&postcount=6645. This demonstrates excellent coverage out to 150m using mwp, ESP07 and ESP01 modules and the standard vendor firmware.
+Advanced configuration for ESP8266 isdetailed at the end of this wiki page, some preliminary data http://www.rcgroups.com/forums/showpost.php?p=35007195&postcount=6645. This demonstrates excellent coverage out to 150m using mwp, ESP07 and ESP01 modules and the standard vendor firmware. The ESP07 module works well with an external antenna.
 
 There is an ezgui [howto](http://ez-gui.com/manual/multiwii-clearflight-wifi-to-ezi-gui-how-to/) on ESP8266 devices.
 
