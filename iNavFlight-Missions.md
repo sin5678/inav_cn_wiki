@@ -9,9 +9,9 @@ This wiki topic describes the software currently available and some of the telem
 
 # Ground Control Stations
 
-Currently there are two GCS applications widely used for iNav mission management, [ezgui](http://ez-gui.com/) (Android) and [mwp](https://github.com/stronnag/mwptools) (Linux). In future, other options may become available, particularly as the MAVLink protocol becomes supported by iNav. However, MAVLink based tools will only provide monitoring, **ezgui** and **mwp** provide full mission definition, mission upload and download to and the from the FC, mission monitoring and mission recording.
+Currently there are two GCS applications widely used for iNav mission management, [ezgui](http://ez-gui.com/) (Android) and [mwp](https://github.com/stronnag/mwptools) (Linux). In future, other options may become available, particularly as the MAVLink protocol becomes supported by iNav. However, MAVLink based tools will only provide monitoring.
 
-ezgui and mwp both support mission planning (they share a common mission definition file format, so missions can be used in either tool), mission monitoring and mission logging. ezgui also provides a FC configuration capability. 
+**ezgui** and **mwp** both support mission planning (they share a common mission definition file format, so missions can be used in either tool), mission upload / download, mission monitoring and mission logging. ezgui also provides a FC configuration capability. 
 
 ## EZGui (Android)
 
