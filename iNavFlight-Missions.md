@@ -5,7 +5,7 @@ iNav supports autonomous flight using waypoints. In order to use this capability
 * A GCS (Ground Control Station). The GCS will typically provide functions to create waypoint (WP) missions, upload WP missions to the flight controller (FC), validate the mission, execute the mission and log the mission;
 * Telemetry Hardware. In order to transfer the mission to the FC and monitor the mission in real time during mission execution it is necessary to install and configure a telemetry system between the GCS and the multicopter.
 
-This wiki topic describes the software currently available and some of the telemetry options. 
+This wiki topic describes the software currently available and some of the telemetry options. Please also see the [wiki page on more general navigation mode options](https://github.com/iNavFlight/inav/wiki/8.-Navigation-modes#wp---autonomous-waypoint-mission).
 
 # Ground Control Stations
 
@@ -59,13 +59,13 @@ Bluetooth is the easiest solution to get working with minimal effort. A cheap HC
 
 3DR is a medium range technology, up to at least 1km. Range is somewhat dependent on baud rate and is [well documented](http://ardupilot.org/copter/docs/common-3dr-radio-advanced-configuration-and-technical-information.html)
 
-Advanced configuration for 3DR will (eventually) be detailed at the end of this wiki page.
+Advanced configuration for 3DR [is detailed at the end of this wiki page](https://github.com/iNavFlight/inav/wiki/iNavFlight-Missions#3dr-1).
 
 ## ESP8266
 
 ESP8266 is a small WiFi to serial bridge. It can be used to transport the serial data link over WiFi. It offers reasonable range (c. 300m) and convenience. The author has seen no evidence of interference between ESP8266 devices and 2.4GHz RC links.
 
-Advanced configuration for ESP8266 isdetailed at the end of this wiki page, some preliminary data http://www.rcgroups.com/forums/showpost.php?p=35007195&postcount=6645. This demonstrates excellent coverage out to 150m using mwp, ESP07 and ESP01 modules and the standard vendor firmware. The ESP07 module works well with an external antenna.
+Advanced configuration for ESP8266 is [detailed at the end of this wiki page](https://github.com/iNavFlight/inav/wiki/iNavFlight-Missions#esp8266-1), some preliminary data can be found in [this RC Groups post](http://www.rcgroups.com/forums/showpost.php?p=35007195&postcount=6645). That post demonstrates excellent coverage out to 150m using mwp, ESP07 and ESP01 modules and the standard vendor firmware. The ESP07 module works well with an external antenna.
 
 There is an ezgui [howto](http://ez-gui.com/manual/multiwii-clearflight-wifi-to-ezi-gui-how-to/) on ESP8266 devices.
 
