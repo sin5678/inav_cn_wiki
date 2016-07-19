@@ -21,6 +21,18 @@ A basic tutorial for EZ-GUI and iNav mission setup is available [here](https://q
 
 There is a [RC Groups support forum](http://www.rcgroups.com/forums/showthread.php?t=2511917)
 
+## Droid Planner 2 (Android)
+
+Droid Planner 2 can also be downloaded from the [Google Play store](https://play.google.com/store/apps/details?id=org.droidplanner&hl=en_GB). It is free and released under GNU Public License v3.
+
+Droid Planner only supports iNav's one-way mavlink protocol. The following telemetry data is displayed:
+
+Vehicle position on map, active flightmode, heading, altitude, speed.
+
+A broken connection recovers once restored after any amount of time.
+The flight track remains on screen even when data link is broken -> lost model recovery.
+Log files can be opened in PC software Mission Planner.
+
 ## mwp (Linux)
 
 mwp can be downloaded from [Github](<https://github.com/stronnag/mwptools>). mwp is open source (GPL 2). It is available only as a source distribution and it is necessary to compile and install the application. Build instructions and dependencies are provided for Ubuntu and Fedora. Arch Linux users can install mwp from the AUR ([Arch User Repository](https://aur.archlinux.org/packages/mwptools-git/)). 
