@@ -13,3 +13,5 @@ When migrating from ***pre 1.2*** to 1.2, use following conversion:
 ## LEVEL
 
 `INAV 1.2 LEVEL P = Pre_1.2_LEVEL_P / 6.1`
+
+Level `I` (LowPassFilter cutoff frequency) and `D` (Horizon transition point) did not changed.
