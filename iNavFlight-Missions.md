@@ -7,6 +7,8 @@ iNav supports autonomous flight using waypoints. In order to use this capability
 
 This wiki topic describes the software currently available and some of the telemetry options. Please also see the [wiki page on more general navigation mode options](https://github.com/iNavFlight/inav/wiki/8.-Navigation-modes#wp---autonomous-waypoint-mission).
 
+The MSP (MultiWii Serial Protocol) messages defining mission navigation are [documented](https://docs.google.com/document/d/16ZfS_qwc-rJeA7N5Tx0DA6wtgxl6HdGgaz-jE3lHBWs). This message set is supported by the **ezgui** and **mwp** ground stations.
+
 # Ground Control Stations
 
 Currently there are two GCS applications widely used for iNav mission management, [ezgui](http://ez-gui.com/) (Android) and [mwp](https://github.com/stronnag/mwptools) (Linux). In future, other options may become available, particularly as the MAVLink protocol becomes supported by iNav. However, MAVLink based tools will only provide monitoring.
