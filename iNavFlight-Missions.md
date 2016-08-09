@@ -165,7 +165,7 @@ following waypoint types are available (iNav 1.1).
 
 * Waypoint (leg speed addition)
 * Infinite position hold
-* RTH (auto land not available)
+* RTH (auto land available from 1.2 RC1)
 
 The following MW-NAV / MSP functions are **not** yet implemented:
 
@@ -179,12 +179,15 @@ ezgui and mwp support iNav WP navigation; they both use the mission definition o
 
 ezgui and mwp both provide interactive WP editing on a geospatial background and mission upload to / download from the multicopter. At least for mwp (to be confirmed for ezgui), the mission upload process also downloads the mission and compares the two. **You should not attempt to fly a mission unless it has validated**.
 
+On F1 baords (Naze, Flip32), you can defined 30 waypoints, for F3 and better FCs, 60 waypints can be defined.
+
 Missions are initiated by a switch setting on the RC TX.
 
 A mission is terminated by RTH, infinite position hold or reaching the end of the waypoint list. In the latter case, the vehicle will enter a position hold state until the pilot takes manual control (by negating the TX WP state).
 
 # Mission / Flight Monitoring
-/* to be written */
+
+Prior to engaging any automated mode, it is advisable to verify that you have reasonable satellite performance. Even with 10+ satellites and HDOP < 1.5, there is a remote possibility that you might experience 'a bad satellite day'; there's an example described in [issue 431](https://github.com/iNavFlight/inav/issues/431). An easy way to verify you have good coverage is to try POSHOLD before executing a mission (or RTH).
 
 # Advanced configuration
 ## 3DR
