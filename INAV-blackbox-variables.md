@@ -32,8 +32,8 @@ represents the desired velocity as used/calculated by iNav. When you are in PH, 
 * **navDebug**: 
 as the name suggests it is used for debugging. Meaning of these values differ all the time depending on what part of the code is currently being debugged.
 
-Blackbox can log data either via Bluetooth or serial port. In order to log the data into the internal flash at the moment is possible via CLI:
-set blackbox_device = SPIFLASH # instead of SERIAL
-set blackbox_rate_num = 1
-set blackbox_rate_denom = 2
+Blackbox can log data either via Bluetooth or serial port. In order to log the data into the internal flash at the moment is possible via CLI:  
+set blackbox_device = SPIFLASH # instead of SERIAL  
+set blackbox_rate_num = 1  
+set blackbox_rate_denom = 2  
 This will make it work and store every second value.
