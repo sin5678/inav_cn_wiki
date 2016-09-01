@@ -36,7 +36,7 @@
 |               |      |      |           |      |        |            |               |        |              |              |       |      |           |
 | BLHeli PT     |      |      |           | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
 |               |      |      |           |      |        |            |               |        |              |              |       |      |           |
-| SERIAL RX     |      | X    |           | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
+| SERIAL RX     | X    | X    |           | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
 | BLACKBOX      | X    | X    |           | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
 |               |      |      |           |      |        |            |               |        |              |              |       |      |           |
 | SONAR         | X    |      |           | X    | X      | X          |               | X      | X            | X            | X     | X    | X         |
