@@ -21,9 +21,9 @@
 | MAG AK8975    |      |      |           | X    | X      | X          |               | X      | X            | X            |       |      | X         |
 | MAG MAG3110   |      |      |           | X    | X      | X          |               | X      |              |              |       |      | X         |
 |               |      |      |           |      |        |            |               |        |              |              |       |      |           |
-| GPS NMEA      |      | X    | X         | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
+| GPS NMEA      |      |      |           | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
 | GPS UBLOX     | X    | X    | X         | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
-| GPS I2C       |      | X    | X         | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
+| GPS I2C       |      |      |           | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
 | GPS NAZA      |      |      |           |      | X      | X          | X             | X      | X            | X            | X     | X    | X         |
 |               |      |      |           |      |        |            |               |        |              |              |       |      |           |
 | Telem FrSky   | X    |      |           | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
