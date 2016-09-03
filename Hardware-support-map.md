@@ -1,6 +1,6 @@
 ## Hardware support map ##
 
-| Feature       | NAZE | CC3D | CC3D OPBL | RMDO | SPARKY | SPRACINGF3 | SPRACINGF3EVO | FURYF3 | RCEXPLORERF3 |       COLIBRI_RACE | ANYFC | REVO | BLUEJAYF4 |SPARKY2
+| Feature       | NAZE | CC3D | CC3D OPBL | RMDO | SPARKY | SPRACINGF3 | SPRACINGF3EVO | FURYF3 | RCEXPLORERF3 |       COLIBRI_RACE | ANYFC | REVO | BLUEJAYF4 |
 |---------------|:----:|:----:|:---------:|:----:|:------:|:----------:|:-------------:|:------:|:------------:|:------------:|:-----:|:----:|:----------|
 | GYRO MPU3050  | X    |      |           |      |        |            |               |        |              |              |       |      |           |
 | GYRO MPU6000  |      | X    | X         |      |        |            |               | X      | X            |              | X     | X    |           |
