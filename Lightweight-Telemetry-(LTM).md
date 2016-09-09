@@ -16,16 +16,16 @@ The function consists of a single ASCII character, described below. Data is bina
 
 The follow telemetry frames are supported:
 
-| Function Byte | Usage |
-| ------------- | ----- |
-| G | GPS Frame |
-| A | Attitude Frame |
-| S | Status Frame |
-| O | Origin Frame |
-| N | Navigation Frame (iNav extension) |
-| X | GPS eXended data (iNav extension) |
+| Function Byte | Usage | Frequency |
+| ------------- | ----- | ---- | 
+| G | GPS Frame | 5Hhz at > 2400 baud |
+| A | Attitude Frame | 10 Hz at > 2400 baud |
+| S | Status Frame | 5Hhz at > 2400 baud | 
+| O | Origin Frame | 1 Hz rate | 
+| N | Navigation Frame (iNav extension) | ~4 Hz rate |
+| X | GPS eXended data (iNav extension) | 1 Hz rate |
 
-In addition, LTM is used by nrf24l01 / deviationtx with iNav, which defines the additional frame for in-TX tuning. This frame is not transmitted for telemetry.
+In addition, LTM is used by NRF24L01 / deviationtx iNav protocol, which defines an additional frame for in-TX tuning. This frame is not transmitted for telemetry.
 
 | Function Byte | Usage |
 | ------------- | ----- |
