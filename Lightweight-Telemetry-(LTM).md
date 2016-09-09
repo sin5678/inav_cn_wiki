@@ -99,7 +99,7 @@ As a general purpose protocol, not all status can be mapped to iNav modes.
 
 The payload is 14 bytes
 
-| Bit | Usage |
+| Data | Usage |
 | ---- | ---- |
 | Latitude | int32 decimal degrees * 10,000,000 (1E7) |
 | Longitude | int32 decimal degrees * 10,000,000 (1E7) |
@@ -111,7 +111,7 @@ The payload is 14 bytes
 
 The payload is 6 bytes. Note that this frame largely mirrors the Multiwii-nav `MSP_NAV_STATUS` message and this contains redundancies and values that are not used in iNav. 
 
-| Bit | Usage |
+| Data | Usage |
 | ---- | ---- |
 | GPS mode | uchar |
 | Nav mode | uchar |
@@ -175,6 +175,13 @@ Note that these values were defined by Multiwii-nav and not all are applicable t
 | 10 | Disarmed, navigation engine disabled |
 | 11 | Landing is in progress, check attitude |
 
+## GPS Extra Frame (X)
 
+The payload is 6 bytes. 
+
+| Data | Usage |
+| ---- | ---- |
+| HDOP | uint16 HDOP * 100 |
+| spare | 4 bytes |
 
 
