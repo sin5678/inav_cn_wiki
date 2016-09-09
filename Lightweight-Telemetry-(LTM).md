@@ -99,68 +99,82 @@ As a general purpose protocol, not all status can be mapped to iNav modes.
 
 The payload is 14 bytes
 
-Latitude, int32 decimal degrees * 10,000,000 (1E7)
-Longitude, int32 decimal degrees * 10,000,000 (1E7)
-Altitude, uint32, cm (m / 100) // always 0 in inav
-OSD on, uchar (always 1)
-Fix, uchar, home fix status (0 == no fix)
+| Bit | Usage |
+| ---- | ---- |
+| Latitude | int32 decimal degrees * 10,000,000 (1E7) |
+| Longitude | int32 decimal degrees * 10,000,000 (1E7) |
+| Altitude, uint32, cm (m / 100) [always 0 in iNav] |
+| OSD on | uchar (always 1) |
+| Fix | uchar, home fix status (0 == no fix) |
 
-Navigation Frame (N)
-~~~~~~~~~~~~~~~~~~~~
+## Navigation Frame (N)
 
-Payload: 6 bytes
+The payload is 6 bytes. Note that this frame largely mirrors the Multiwii-nav `MSP_NAV_STATUS` message and this contains redundancies and values that are not used in iNav. 
 
-GPS mode, uchar
-       None
-       PosHold
-       RTH
-       Mission
+| Bit | Usage |
+| ---- | ---- |
+| GPS mode | uchar |
+| Nav mode | uchar |
+| Nav Action | uchar (not all used in inav) |
+| Waypoint number | uchar, target waypoint |
+| Nav Error | uchar |
+| Flags | uchar (to be defined) |
 
-Nav mode, uchar
-    "None",                 // 0
-    "RTH Start",            // 1
-   "RTH Enroute",          // 2
-   "PosHold infinite",     // 3
-   "PosHold timed",        // 4
-   "WP Enroute",           // 5
-   "Process next",         // 6
-   "Jump",                 // 7
-   "Start Land",           // 8
-   "Land in Progress",     // 9
-   "Landed",               // 10
-   "Settling before land", // 11
-   "Start descent",        // 12
-   "Critical GPS failure"  // 15(?)
+where:
 
+| GPS mode |  Enumeration |
+| ----------- | -------- |
+| 0 | None |
+| 1 | PosHold |
+| 2 | RTH |
+| 3 | Mission |
 
-Nav Action, uchar (not all used in inav)
-    UNASSIGNED=0,
-    WAYPOINT,
-    POSHOLD_UNLIM,
-    POSHOLD_TIME,
-    RTH,
-    SET_POI,
-    JUMP,
-    SET_HEAD,
-    LAND
+| Nav mode  |  Enumeration |
+| ----------- | -------- |
+| 0 | None |
+| 1 | RTH Start |
+| 2 | RTH Enroute | 
+| 3 | PosHold infinite |
+| 4 | PosHold timed |
+| 5 | WP Enroute |
+| 6 | Process next |
+| 7 | Jump |
+| 8 | Start Land |
+| 9 | Landing in Progress |
+| 10 | Landed |
+| 11 | Settling before landing |
+| 12 | Start descent |
+| 15 | Critical GPS failure (yes 15, you never want to see this) |
 
-Waypoint number, uchar, target waypoint
+Note that these values were defined by Multiwii-nav and not all are applicable to iNav.
 
-Nav Error, uchar
-    "Navigation system is working", // 0
-    "Next waypoint distance is more than the safety limit, aborting mission", //1
-    "GPS reception is compromised - pausing mission, COPTER IS ADRIFT!", //2
-    "Error while reading next waypoint from memory, aborting mission", //3
-    "Mission Finished" , //4
-    "Waiting for timed position hold", //5
-    "Invalid Jump target detected, aborting mission", //6
-    "Invalid Mission Step Action code detected, aborting mission", //7
-    "Waiting to reach return to home altitude", //8
-    "GPS fix lost, mission aborted - COPTER IS ADRIFT!", //9
-    "Copter is disarmed, navigation engine disabled", //10
-    "Landing is in progress, check attitude if possible" //11
+| Nav Action |  Enumeration |
+| ----------- | -------- |
+| 0 | UNASSIGNED |
+| 1 | WAYPOINT |
+| 2 | POSHOLD_UNLIM |
+| 3 | POSHOLD_TIME |
+| 4 | RTH |
+| 5 | SET_POI |
+| 6 | JUMP |
+| 7 | SET_HEAD |
+| 8 | LAND |
 
-Flags, uchar ???
+| Nav Error |  Enumeration |
+| ----------- | -------- |
+| 0 | Navigation system is working |
+| 1 | Next waypoint distance is more than the safety limit, aborting mission |
+| 2 | GPS reception is compromised - pausing mission |
+| 3 | Error while reading next waypoint from memory, aborting mission |
+| 4 | Mission Finished |
+| 5 | Waiting for timed position hold |
+| 6 | Invalid Jump target detected, aborting mission |
+| 7 | Invalid Mission Step Action code detected, aborting mission |
+| 8 | Waiting to reach return to home altitude |
+| 9 | GPS fix lost, mission aborted |
+| 10 | Disarmed, navigation engine disabled |
+| 11 | Landing is in progress, check attitude |
+
 
 
 
