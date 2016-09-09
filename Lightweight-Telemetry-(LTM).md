@@ -184,4 +184,20 @@ The payload is 6 bytes.
 | HDOP | uint16 HDOP * 100 |
 | spare | 4 bytes |
 
+## Tuning Frame (T)
 
+The payload is 12 bytes. This frame is not transmitted by iNav telemetry.
+
+| Data | Usage |
+| ---- | ---- |
+| P-roll | uint8 |
+| I-roll | uint8 |
+| D-roll | uint8 |
+| P-pitch | uint8 |
+| P-pitch | uint8 |
+| I-pitch | uint8 |
+| D-yaw | uint8 |
+| I-yaw | uint8 |
+| rates-roll | uint8 |
+| rates-pitch | uint8 |
+| rates-yaw | uint8 |
