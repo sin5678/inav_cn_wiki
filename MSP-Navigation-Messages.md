@@ -167,3 +167,122 @@ Landing is in progress, check attitude if possible. </td>
 </tr>
 </tbody>
 </table>
+
+
+# MSP_NAV_CONFIG
+
+The following data are returned from a MSP_NAV_CONFIG message. Values
+from config.h. Values may also be set by MSP_SET_NAV_CONFIG.
+
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>flags1</td>
+<td>uchar</td>
+<td>
+Bitmap of settings from MW config.h <br/>
+b0 : GPS filtering <br/>
+b1 : GPS Lead <br/>
+b2 : Reset Home <br/>
+b3 : Heading control <br/>
+b4 : Tail first <br/>
+b5 : RTH Head <br/>
+b6 : Slow Nav <br/>
+b7 : RTH Alt </td>
+</tr>
+<tr class="even">
+<td>flags2</td>
+<td>uchar</td>
+<td>
+Bitmap of settings from MW config.h <br/>
+b0 : Disable sticks <br/>
+b1 : Baro takeover</td>
+</tr>
+<tr class="odd">
+<td>wp_radius</td>
+<td>uint16</td>
+<td>radius around which waypoint is reached (cm)</td>
+<tr class="even">
+<td>nav_max_altitude</td>
+<td>uint16</td>
+<td>Maximum altitude for NAV (m)</td>
+</tr>
+<tr class="odd">
+<td>safe_wp_distance</td>
+<td>uint16</td>
+<td>Maximum permitted first leg of mission (m, assumed?)</td>
+</tr>
+<tr class="even">
+<td>nav_max_altitude</td>
+<td>uint16</td>
+<td>Maximum altitude for NAV (m)</td>
+</tr>
+<tr class="odd">
+<td>nav_speed_max</td>
+<td>uint16</td>
+<td>maximum speed for NAV (cm/sec)</td>
+</tr>
+<tr class="even">
+<td>nav_speed_min</td>
+<td>uint16</td>
+<td>minimum speed for NAV (cm/s)</td>
+</tr>
+<tr class="odd">
+<td>crosstrack_gain</td>
+<td>uchar</td>
+<td>MW config.h value*100</td>
+</tr>
+<tr class="even">
+<td>nav_bank_max</td>
+<td>uint16</td>
+<td>maximum bank ??? for NAV, MW config.h value*100</td>
+</tr>
+<tr class="odd">
+<td>rth_altitude</td>
+<td>uint16</td>
+<td>RTH altitude (m)</td>
+</tr>
+<tr class="even">
+<td>land_speed</td>
+<td>uchar</td>
+<td>Governs the descent speed during landing. 100 ~= 50 cm/sec unknown units</td>
+</tr>
+<tr class="odd">
+<td>fence</td>
+<td>uint16</td>
+<td>Distance beyond which forces RTH (m)</td>
+</tr>
+<tr class="even">
+<td>max_wp_number</td>
+<td>uchar</td>
+<td>maximum number of waypoints possible (read only)</td>
+</tr>
+</tbody>
+</table>
+
+# MSP_RADIO
+
+If you have a 3DR radio with the MW/MSP specific firmware, the follow
+data are sent from the radio, unsolicited.
+
+| Name | Type | Usage |
+| ---- | ---- | ----- |
+| rxerrors | uint16 | Number of RX errors |
+| fixed_errors | uint16 | Number of fixed errors, if error correction is set |
+| localrssi | uchar | Local RSSI |
+| remrssi | uchar | Remote RSSI |
+| txbuf  | uchar | Size of TX buffer |
+| noise | uchar | Local noise |
+| remnoise | uchar | Remote noise |
+
+# Implementations
+
+The MSP NAV message set is implemented by mwptools (Linux), ezgui
+(Android) and WinGUI (MS Windows).
