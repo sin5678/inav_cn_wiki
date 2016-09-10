@@ -188,7 +188,7 @@ The payload is 6 bytes.
 
 The payload is 12 bytes. This frame is not transmitted by iNav telemetry.
 
-| Data | Usage |
+| Data | Format |
 | ---- | ---- |
 | P-roll | uint8 |
 | I-roll | uint8 |
