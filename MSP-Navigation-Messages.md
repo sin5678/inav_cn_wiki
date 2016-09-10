@@ -22,7 +22,7 @@ indicated if the message is implemented for iNav 1.2.
 
 | Value | Enum | P1 | P2 | P3 | Lat | Lon | Alt | iNav |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| 1 | WAYPOINT      | speed [0] | | | ✔ | ✔ | ✔ | ✔ |
+| 1 | WAYPOINT      | speed [1] | | | ✔ | ✔ | ✔ | ✔ |
 | 2 | POSHOLD_UNLIM |          | | | ✔ | ✔ | ✔ | ✔ |
 | 3 | POSHOLD TIME  | Seconds | | | ✔ | ✔ | ✔ |    |
 | 4 | RTH           | Land | | |    |    | ✔ [2] | ✔ |
@@ -31,10 +31,9 @@ indicated if the message is implemented for iNav 1.2.
 | 7 | SET HEAD [3]  | Heading  | | | | | | |
 | 8 | LAND | | | | ✔ | ✔ | ✔ | |
 
-0. Leg speed in an iNav extension
-1. Not used by iNav
-2. Once SET_HEAD is invoked, it remains active until cleared by a P1
-value of -1.
+1. Leg speed in an iNav extension
+2. Not used by iNav
+3. Once SET_HEAD is invoked, it remains active until cleared by a P1 value of -1.
 
 ## Uploading
 
@@ -42,9 +41,9 @@ For safety, if no mission is defined, a single RTH action should be sent.
 
 | Enum | P1 | P2 | P3 | Lat | Lon | Alt | Flag |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| RTH | 0 | 0 | 0 | 0 | 0 | 25m [0] | 0xa5 |
+| RTH | 0 | 0 | 0 | 0 | 0 | 25m [1] | 0xa5 |
 
-0. your choice, really.
+1. your choice, really.
 
 In general, flag is 0, unless it's the last point in a mission, in
 which case it is set to 0xa5. When waypoints are uploaded, the values
