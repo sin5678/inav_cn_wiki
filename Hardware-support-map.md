@@ -1,5 +1,7 @@
 ## Hardware support map ##
 
+This is default, if you download and compile your own firmware you can example add NAZA gps if you example remove ublox gps. 
+
 | Feature       | NAZE | CC3D | CC3D OPBL | RMDO | SPARKY | SP RACING F3 | SP RACING F3EVO | FURY F3 | RC EXPLORER F3 |       COLIBRI RACE | ANYFC | REVO | BLUEJAY F4 |
 |---------------|:----:|:----:|:---------:|:----:|:------:|:----------:|:-------------:|:------:|:------------:|:------------:|:-----:|:----:|:----------|
 | GYRO MPU3050  | X    |      |           |      |        |            |               |        |              |              |       |      |           |
