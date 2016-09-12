@@ -154,7 +154,27 @@ smix 0 4 1 100 0 0 100 0
 smix 1 5 0  100 0 0 100 0
 ```
 
+## V-Tail Fixed Wing
 
+Tested in a Mini talon UAV.
+
+```
+mmix reset
+mmix 0 1.0 0.0 0.0 0.0
+
+smix reset
+smix 0 2 0 -100 0 0 100 0
+smix 1 3 0 -100 0 0 100 0
+
+smix 2 4 1 100 0 0 100 0
+smix 3 5 1 -100 0 0 100 0
+
+smix 4 4 2 -100 0 0 100 0
+smix 5 5 2 -100 0 0 100 0
+
+smix 6 6 8 -100 0 0 100 0
+smix 7 7 9 -100 0 0 100 0
+```
 # Setups that were never implemented in Baseflight, Cleanflight or any of it's derivatives
 
 # Disabled setups
