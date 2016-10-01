@@ -1,10 +1,9 @@
-**Values written here must be based on pre 1.2!**
-
-When 1.2 is offically released I will convert all PIDs here to new 1.2 values
+**Values written here must be based on 1.2 or later!**
 
 
 ### History: **PLEASE WRITE HERE IF YOU CHANGE ANYTHING AND WHY.**
 ```
+01.10.2016 oleost: Removed old PIDs based on pre 1.2
 10.07.2016 oleost: Added disabling mag on flying wing aswell
 24.06.2016 oleost: Created first version of this wiki
 24.06.2016 oleost: Changed default to "mag_hardware = 1" on regular regular airplane because airplanes flies better with gps heading instead of mag heading.
@@ -27,25 +26,28 @@ Changes **you** think that should be done to iNav globally:
 
 _PIDs:_
 
+```
+
+```
+
 _Navigation PIDs:_
+
+```
+
+```
 
 _Other Values:_
 
+```
+
+```
 
 **250 Size:**
 
 _PIDs:_
 
 ```
-set p_pitch = 82
-set i_pitch = 55
-set d_pitch = 145
-set p_roll = 55
-set i_roll = 35
-set d_roll = 110
-set p_yaw = 110
-set i_yaw = 30
-set d_yaw = 1
+
 ```
 
 
@@ -64,21 +66,14 @@ set gyro_lpf = 188HZ
 _PIDs:_
 
 ```
-set p_pitch = 120
-set i_pitch = 45
-set d_pitch = 125
-set p_roll = 90
-set i_roll = 40
-set d_roll = 115
-set p_yaw = 150
-set i_yaw = 50
-set d_yaw = 0
-set p_level = 120
-set i_level = 15
-set d_level = 75
+
 ```
 
 _Navigation PIDs:_
+
+```
+
+```
 
 _Other Values:_
 
@@ -93,27 +88,22 @@ set gyro_lpf = 42HZ
 
 _PIDs:_
 
-_Navigation PIDs:_
+```
 
-_Other Values:_
-
-# Tricopters
-
-**250 Size:**
-
-_PIDs:_
+```
 
 _Navigation PIDs:_
 
-_Other Values:_
+```
 
-**600 Size:**
-
-_PIDs:_
-
-_Navigation PIDs:_
+```
 
 _Other Values:_
+
+```
+
+```
+
 
 # Fixedwing
 
@@ -122,18 +112,7 @@ _Other Values:_
 _PIDs:_
 
 ```
-set p_pitch = 100
-set i_pitch = 10
-set d_pitch = 40
-set p_roll = 100
-set i_roll = 10
-set d_roll = 40
-set p_yaw = 100
-set i_yaw = 5
-set d_yaw = 20
-set p_level = 160
-set i_level = 10
-set d_level = 75
+
 ```
 
 _Navigation PIDs:_
@@ -166,7 +145,15 @@ set mag_hardware = 1
 
 _PIDs:_
 
+```
+
+```
+
 _Navigation PIDs:_
+
+```
+
+```
 
 _Other Values:_
 
