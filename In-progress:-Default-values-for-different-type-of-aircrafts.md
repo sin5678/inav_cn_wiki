@@ -3,6 +3,7 @@
 
 ### History: **PLEASE WRITE HERE IF YOU CHANGE ANYTHING AND WHY.**
 ```
+03.10.2016 artekw: Added default settings for F450
 01.10.2016 oleost: Removed old PIDs based on pre 1.2
 10.07.2016 oleost: Added disabling mag on flying wing aswell
 24.06.2016 oleost: Created first version of this wiki
@@ -66,17 +67,45 @@ set gyro_lpf = 188HZ
 ```
 
 **450 Size:**
+```
+Weight: ~1200g (with battery)
+Props: 10x4.5
+Battery: 3s 5200mAh
+```
 
 _PIDs:_
-
 ```
-
+set p_pitch = 90
+set i_pitch = 34
+set d_pitch = 54
+set p_roll = 90
+set i_roll = 34
+set d_roll = 54
+set p_yaw = 70
+set i_yaw = 20
+set d_yaw = 0
+set p_level = 22
+set i_level = 15
+set d_level = 75
 ```
-
 _Navigation PIDs:_
 
 ```
-
+set nav_alt_p = 50
+set nav_alt_i = 0
+set nav_alt_d = 0
+set nav_vel_p = 100
+set nav_vel_i = 50
+set nav_vel_d = 10
+set nav_pos_p = 65
+set nav_pos_i = 120
+set nav_pos_d = 10
+set nav_posr_p = 180
+set nav_posr_i = 15
+set nav_posr_d = 100
+set nav_navr_p = 10
+set nav_navr_i = 5
+set nav_navr_d = 8
 ```
 
 _Other Values:_
