@@ -37,6 +37,7 @@ INAV 1.2 changes how rates (rotation speed at maximum stick deflection) is store
 | 40 | 0,40 | 400dps |
 | 50 | 0,50 | 500dps |
 
+Example: "set yaw_rate = 3" defines a rotation rate of 30dps on YAW axis that UAV will try to archive on max. stick deflection.  
 Latest INAV Configurator detects INAV 1.2 and allows to enter rates scaled to degrees per second
 
 //TODO: explain how rates work in servo setups (airplanes mainly).
