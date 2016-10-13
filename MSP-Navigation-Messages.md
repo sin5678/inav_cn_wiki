@@ -1,7 +1,7 @@
 # MultiWii NAV Protocol and Types
 
 This document describes a number of values and enumerations for the
-stated version of the beta NAV development for **MultiWii**. As iNav
+stated version of the beta NAV development for **MultiWii**. As **iNav**
 implements a part of this specification it is documented in the iNav wiki.
 
 This information is provided in the hope it might be useful NO
@@ -31,7 +31,7 @@ indicated if the message is implemented for iNav 1.2.
 | 7 | SET HEAD [3]  | Heading  | | | | | | |
 | 8 | LAND | | | | ✔ | ✔ | ✔ | |
 
-1. Leg speed in an iNav extension
+1. Leg speed is an iNav extension
 2. Not used by iNav
 3. Once SET_HEAD is invoked, it remains active until cleared by a P1 value of -1.
 
