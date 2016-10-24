@@ -185,6 +185,11 @@ Missions are initiated by a switch setting on the RC TX. It can also be aborted 
 
 A mission is terminated by RTH, infinite position hold or reaching the end of the waypoint list. In the latter case, the vehicle will enter a position hold state until the pilot takes manual control (by negating the TX WP state).
 
+An 'in progress' mission flight may be aborted prior to reaching one of the above end points by:
+
+* Switching out of WP mode; or
+* Invoking RTH.
+
 # Mission / Flight Monitoring
 
 Prior to engaging any automated mode, it is advisable to verify that you have reasonable satellite performance. Even with 10+ satellites and HDOP < 1.5, there is a remote possibility that you might experience 'a bad satellite day'; there's an example described in [issue 431](https://github.com/iNavFlight/inav/issues/431). An easy way to verify you have good coverage is to try POSHOLD before executing a mission (or RTH).
