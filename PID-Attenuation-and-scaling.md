@@ -1,8 +1,8 @@
 ## PID Attenuation and scaling
 
-PID attenuation is what allows vehicles that are optimally tuned for hover or slow flight dynamically adjust PID gains so high throttle (fast forward flight or rapid climb) doesn't introduce oscillations.
+**TPA** [***Throttle PID Attenuation***] is what allows vehicles, that are optimally tuned for hover or slow flight, dynamically adjust PID gains, so high throttle (fast forward flight or rapid climb) doesn't introduce oscillations.
 
-### TPA - Multirotors
+### Multirotors
 
 TPA applies a PID value reduction in relation to full Throttle. It is used to apply dampening of PID values as full throttle is reached.
 
@@ -18,7 +18,7 @@ If you are getting oscillations starting at say 3/4 throttle, set TPA Breakpoint
 
 ![](images/tpa_multirotor.png)
 
-### TPA - Airplanes
+### Airplanes
 
 Airplanes are different from multirotors as PID gains should be attenuated according to airspeed, not throttle. However, until airspeed sensor support is introduced it's safe to assume that speed is directly proportional to throttle.
 
