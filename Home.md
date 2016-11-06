@@ -1,5 +1,7 @@
 ![](http://static.rcgroups.net/forums/attachments/6/1/0/3/7/6/a9088858-102-inav.png)
 
+Wiki is available in other languages: [Русский](https://github.com/iNavFlight/ru_wiki/wiki)
+
 INAV is a fork of cleanflight with focus on GPS features.
 It currently supports position hold, RTH with predefined climb height, [[waypoints|iNavFlight Missions]] and follow-me. Both with airplanes & multirotors.
 
