@@ -14,4 +14,5 @@ Frames IDs
 | 1         | MAG_HOLD_ERROR_LPF_FREQ (not implemented yet as configurable) | 7     |
 | 2         | yaw_jump_prevention_limit | 9                 |
 | 1         | gyro_lpf       | 10                 |
-| 5         | _reserved_                | 15                |
+| 1         | acc_soft_lpf_hz | 11                          |
+| 4         | _reserved_                | 15                |
