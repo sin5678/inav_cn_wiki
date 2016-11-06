@@ -1,1 +1,0 @@
-Read the wiki in other languages: [Русский](https://github.com/iNavFlight/ru_wiki/wiki)
