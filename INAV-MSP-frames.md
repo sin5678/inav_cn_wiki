@@ -77,7 +77,7 @@ Frame IDs:
 | ----      | ----                          | ----                |
 | 1         | `gyro_sync_denom`             |                     |
 | 1         | _not used_                    | Betaflight `masterConfig.pid_process_denom` |
-| 1         | _not used                     | Betaflight `masterConfig.motorConfig.useUnsyncedPwm`  |
+| 1         | _not used_                    | Betaflight `masterConfig.motorConfig.useUnsyncedPwm`  |
 | 1         | `motor_pwm_protocol`          | _dictionary_  |
 | 2         | `motor_pwm_rate`              |   |
 | 2         | `servo_pwm_rate`              |   |
