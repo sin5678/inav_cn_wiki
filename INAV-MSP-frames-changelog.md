@@ -61,8 +61,8 @@ Frame IDs:
 | 1         | _reserved_                    |                               |
 | 1         | _reserved_                    |                               |
 | 1         | _not used_                    | Betaflight `itermThrottleGain`    |
-| 2         | `rate_accel_limit_roll_pitch` | divided by `1000` for BF compatibility    |
-| 2         | `rate_accel_limit_yaw`        | divided by `1000` for BF compatibility    |
+| 2         | `rate_accel_limit_roll_pitch` | divided by `10`    |
+| 2         | `rate_accel_limit_yaw`        | divided by `10`    |
 
 ## INAV 1.3 MSP API 1.21
 
@@ -82,3 +82,7 @@ Frame IDs:
 | 2         | `motor_pwm_rate`              |   |
 | 2         | `servo_pwm_rate`              |   |
 | 1         | `gyro_sync`                   | _boolean_  |
+
+##Change log:
+
+* 2016-11-20 - scaling of `rate_accel_limit_roll_pitch` and `rate_accel_limit_yaw` in **MSP_PID_ADVANCED** changed from 1000 to 10
