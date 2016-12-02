@@ -28,7 +28,7 @@ This is default, if you download and compile your own firmware you can example a
 | GPS I2C       |      |      |           | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
 | GPS NAZA      |      |      |           |      | X      | X          | X             | X      | X            | X            | X     | X    | X         |
 |               |      |      |           |      |        |            |               |        |              |              |       |      |           |
-| Telem FrSky   | X    |      |           | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
+| Telem FrSky   |      |      |           | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
 | Telem HOTT    |      |      |           |      | X      | X          | X             | X      | X            | X            | X     | X    | X         |
 | Telem S.Port  |      |      |           |      | X      | X          | X             | X      | X            | X            | X     | X    | X         |
 | Telem LTM     | X    | X    | X         | X    | X      | X          | X             | X      | X            | X            | X     | X    | X         |
