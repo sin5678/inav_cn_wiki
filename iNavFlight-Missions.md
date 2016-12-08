@@ -194,6 +194,22 @@ An 'in progress' mission flight may be aborted prior to reaching one of the abov
 
 Prior to engaging any automated mode, it is advisable to verify that you have reasonable satellite performance. Even with 10+ satellites and HDOP < 1.5, there is a remote possibility that you might experience 'a bad satellite day'; there's an example described in [issue 431](https://github.com/iNavFlight/inav/issues/431). An easy way to verify you have good coverage is to try POSHOLD before executing a mission (or RTH).
 
+# Waypoint Mode
+
+As soon as iNav starts a leg on a WP mission, it will attempt to reach the leg altitude, so if you have
+
+* WP 1, altitude 10m
+* WP 2, altitude 50m
+
+On engaging WP mode, iNav will attempt to reach 10m altitude. On passing WP 1, iNav will attempt to reach 50m. Altitude is not taken into consideration in determining when a waypoint is reached (only latitude / longitude).
+
+WP mode is only disengaged under the following circumstances:
+
+1. GPS is lost (will switch to emergency landing and land)
+2. Failsafe took over (Radio link lost)
+3. Pilot manually disables WP mode by either turning off the switch or enabling RTH
+4. The end of the mission is reached.
+
 # Advanced configuration
 ## 3DR
 ### Hardware
