@@ -183,7 +183,7 @@ On F1 baords (Naze, Flip32), you can defined 30 waypoints, for F3 and better FCs
 
 Missions are initiated by a switch setting on the RC TX. It can also be aborted at any time turning this switch(NAV WP) off.
 
-A mission is terminated by RTH, infinite position hold or reaching the end of the waypoint list. In the latter case, the vehicle will enter a position hold state until the pilot takes manual control (by negating the TX WP state).
+A mission is manually terminated by RTH, infinite position hold or reaching the end of the waypoint list. In the latter case, the vehicle will enter a position hold state until the pilot takes manual control (by negating the TX WP state).
 
 An 'in progress' mission flight may be aborted prior to reaching one of the above end points by:
 
