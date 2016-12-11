@@ -1,6 +1,6 @@
 ## INAV 1.5 MSP API Version 1.2x (tbc)
 
-For iNav 1.5 and later, the MSP STATUS/sensor field reports sensor failure. This updates MSP_SENSOR (see http://www.multiwii.com/wiki/index.php?title=Multiwii_Serial_Protocol) in a backwards compatible manner to report additional sensors and sensor health. The sensor field is reported as:
+For iNav 1.5 and later, the MSP_STATUS/sensor field reports sensor failure. This updates MSP_SENSOR (see http://www.multiwii.com/wiki/index.php?title=Multiwii_Serial_Protocol) in a backwards compatible manner to report additional sensors and sensor health. The sensor field is reported as:
 
 | Bit | Usage |
 | ---- | ----- |
