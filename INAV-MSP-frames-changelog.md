@@ -1,3 +1,20 @@
+## INAV 1.5 MSP API Version 1.2x (tbc)
+
+For iNav 1.5 and later, the MSP STATUS/sensor field reports sensor failure. This updates MSP_SENSOR (see http://www.multiwii.com/wiki/index.php?title=Multiwii_Serial_Protocol) in a backwards compatible manner to report additional sensors and sensor health. The sensor field is reported as:
+
+| Bit | Usage |
+| ---- | ----- |
+| 0 | Set if ACC present |
+| 1 | Set if BARO present |
+| 2 | Set if MAG present |
+| 3 | Set if GPS present |
+| 4 | Set if SONAR present |
+| 5 | Reserved for OPFLOW (not implemented) |
+| 6 | Set if PITOT present |
+| 15 | Set on sensor failure |
+
+The sensor hardware failure indication is backwards compatible with versions prior to 1.5 (and other Multiwii / Cleanflight derivatives).
+
 ## INAV 1.4 MSP API Version 1.22
 
 ### MSP_INAV_PID
@@ -86,3 +103,4 @@ Frame IDs:
 ##Change log:
 
 * 2016-11-20 - scaling of `rate_accel_limit_roll_pitch` and `rate_accel_limit_yaw` in **MSP_PID_ADVANCED** changed from 1000 to 10
+* 2016-12-11 - added MSP_STATUS update for iNav 1.5
