@@ -185,18 +185,9 @@ The payload is 6 bytes.
 | hw status | 1 byte |
 | (spare) | 3 bytes | 
 
-Note that hw status (hardware sensor status) is iNav 1.5 and later. If the value is non-zero, then a sensor has failed. On disarming, the sensor status may be evinced from the MSP_STATUS/sensor field (see http://www.multiwii.com/wiki/index.php?title=Multiwii_Serial_Protocol); this will indicate the status of each hardware sensor as:
-
-| Bit | Usage |
-| ---- | ----- |
-| 0 | Set if ACC present |
-| 1 | Set if BARO present |
-| 2 | Set if MAG present |
-| 3 | Set if GPS present |
-| 4 | Set if SONAR present |
-| 5 | Reserved for OPFLOW (not implemented) |
-| 6 | Set if PITOT present |
-| 15 | Set on sensor failure |
+Note that hw status (hardware sensor status) is iNav 1.5 and later. If the value is non-zero, then a sensor has failed. 
+A complementary update has been made to MSP_STATUS (https://github.com/iNavFlight/inav/wiki/INAV-MSP-frames-changelog).
+Thus, on disarming, the sensor status may be evinced from the MSP_STATUS/sensor field.
 
 The sensor hardware failure indication is backwards compatible with versions prior to 1.5 (and other Multiwii / Cleanflight derivatives).
 
