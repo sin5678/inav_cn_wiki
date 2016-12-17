@@ -15,6 +15,22 @@ For iNav 1.5 and later, the MSP_STATUS/sensor field reports sensor failure. This
 
 The sensor hardware failure indication is backwards compatible with versions prior to 1.5 (and other Multiwii / Cleanflight derivatives).
 
+### MSP_SENSOR_CONFIG
+
+Frame IDs:
+
+* MSP_SENSOR_CONFIG, Frame ID _96_
+* MSP_SET_SENSOR_CONFIG, Frame ID _97_
+
+| length    | setting                       | Notes                         |
+| ----      | ----                          | ----                          |
+| 1         | `acc_hardware`                  |                               |
+| 1         | `baro_hardware`                  |                               |
+| 1         | `mag_hardware`                  |                               |
+| 1         | `pitot_hardware`                  |                               |
+| 1         | Reserved for rangefinder      | not yet implemented |
+| 1         | Reserved for OpFlow      | not yet implemented |
+
 ## INAV 1.4 MSP API Version 1.22
 
 ### MSP_INAV_PID
