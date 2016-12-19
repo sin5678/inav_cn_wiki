@@ -159,6 +159,8 @@ smix 1 5 0  100 0 0 100 0
 Tested in a Mini talon UAV.
 
 ```
+# mixer
+mixer CUSTOMAIRPLANE
 mmix reset
 mmix 0 1.0 0.0 0.0 0.0
 
