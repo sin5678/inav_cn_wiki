@@ -231,7 +231,7 @@ or both MSP framing and MSP radio status reporting:
 ````
 ATS6 = 2
 ````  
-* You will get better range at lower speeds, it is also good practice to set the air speed and the ground speed to close rates, in order to minimise the probability of serial overruns. Here we set air speed to 24000 baud and ground speed to 19200 baud.
+* You will get better range at lower speeds, it is also good practice to set the air speed and the ground speed to close rates, in order to minimise the probability of serial overruns. Here we set air speed to 24000 baud and ground speed to 19200 baud. Actually, as the data rate is low (and fits within the device buffers, this is not so important; an air speed of 24000 baud and a ground speed of 115200 works as well.
 ````
 ATS1 = 19
 ATS2 = 24
@@ -260,7 +260,7 @@ ATS15 = 131
 AT&W
 ATZ
 ````
-If you use Linux and a USB connected ground side (rather than the USB bridge), you can use `udev` to set the device name. You will need to use `lsusb`to find the `serial` parameter for your device. The rule below links the `/dev/ttyUSBx` name to `/dev/3dr`.
+If you use Linux and a USB connected ground side (rather than the USB / BT bridge), you can use `udev` to set the device name. You will need to use `lsusb`to find the `serial` parameter for your device. The rule below links the `/dev/ttyUSBx` name to `/dev/3dr`.
 ````
 ### /etc/udev/rules.d/66-3dr.rules
 # Hextronic radio
