@@ -12,13 +12,12 @@ Frame IDs:
 | Length        | Setting                       | Notes                         |
 | -----         | -----                         | -----                         |
 | 1             | `nav_user_control_mode`       | dictionary                    |
-| 1             | `nav_use_midthr_for_althold`  | ON/OFF                        |
 | 2             | `nav_max_speed`               |                               |
 | 2             | `nav_max_climb_rate`          |                               |
 | 2             | `nav_manual_speed`            |                               |
 | 2             | `nav_manual_climb_rate`       |                               |
-| 2             | `nav_wp_radius`               |                               |
 | 1             | `nav_mc_bank_angle`           |                               |
+| 1             | `nav_use_midthr_for_althold`  | ON/OFF                        |
 | 2             | `nav_mc_hover_thr`            |                               |
 | 8             | _reserved_                    |                               |
 
