@@ -2,7 +2,7 @@
 
 ### MSP_NAV_POSHOLD
 
-Basic position hold settings. Mostly, but on only, for multirotor 
+Basic position hold settings. Mostly, but not only, for multirotor 
 
 Frame IDs:
 
