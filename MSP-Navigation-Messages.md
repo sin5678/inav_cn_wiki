@@ -209,56 +209,51 @@ b1 : Baro takeover</td>
 <td>uint16</td>
 <td>radius around which waypoint is reached (cm)</td>
 <tr class="even">
-<td>nav_max_altitude</td>
-<td>uint16</td>
-<td>Maximum altitude for NAV (m)</td>
-</tr>
-<tr class="odd">
 <td>safe_wp_distance</td>
 <td>uint16</td>
 <td>Maximum permitted first leg of mission (m, assumed?)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>nav_max_altitude</td>
 <td>uint16</td>
 <td>Maximum altitude for NAV (m)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>nav_speed_max</td>
 <td>uint16</td>
 <td>maximum speed for NAV (cm/sec)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>nav_speed_min</td>
 <td>uint16</td>
 <td>minimum speed for NAV (cm/s)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>crosstrack_gain</td>
 <td>uchar</td>
 <td>MW config.h value*100</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>nav_bank_max</td>
 <td>uint16</td>
 <td>maximum bank ??? for NAV, MW config.h value*100</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>rth_altitude</td>
 <td>uint16</td>
 <td>RTH altitude (m)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>land_speed</td>
 <td>uchar</td>
 <td>Governs the descent speed during landing. 100 ~= 50 cm/sec unknown units</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>fence</td>
 <td>uint16</td>
 <td>Distance beyond which forces RTH (m)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>max_wp_number</td>
 <td>uchar</td>
 <td>maximum number of waypoints possible (read only)</td>
