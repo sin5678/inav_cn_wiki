@@ -9,7 +9,7 @@ WARRANTY.
 
 Note that all binary values are little endian (MSP standard).
 
-# MultiWii NAV Version
+# Implementation and versions
 
 This document should match the 2.3-pre8 / b5 MultiWii / Wingui
 release, as well as iNav 1.2 and the implementations in mwp and ezgui.
