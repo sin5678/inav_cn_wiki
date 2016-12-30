@@ -1,11 +1,8 @@
 # MultiWii NAV Protocol and Types
 
-This document describes a number of values and enumerations for 
-for **MultiWii** MSP messages. As **iNav**
-implements a part of this specification it is documented in the iNav wiki.
+This document describes a number of values and enumerations for for **MultiWii** MSP messages. As **iNav** implements a part of this specification it is documented in the iNav wiki.
 
-This information is provided in the hope it might be useful NO
-WARRANTY.
+This information is provided in the hope it might be useful NO WARRANTY.
 
 Note that all binary values are little endian (MSP standard).
 
@@ -86,9 +83,9 @@ Special waypoints are 0 and 255. 0 is the RTH (Home) position, 255 is the POSHOL
 
 The values for the various parameters are given in the section “WayPoint / Action Attributes”
 
-# MSP_NAV_STATUS (MW)
+# MSP_NAV_STATUS
 
-The following data are returned by a MSP_NAV_STATUS message. The texts are those defined by Wingui; multiwii and iNav support this message.
+The following data are returned by a MSP_NAV_STATUS message. The texts are those defined by Wingui; multiwii and iNav support this message. Almost the same data is returned by the iNav LTM NFRAME (https://github.com/iNavFlight/inav/wiki/Lightweight-Telemetry-(LTM)#navigation-frame-n)
 
 <table>
 <thead>
@@ -158,10 +155,9 @@ Landing is in progress, check attitude if possible. </td>
 </tbody>
 </table>
 
-
 # MSP_NAV_CONFIG (MW)
 
-The following data are returned from a MSP_NAV_CONFIG message. Values are from multiwii config.h. Values may also be set by MSP_SET_NAV_CONFIG. This is a multiwii message, however the same data is returned by the iNav LTM NFRAME (https://github.com/iNavFlight/inav/wiki/Lightweight-Telemetry-(LTM)#navigation-frame-n)
+The following data are returned from a MSP_NAV_CONFIG message. Values are from multiwii config.h. Values may also be set by MSP_SET_NAV_CONFIG. 
 
 <table>
 <thead>
