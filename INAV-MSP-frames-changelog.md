@@ -1,4 +1,4 @@
-## INAV 1.6 MSP API Version 1.2x (tbd)
+## INAV 1.6 MSP API Version 1.24
 
 ### MSP_NAV_POSHOLD
 
@@ -6,8 +6,8 @@ Basic position hold settings. Mostly, but not only, for multirotor
 
 Frame IDs:
 
-* MSP_NAV_POSHOLD, Frame ID _tbd_
-* MSP_SET_NAV_POSHOLD, Frame ID _tbd_
+* MSP_NAV_POSHOLD, Frame ID _12_
+* MSP_SET_NAV_POSHOLD, Frame ID _13_
 
 | Length        | Setting                       | Notes                         |
 | -----         | -----                         | -----                         |
@@ -21,7 +21,7 @@ Frame IDs:
 | 2             | `nav_mc_hover_thr`            |                               |
 | 8             | _reserved_                    |                               |
 
-## INAV 1.5 MSP API Version 1.2x (tbc)
+## INAV 1.5 MSP API Version 1.23
 
 For iNav 1.5 and later, the MSP_STATUS/sensor field reports sensor failure. This updates MSP_SENSOR (see http://www.multiwii.com/wiki/index.php?title=Multiwii_Serial_Protocol) in a backwards compatible manner to report additional sensors and sensor health. The sensor field is reported as:
 
