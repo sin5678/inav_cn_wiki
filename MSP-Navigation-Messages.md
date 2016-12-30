@@ -85,7 +85,7 @@ The values for the various parameters are given in the section “WayPoint / Act
 
 # MSP_NAV_STATUS
 
-The following data are returned by a MSP_NAV_STATUS message. The texts are those defined by Wingui; multiwii and iNav support this message. Almost the same data is returned by the iNav LTM NFRAME (https://github.com/iNavFlight/inav/wiki/Lightweight-Telemetry-(LTM)#navigation-frame-n)
+The following data are returned by a MSP_NAV_STATUS message. The texts are those defined by Wingui; multiwii and iNav support this message. Almost the same data is returned by the [iNav LTM NFRAME] (https://github.com/iNavFlight/inav/wiki/Lightweight-Telemetry-(LTM)#navigation-frame-n)
 
 <table>
 <thead>
