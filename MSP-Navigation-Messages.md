@@ -1,7 +1,7 @@
 # MultiWii NAV Protocol and Types
 
-This document describes a number of values and enumerations for the
-stated version of the beta NAV development for **MultiWii**. As **iNav**
+This document describes a number of values and enumerations for 
+for **MultiWii** MSP messages. As **iNav**
 implements a part of this specification it is documented in the iNav wiki.
 
 This information is provided in the hope it might be useful NO
@@ -11,14 +11,11 @@ Note that all binary values are little endian (MSP standard).
 
 # Implementation and versions
 
-This document should match the 2.3-pre8 / b5 MultiWii / Wingui
-release, as well as iNav 1.2 and the implementations in mwp and ezgui.
+This document should match the iNav 1.2 (and later) and Multiwii 2.4 flight controller firmware. The messages described are implemented in mwp (Linux / FreeBSD) and ezgui (Android) ground station applications. mwp and ezgui support both iNav and Multiwii; WinGui is a Windows / Multiwii only mission planner that also supports this message set.
 
 # WayPoint / Action Attributes
 
-Each  waypoint has a type and takes a number of parameters, as
-below. These are used in the MSP_WP message. The final column
-indicated if the message is implemented for iNav 1.2.
+Each  waypoint has a type and takes a number of parameters, as below. These are used in the MSP_WP message. The final column indicated if the message is implemented for iNav 1.2.
 
 | Value | Enum | P1 | P2 | P3 | Lat | Lon | Alt | iNav |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
@@ -45,17 +42,12 @@ For safety, if no mission is defined, a single RTH action should be sent.
 
 1. your choice, really.
 
-In general, flag is 0, unless it's the last point in a mission, in
-which case it is set to 0xa5. When waypoints are uploaded, the values
-are also returned by the FC, thus enabling the application to verify
-that the mission has been uploaded correctly.
+In general, flag is 0, unless it's the last point in a mission, in which case it is set to 0xa5. When waypoints are uploaded, the values are also returned by the FC, thus enabling the application to verify that the mission has been uploaded correctly.
 
 ## FC Capabilities (MW only)
 
-Note that 32bit flight controllers (baseflight, cleanflight) use
-capability == 16 for a different purpose
-(CAP_CHANNEL_FORWARDING). It is advised to use other messages for
-checking for capabilities on non-MW platforms.
+Note that 32bit flight controllers (baseflight, cleanflight) use capability == 16 for a different purpose
+(CAP_CHANNEL_FORWARDING). It is advised to use other messages for checking for capabilities on non-MW platforms.
 
 | Capability | Value |
 | ---- | ---- |
@@ -78,8 +70,7 @@ checking for capabilities on non-MW platforms.
 
 # MSP_WP / MSP_SET_WP
 
-Special waypoints are 0 and 255. 0 is the RTH position, 255 is the
-POSHOLD position (lat, lon, alt).
+Special waypoints are 0 and 255. 0 is the RTH (Home) position, 255 is the POSHOLD position (lat, lon, alt).
 
 | Name | Type | Usage |
 | ---- | ---- | ----- |
@@ -93,12 +84,12 @@ POSHOLD position (lat, lon, alt).
 | p3 | int16 | varies according to action |
 | flag | uchar | 0xa5 = last, otherwise set to 0 |
 
-The values for the various parameters are given in the section
-“WayPoint / Action Attributes”
+The values for the various parameters are given in the section “WayPoint / Action Attributes”
 
-# MSP_NAV_STATUS
+# MSP_NAV_STATUS (MW)
 
-The following data are returned by a MSP_NAV_STATUS message.
+The following data are returned by a MSP_NAV_STATUS message. The texts are those defined by Wingui; multiwii and iNav support this message.
+
 <table>
 <thead>
 <tr class="header">
@@ -168,10 +159,9 @@ Landing is in progress, check attitude if possible. </td>
 </table>
 
 
-# MSP_NAV_CONFIG
+# MSP_NAV_CONFIG (MW)
 
-The following data are returned from a MSP_NAV_CONFIG message. Values
-from config.h. Values may also be set by MSP_SET_NAV_CONFIG.
+The following data are returned from a MSP_NAV_CONFIG message. Values are from multiwii config.h. Values may also be set by MSP_SET_NAV_CONFIG. This is a multiwii message, however the same data is returned by the iNav LTM NFRAME (https://github.com/iNavFlight/inav/wiki/Lightweight-Telemetry-(LTM)#navigation-frame-n)
 
 <table>
 <thead>
@@ -263,8 +253,7 @@ b1 : Baro takeover</td>
 
 # MSP_RADIO
 
-If you have a 3DR radio with the MW/MSP specific firmware, the follow
-data are sent from the radio, unsolicited.
+If you have a 3DR radio with the MW/MSP specific firmware, the follow data are sent from the radio, unsolicited.
 
 | Name | Type | Usage |
 | ---- | ---- | ----- |
@@ -278,5 +267,4 @@ data are sent from the radio, unsolicited.
 
 # Implementations
 
-The MSP NAV message set is implemented by mwptools (Linux), ezgui
-(Android) and WinGUI (MS Windows).
+The MSP NAV message set is implemented by mwptools (Linux), ezgui (Android) and WinGUI (MS Windows).
