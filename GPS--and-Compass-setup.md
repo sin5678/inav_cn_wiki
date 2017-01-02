@@ -17,7 +17,7 @@ Otherwise just use the internal FC magnetometer, but keep aware of magnetic inte
 - If you use the GPS built in magnetometer, connect the magnetometer to I2C ports (SCL/SDA) Be aware that with SDA/SLC lines connected the flight battery must often be connected to access configurator, also it needs to be connected while calibrating the compass. Most built in magnetometers are on the underside and rotated 180 degrees, use example "align_mag = CW180FLIP". If compass is not working properly in all directions then either think and figure out the direction of your mag, or go through them all until it works as expected.
 - Activate GPS in the ports tab in cleanflight/iNav configurator and set it to 57600 using UART or 19200 using softserial (on your chosen port)
 - Activate GPS in the configuration tab, set it to ublox and set the magnetic declination. The magnetic declination of your specific location can be found here: www.magnetic-declination.com. If your magnetic declination readings are e.g. +3° 34' , the value entered in the iNav configurator is 3.34 (3,34 in some locales). In the CLI, the same effect would be `set mag_declination = 334`. For west declination, use a minus value, e.g. for 1° 32' W, `set mag_declination = -132`. In all cases (both CLI and GUI), the least significant digits are **minutes**, not decimal degrees.
-- Calibrate your compass according to [compass calibration](https://github.com/iNavFlight/inav/wiki/4.-Sensor-calibration#compass-calibration)
+- Calibrate your compass according to [compass calibration](https://github.com/iNavFlight/inav/wiki/Sensor-calibration#compass-calibration)
 - Keep in mind to change the magnetic declination when you change your location, although +-0,05 shouldn´t make a big difference.  
 
 In iNav 1.2, on non-F1 targets, one can use an automatic declination setting, which is more than accurate enough for iNav. `set inav_auto_mag_decl = ON`.
@@ -37,7 +37,7 @@ In iNav 1.2, on non-F1 targets, one can use an automatic declination setting, wh
 Also the cli align_mag must be set correctly. Play around with it. It should be CW0FLIP, CW90FLIP, CW180FLIP or CW270FLIP
 
 - Configure your magnetic declination of your specific location can be found here: www.magnetic-declination.com. If your magnetic declination readings are e.g. +3° 34' , the value entered in the iNav configurator is 3.34 (3,34 in some locales). In the CLI, the same effect would be `set mag_declination = 334`. For west declination, use a minus value, e.g. for 1° 32' W, `set mag_declination = -132`. In all cases (both CLI and GUI), the least significant digits are **minutes**, not decimal degrees.
-- Calibrate your compass according to [compass calibration](https://github.com/iNavFlight/inav/wiki/4.-Sensor-calibration#compass-calibration)
+- Calibrate your compass according to [compass calibration](https://github.com/iNavFlight/inav/wiki/Sensor-calibration#compass-calibration)
 
 
 Thats it!
