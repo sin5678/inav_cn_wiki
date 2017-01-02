@@ -15,6 +15,8 @@
 
 # Additional infomation
 
+
+ - [iNavFlight Missions / Waypoint flying](/iNavFlight/inav/wiki/iNavFlight-Missions)
  - [iNav CLI variables](/iNavFlight/inav/wiki/iNav-CLI-variables)
  - [Navigation modes](/iNavFlight/inav/wiki/Navigation-modes)
 
