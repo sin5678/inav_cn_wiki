@@ -34,6 +34,8 @@ Set receiver to send out `NO PULSES`
 
  `Arm switch: Disarmed (If you use stick arming you can skip this)`  
 
+1. Configure failsafe on your receiver to the above conditions on link loss (consult manual for your receiver on how to do it)
+
 ###Configuration of iNav
 
 Go to `Failsafe` tab, and enable `RTH` as Stage 2 failsafe.
