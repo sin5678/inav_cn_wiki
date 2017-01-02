@@ -82,8 +82,8 @@ _Navigation PIDs:_
 _Other Values:_
 
 ```
-set looptime = 1000 // If F3 or newer CPU
-set gyro_lpf = 188HZ
+set tpa_rate = 10
+set tpa_breakpoint = 1650
 ```
 
 **450 Size:**
