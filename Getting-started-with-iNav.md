@@ -38,7 +38,7 @@ Also be aware that some of our flight controllers can cause interference with th
 
 ## Notes / Common issues
 
-* Unable to enable NAV related modes, See [Link](https://github.com/iNavFlight/inav/wiki/8.-Navigation-modes) for possible reasons for why.
+* Unable to enable NAV related modes, See [Link](https://github.com/iNavFlight/inav/wiki/Navigation-modes) for possible reasons for why.
 
 * iNav does not show "GPS Signal Strength" for each satellite in the Cleanflight configurator, instead only the first one is used to show [HDOP](https://en.wikipedia.org/wiki/Dilution_of_precision_%28GPS%29)
 
@@ -50,7 +50,7 @@ Also be aware that some of our flight controllers can cause interference with th
 1. Navigation modes are turned on while trying to arm.
 
 
-* iNav has other GPS modes than cleanflight, or names them differently. Read [this wiki page](https://github.com/iNavFlight/inav/wiki/8.-Navigation-modes) for how to use them, and combine them to get wanted position hold.
+* iNav has other GPS modes than cleanflight, or names them differently. Read [this wiki page](https://github.com/iNavFlight/inav/wiki/Navigation-modes) for how to use them, and combine them to get wanted position hold.
 
 * If your copter is toilet-bowling, which means, in the beginning it holds its position and then starts to make bigger and bigger circles, you probably have your magnetometer not calibrated correctly or it’s seeing the magnetic field of you power lines or the beeper.  
 If you are using your FC onboard mag, try to place the the FC as far away as possible from the magnetic interference causing parts e.g. mounting it on/under the top plate on small racers.
