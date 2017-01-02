@@ -83,7 +83,7 @@ _Other Values:_
 
 ```
 set looptime = 1000 // If F3 or newer CPU
-set gyro_lpf = 256HZ
+set gyro_lpf = 188HZ
 ```
 
 **450 Size:**
