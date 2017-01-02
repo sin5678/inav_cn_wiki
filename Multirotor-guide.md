@@ -4,8 +4,8 @@ Balance props and motors, install FC on a vibration-damping mount if possible.
 ### Step 1, getting your flight controller ready.
 
 * Flash newest iNav
-* Do the advanced 6-point [sensor calibration](https://github.com/iNavFlight/inav/wiki/4.-Sensor-calibration).
-* Select your Mixer. iNav has removed a lot of mixes and requires custom mix for exotic setups, see [Custom mixes for exotic setups](https://github.com/iNavFlight/inav/wiki/8.-Custom-mixes-for-exotic-setups#setups-that-can-be-implemented-with-custom-mixer)
+* Do the advanced 6-point [sensor calibration](https://github.com/iNavFlight/inav/wiki/Sensor-calibration).
+* Select your Mixer. iNav has removed a lot of mixes and requires custom mix for exotic setups, see [Custom mixes for exotic setups](https://github.com/iNavFlight/inav/wiki/Custom-mixes-for-exotic-setups#setups-that-can-be-implemented-with-custom-mixer)
 
 
 ## 2. Set your TX midpoints
@@ -13,7 +13,7 @@ Set trim on your TX to zero. Use subtrim to adjust your TX midpoints to be preci
 
 ## 3. Tune your copter's Pitch/Roll/Yaw/Level PIDs and other values
 
-[Default values for different type of aircrafts](https://github.com/iNavFlight/inav/wiki/7.-Default-values-for-different-type-of-aircrafts)
+[Default values for different type of aircrafts](https://github.com/iNavFlight/inav/wiki/Default-values-for-different-type-of-aircrafts)
 
 **THIS IS IMPORTANT.** Stock values does not fly good on example and 250 racing quad.
 
@@ -22,7 +22,7 @@ DO NOT USE TRIM on your Transmitter to stop your copter drifting. Use board alig
 [How to trim your Accelerometer](http://tldrify.com/elw)
 
 ## 5. Setup and verify failsafe on TX and iNav
-[Guide for setting up failsafe](https://github.com/iNavFlight/inav/wiki/9.-Failsafe#setting-up-failsafe-with-return-to-home)
+[Guide for setting up failsafe](https://github.com/iNavFlight/inav/wiki/Failsafe#setting-up-failsafe-with-return-to-home)
 
 ## 6. Determine and set hover throttle
 Use blackbox or Configurator to figure out throttle stick position when your copter is hovering. Set **nav_mc_hover_thr** CLI variable to that value.
@@ -30,7 +30,7 @@ You can also tune this without blackbox. If your copter jumps/rises when you act
 
 
 ## 7. Get to know the CLI values.
-iNav offers a lot of customization through CLI variables. Its strongly recommended to read through [iNav CLI variables](https://github.com/iNavFlight/inav/wiki/6.-iNav-CLI-variables)
+iNav offers a lot of customization through CLI variables. Its strongly recommended to read through [iNav CLI variables](https://github.com/iNavFlight/inav/wiki/iNav-CLI-variables)
 
 Some important ones are:
 
