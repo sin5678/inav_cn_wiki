@@ -6,6 +6,8 @@ The goal is to configured both your flight controller and radio receiver so fail
 
 For failsafe to work optimal iNav needs to know it's in a failsafe event and not just doing regular RTH. This is for example correctly handle loss of GPS while returning to home.
 
+Also this assumes you have regular GPS modes like `RTH` working already.
+
 ###Configuration of receiver
 
 One got two options on how to configure receiver.
@@ -16,7 +18,7 @@ Set receiver to send out `NO PULSES`
 
 **Option two**
 
-1. In "Modes" tab select a switch for "Failsafe"
+1. In `Modes` tab select a switch for "Failsafe"
 
 1. Set your switches and sticks of your radio to the following conditions:  
 
@@ -31,3 +33,14 @@ Set receiver to send out `NO PULSES`
  `Failsafe mode: activated`  
 
  `Arm switch: Disarmed (If you use stick arming you can skip this)`  
+
+###Configuration of iNav
+
+Go to `Failsafe` tab, and enable `RTH` as Stage 2 failsafe.
+
+Stage 1 is default safe to use.
+It will to contuinue what the pilot was doing.
+
+Behavior of RTH can also be configured.
+ - [iNav Flight modes / Navigation Modes](/iNavFlight/inav/wiki/Navigation-modes#rth-altitude-control-modes)
+
