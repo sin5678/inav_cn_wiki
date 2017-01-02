@@ -89,12 +89,12 @@ Frame IDs:
 | 1         | `gyro_soft_lpf_hz`            |   |
 | 2         | `dterm_lpf_hz`                |   |
 | 2         | `yaw_lpf_hz`                  |   |
-| 2         | `gyro_soft_notch_hz`          | Betaflight `masterConfig.gyro_soft_notch_hz_1`    |
-| 2         | `gyro_soft_notch_cutoff_hz`   | Betaflight `masterConfig.gyro_soft_notch_cutoff_1`    |
-| 2         | _not used_                    | Betaflight `pidProfile.dterm_notch_hz`    |
-| 2         | _not used_                    | Betaflight `pidProfile.dterm_notch_cutoff`    |
-| 2         | _not used_                    | Betaflight `masterConfig.gyro_soft_notch_hz_2`    |
-| 2         | _not used_                    | Betaflight `masterConfig.gyro_soft_notch_cutoff_2`    |
+| 2         | `gyro_soft_notch_hz_1`        | Betaflight `masterConfig.gyro_soft_notch_hz_1`    |
+| 2         | `gyro_soft_notch_cutoff_1`    | Betaflight `masterConfig.gyro_soft_notch_cutoff_1`    |
+| 2         | `dterm_soft_notch_hz`         | Betaflight `pidProfile.dterm_notch_hz`    |
+| 2         | `dterm_soft_notch_cutoff`     | Betaflight `pidProfile.dterm_notch_cutoff`    |
+| 2         | `gyro_soft_notch_hz_2`        | Betaflight `masterConfig.gyro_soft_notch_hz_2`    |
+| 2         | `gyro_soft_notch_cutoff_2`    | Betaflight `masterConfig.gyro_soft_notch_cutoff_2`    |
 
 ## MSP_PID_ADVANCED
 
