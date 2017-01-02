@@ -6,7 +6,7 @@
  - [Multirotor guide](/iNavFlight/inav/wiki/Multirotor-guide)
  - [Fixed-Wing Guide](/iNavFlight/inav/wiki/iNavFlight/inav/wiki/Fixed-wing-guide)
 
-# Addiotnal link
+# Additional link
 
  - [Sensor calibration](/iNavFlight/inav/wiki/Sensor-calibration)
  - [GPS and Compass setup](/iNavFlight/inav/wiki/GPS--and-Compass-setup)
