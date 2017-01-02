@@ -10,22 +10,24 @@ For failsafe to work optimal iNav needs to know it's in a failsafe event and not
 
 One got two options on how to configure receiver.
 
-Option one:  
+**Option one**
+
 Set receiver to send out `NO PULSES`
 
-Option two:  
+**Option two**
+
 1. In "Modes" tab select a switch for "Failsafe"
 
 1. Set your switches and sticks of your radio to the following conditions:  
 
- `Throttle: approx. 45% (just below 6 hover throttle/cruise throttle)`  
+ `Throttle: approx. 0% (no throttle)`  
 
- `Aileron: 0% (no input, stick center)`  
+ `Aileron: 50% (no input, stick center)`  
 
- `Rudder: 0% (no input, stick center)`  
+ `Rudder: 50% (no input, stick center)`  
 
- `Elevator: 0% (no input, stick center)`  
+ `Elevator: 50% (no input, stick center)`  
 
  `Failsafe mode: activated`  
 
- `Arm switch: activated (just if you use switch to arm)`  
+ `Arm switch: Disarmed (If you use stick arming you can skip this)`  
