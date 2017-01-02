@@ -9,13 +9,13 @@ INAV have some settings that are different than stock cleanflight, and simply re
 
 ##It is ABSOLUTELY mandatory to read these pages.
 
-- [Getting started with iNav](https://github.com/iNavFlight/inav/wiki/1.-Getting-started-with-iNav)
+- [Getting started with iNav](https://github.com/iNavFlight/inav/wiki/Getting-started-with-iNav)
 
-- [Sensor calibration](https://github.com/iNavFlight/inav/wiki/4.-Sensor-calibration)
+- [Sensor calibration](https://github.com/iNavFlight/inav/wiki/Sensor-calibration)
 
-- [Multirotor guide](https://github.com/iNavFlight/inav/wiki/2.-Multirotor-guide) if your going to use it in a multirotor.
+- [Multirotor guide](https://github.com/iNavFlight/inav/wiki/Multirotor-guide) if your going to use it in a multirotor.
 
-- [Fixed wing guide](https://github.com/iNavFlight/inav/wiki/3.-Fixed-wing-guide) if your going to use it in a fixed wing.
+- [Fixed wing guide](https://github.com/iNavFlight/inav/wiki/Fixed-wing-guide) if your going to use it in a fixed wing.
 
 - [Hardware support map](https://github.com/iNavFlight/inav/wiki/Hardware-and-feature-support-map)
 
