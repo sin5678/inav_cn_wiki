@@ -189,13 +189,14 @@ Keep in mind that if `NAV POSHOLD` is not combined with this mode you must combi
 ## LAUNCH - airplane launch assistant
 This flight mode is intended to provide assistance for launching the fixed-wing UAVs. Launch detection works by monitoring airplane acceleration - once it breaches the threshold for a certain amount of time launch sequence is started.
 
-**Be aware that launching a flyingwing by slinging it by the wing tip is only supported with iNav version 1.5RC1 or newer.**
 
 The entire time `NAV LAUNCH` mode it will try and stabilize plane, it will target zero roll, zero yaw and predefined climb angle. The I-gain of the PID regulator is also disabled to prevent I-gain growing during launch until motor is started. When succesfull launch is detected it waits for preconfigured amount of time before starting motor.
 
 `NAV LAUNCH` is automatically aborted after 5 seconds or by any pilot input on PITCH/ROLL stick. When it has aborted it goes to whichever selected mode, which can be Angle, Rate, Horzion, RTH or a waypoint mission (if no other mode is selected it will go to Rate mode).
 
 The `NAV LAUNCH` mode cannot be activated again in flight while armed. So its safe to keep it activated. 
+
+See iNav CLI for all available adjustable parameters, they start with `nav_fw_launch_`
 
 Sequence for launching airplane using `NAV LAUNCH` mode looks like this:
 
