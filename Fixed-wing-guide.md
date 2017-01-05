@@ -1,6 +1,5 @@
 # The basic of getting iNav working on airplane
 
-* For more detailed Howto and for CC3D see [this link.](https://github.com/iNavFlight/inav/wiki/Howto:-CC3D-flight-controller,-minimOSD-and-GPS-for-fixed-wing#howto-setup-inav-for-fixed-wing)
 
 * One limitation of iNav(And all other Cleanflight based) is it cannot be flown longer than 1 hour and 15 minutes. This is expected to be corrected by iNav 1.6
 
