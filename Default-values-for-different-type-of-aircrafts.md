@@ -82,8 +82,14 @@ _Navigation PIDs:_
 _Other Values:_
 
 ```
+set gyro_lpf = 256hz
 set tpa_rate = 10
 set tpa_breakpoint = 1650
+
+Also reduce looptime if your FC is capable of it.
+set looptime = 1000
+set gyro_sync = on
+set gyro_sync_denom = 8
 ```
 
 **450 Size:**
