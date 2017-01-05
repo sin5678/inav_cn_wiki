@@ -6,7 +6,7 @@ Worth reading regards to deciding to use asynchronous mode. https://quadmeup.com
 
 ### History: **PLEASE WRITE HERE IF YOU CHANGE ANYTHING AND WHY.**
 ```
-01.01.3017 oleøst: Removed lots of settings in 250 class.
+05.01.3017 oleøst: Changed some settings in 250 class.
 21.11.2016 oleoat: Removed disabling of baro because fixed in iNav 1.4
 21.11.2016 oleoat: Changed recommend gyro_lpf on flying wing, should probably be changed on acrobatic airplanes aswell
 17.11.2016 oleost: Added disabled baro for fixedwing until [543](https://github.com/iNavFlight/inav/pull/543) is fixed
