@@ -59,22 +59,20 @@ Servo 5: Rudder
 
 (Note: In the Servos tab servos are counted from 0-7 while in the Motors tab they run from 1-8.)
 
-### Step 4, Replace default PIDs.
+### Step 4, Replace default values.
 
 * Default PIDs in iNav are mainly for multirotors. Find some PIDs [here](https://github.com/iNavFlight/inav/wiki/Default-values-for-different-type-of-aircrafts) to use instead and tune from there.
 * If you are flying a plane with rudder, use "set i_yaw = 0".
 * If your plane over corrects when RTH is engaged, try increasing "nav_navr_p" and/or increasing "nav_navr_i". Good values to start: "set nav_navr_p = 50"; "set nav_navr_i = 5". Also you can lower "nav_navr_d". The behaviour of the plane is very different with or w/o wind, so it is necessary to test and tweak parameters in both scenarios.
 * In "Angle" Mode you don't need high steering surface deflection. Set "p_roll" and "p_pitch" just as high that you have 25% of full travel. That is a good point to start tweaking the gains from. If you use to high values, the plane will oscillate.
 * A good tool to optimize your system is the blackbox logger. Some FCs have it and in others it is an accessory. After the flight you can analyze in 'Chrome blackbox explorer' the behaviour of many parameters of your plane and later solve issues or ask for help in the forums. With a blackbox log you can also replay all your flight in linux with [mwp tools](https://github.com/stronnag/mwptools).
-
-//TODO: explain how rates work with airplane servos.
+* Read through the iNav CLI commands, especially ALL marked with " fw_ "
 
 ### Step 5, optional but recommended:
 
 * Use Airmode mode to get full stabilitation and servo throw with no throttle applied.
 * [Setting up failsafe with return to home.](https://github.com/iNavFlight/inav/wiki/Failsafe#setting-up-failsafe-with-return-to-home)
-* Disable compass (if present) so it uses GPS heading instead. Cli command `set mag_hardware = 1`
-* Disable barometer (if present) (`set baro_hardware = 1`) due to critical bug that can make airplane dive to ground. Issue [543](https://github.com/iNavFlight/inav/pull/543)
+* Disable compass (if present) so it uses GPS heading instead. Cli command `set mag_hardware = none`
 
 
 ### Optional / Guides related to Fixed Wing:
