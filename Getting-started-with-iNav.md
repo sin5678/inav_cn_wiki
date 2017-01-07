@@ -57,6 +57,7 @@ If you are using your FC onboard mag, try to place the the FC as far away as pos
 
 * No GPS lock after setting it up and the GPS icon lights up green are often due to electric noise from flight controller or other equipment such as 1.2ghz video TX. Try getting the GPS on a mast and also you can shield using alufoil or copper foil.
 
+* Barometer is held at 0 meter until first arm, this is to ensure that it starts at 0 meter instead of 10 meters because of temperatur drift. ( This is why raising your flightcontroller while connected to configurator it shows increasing altitude but then is dragged to 0 meter )
 
 **Checklist if you're having issue with something:**
 
