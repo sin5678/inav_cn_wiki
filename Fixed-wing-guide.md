@@ -5,7 +5,7 @@
 
 ### Step 1, getting your flight controller ready.
 
-* Flash newest iNav. _(Warning: iNav default mixer is Quadcopter, so it sends out high frequency signal that is meant for an ESC. This can damage servo if servos are powered up. If flashing with an FTID adapter the 5v line is powered up, and its required to disconnect any servo.)_
+* Flash newest iNav.
 
 * Do entire [sensor calibration](https://github.com/iNavFlight/inav/wiki/Sensor-calibration). (Level should be the angle of the plane itself when flying straight)
 
