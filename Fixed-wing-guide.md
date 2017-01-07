@@ -59,6 +59,10 @@ Servo 5: Rudder
 
 (Note: In the Servos tab servos are counted from 0-7 while in the Motors tab they run from 1-8.)
 
+At this point everything should do as expected.  
+1: When moving sticks on TX the control surfaces should move correctly, do an [High Five](https://www.youtube.com/watch?v=Gf74geZyKYk) test  
+2: When moving the airplane in the air in angle mode control surfaces should counter-act movement correctly. The controls surfaces needs to move the same way as the airplane is moved to counteract and stabilize the airplane. You may need to **temporarly** tripple the amount on P-gain on Roll, Pitch and Yaw axis. (So its easy to see movement.)  
+
 ### Step 4, Replace default values.
 
 * Default PIDs in iNav are mainly for multirotors. Find some PIDs [here](https://github.com/iNavFlight/inav/wiki/Default-values-for-different-type-of-aircrafts) to use instead and tune from there.
