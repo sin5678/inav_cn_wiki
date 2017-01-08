@@ -47,3 +47,13 @@ It will to contuinue what the pilot was doing.
 Behavior of RTH can also be configured.
  - [iNav Flight modes / Navigation Modes](/iNavFlight/inav/wiki/Navigation-modes#rth-altitude-control-modes)
 
+### Verifying that failsafe works as intended
+
+Verify that your failsafe works.
+
+* Remove all props  
+
+* Go outside, arm and apply throttle, walk with it 20meter away from home (normally the place where you armed it) and then turn off transmitter. The aircraft should now try to climb (increase throttle). Also verify that you're able to regain control by turning on transmitter again.  
+
+* Real test: Take the props on again. Take off, fly at least 20 meters from home, and turn off transmitter. Tip: Do this over soft grass. If it's an airplane it's better to have some altitude.  
+
