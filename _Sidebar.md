@@ -10,8 +10,10 @@
 
 # Sensors setup and calibration
 
+ - [Sensor auto detection and Hardware Failure detection](/Sensor-auto-detect-and-hardware-failure-detection)
  - [Sensor calibration](/iNavFlight/inav/wiki/Sensor-calibration)
  - [GPS and Compass setup](/iNavFlight/inav/wiki/GPS--and-Compass-setup)
+
 
 # Additional infomation
 
