@@ -32,7 +32,7 @@ In iNav 1.2, on non-F1 targets, one can use an automatic declination setting, wh
 
 `set gps_provider = NAZA`
 
-`set mag_hardware = 4`
+`set mag_hardware = GPSMAG`
 
 Also the cli align_mag must be set correctly. Play around with it. It should be CW0FLIP, CW90FLIP, CW180FLIP or CW270FLIP
 
