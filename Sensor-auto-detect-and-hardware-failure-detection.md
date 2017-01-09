@@ -11,4 +11,16 @@ If you connect a magnetometer after first boot it will not autodetect it, then y
 
 # Hardware failure detection
 
-Need help
+Since version 1.5 INAV features hardware failure detection. At run time all sensors - GPS, BARO, MAG, ACC, GYRO, SONAR are periobically checked by a diagnostic system. There are 4 cases for each sensor:
+
+**Case #1**: If sensor is not configured (`*_hardware` setting set to `NONE` or in case of GPS feature is not enabled) it's not monitored by diagnostic system, reported as `NOT AVAILABLE` and is not considered as a hardware failure.
+
+If sensor is configured it's checked periodically and it's status is reported to Configurator via MSP and also used for pre-flight checks.
+
+**Case #2**: Sensor is configured, but not detected. This can happen if you configure a sensor that is not present i.e. by accidentally setting `mag_hardware` to `MAG3110` while your compass chip is `HMC5883`. In this case sensor is reported as `NOT DETECTED` and this status is considered as a hardware failure.
+
+**Case #3**: Sensor is configured, detected correctly, but reports inconsistent readings. This check may not be implemented for certain sensor but if it does such sensor is reported as `NOT HEALTHY` and is considered as a hardware failure.
+
+**Case #4**: Sensor is configured, detected correctly and reports sane and consistent data. This is reported as `GOOD` status.
+
+If any of the sensors is in `NOT DETECTED` or `NOT HEALTHY` state - the board will not ARM and `FAIL` will be indicated for `Hardware health` pre-arming check in the Configurator.
