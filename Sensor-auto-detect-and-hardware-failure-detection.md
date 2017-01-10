@@ -24,3 +24,5 @@ If sensor is configured it's checked periodically and it's status is reported to
 **Case #4**: Sensor is configured, detected correctly and reports sane and consistent data. This is reported as `GOOD` status.
 
 If any of the sensors is in `NOT DETECTED` or `NOT HEALTHY` state - the board will not ARM and `FAIL` will be indicated for `Hardware health` pre-arming check in the Configurator.
+
+Hardware detection failure does not work while in flight. Only detection working is if iNav looses position data, and it does not have knowlegde of where it is anymore, example loosing GPS lock. This will cause the machine to exit GPS modes, and if its during failsafe RTH it will emergency land.
