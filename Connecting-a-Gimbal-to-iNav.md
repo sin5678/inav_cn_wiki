@@ -13,3 +13,7 @@ Because boards are different, the pinout may be different. It also depends on wh
 Naze32: Servos connect to pin 1 and pin 2, motors get shifted to pin 4-8
 
 SpracingF3: Servos connect to pin 7 and 8, motors stay at pin 1-4
+
+## Warning
+
+On some boards (SP Racing F3 for example) servo connectors might not be 5V tolerant, while gimbal controller might be using INPUT_PULLUP 5V in Roll/Pitch inputs. This might damage flight controller
