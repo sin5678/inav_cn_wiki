@@ -6,3 +6,10 @@ There are two ways of doing this.
 
 2: Using servo_tilt to let the flight controller do the stabiliation itself. It is example when using two servos to stabilize and camera. Like [this](https://www.youtube.com/watch?v=Py_RLdZwAlc&t=81s)
 
+## Difference between flight controller boards and mixer used.
+
+Because boards are different, the pinout may be different. It also depends on what Mixer is being used.
+
+Naze32: Servos connect to pin 1 and pin 2, motors get shiftet to pin 4-8
+
+SpracingF3: Servos connect to pin 7 and 8, motors stay at pin 1-4
