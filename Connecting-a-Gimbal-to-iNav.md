@@ -10,9 +10,9 @@ There are two ways of doing this.
 
 Because boards are different, the pinout may be different. It also depends on what Mixer is being used.
 
-Naze32: Servos connect to pin 1 and pin 2, motors get shifted to pin 4-8
+QuadX Naze32: Servos connect to pin 1 and pin 2, motors get shifted to pin 4-8
 
-SpracingF3: Servos connect to pin 7 and 8, motors stay at pin 1-4
+QuadX SpracingF3: Servos connect to pin 7 and 8, motors stay at pin 1-4
 
 ## Warning
 
