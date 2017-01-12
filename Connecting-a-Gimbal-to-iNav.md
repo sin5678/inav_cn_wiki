@@ -31,4 +31,4 @@ When using an gimbal with gimbal controller, simple use `Roll` input as yaw comm
 1. Enable `CAMSTAB` mode if you want to stabilize it. ( Don't use this if you have an actuall gimbal controller )  
 1. Tune Servo MID, MIN and MAX to match your servo / gimbal so it centered and does not exceed mechanical limits.  
 1. If the servo / gimbal moves incorrectly change direction on the `SERVO` tab to negativ number instead of positive.  
-1. To control the gimbal using a free AUX channel enter `SERVO` tab and assign an free AUX to servo 0 (Pitch) and servo 1 (Roll).  
+1. To control the servo / gimbal using a free AUX channel enter `SERVO` tab and assign an free AUX to servo 0 (Pitch) and servo 1 (Roll).  
