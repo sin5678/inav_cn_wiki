@@ -5,9 +5,9 @@ There are two outputs that can be used, in this guide we will name them PITCH an
 There are mainly two scenarios for using `SERVO GIMBAL` feature.
 
 
-1: Using an actuall gimbal like  [this](http://www.banggood.com/Upgrade-Debugging-Edition-JIYI-FPV-G3-3D-3-Axis-Gimbal-For-Gopro-Hero3-3-Hero4-Aerial-Photography-p-1031482.html?rmmds=search), with the purpose of just having controll over PITCH and (ROLL OR YAW) of gimball.
+1: Using an actuall gimbal like  [this](http://www.banggood.com/Upgrade-Debugging-Edition-JIYI-FPV-G3-3D-3-Axis-Gimbal-For-Gopro-Hero3-3-Hero4-Aerial-Photography-p-1031482.html?rmmds=search), with the purpose of just having controll over PITCH and ( ROLL OR YAW ) of gimball.
 
-2: Controlling an gimbal like device like [this](https://www.youtube.com/watch?v=Py_RLdZwAlc&t=81s), which don't have any external gimbal control board. This will enable PITCH and ROLL controll and you can optinally enable `CAMSTAB` mode so the flight controller acts as an gimbal controller and stabilize the camera. 
+2: Controlling an gimbal like device like [this](https://www.youtube.com/watch?v=Py_RLdZwAlc&t=81s), which don't have any external gimbal control board. This will enable PITCH and ROLL controll and you can optinally enable `CAMSTAB` mode so the flight controller acts as an gimbal controller and stabilize the camera. If you want to sacrifise the ROLL-axis to control an servo controlling YAW-axis you need to disable `CAMSTAB`.
 
 ## Warning
 
