@@ -1,11 +1,13 @@
 # Forewords
 
-There are two ways of using `SERVO_GIMBAL`
+There are two outputs that can be used, in this guide we will name them PITCH and ROLL since when turning on `CAMSTAB` they will stabilize PITCH axis and ROLL Axis
+
+There are mainly two scenarios for using `SERVO GIMBAL` feature.
 
 
 1: Using an actuall gimbal like  [this](http://www.banggood.com/Upgrade-Debugging-Edition-JIYI-FPV-G3-3D-3-Axis-Gimbal-For-Gopro-Hero3-3-Hero4-Aerial-Photography-p-1031482.html?rmmds=search), with the purpose of just having controll over PITCH and YAW of gimball.
 
-2: Controlling an gimbal like device like [this](https://www.youtube.com/watch?v=Py_RLdZwAlc&t=81s), which don't have any external gimbal control board. This will enable PITCH and YAW controll and you can optinally enable `CAMSTAB` mode so the flight controller acts as an gimbal controller and stabilize the camera.
+2: Controlling an gimbal like device like [this](https://www.youtube.com/watch?v=Py_RLdZwAlc&t=81s), which don't have any external gimbal control board. This will enable PITCH and ROLL controll and you can optinally enable `CAMSTAB` mode so the flight controller acts as an gimbal controller and stabilize the camera. 
 
 ## Warning
 
