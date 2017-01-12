@@ -27,7 +27,7 @@ On some boards (SP Racing F3 for example) servo connectors might not be 5V toler
 Because boards are different, the pinout may be different. It also depends on what Mixer is being used.
 See map below:
 
-| Board / Target     | Mixer       | SERVO 0 Output pin | SERVO 1 Output pin | Motor Output |
+| Board              | Mixer       | SERVO 0 Output pin | SERVO 1 Output pin | Motor Output |
 |--------------------|:-----------:|:------------------:|:------------------:|:------------:|
 | NAZE               | QuadX       | Output Pin 1       | Output Pin 2       | Output 4-8   |
 | SP RACING F3       | QuadX       | Output Pin 7       | Output Pin 8       | Output 1-4   |
