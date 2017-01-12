@@ -24,9 +24,9 @@ On some boards (SP Racing F3 for example) servo connectors might not be 5V toler
 
 ##  Difference between flight controller boards and mixer used.
 
-Because boards are different, the pinout may be different. It also depends on what Mixer is being used.
-Also be aware that on some boards when using `SERVO GIMBAL` feature motor outputs can get moved to new outputs.
-See map below:
+Because boards are different, the pinout may be different. It also depends on what Mixer is being used.  
+Also be aware that on some boards when using `SERVO GIMBAL` feature motor outputs can get moved to new outputs.  
+See map below:  
 
 | Board              | Mixer       | SERVO 0 Output pin | SERVO 1 Output pin | Motor Output |
 |--------------------|:-----------:|:------------------:|:------------------:|:------------:|
