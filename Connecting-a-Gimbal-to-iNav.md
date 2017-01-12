@@ -30,7 +30,7 @@ See map below:
 
 | Board              | Mixer       | SERVO 0 Output pin | SERVO 1 Output pin | Motor Output |
 |--------------------|:-----------:|:------------------:|:------------------:|:------------:|
-| NAZE               | QuadX       | Output Pin 1       | Output Pin 2       | Output 23-6   |
+| NAZE               | QuadX       | Output Pin 1       | Output Pin 2       | Output 3-6   |
 | SP RACING F3       | QuadX       | Output Pin 7       | Output Pin 8       | Output 1-4   |
 
 
