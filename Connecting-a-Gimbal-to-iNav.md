@@ -19,6 +19,8 @@ QuadX Naze32    : Servo / Gimbal connect to pin 1 (Pitch) and pin 2 (Roll), moto
 
 QuadX SpracingF3: Servo / Gimbal connect to pin 7 (Pitch) and pin 8 (Roll), motors stay at pin 1-4
 
+When using an gimbal with gimbal controller, simple use `Roll` input as yaw command instead.
+
 
 ## Servo Tilt usage
 
