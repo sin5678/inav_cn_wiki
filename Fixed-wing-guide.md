@@ -72,6 +72,7 @@ At this point everything should do as expected.
 * In "Angle" Mode you don't need high steering surface deflection. Set "p_roll" and "p_pitch" just as high that you have 25% of full travel. That is a good point to start tweaking the gains from. If you use to high values, the plane will oscillate.
 * A good tool to optimize your system is the blackbox logger. Some FCs have it and in others it is an accessory. After the flight you can analyze in 'Chrome blackbox explorer' the behaviour of many parameters of your plane and later solve issues or ask for help in the forums. With a blackbox log you can also replay all your flight in linux with [mwp tools](https://github.com/stronnag/mwptools).
 * Read through the iNav CLI commands, especially ALL marked with " fw_ "
+* Use Switch Arming or if using Stick Arming, disable Auto Disarm (prevents disarming if throttle is below min_throttle for a certain amount of time; set auto_disarm_delay = 0) and increase Small Angle (let you arm in any position; set small_angle = 180)
 
 ### Step 5, optional but recommended:
 
