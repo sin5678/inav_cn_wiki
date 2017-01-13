@@ -276,6 +276,8 @@ _Other Values:_
 
 ```
 set mag_hardware = 1
+set auto_disarm_delay = 0
+set small_angl e= 70
 ```
 
 **Flying wing**
@@ -326,4 +328,7 @@ set max_angle_inclination_pit = 450
 set rc_expo = 40
 set tpa_rate = 33
 set tpa_breakpoint = 1300
+
+set auto_disarm_delay = 0
+set small_angl e= 70
 ```
