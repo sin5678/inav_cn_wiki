@@ -1,5 +1,27 @@
 ## INAV 1.6 MSP API Version 1.24
 
+### MSP_CALIBRATION_DATA
+
+Sensors calibration data
+
+| Length        | Setting                       | Notes                         |
+| -----         | -----                         | -----                         |
+| 2             | `acczero_x`                   |                               |
+| 2             | `acczero_y`                   |                               |
+| 2             | `acczero_z`                   |                               |
+| 2             | `accgain_x`                   |                               |
+| 2             | `accgain_y`                   |                               |
+| 2             | `accgain_z`                   |                               |
+| 2             | `magzero_x`                   |                               |
+| 2             | `magzero_y`                   |                               |
+| 2             | `magzero_z`                   |                               |
+| 8             | _reserved_                    |                               |
+
+Frame IDs:
+
+* MSP_CALIBRATION_DATA, Frame ID _14_
+* MSP_SET_CALIBRATION_DATA, Frame ID _15_
+
 ### MSP_NAV_POSHOLD
 
 Basic position hold settings. Mostly, but not only, for multirotor 
@@ -144,3 +166,4 @@ Frame IDs:
 * 2016-11-20 - scaling of `rate_accel_limit_roll_pitch` and `rate_accel_limit_yaw` in **MSP_PID_ADVANCED** changed from 1000 to 10
 * 2016-12-11 - added MSP_STATUS update for iNav 1.5
 * 2017-01-15 - added dterm_setpoint_weight added to MSP_PID_ADVANCED frame
+* 2017-01-15 - MSP_CALIBRATION_DATA
