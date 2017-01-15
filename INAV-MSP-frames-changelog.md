@@ -89,12 +89,12 @@ Frame IDs:
 | 1         | `gyro_soft_lpf_hz`            |   |
 | 2         | `dterm_lpf_hz`                |   |
 | 2         | `yaw_lpf_hz`                  |   |
-| 2         | `gyro_soft_notch_hz_1`        | Betaflight `masterConfig.gyro_soft_notch_hz_1`    |
-| 2         | `gyro_soft_notch_cutoff_1`    | Betaflight `masterConfig.gyro_soft_notch_cutoff_1`    |
-| 2         | `dterm_soft_notch_hz`         | Betaflight `pidProfile.dterm_notch_hz`    |
-| 2         | `dterm_soft_notch_cutoff`     | Betaflight `pidProfile.dterm_notch_cutoff`    |
-| 2         | `gyro_soft_notch_hz_2`        | Betaflight `masterConfig.gyro_soft_notch_hz_2`    |
-| 2         | `gyro_soft_notch_cutoff_2`    | Betaflight `masterConfig.gyro_soft_notch_cutoff_2`    |
+| 2         | `gyro_soft_notch_hz_1`        | Since INAV 1.6 |
+| 2         | `gyro_soft_notch_cutoff_1`    | Since INAV 1.6 |
+| 2         | `dterm_soft_notch_hz`         | Since INAV 1.6 |
+| 2         | `dterm_soft_notch_cutoff`     | Since INAV 1.6 |
+| 2         | `gyro_soft_notch_hz_2`        | Since INAV 1.6 |
+| 2         | `gyro_soft_notch_cutoff_2`    | Since INAV 1.6 |
 
 ## MSP_PID_ADVANCED
 
@@ -113,7 +113,7 @@ Frame IDs:
 | 1         | _not used_                    | Betaflight `deltaMethod`      |
 | 1         | _not used_                    | Betaflight `vbatPidCompensation` |
 | 1         | _not used_                    | Betaflight `setpointRelaxRatio`  |
-| 1         | _not used_                    | Betaflight `dtermSetpointWeight` |
+| 1         | `dterm_setpoint_weight`       | Since INAV 1.6 |
 | 1         | _reserved_                    |                               |
 | 1         | _reserved_                    |                               |
 | 1         | _not used_                    | Betaflight `itermThrottleGain`    |
@@ -143,3 +143,4 @@ Frame IDs:
 
 * 2016-11-20 - scaling of `rate_accel_limit_roll_pitch` and `rate_accel_limit_yaw` in **MSP_PID_ADVANCED** changed from 1000 to 10
 * 2016-12-11 - added MSP_STATUS update for iNav 1.5
+* 2017-01-15 - added dterm_setpoint_weight added to MSP_PID_ADVANCED frame
