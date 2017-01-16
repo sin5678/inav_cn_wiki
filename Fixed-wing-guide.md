@@ -92,3 +92,5 @@ At this point everything should do as expected.
 * Setting up flaps in iNav. [Youtube Link](https://www.youtube.com/watch?v=Ui7Y0UVedDQ)
 
 * Howto in flight trim servos. [Aileron example at rcgroups.com](http://www.rcgroups.com/forums/showpost.php?p=35059861&postcount=6741) [Fixed wing example](https://www.rcgroups.com/forums/showpost.php?p=36039077&postcount=8732)
+
+* Prefer using digital servos to analog ones. Digital servos are much faster. [Explanation](https://www.rcgroups.com/forums/showpost.php?p=36649528&postcount=10480)
