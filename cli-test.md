@@ -1,5 +1,5 @@
 |  Variable Name | Default Value | Description |
-|  ------ | --------- | ------ |
+|  ------ | ----------------- | ------ |
 |  looptime  | 2000 | This is the main loop time (in us). Changing this affects PID effect with some PID controllers (see PID section for details). Default of 3500us/285Hz should work for everyone. Setting it to zero does not limit loop time, so it will go as fast as possible. |
 |  i2c_overclock  | OFF | Enabling this feature speeds up IMU speed significantly and faster looptimes are possible. |
 |  gyro_sync  | OFF | This option enables gyro_sync feature. In this case the loop will be synced to gyro refresh rate. Loop will always wait for the newest gyro measurement. Use gyro_lpf and gyro_sync_denom determine the gyro refresh rate. Note that different targets have different limits. Setting too high refresh rate can mean that FC cannot keep up with the gyro and higher gyro_sync_denom is needed, |
