@@ -16,17 +16,17 @@
 
 * Servo and ESC/MOTOR. 
 
-Output 1 Motor/ESC
+    * Output 1 Motor/ESC
 
-Output 2 Empty
+    * Output 2 Empty
 
-Output 3 Elevator
+    * Output 3 Elevator
 
-Output 4 Aileron
+    * Output 4 Aileron
 
-Output 5 Aileron
+    * Output 5 Aileron
 
-Output 6 Rudder
+    * Output 6 Rudder
 
 * If using GPS connect it to UART 2.
 * If using Sbus connect it to UART 3. (Note this requires newer board like spracing f3)
