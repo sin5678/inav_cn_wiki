@@ -38,6 +38,8 @@ Also be aware that some of our flight controllers can cause interference with th
 
 ## Notes / Common issues
 
+* Old version of iNav configurator, verify that your on the latest version see [link](https://chrome.google.com/webstore/detail/inav-configurator/fmaidjmgkdkpafmbnmigkpdnpdhopgel). If it has failed to update, simple uninstall configurator and install it again.
+
 * Unable to enable NAV related modes, See [Link](https://github.com/iNavFlight/inav/wiki/Navigation-modes) for possible reasons for why.
 
 * iNav does not show "GPS Signal Strength" for each satellite in the Cleanflight configurator, instead only the first one is used to show [HDOP](https://en.wikipedia.org/wiki/Dilution_of_precision_%28GPS%29)
