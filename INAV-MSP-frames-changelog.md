@@ -136,8 +136,7 @@ Frame IDs:
 | 1         | _not used_                    | Betaflight `vbatPidCompensation` |
 | 1         | _not used_                    | Betaflight `setpointRelaxRatio`  |
 | 1         | `dterm_setpoint_weight`       | Since INAV 1.6 |
-| 1         | `pidsum_limit`                | Since INAV 1.6                 |
-| 1         | _reserved_                    |                               |
+| 2         | `pidsum_limit`                | Since INAV 1.6                 |
 | 1         | _not used_                    | Betaflight `itermThrottleGain`    |
 | 2         | `rate_accel_limit_roll_pitch` | divided by `10`    |
 | 2         | `rate_accel_limit_yaw`        | divided by `10`    |
