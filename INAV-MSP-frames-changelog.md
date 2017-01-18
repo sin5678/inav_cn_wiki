@@ -136,7 +136,7 @@ Frame IDs:
 | 1         | _not used_                    | Betaflight `vbatPidCompensation` |
 | 1         | _not used_                    | Betaflight `setpointRelaxRatio`  |
 | 1         | `dterm_setpoint_weight`       | Since INAV 1.6 |
-| 1         | _reserved_                    |                               |
+| 1         | `pidsum_limit`                | Since INAV 1.6                 |
 | 1         | _reserved_                    |                               |
 | 1         | _not used_                    | Betaflight `itermThrottleGain`    |
 | 2         | `rate_accel_limit_roll_pitch` | divided by `10`    |
@@ -167,3 +167,4 @@ Frame IDs:
 * 2016-12-11 - added MSP_STATUS update for iNav 1.5
 * 2017-01-15 - added dterm_setpoint_weight added to MSP_PID_ADVANCED frame
 * 2017-01-15 - MSP_CALIBRATION_DATA
+* 2017-01-18 - `pidsum_limit` in `MSP_PID_ADVANCED`
