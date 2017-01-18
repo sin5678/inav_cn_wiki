@@ -19,10 +19,11 @@ Go through the index on the right side to find useful information.
 * Dropped sonar support
 * Dropped automatic magnetic declination. 
 * Dropped Led strip
-* Since version 1.4 F1 targets support only S.Bus, Spektrum and IBus SerialRX protocols
+* Support only S.Bus, Spektrum and IBus SerialRX protocols
 * For more complete list see this [Link](https://github.com/iNavFlight/inav/wiki/Hardware-and-feature-support-map)
 
-These features can be enabled if you download and compile your own, (Required to take out other features due to size limitations) Read [Building in windows ](https://github.com/iNavFlight/inav/blob/master/docs/development/Building%20in%20Windows.md) and [Features safe to add and remove ](https://github.com/iNavFlight/inav/blob/master/docs/Features%20safe%20to%20remove%20and%20add.md) (This list is incomplete, still more that can be disabled. Feel free to add to the list showing) 
+These features can be enabled if you download and compile your own, (Required to take out other features due to size limitations) Read [Building in windows ](https://github.com/iNavFlight/inav/blob/master/docs/development/Building%20in%20Windows.md) and [Features safe to add and remove ](https://github.com/iNavFlight/inav/blob/master/docs/Features%20safe%20to%20remove%20and%20add.md) (This list is incomplete, still more that can be disabled. Feel free to add to the list showing)  
+
 
 [Video showing how to edit and tailor iNav for you needs.](https://youtu.be/n3Z1fOQJAg8)
 
