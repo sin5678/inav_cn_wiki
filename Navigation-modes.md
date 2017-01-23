@@ -39,7 +39,7 @@ Let's have a look at each mode of operation in detail.
 When activated, the aircraft maintains its actual altitude unless changed by manual throttle input.
 Throttle input indicate climb or sink up to a predetermined maximum rate (see CLI variables). Using ALTHOLD with a multicopter, you need a barometer.  
 SONAR: Altitude hold code will use sonar automatically on low altitudes (< 3m) if hardware is available.  
-Using ALTHOLD with a plane (fixed wing: fw) with GPS: Barometer should be ignored. (To disable barometer: "set baro_hardware=1").
+Using ALTHOLD with a plane (fixed wing: fw) with GPS: Since iNAV 1.5 it's recommended to keep baro enabled, and for iNav 1.6 the plan is to rely even less on GPS altitude when baro is enabled.  
   
 In general you shouldn't mix up ALTHOLD and ACRO/HORIZON: ALTHOLD doesn't account for extreme acro maneuvers. 
   
