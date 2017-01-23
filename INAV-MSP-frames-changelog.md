@@ -1,5 +1,22 @@
 ## INAV 1.6 MSP API Version 1.24
 
+### MSP_POSITION_ESTIMATION_CONFIG
+
+Frame IDs:
+
+* MSP_POSITION_ESTIMATION_CONFIG, Frame ID _16_
+* MSP_SET_POSITION_ESTIMATION_CONFIG, Frame ID _17_
+
+| Length        | Setting                       | Notes                         |
+| -----         | -----                         | -----                         |
+| 2             | `inav_w_z_baro_p`             | float as `value * 100`        |
+| 2             | `inav_w_z_gps_p`              | float as `value * 100`        |
+| 2             | `inav_w_z_gps_v`              | float as `value * 100`        |
+| 2             | `inav_w_xy_gps_p`             | float as `value * 100`        |
+| 2             | `inav_w_xy_gps_v`             | float as `value * 100`        |
+| 8             | `reserved`                    |         |
+
+
 ### MSP_CALIBRATION_DATA
 
 Sensors calibration data
@@ -167,3 +184,4 @@ Frame IDs:
 * 2017-01-15 - added dterm_setpoint_weight added to MSP_PID_ADVANCED frame
 * 2017-01-15 - MSP_CALIBRATION_DATA
 * 2017-01-18 - `pidsum_limit` in `MSP_PID_ADVANCED`
+* 2017-01-23 - MSP_POSITION_ESTIMATOR
