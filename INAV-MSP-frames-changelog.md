@@ -14,7 +14,9 @@ Frame IDs:
 | 2             | `inav_w_z_gps_v`              | float as `value * 100`        |
 | 2             | `inav_w_xy_gps_p`             | float as `value * 100`        |
 | 2             | `inav_w_xy_gps_v`             | float as `value * 100`        |
-| 8             | `reserved`                    |         |
+| 1             | `inav_gps_min_sats`           | |
+| 1             | `inav_use_gps_velned`         | ON/OFF |
+| 6             | `reserved`                    |         |
 
 
 ### MSP_CALIBRATION_DATA
