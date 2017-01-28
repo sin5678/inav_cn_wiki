@@ -309,7 +309,7 @@ _Navigation PIDs:_
 _Other Values:_
 
 ```
-set mag_hardware = 1
+set mag_hardware = none
 set gyro_sync = ON
 set gyro_sync_denom = 1
 set gyro_lpf = 98HZ
@@ -330,5 +330,5 @@ set tpa_rate = 33
 set tpa_breakpoint = 1300
 
 set auto_disarm_delay = 0
-set small_angl e= 70
+set small_angle= 70
 ```
