@@ -81,6 +81,7 @@ At this point everything should do as expected.
 * [Setting up failsafe with return to home.](https://github.com/iNavFlight/inav/wiki/Failsafe#setting-up-failsafe-with-return-to-home)
 * Disable compass (if present) so it uses GPS heading instead. Cli command `set mag_hardware = none`
 * Zero out D-Term of Pitch/Roll/Yaw PID Controller (set d_pitch = 0; set d_roll = 0; set d_yaw = 0) [Explanation](https://www.rcgroups.com/forums/showpost.php?p=36645260&postcount=10462)
+* Setup your TPA correctly. [PID Attenuation and scaling](https://github.com/iNavFlight/inav/wiki/PID-Attenuation-and-scaling)
 
 
 ### Last step, tesflight!:
