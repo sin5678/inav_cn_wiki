@@ -83,6 +83,25 @@ At this point everything should do as expected.
 * Zero out D-Term of Pitch/Roll/Yaw PID Controller (set d_pitch = 0; set d_roll = 0; set d_yaw = 0) [Explanation](https://www.rcgroups.com/forums/showpost.php?p=36645260&postcount=10462)
 
 
+### Last step, tesflight!:
+
+* Double check following again:
+    * 3d model in configurator moves correctly when moving airplane by hand. And that the aircraft is showing leveled when your holding the aircraft leveled in air.
+    * Do the [High Five](https://youtu.be/Gf74geZyKYk) test in passthrough mode, verify everything is moving as expected.
+    * Enable `Angle` / `Horizon` mode and verify the control surfaces moves correctly when moving aircraft by hand.
+
+* Arm and launch your aircraft using prefered mode, example `Horizon`.
+    * If airplane is not flying leveled when in self leveling mode like `Horizon` you need to trim your [board aligment](https://github.com/iNavFlight/inav/wiki/Sensor-calibration#board-orientation-and-level-calibration)
+    * If airplane flies leveled, do an [Servo Autotrim](https://github.com/iNavFlight/inav/wiki/Navigation-modes#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight)
+    * Tune your PIDs if necessary.
+
+* For GPS features
+    * Test `NAV ALTHOLD` and se that it holds altitude.
+    * Test `NAV ALTHOLD` and `NAV POSHOLD` combined
+    * Test `RTH` flight mode
+    * Test [failsafe](https://github.com/iNavFlight/inav/wiki/Failsafe)
+
+
 ### Optional / Guides related to Fixed Wing:
 
 * Using a seperate BEC for servos to prevent the FC from restarting due to brownouts or interferences of the servos. [Example](http://www.rcgroups.com/forums/showpost.php?p=34254665&postcount=4006)
