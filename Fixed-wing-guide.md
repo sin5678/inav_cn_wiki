@@ -88,7 +88,7 @@ At this point everything should do as expected.
 * Double check following again:
     * 3d model in configurator moves correctly when moving airplane by hand. And that the aircraft is showing leveled when your holding the aircraft leveled in air.
     * Do the [High Five](https://youtu.be/Gf74geZyKYk) test in passthrough mode, verify everything is moving as expected.
-    * Enable `Angle` / `Horizon` mode and verify the control surfaces moves correctly when moving aircraft by hand.
+    * Enable `Angle` / `Horizon` mode and verify the control surfaces moves correctly when moving aircraft by hand and by sticks on TX
 
 * Arm and launch your aircraft using prefered mode, example `Horizon`.
     * If airplane is not flying leveled when in self leveling mode like `Horizon` you need to trim your [board aligment](https://github.com/iNavFlight/inav/wiki/Sensor-calibration#board-orientation-and-level-calibration)
