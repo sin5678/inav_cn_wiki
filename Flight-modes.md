@@ -13,15 +13,15 @@
 |  NAV RTH | Used for Return-to-home. Does not need any other mode selected. |
 |  NAV POSHOLD | Used to hold posision in 2d space with GPS. Combine with ALTHOLD to get 3d posision lock |
 |  [`PASSTHRU`](/iNavFlight/inav/wiki/Modes) | Used with fixedwings to controll everything manually. ( Direct servo controll ) |
-|  BEEPER | Used to activate beeper |
-|  LEDLOW | Missing |
-|  LLIGHTS | Missing |
-|  OSD SW | Missing |
+|  [`BEEPER`](/iNavFlight/inav/wiki/Modes) | Used to activate beeper |
+|  [`LEDLOW`](/iNavFlight/inav/wiki/Modes) | Missing |
+|  [`LLIGHTS`](/iNavFlight/inav/wiki/Modes) | Missing |
+|  [`OSD SW`](/iNavFlight/inav/wiki/Modes) | Missing |
 |  TELEMETRY | Missing |
 |  BLACKBOX | Used to manually start blackbox logging. ( If not configured it will automaticle start on ARM ) |
 |  FAILSAFE | Used to manually initate FAILSAFE |
 |  NAV WP | Used to fly WAYPOINT mission. Does not need any other mode selected. |
-|  AIR MODE | Keeps PID controller active at zero throttle |
+|  [`AIR MODE`](/iNavFlight/inav/wiki/Modes) | Keeps PID controller active at zero throttle |
 |  HOME RESET | Used to set new home position and current aircraft posision. |
 |  GCS NAV | Used to allow ground station to controll aircraft to do stuff like `Follow me` |
 |  HEADING LOCK | Locks heading like MAG mode, but without using magnetometer. |
