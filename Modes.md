@@ -33,10 +33,11 @@ The default flight mode does not self level the aircraft around the roll and the
 ### Angle
 
 In this auto-leveled mode the roll and pitch channels control the angle between the relevant axis and the vertical, achieving leveled flight just by leaving the sticks centered.
+Maximum banking angle is limited by `max_angle_inclination_rll` and `max_angle_inclination_pit`
 
 ### Horizon
 
-This hybrid mode works exactly like the previous ANGLE mode with centered roll and pitch sticks (thus enabling auto-leveled flight), then gradually behaves more and more like the default RATE mode as the sticks are moved away from the center position.
+This hybrid mode works exactly like the previous ANGLE mode with centered roll and pitch sticks (thus enabling auto-leveled flight), then gradually behaves more and more like the default RATE mode as the sticks are moved away from the center position. Which means it has no limitation on banking angle and can do flips.
 
 ### MAG
 
