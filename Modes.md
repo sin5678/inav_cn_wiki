@@ -58,7 +58,7 @@ With this mode it is easier to control the multicopter, even fly it with the phy
 
 It allows you to set a new yaw origin for HEADFREE mode.
 
-### Airmode
+### Air mode
 
 In the standard mixer / mode, when the roll, pitch and yaw gets calculated and saturates a motor, all motors
 will be reduced equally. When motor goes below minimum it gets clipped off.
@@ -75,7 +75,7 @@ when throttle zeroed (below min_check) and roll/pitch sticks centered. This is a
 motors spooling up on the ground. Also the Iterm will be reset above 70% of stick input in acro mode to prevent
 quick Iterm windups during finishes of rolls and flips, which will provide much cleaner and more natural stops
 of flips and rolls what again opens the ability to have higher I gains for some.
-Note that AIRMODE will also overrule motor stop function! It will basically also act as an idle up switch.
+
 
 ### LAUNCH - airplane launch assistant
 This flight mode is intended to provide assistance for launching the fixed-wing UAVs. Launch detection works by monitoring airplane acceleration - once it breaches the threshold for a certain amount of time launch sequence is started.
