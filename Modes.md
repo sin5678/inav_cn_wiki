@@ -5,7 +5,7 @@ Index:
 - [HORIZON](#horizon)
 - [MAG](#MAG)
 - [HEADFREE](#headfree)
-- [HEADADJ](#headaj)
+- [HEADADJ](#headadj)
 - [CAMSTAB](#CAMSTAB)
 - [PASSTHRU](#passthru)
 - [BEEPER](#BEEPER)
