@@ -1,7 +1,7 @@
 ### Getting started
 
 ## Where to download?!
-Install the latest chrome app [iNav Configurator](https://chrome.google.com/webstore/detail/inav-configurator/fmaidjmgkdkpafmbnmigkpdnpdhopgel) and use that tool do donwload and flash firmware. 
+Install the latest chrome app [iNav Configurator](https://chrome.google.com/webstore/detail/inav-configurator/fmaidjmgkdkpafmbnmigkpdnpdhopgel) and use that tool do download and flash firmware. 
 
 Go through the index on the right side to find useful information.
 
