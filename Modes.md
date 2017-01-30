@@ -53,7 +53,9 @@ In this mode, the "head" of the multicopter is always pointing to the same direc
 
 With this mode it is easier to control the multicopter, even fly it with the physical head towards you since the controls always respond the same. This is a friendly mode to new users of multicopters and can prevent losing the control when you don't know the head direction. 
 
+### HeadAdj
 
+It allows you to set a new yaw origin for HEADFREE mode.
 
 ### Airmode
 
