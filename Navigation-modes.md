@@ -186,43 +186,8 @@ Keep in mind that if `NAV POSHOLD` is not combined with this mode you must combi
 
 // TODO: explain what happens when you are in GSC NAV mode and GPS fails.  
  
-## LAUNCH - airplane launch assistant
-This flight mode is intended to provide assistance for launching the fixed-wing UAVs. Launch detection works by monitoring airplane acceleration - once it breaches the threshold for a certain amount of time launch sequence is started.
+right (roll/pitch) stick
 
-
-The entire time `NAV LAUNCH` mode it will try and stabilize plane, it will target zero roll, zero yaw and predefined climb angle. The I-gain of the PID regulator is also disabled to prevent I-gain growing during launch until motor is started. When succesfull launch is detected it waits for preconfigured amount of time before starting motor.
-
-`NAV LAUNCH` is automatically aborted after 5 seconds or by any pilot input on PITCH/ROLL stick. When it has aborted it goes to whichever selected mode, which can be Angle, Rate, Horzion, RTH or a waypoint mission (if no other mode is selected it will go to Rate mode).
-
-The `NAV LAUNCH` mode cannot be activated again in flight while armed. So its safe to keep it activated. 
-
-See iNav CLI for all available adjustable parameters, they start with `nav_fw_launch_`
-
-Sequence for launching airplane using `NAV LAUNCH` mode looks like this:
-
-1. Set switch to `NAV LAUNCH` mode prior to arming (note that it won't actually enable until arming)
-1. ARM the plane. Motor should start spinning at min_throttle (if `MOTOR_STOP` is active, motor won't spin)
-1. Verify that motor don't respond to throttle stick motion. Don't touch the right stick!
-1. Put throttle stick to desired throttle value to be set **after** launch is finished.
-1. Throw the airplane
-1. Motors will start at pre-configured `nav_fw_launch_thr` (default 1700) after `nav_fw_launch_motor_delay` (500ms)
-1. Launch sequence will finish when pilot switch off the NAV LAUNCH mode or move the right (roll/pitch) stick
-
-## SERVO AUTOTRIM - In flight adjustment of servo midpoint for straight flight
-The purpose of this mode is to set new midpoints for `SERVO_ELEVATOR`, `SERVO_FLAPERON_1`, `SERVO_FLAPERON_2` and `SERVO_RUDDER`.
-
-This is so when switching into passthrough mode the plane will fly straight, its also to help the PID controller know where the plane is expected to fly straight.
-
-How to use:
-
-1. This is intended to use in air. 
-2. Fly straight, choose what mode that suites you best. (`passthrough`, `angle` or `acro`)
-3. Enable `SERVO AUTOTRIM` mode, and keep flying straight for 5 seconds. After 5 seconds it will set new midpoints based on average servo position during those 5 seconds.
-4. If your are NOT happy with new midpoints disable `SERVO AUTOTRIM` mode and it will revert back to old settings. If you want to keep new midpoints keep `SERVO AUTOTRIM` turned on, land aircraft and disarm. New midpoints will be saved.
-
-You may want to inspect your new midpoints after landing, if the servo ofset is alot you may alter your linkage mechanicaly and redo servo midpoint. 
-
-This is not to be confused with tuning your aircraft for leveled flight in `ANGLE` mode, to do this you need to adjust your board aligment so straight flight for that aircraft is board aligment = 0 pitch and 0 roll.
 
 ## Mode switch diagram
 
