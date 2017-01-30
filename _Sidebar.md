@@ -20,7 +20,7 @@
 
  - [iNav Missions / Waypoint flying](/iNavFlight/inav/wiki/iNavFlight-Missions)
  - [iNav CLI variables](/iNavFlight/inav/wiki/iNav-CLI-variables)
- - [iNav Flight modes](/iNavFlight/inav/wiki/Modes)
+ - [iNav Flight modes](/iNavFlight/inav/wiki/Flight-modes)
  - [Usage of Servo Gimbal feature](/iNavFlight/inav/wiki/Connecting-a-Gimbal-to-iNav)
 
 
