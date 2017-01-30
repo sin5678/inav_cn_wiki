@@ -138,6 +138,12 @@ In RATE mode it makes a perfect yaw-stick only turn and maintains attitude. Ther
 In ANGLE mode it also maked yaw turns much smoother and completely pirouette-less. This is expected as TURN ASSIST introduces feed-forward control in pitch/roll and maintains attitude naturally and without delay making it easier for self-leveling controller.
 
 
+### FAILSAFE
+
+Lets you activate flight controller failsafe with an aux channel.
+Read [Failsafe page](https://github.com/iNavFlight/inav/wiki/Failsafe) for more info.
+
+
 ## Auxillary Configuration
 
 Spare auxillary receiver channels can be used to enable/disable modes.  Some modes can only be enabled this way.
