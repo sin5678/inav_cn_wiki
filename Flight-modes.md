@@ -2,7 +2,7 @@
 
 |  Mode name | Description |
 |  ------ | ------ |
-|  ARM | Used to switch arm aircraft |
+|  [`ARM`](/iNavFlight/inav/wiki/Modes) | Used to switch arm aircraft |
 |  [`ANGLE`](/iNavFlight/inav/wiki/Modes) | Stabilized mode with self leveling and restricted banking angles |
 |  [`HORIZON`](/iNavFlight/inav/wiki/Modes)  | Stabilized mode with self leveling but without restricted banking angles |
 |  [`NAV ALTHOLD`](/iNavFlight/inav/wiki/Navigation-modes) | Used to hold altitude |
