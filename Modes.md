@@ -1,8 +1,26 @@
 Index:
 
+- [ARM](#arm)
+- [ANGLE](#angle)
+- [MAG](#MAG)
+- [HEADFREE](#headfree)
+- [HEADADJ](#headaj)
+- [CAMSTAB](#CAMSTAB)
+- [PASSTHRU](#passthru)
+- [BEEPER](#BEEPER)
+- [LEDLOW](#ledlow)
+- [LLIGHTS](#llights)
+- [OSD SW](#osd-sw)
+- [TELEMETRY](#telemetry)
+- [BLACKBOX](#blackbox)
+- [FAILSAFE](#failsafe)
+- [AIR MODE](#air-mode)
 - [HEADING LOCK](#heading-lock)
-- [LAUNCH - airplane launch assistant](#launch---airplane-launch-assistant)
-- [SERVO AUTOTRIM - In flight adjustment of servo midpoint for straight flight](#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight)
+- [SURFACE](#surface)
+- [FLAPERON](#flaperon)
+- [TURN ASSIST](#turn-assist)
+- [NAV LAUNCH](#launch---airplane-launch-assistant)
+- [SERVO AUTOTRIM](#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight)
 
 ## Auto-leveled flight
 
