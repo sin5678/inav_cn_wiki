@@ -1,6 +1,6 @@
 This page will list and explain all the different navigational flight modes of iNav:
 
-- [NAV ALTHOLD - Altitude hold](#althold---Altitude-hold)
+- [NAV ALTHOLD - Altitude hold](#-ALTHOLD---Altitude-hold)
 - [NAV POSHOLD - Horizontal position hold](#poshold---horizontal-position-hold)
 - [NAV RTH - Return to home](#rth---return-to-home)
 - [NAV WP - Autonomous waypoint mission](#wp---autonomous-waypoint-mission)
