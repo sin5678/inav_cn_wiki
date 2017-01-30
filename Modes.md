@@ -131,9 +131,9 @@ Configuration besides activating FLAPERON mode is pretty simple, and consists of
 
 ### TURN ASSIST
 
-Makes aircraft do Yaw turns on parallel to the ground plane regardless of tilt.
+TURN ASSISTANT mode is an assisted mode to do a Yaw rotation on a ground plane, allowing one-stick turn in RATE mode and keeping ROLL and PITCH attitude though the turn.
 
-In RATE mode it makes a perfect yaw-stick only turn and maintains attitude. There is slight drift due to not instant response of PID control, but still much easier to pilot for a RATE-mode beginner like myself.
+In RATE mode it makes a perfect yaw-stick only turn and maintains attitude. There is slight drift due to not instant response of PID control, but still much easier to pilot for a RATE-mode beginners.
 
 In ANGLE mode it also maked yaw turns much smoother and completely pirouette-less. This is expected as TURN ASSIST introduces feed-forward control in pitch/roll and maintains attitude naturally and without delay making it easier for self-leveling controller.
 
