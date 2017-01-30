@@ -6,8 +6,6 @@ This page will list and explain all the different navigational flight modes of i
 - [RTH - Return to home](#rth---return-to-home)
 - [WP - Autonomous waypoint mission](#wp---autonomous-waypoint-mission)
 - [GCS_NAV - Ground control station](#gcs_nav---ground-control-station)
-- [LAUNCH - airplane launch assistant](#launch---airplane-launch-assistant)
-- [SERVO AUTOTRIM - In flight adjustment of servo midpoint for straight flight](#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight)
 
 
 For safety reasons, iNAV’s navigation modes can be activated only if  
@@ -139,10 +137,6 @@ Hints for safe operation:
 
 Activated by **POSHOLD** flight mode.
 
-## HEADING LOCK
-This flight mode affects on yaw axis and can be enabled together with any other flight mode. 
-It helps to maintain current heading without pilots input and  magnetometer's support. When yaw stick is neutral position, Heading Lock tries to keep total amount on rotation on yaw at zero. When pilot moves yaw stick, Heading Lock is not used.
-It is a equivalent of [TauLabs Axis Lock mode](https://github.com/TauLabs/TauLabs/wiki/Flightmode-Settings#axislock) 
 
 // TODO: explain if this works for FW w/o magnetometer.
 
