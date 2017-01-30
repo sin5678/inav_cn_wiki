@@ -1,9 +1,7 @@
 ### Getting started
 
 ## Where to download?!
-Download the *.hex file for your flight controller from the [latest stable iNav release page](https://github.com/iNavFlight/inav/releases/latest) and use the chrome app [iNav Configurator](https://chrome.google.com/webstore/detail/inav-configurator/fmaidjmgkdkpafmbnmigkpdnpdhopgel) to flash it. You can also buy the android app [Cleanflight flasher](https://play.google.com/store/apps/details?id=com.eziosoft.cleanflight_flasher) to directly download newest version and flash.
-
-Older Versions can be found [here](https://github.com/iNavFlight/inav/releases).
+Install the latest chrome app [iNav Configurator](https://chrome.google.com/webstore/detail/inav-configurator/fmaidjmgkdkpafmbnmigkpdnpdhopgel) and use that tool do donwload and flash firmware. 
 
 Go through the index on the right side to find useful information.
 
