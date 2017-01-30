@@ -57,3 +57,4 @@ Verify that your failsafe works.
 
 * Real test: Take the props on again. Take off, fly at least 20 meters from home, and turn off transmitter. Tip: Do this over soft grass. If it's an airplane it's better to have some altitude.  
 
+Note: If you are using fixedwing without magnetometer enabled you will need to run with airplane before turning off transmitter to test failsafe. This is because GPS speed needs to be above a certain threshold to aquirre a valid heading. Without known any heading failsafe will not initated.
