@@ -128,6 +128,16 @@ Configuration besides activating FLAPERON mode is pretty simple, and consists of
 - `flaperon_throw_offset` defines throw range in us for both ailerons that will be applied (before scaling) when FLAPERON mode is activated. By default it 250 with max at 400
 - `flaperon_throw_inverted` [ON, OFF] inverts throw offset on both ailerons. Can be used to create SPOILERON or just to change throw direction
 
+
+### TURN ASSIST
+
+Makes aircraft do Yaw turns on parallel to the ground plane regardless of tilt.
+
+In RATE mode it makes a perfect yaw-stick only turn and maintains attitude. There is slight drift due to not instant response of PID control, but still much easier to pilot for a RATE-mode beginner like myself.
+
+In ANGLE mode it also maked yaw turns much smoother and completely pirouette-less. This is expected as TURN ASSIST introduces feed-forward control in pitch/roll and maintains attitude naturally and without delay making it easier for self-leveling controller.
+
+
 ## Auxillary Configuration
 
 Spare auxillary receiver channels can be used to enable/disable modes.  Some modes can only be enabled this way.
