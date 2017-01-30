@@ -47,7 +47,7 @@ quick Iterm windups during finishes of rolls and flips, which will provide much 
 of flips and rolls what again opens the ability to have higher I gains for some.
 Note that AIRMODE will also overrule motor stop function! It will basically also act as an idle up switch.
 
-## LAUNCH - airplane launch assistant
+### LAUNCH - airplane launch assistant
 This flight mode is intended to provide assistance for launching the fixed-wing UAVs. Launch detection works by monitoring airplane acceleration - once it breaches the threshold for a certain amount of time launch sequence is started.
 
 
@@ -84,6 +84,11 @@ How to use:
 You may want to inspect your new midpoints after landing, if the servo ofset is alot you may alter your linkage mechanicaly and redo servo midpoint. 
 
 This is not to be confused with tuning your aircraft for leveled flight in `ANGLE` mode, to do this you need to adjust your board aligment so straight flight for that aircraft is board aligment = 0 pitch and 0 roll.
+
+### HEADING LOCK
+This flight mode affects on yaw axis and can be enabled together with any other flight mode. 
+It helps to maintain current heading without pilots input and  magnetometer's support. When yaw stick is neutral position, Heading Lock tries to keep total amount on rotation on yaw at zero. When pilot moves yaw stick, Heading Lock is not used.
+It is a equivalent of [TauLabs Axis Lock mode](https://github.com/TauLabs/TauLabs/wiki/Flightmode-Settings#axislock) 
 
 
 ## Auxillary Configuration
