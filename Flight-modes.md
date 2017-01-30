@@ -25,7 +25,7 @@
 |  [`HOME RESET`](/iNavFlight/inav/wiki/Navigation-modes) | Used to set new home position and current aircraft posision. |
 |  [`GCS NAV`](/iNavFlight/inav/wiki/Navigation-modes) | Used to allow ground station to control aircraft to do stuff like `Follow me` |
 |  [`HEADING LOCK`](/iNavFlight/inav/wiki/Modes) | Locks heading like MAG mode, but without using magnetometer. |
-|  [`SURFACE`](/iNavFlight/inav/wiki/Modes) | Used to follow terrain, in combination with SONAR |
+|  [`SURFACE`](/iNavFlight/inav/wiki/Modes) | Used to follow terrain, needs SONAR |
 |  [`FLAPERON`](/iNavFlight/inav/wiki/Modes) | Used to activate flaperons on fixed-wings |
 |  [`TURN ASSIST`](/iNavFlight/inav/wiki/Modes)  | Makes copter do Yaw turns on parallel to the ground plane regardless of tilt. |
 |  [`NAV LAUNCH`](/iNavFlight/inav/wiki/Modes) | Used to detect and automatic launch fixed-wings. |
