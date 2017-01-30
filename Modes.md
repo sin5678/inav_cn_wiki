@@ -120,6 +120,13 @@ This flight mode affects on yaw axis and can be enabled together with any other 
 It helps to maintain current heading without pilots input and  magnetometer's support. When yaw stick is neutral position, Heading Lock tries to keep total amount on rotation on yaw at zero. When pilot moves yaw stick, Heading Lock is not used.
 It is a equivalent of [TauLabs Axis Lock mode](https://github.com/TauLabs/TauLabs/wiki/Flightmode-Settings#axislock) 
 
+### FLAPERON
+
+Activating it moves both ailerons down (or up) by predefined offset.
+
+Configuration besides activating FLAPERON mode is pretty simple, and consists of 2 CLI variables:
+- `flaperon_throw_offset` defines throw range in us for both ailerons that will be applied (before scaling) when FLAPERON mode is activated. By default it 250 with max at 400
+- `flaperon_throw_inverted` [ON, OFF] inverts throw offset on both ailerons. Can be used to create SPOILERON or just to change throw direction
 
 ## Auxillary Configuration
 
