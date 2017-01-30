@@ -3,16 +3,16 @@
 |  Mode name | Description |
 |  ------ | ------ |
 |  ARM | Used to switch arm aircraft |
-|  ANGLE | Stabilized mode with self leveling and restricted banking angles |
-|  HORIZON | Stabilized mode with self leveling but without restricted banking angles |
+|  [`ANGLE`](/iNavFlight/inav/wiki/Modes) | Stabilized mode with self leveling and restricted banking angles |
+|  [`HORIZON`](/iNavFlight/inav/wiki/Modes)  | Stabilized mode with self leveling but without restricted banking angles |
 |  NAV ALTHOLD | Used to hold altitude |
 |  MAG | Used to lock heading using magnetometer |
-|  HEADFREE | Head Free - When enabled yaw has no effect on pitch/roll inputs |
-|  HEADADJ | Heading Adjust - Sets a new yaw origin for HEADFREE mode |
-|  CAMSTAB | Used to stabilize SERVO GIMBAL outputs |
+|  [`HEADFREE`](/iNavFlight/inav/wiki/Modes) | Head Free - When enabled yaw has no effect on pitch/roll inputs |
+|  [`HEADADJ`](/iNavFlight/inav/wiki/Modes) | Heading Adjust - Sets a new yaw origin for HEADFREE mode |
+|  [`CAMSTAB`](/iNavFlight/inav/wiki/Modes) | Used to stabilize SERVO GIMBAL outputs |
 |  NAV RTH | Used for Return-to-home. Does not need any other mode selected. |
 |  NAV POSHOLD | Used to hold posision in 2d space with GPS. Combine with ALTHOLD to get 3d posision lock |
-|  PASSTHRU | Used with fixedwings to controll everything manually. ( Direct servo controll ) |
+|  [`PASSTHRU`](/iNavFlight/inav/wiki/Modes) | Used with fixedwings to controll everything manually. ( Direct servo controll ) |
 |  BEEPER | Used to activate beeper |
 |  LEDLOW | Missing |
 |  LLIGHTS | Missing |
