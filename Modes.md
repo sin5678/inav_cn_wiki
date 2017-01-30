@@ -2,6 +2,7 @@ Index:
 
 - [ARM](#arm)
 - [ANGLE](#angle)
+- [HORIZON](#horizon)
 - [MAG](#MAG)
 - [HEADFREE](#headfree)
 - [HEADADJ](#headaj)
@@ -22,11 +23,10 @@ Index:
 - [NAV LAUNCH](#launch---airplane-launch-assistant)
 - [SERVO AUTOTRIM](#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight)
 
-## Auto-leveled flight
+## Default flight mode ( No mode selected )
 
-The default flight mode does not stabilize the multicopter around the roll and the pitch axes. That is, the multicopter does not level on its own if you center the pitch and roll sticks on the radio. Rather, they work just like the yaw axis: the rate of rotation of each axis is controlled directly by the related stick on the radio, and by leaving them centered the flight controller will just try to keep the multicopter in whatever orientation it's in. This default mode is called "Rate" mode, also sometime called "Acro" (from "acrobatic") or "Manual" mode, and is active whenever no auto-leveled mode is enabled.
+The default flight mode does not self level the aircraft around the roll and the pitch axes. That is, the multicopter does not level on its own if you center the pitch and roll sticks on the radio. Rather, they work just like the yaw axis: the rate of rotation of each axis is controlled directly by the related stick on the radio, and by leaving them centered the flight controller will just try to keep the multicopter in whatever orientation it's in. This default mode is called "Rate" mode, also sometime called "Acro" (from "acrobatic") or "Manual" mode, and is active whenever no auto-leveled mode is enabled.
 
-If your flight controller is equipped with a 3 axis accelerometer (very likely), then you can enable one of the two available auto leveled flight modes.
 
 ## Mode details
 
@@ -37,6 +37,15 @@ In this auto-leveled mode the roll and pitch channels control the angle between 
 ### Horizon
 
 This hybrid mode works exactly like the previous ANGLE mode with centered roll and pitch sticks (thus enabling auto-leveled flight), then gradually behaves more and more like the default RATE mode as the sticks are moved away from the center position.
+
+### MAG
+
+The magnetometer is used in this mode.
+
+When Mag Mode is enabled, if there is no yaw input, the copter will point forever to the same direction. MAG can be activated in all flight stabilization methods. Without this mode, you will still have a light deviation (drifting around the Z axis due to the imperfection of the gyro).
+
+MAG MODE needs: gyro + acc + mag sensors (acc is needed also because it is used in heading angle determination)
+
 
 ### Headfree
 
