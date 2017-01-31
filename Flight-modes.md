@@ -18,7 +18,7 @@
 |  [`LLIGHTS`](/iNavFlight/inav/wiki/Modes) | Missing |
 |  [`OSD SW`](/iNavFlight/inav/wiki/Modes) | Missing |
 |  [`TELEMETRY`](/iNavFlight/inav/wiki/Modes) | Missing |
-|  [`BLACKBOX`](/iNavFlight/inav/wiki/Modes) | Used to manually start blackbox logging. ( If not configured it will automatic start on ARM ) |
+|  [`BLACKBOX`](/iNavFlight/inav/blob/master/docs/Blackbox.md) | Normally blackbox is logging as soon as you arm, configure this mode blackbox will only log flight data when the mode is active. ) |
 |  [`FAILSAFE`](/iNavFlight/inav/wiki/Modes) | Used to manually initate FAILSAFE |
 |  [`NAV WP`](/iNavFlight/inav/wiki/Navigation-modes) | Used to fly WAYPOINT mission. Does not need any other mode selected. |
 |  [`AIR MODE`](/iNavFlight/inav/wiki/Modes) | Keeps PID controller active at zero throttle |
