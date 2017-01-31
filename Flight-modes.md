@@ -6,7 +6,6 @@ Actuall flight modes
 |  ------ | ------ |
 |  [`ANGLE`](/iNavFlight/inav/wiki/Modes) | Stabilized mode with self leveling and restricted banking angles |
 |  [`HORIZON`](/iNavFlight/inav/wiki/Modes)  | Stabilized mode with self leveling but without restricted banking angles |
-|  [`NAV ALTHOLD`](/iNavFlight/inav/wiki/Navigation-modes) | Used to hold altitude |
 |  [`NAV RTH`](/iNavFlight/inav/wiki/Navigation-modes) | Used for Return-to-home. Does not need any other mode selected. |
 |  [`NAV POSHOLD`](/iNavFlight/inav/wiki/Navigation-modes) | Used to hold position in 2d space with GPS. Combine with ALTHOLD to get 3d position lock |
 |  [`PASSTHRU`](/iNavFlight/inav/wiki/Modes) | Used with fixedwings to control everything manually. ( Direct servo control ) |
@@ -19,6 +18,7 @@ Modes used to change behavior of other flightmodes, or various other things.
 |  Mode name | Description |
 |  ------ | ------ |
 |  [`ARM`](/iNavFlight/inav/wiki/Modes) | Used to switch arm aircraft |
+|  [`NAV ALTHOLD`](/iNavFlight/inav/wiki/Navigation-modes) | Used to hold altitude. recommend to use in combination with `angle` mode or `nav poshold` |
 |  [`CAMSTAB`](/iNavFlight/inav/wiki/Modes) | Used to stabilize SERVO GIMBAL outputs |
 |  [`BEEPER`](/iNavFlight/inav/wiki/Modes) | Used to activate beeper |
 |  [`LEDLOW`](/iNavFlight/inav/wiki/Modes) | Turns LEDs OFF|
