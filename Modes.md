@@ -13,7 +13,6 @@ Index:
 - [LLIGHTS](#llights)
 - [OSD SW](#osd-sw)
 - [TELEMETRY](#telemetry)
-- [BLACKBOX](#blackbox)
 - [FAILSAFE](#failsafe)
 - [AIR MODE](#air-mode)
 - [HEADING LOCK](#heading-lock)
