@@ -1,6 +1,5 @@
 # List of all flight modes in iNav
 
-## Default flight mode ( No mode selected )
 
 The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-mode--no-mode-selected-), this is activate when none of the `Actuall flight modes` is turned on.
 
