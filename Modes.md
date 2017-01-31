@@ -144,6 +144,14 @@ Lets you activate flight controller failsafe with an aux channel.
 Read [Failsafe page](https://github.com/iNavFlight/inav/wiki/Failsafe) for more info.
 
 
+### BLACKBOX
+
+If you're recording to an onboard flash chip, you probably want to disable Blackbox recording when not required in order to save storage space. To do this, you can add a Blackbox flight mode to one of your AUX channels on the Configurator's modes tab. Once you've added a mode, Blackbox will only log flight data when the mode is active.
+
+A log header will always be recorded at arming time, even if logging is paused. You can freely pause and resume logging while in flight.
+
+See [`BLACKBOX`](/iNavFlight/inav/blob/master/docs/Blackbox.md) for more infomation
+
 ## Auxillary Configuration
 
 Spare auxillary receiver channels can be used to enable/disable modes.  Some modes can only be enabled this way.
