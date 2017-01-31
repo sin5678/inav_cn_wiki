@@ -16,8 +16,7 @@ The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-m
 |  [`NAV WP`](/iNavFlight/inav/wiki/Navigation-modes) | Used to fly WAYPOINT mission. Does not need any other mode selected. |
 
 
-
-Modes used to change behavior of other flightmodes, or various other things.
+`Flight modes that alter behavior in combination with one of the above`
 
 |  Mode name | Description |
 |  ------ | ------ |
@@ -30,6 +29,10 @@ Modes used to change behavior of other flightmodes, or various other things.
 |  [`MAG`](/iNavFlight/inav/wiki/Modes) | Used to lock heading using magnetometer |
 |  [`HEADFREE`](/iNavFlight/inav/wiki/Modes) | Head Free - When enabled yaw has no effect on pitch/roll inputs |
 |  [`HEADADJ`](/iNavFlight/inav/wiki/Modes) | Heading Adjust - Sets a new yaw origin for HEADFREE mode |
+
+
+`Modes that can be enabled to activate function or other features.`
+|  Mode name | Description |
 |  [`CAMSTAB`](/iNavFlight/inav/wiki/Modes) | Used to stabilize SERVO GIMBAL outputs |
 |  [`BEEPER`](/iNavFlight/inav/wiki/Modes) | Used to activate beeper |
 |  [`LEDLOW`](/iNavFlight/inav/wiki/Modes) | Turns LEDs OFF|
