@@ -19,7 +19,6 @@ The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-m
 
 |  Mode name | Description |
 |  ------ | ------ |
-|  [`ARM`](/iNavFlight/inav/wiki/Modes) | Used to switch arm aircraft |
 |  [`NAV ALTHOLD`](/iNavFlight/inav/wiki/Navigation-modes) | Used to hold altitude. recommend to use in combination with `angle` mode or `nav poshold` |
 |  [`TURN ASSIST`](/iNavFlight/inav/wiki/Modes)  | Makes copter do Yaw turns on parallel to the ground plane regardless of tilt. |
 |  [`AIR MODE`](/iNavFlight/inav/wiki/Modes) | Keeps PID controller active at zero throttle |
@@ -34,6 +33,7 @@ The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-m
 
 |  Mode name | Description |
 |  ------ | ------ |
+|  [`ARM`](/iNavFlight/inav/wiki/Modes) | Used to switch arm aircraft |
 |  [`CAMSTAB`](/iNavFlight/inav/wiki/Modes) | Used to stabilize SERVO GIMBAL outputs |
 |  [`BEEPER`](/iNavFlight/inav/wiki/Modes) | Used to activate beeper |
 |  [`LEDLOW`](/iNavFlight/inav/wiki/Modes) | Turns LEDs OFF|
