@@ -18,6 +18,7 @@ The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-m
 
 `Flight modes that alter behavior in combination with one of the above`
 
+
 |  Mode name | Description |
 |  ------ | ------ |
 |  [`ARM`](/iNavFlight/inav/wiki/Modes) | Used to switch arm aircraft |
@@ -32,7 +33,9 @@ The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-m
 
 
 `Modes that can be enabled to activate function or other features.`
+
 |  Mode name | Description |
+|  ------ | ------ |
 |  [`CAMSTAB`](/iNavFlight/inav/wiki/Modes) | Used to stabilize SERVO GIMBAL outputs |
 |  [`BEEPER`](/iNavFlight/inav/wiki/Modes) | Used to activate beeper |
 |  [`LEDLOW`](/iNavFlight/inav/wiki/Modes) | Turns LEDs OFF|
