@@ -14,10 +14,10 @@
 |  [`NAV POSHOLD`](/iNavFlight/inav/wiki/Navigation-modes) | Used to hold position in 2d space with GPS. Combine with ALTHOLD to get 3d position lock |
 |  [`PASSTHRU`](/iNavFlight/inav/wiki/Modes) | Used with fixedwings to control everything manually. ( Direct servo control ) |
 |  [`BEEPER`](/iNavFlight/inav/wiki/Modes) | Used to activate beeper |
-|  [`LEDLOW`](/iNavFlight/inav/wiki/Modes) | Missing |
-|  [`LLIGHTS`](/iNavFlight/inav/wiki/Modes) | Missing |
-|  [`OSD SW`](/iNavFlight/inav/wiki/Modes) | Missing |
-|  [`TELEMETRY`](/iNavFlight/inav/wiki/Modes) | Missing |
+|  [`LEDLOW`](/iNavFlight/inav/wiki/Modes) | Turns LEDs OFF|
+|  [`LLIGHTS`](/iNavFlight/inav/wiki/Modes) | Missing description |
+|  [`OSD SW`](/iNavFlight/inav/wiki/Modes) | Missing description |
+|  [`TELEMETRY`](/iNavFlight/inav/wiki/Modes) | Normally telemetry is always enabled, enabling this mode allows you to turn on and off telemetry at will |
 |  [`BLACKBOX`](/iNavFlight/inav/blob/master/docs/Blackbox.md) | Normally blackbox is logging as soon as you arm, configure this mode blackbox will only log flight data when the mode is active. ) |
 |  [`FAILSAFE`](/iNavFlight/inav/wiki/Modes) | Used to manually initate FAILSAFE |
 |  [`NAV WP`](/iNavFlight/inav/wiki/Navigation-modes) | Used to fly WAYPOINT mission. Does not need any other mode selected. |
