@@ -9,11 +9,10 @@ The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-m
 |  ------ | ------ |
 |  [`ANGLE`](/iNavFlight/inav/wiki/Modes) | Stabilized mode with self leveling and restricted banking angles |
 |  [`HORIZON`](/iNavFlight/inav/wiki/Modes)  | Stabilized mode with self leveling but without restricted banking angles |
-|  [`NAV RTH`](/iNavFlight/inav/wiki/Navigation-modes) | Used for Return-to-home. Does not need any other mode selected. |
 |  [`NAV POSHOLD`](/iNavFlight/inav/wiki/Navigation-modes) | Used to hold position in 2d space with GPS. Combine with ALTHOLD to get 3d position lock |
-|  [`PASSTHRU`](/iNavFlight/inav/wiki/Modes) | Used with fixedwings to control everything manually. ( Direct servo control ) |
+|  [`NAV RTH`](/iNavFlight/inav/wiki/Navigation-modes) | Used for Return-to-home. Does not need any other mode selected. |
 |  [`NAV WP`](/iNavFlight/inav/wiki/Navigation-modes) | Used to fly WAYPOINT mission. Does not need any other mode selected. |
-
+|  [`PASSTHRU`](/iNavFlight/inav/wiki/Modes) | Used with fixedwings to control everything manually. ( Direct servo control ) |
 
 `Flight modes that alter behavior in combination with one of the above`
 
