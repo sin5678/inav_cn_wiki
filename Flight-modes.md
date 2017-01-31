@@ -19,6 +19,13 @@ Modes used to change behavior of other flightmodes, or various other things.
 |  ------ | ------ |
 |  [`ARM`](/iNavFlight/inav/wiki/Modes) | Used to switch arm aircraft |
 |  [`NAV ALTHOLD`](/iNavFlight/inav/wiki/Navigation-modes) | Used to hold altitude. recommend to use in combination with `angle` mode or `nav poshold` |
+|  [`TURN ASSIST`](/iNavFlight/inav/wiki/Modes)  | Makes copter do Yaw turns on parallel to the ground plane regardless of tilt. |
+|  [`AIR MODE`](/iNavFlight/inav/wiki/Modes) | Keeps PID controller active at zero throttle |
+|  [`SURFACE`](/iNavFlight/inav/wiki/Modes) | Used to follow terrain, needs SONAR |
+|  [`HEADING LOCK`](/iNavFlight/inav/wiki/Modes) | Locks heading like MAG mode, but without using magnetometer. |
+|  [`MAG`](/iNavFlight/inav/wiki/Modes) | Used to lock heading using magnetometer |
+|  [`HEADFREE`](/iNavFlight/inav/wiki/Modes) | Head Free - When enabled yaw has no effect on pitch/roll inputs |
+|  [`HEADADJ`](/iNavFlight/inav/wiki/Modes) | Heading Adjust - Sets a new yaw origin for HEADFREE mode |
 |  [`CAMSTAB`](/iNavFlight/inav/wiki/Modes) | Used to stabilize SERVO GIMBAL outputs |
 |  [`BEEPER`](/iNavFlight/inav/wiki/Modes) | Used to activate beeper |
 |  [`LEDLOW`](/iNavFlight/inav/wiki/Modes) | Turns LEDs OFF|
@@ -27,15 +34,9 @@ Modes used to change behavior of other flightmodes, or various other things.
 |  [`TELEMETRY`](/iNavFlight/inav/wiki/Modes) | Normally telemetry is always enabled, enabling this mode allows you to turn on and off telemetry at will |
 |  [`BLACKBOX`](/iNavFlight/inav/blob/master/docs/Blackbox.md) | Normally blackbox is logging as soon as you arm, configure this mode blackbox will only log flight data when the mode is active. ) |
 |  [`FAILSAFE`](/iNavFlight/inav/wiki/Modes) | Used to manually initate FAILSAFE |
-|  [`AIR MODE`](/iNavFlight/inav/wiki/Modes) | Keeps PID controller active at zero throttle |
 |  [`HOME RESET`](/iNavFlight/inav/wiki/Navigation-modes) | Used to set new home position at aircraft current position. |
 |  [`GCS NAV`](/iNavFlight/inav/wiki/Navigation-modes) | Used to allow ground station to control aircraft to do stuff like `Follow me` |
 |  [`FLAPERON`](/iNavFlight/inav/wiki/Modes) | Used to activate flaperons on fixed-wings |
 |  [`NAV LAUNCH`](/iNavFlight/inav/wiki/Modes) | Used to detect and automatic launch fixed-wings. |
 |  [`SERVO AUTOTRIM`](/iNavFlight/inav/wiki/Modes) | Used to trim midpoint for servos to maintain straight. |
-|  [`TURN ASSIST`](/iNavFlight/inav/wiki/Modes)  | Makes copter do Yaw turns on parallel to the ground plane regardless of tilt. |
-|  [`SURFACE`](/iNavFlight/inav/wiki/Modes) | Used to follow terrain, needs SONAR |
-|  [`HEADING LOCK`](/iNavFlight/inav/wiki/Modes) | Locks heading like MAG mode, but without using magnetometer. |
-|  [`MAG`](/iNavFlight/inav/wiki/Modes) | Used to lock heading using magnetometer |
-|  [`HEADFREE`](/iNavFlight/inav/wiki/Modes) | Head Free - When enabled yaw has no effect on pitch/roll inputs |
-|  [`HEADADJ`](/iNavFlight/inav/wiki/Modes) | Heading Adjust - Sets a new yaw origin for HEADFREE mode |
+
