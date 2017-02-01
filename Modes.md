@@ -29,7 +29,7 @@ The default flight mode does not self level the aircraft around the roll and the
 
 ## Mode details
 
-### Air mode
+### AIR MODE
 
 In the standard mixer / mode, when the roll, pitch and yaw gets calculated and saturates a motor, all motors
 will be reduced equally. When motor goes below minimum it gets clipped off.
@@ -47,7 +47,7 @@ motors spooling up on the ground. Also the Iterm will be reset above 70% of stic
 quick Iterm windups during finishes of rolls and flips, which will provide much cleaner and more natural stops
 of flips and rolls what again opens the ability to have higher I gains for some.
 
-### Angle
+### ANGLE
 
 In this auto-leveled mode the roll and pitch channels control the angle between the relevant axis and the vertical, achieving leveled flight just by leaving the sticks centered.
 Maximum banking angle is limited by `max_angle_inclination_rll` and `max_angle_inclination_pit`
@@ -73,11 +73,11 @@ Configuration besides activating FLAPERON mode is pretty simple, and consists of
 - `flaperon_throw_offset` defines throw range in us for both ailerons that will be applied (before scaling) when FLAPERON mode is activated. By default it 250 with max at 400
 - `flaperon_throw_inverted` [ON, OFF] inverts throw offset on both ailerons. Can be used to create SPOILERON or just to change throw direction
 
-### HeadAdj
+### HEADADJ
 
 It allows you to set a new yaw origin for HEADFREE mode.
 
-### Headfree
+### HEADFREE
 
 In this mode, the "head" of the multicopter is always pointing to the same direction as when the feature was activated. This means that when the multicopter rotates around the Z axis (yaw), the controls will always respond according the same "head" direction.
 
@@ -88,7 +88,7 @@ This flight mode affects on yaw axis and can be enabled together with any other 
 It helps to maintain current heading without pilots input and  magnetometer's support. When yaw stick is neutral position, Heading Lock tries to keep total amount on rotation on yaw at zero. When pilot moves yaw stick, Heading Lock is not used.
 It is a equivalent of [TauLabs Axis Lock mode](https://github.com/TauLabs/TauLabs/wiki/Flightmode-Settings#axislock) 
 
-### Horizon
+### HORIZON
 
 This hybrid mode works exactly like the previous ANGLE mode with centered roll and pitch sticks (thus enabling auto-leveled flight), then gradually behaves more and more like the default RATE mode as the sticks are moved away from the center position. Which means it has no limitation on banking angle and can do flips.
 
@@ -100,7 +100,7 @@ When Mag Mode is enabled, if there is no yaw input, the copter will point foreve
 
 MAG MODE needs: gyro + acc + mag sensors (acc is needed also because it is used in heading angle determination)
 
-### LAUNCH - airplane launch assistant
+### LAUNCH - Airplane launch assistant
 This flight mode is intended to provide assistance for launching the fixed-wing UAVs. Launch detection works by monitoring airplane acceleration - once it breaches the threshold for a certain amount of time launch sequence is started.
 
 
@@ -150,23 +150,23 @@ In RATE mode it allows one to makes a perfect yaw-stick only turn without changi
 
 In ANGLE mode it also makes yaw turns smoother and completely pirouette-less. This is because TURN ASSIST introduces feed-forward control in pitch/roll and maintains attitude naturally and without delay.
 
-## Auxillary Configuration
+## AUXILIARY CONFIGURATION
 
-Spare auxillary receiver channels can be used to enable/disable modes.  Some modes can only be enabled this way.
+Spare auxiliary receiver channels can be used to enable/disable modes.  Some modes can only be enabled this way.
 
 Configure your transmitter so that switches or dials (potentiometers) send channel data on channels 5 and upwards (the first 4 channels are usually occupied by the throttle, aileron, rudder, and elevator channels).
 
 _e.g. You can configure a 3 position switch to send 1000 when the switch is low, 1500 when the switch is in the middle and 2000 when the switch is high._
 
-Configure your tx/rx channel limits to use values between 1000 and 2000.  The range used by mode ranges is fixed to 900 to 2100.
+Configure your TX/RX channel limits to use values between 1000 and 2000.  The range used by mode ranges is fixed to 900 to 2100.
 
-When a channel is within a specifed range the corresponding mode is enabled.
+When a channel is within a specified range the corresponding mode is enabled.
 
 Use the GUI configuration tool to allow easy configuration when channel.
 
 ### CLI 
 
-There is a CLI command, `aux` that allows auxillary configuration.  It takes 5 arguments as follows:
+There is a CLI command, `aux` that allows auxiliary configuration.  It takes 5 arguments as follows:
 
 * AUD range slot number (0 - 39)
 * mode id (see mode list above)
@@ -178,7 +178,7 @@ If the low and high position are the same then the values are ignored.
 
 e.g.
 
-Configure AUX range slot 0 to enable ARM when AUX1 is withing 1700 and 2100.
+Configure AUX range slot 0 to enable ARM when AUX1 is within 1700 and 2100.
  
 ```
 aux 0 0 0 1700 2100
