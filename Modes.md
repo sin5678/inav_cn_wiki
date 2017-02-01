@@ -10,7 +10,6 @@ Index:
 - [PASSTHRU](#passthru)
 - [BEEPER](#BEEPER)
 - [LEDLOW](#ledlow)
-- [LLIGHTS](#llights)
 - [OSD SW](#osd-sw)
 - [TELEMETRY](#telemetry)
 - [BLACKBOX](#blackbox)
