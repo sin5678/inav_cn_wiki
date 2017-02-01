@@ -21,29 +21,29 @@ The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-m
 |  ------ | ------ |
 |  [`NAV ALTHOLD`](/iNavFlight/inav/wiki/Navigation-modes#althold---altitude-hold) | Used to hold altitude. recommend to use in combination with `angle` mode or `nav poshold` |
 |  [`TURN ASSIST`](/iNavFlight/inav/wiki/Modes#turn-assist)  | Makes copter do Yaw turns on parallel to the ground plane regardless of tilt. |
-|  [`AIR MODE`](/iNavFlight/inav/wiki/Modes) | Keeps PID controller active at zero throttle |
-|  [`SURFACE`](/iNavFlight/inav/wiki/Modes) | Used to follow terrain, needs SONAR |
-|  [`HEADING LOCK`](/iNavFlight/inav/wiki/Modes) | Locks heading like MAG mode, but without using magnetometer. |
-|  [`MAG`](/iNavFlight/inav/wiki/Modes) | Used to lock heading using magnetometer |
-|  [`HEADFREE`](/iNavFlight/inav/wiki/Modes) | Head Free - When enabled yaw has no effect on pitch/roll inputs |
-|  [`HEADADJ`](/iNavFlight/inav/wiki/Modes) | Heading Adjust - Sets a new yaw origin for HEADFREE mode |
+|  [`AIR MODE`](/iNavFlight/inav/wiki/Modes#air-mode) | Keeps PID controller active at zero throttle |
+|  [`SURFACE`](/iNavFlight/inav/wiki/Modes#surface) | Used to follow terrain, needs SONAR |
+|  [`HEADING LOCK`](/iNavFlight/inav/wiki/Modes#heading-lock) | Locks heading like MAG mode, but without using magnetometer. |
+|  [`MAG`](/iNavFlight/inav/wiki/Modes#mag) | Used to lock heading using magnetometer |
+|  [`HEADFREE`](/iNavFlight/inav/wiki/Modes#headfree) | Head Free - When enabled yaw has no effect on pitch/roll inputs |
+|  [`HEADADJ`](/iNavFlight/inav/wiki/Modes#headadj) | Heading Adjust - Sets a new yaw origin for HEADFREE mode |
 
 
 `Modes that can be enabled to activate function or other features.`
 
 |  Mode name | Description |
 |  ------ | ------ |
-|  [`ARM`](/iNavFlight/inav/wiki/Modes) | Used to switch arm aircraft |
-|  [`CAMSTAB`](/iNavFlight/inav/wiki/Modes) | CAMera STABilisation. Used to stabilize SERVO GIMBAL outputs |
-|  [`BEEPER`](/iNavFlight/inav/wiki/Modes) | Used to activate beeper |
-|  [`LEDLOW`](/iNavFlight/inav/wiki/Modes) | Turns LEDs OFF|
-|  [`OSD SW`](/iNavFlight/inav/wiki/Modes) | Turns on and off OSD overlay |
-|  [`TELEMETRY`](/iNavFlight/inav/wiki/Modes) | Normally telemetry is always enabled, using this mode allows you to turn telemetry on and off at will |
+|  [`ARM`](/iNavFlight/inav/wiki/Modes#arm) | Used to switch arm aircraft |
+|  [`CAMSTAB`](/iNavFlight/inav/wiki/Modes#CAMSTAB) | CAMera STABilisation. Used to stabilize SERVO GIMBAL outputs |
+|  [`BEEPER`](/iNavFlight/inav/wiki/Modes#BEEPER) | Used to activate beeper |
+|  [`LEDLOW`](/iNavFlight/inav/wiki/Modes#ledlow) | Turns LEDs OFF|
+|  [`OSD SW`](/iNavFlight/inav/wiki/Modes#osd-sw) | Turns on and off OSD overlay |
+|  [`TELEMETRY`](/iNavFlight/inav/wiki/Modes#telemetry) | Normally telemetry is always enabled, using this mode allows you to turn telemetry on and off at will |
 |  [`BLACKBOX`](/iNavFlight/inav/blob/master/docs/Blackbox.md) | Normally blackbox is logging as soon as you arm, using this mode blackbox will only log flight data when the mode is active. ) |
-|  [`FAILSAFE`](/iNavFlight/inav/wiki/Modes) | Used to manually initate FAILSAFE |
+|  [`FAILSAFE`](/iNavFlight/inav/wiki/Modes#failsafe) | Used to manually initate FAILSAFE |
 |  [`HOME RESET`](/iNavFlight/inav/wiki/Navigation-modes) | Used to set a new home position at the current aircraft position. |
 |  [`GCS NAV`](/iNavFlight/inav/wiki/Navigation-modes) | Used to allow ground station to control aircraft to do stuff like `Follow me` |
-|  [`FLAPERON`](/iNavFlight/inav/wiki/Modes) | Used to activate flaperons on fixed-wing aircraft. |
-|  [`NAV LAUNCH`](/iNavFlight/inav/wiki/Modes) | Used to detect and automatic launch fixed-wing aircraft. |
-|  [`SERVO AUTOTRIM`](/iNavFlight/inav/wiki/Modes) | Used to trim midpoint for servos to maintain straight and level flight |
+|  [`FLAPERON`](/iNavFlight/inav/wiki/Modes#flaperon) | Used to activate flaperons on fixed-wing aircraft. |
+|  [`NAV LAUNCH`](/iNavFlight/inav/wiki/Modes#launch---airplane-launch-assistant) | Used to detect and automatic launch fixed-wing aircraft. |
+|  [`SERVO AUTOTRIM`](/iNavFlight/inav/wiki/Modes#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight) | Used to trim midpoint for servos to maintain straight and level flight |
 
