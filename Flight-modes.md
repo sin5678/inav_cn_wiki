@@ -8,19 +8,19 @@ The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-m
 |  Mode name | Description |
 |  ------ | ------ |
 |  [`ANGLE`](/iNavFlight/inav/wiki/Modes#angle) | Stabilized mode with self leveling and restricted banking angles |
-|  [`HORIZON`](/iNavFlight/inav/wiki/Modes)  | Stabilized mode with self leveling but without restricted banking angles |
-|  [`NAV POSHOLD`](/iNavFlight/inav/wiki/Navigation-modes) | Used to hold position in 2d space with GPS. Combine with ALTHOLD to get 3d position lock |
-|  [`NAV RTH`](/iNavFlight/inav/wiki/Navigation-modes) | Used for Return-to-home. Does not need any other mode selected. |
-|  [`NAV WP`](/iNavFlight/inav/wiki/Navigation-modes) | Used to fly WAYPOINT mission. Does not need any other mode selected. |
-|  [`PASSTHRU`](/iNavFlight/inav/wiki/Modes) | Used with fixedwings to control everything manually. ( Direct servo control ) |
+|  [`HORIZON`](/iNavFlight/inav/wiki/Modes#horizon)  | Stabilized mode with self leveling but without restricted banking angles |
+|  [`NAV POSHOLD`](/iNavFlight/inav/wiki/Navigation-modes#poshold---horizontal-position-hold) | Used to hold position in 2d space with GPS. Combine with ALTHOLD to get 3d position lock |
+|  [`NAV RTH`](/iNavFlight/inav/wiki/Navigation-modes#rth---return-to-home) | Used for Return-to-home. Does not need any other mode selected. |
+|  [`NAV WP`](/iNavFlight/inav/wiki/Navigation-modes#wp---autonomous-waypoint-mission) | Used to fly WAYPOINT mission. Does not need any other mode selected. |
+|  [`PASSTHRU`](/iNavFlight/inav/wiki/Modes#passthru) | Used with fixedwings to control everything manually. ( Direct servo control ) |
 
 `Flight modes that alter behavior in combination with one of the above`
 
 
 |  Mode name | Description |
 |  ------ | ------ |
-|  [`NAV ALTHOLD`](/iNavFlight/inav/wiki/Navigation-modes) | Used to hold altitude. recommend to use in combination with `angle` mode or `nav poshold` |
-|  [`TURN ASSIST`](/iNavFlight/inav/wiki/Modes)  | Makes copter do Yaw turns on parallel to the ground plane regardless of tilt. |
+|  [`NAV ALTHOLD`](/iNavFlight/inav/wiki/Navigation-modes#althold---altitude-hold) | Used to hold altitude. recommend to use in combination with `angle` mode or `nav poshold` |
+|  [`TURN ASSIST`](/iNavFlight/inav/wiki/Modes#turn-assist)  | Makes copter do Yaw turns on parallel to the ground plane regardless of tilt. |
 |  [`AIR MODE`](/iNavFlight/inav/wiki/Modes) | Keeps PID controller active at zero throttle |
 |  [`SURFACE`](/iNavFlight/inav/wiki/Modes) | Used to follow terrain, needs SONAR |
 |  [`HEADING LOCK`](/iNavFlight/inav/wiki/Modes) | Locks heading like MAG mode, but without using magnetometer. |
