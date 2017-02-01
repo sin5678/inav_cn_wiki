@@ -38,7 +38,7 @@ The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-m
 |  [`BEEPER`](/iNavFlight/inav/wiki/Modes) | Used to activate beeper |
 |  [`LEDLOW`](/iNavFlight/inav/wiki/Modes) | Turns LEDs OFF|
 |  [`LLIGHTS`](/iNavFlight/inav/wiki/Modes) | Missing description |
-|  [`OSD SW`](/iNavFlight/inav/wiki/Modes) | Missing description |
+|  [`OSD SW`](/iNavFlight/inav/wiki/Modes) | Turns on and off OSD overlay |
 |  [`TELEMETRY`](/iNavFlight/inav/wiki/Modes) | Normally telemetry is always enabled, enabling this mode allows you to turn on and off telemetry at will |
 |  [`BLACKBOX`](/iNavFlight/inav/blob/master/docs/Blackbox.md) | Normally blackbox is logging as soon as you arm, configure this mode blackbox will only log flight data when the mode is active. ) |
 |  [`FAILSAFE`](/iNavFlight/inav/wiki/Modes) | Used to manually initate FAILSAFE |
