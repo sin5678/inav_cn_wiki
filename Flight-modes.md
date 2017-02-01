@@ -3,7 +3,7 @@
 
 The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-mode--no-mode-selected-) (also sometimes called ACRO), this is activated when none of the `actual flight modes` are turned on.
 
-`Actuall flight modes`
+`Actual flight modes`
 
 |  Mode name | Description |
 |  ------ | ------ |
