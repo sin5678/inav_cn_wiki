@@ -1,26 +1,26 @@
 Index:
 
-- [ARM](#arm)
-- [ANGLE](#angle)
-- [HORIZON](#horizon)
-- [MAG](#MAG)
-- [HEADFREE](#headfree)
-- [HEADADJ](#headadj)
-- [CAMSTAB](#CAMSTAB)
-- [PASSTHRU](#passthru)
-- [BEEPER](#BEEPER)
-- [LEDLOW](#ledlow)
-- [OSD SW](#osd-sw)
-- [TELEMETRY](#telemetry)
-- [BLACKBOX](#blackbox)
-- [FAILSAFE](#failsafe)
 - [AIR MODE](#air-mode)
-- [HEADING LOCK](#heading-lock)
-- [SURFACE](#surface)
+- [ANGLE](#angle)
+- [ARM](#arm)
+- [BEEPER](#BEEPER)
+- [BLACKBOX](#blackbox)
+- [CAMSTAB](#CAMSTAB)
+- [FAILSAFE](#failsafe)
 - [FLAPERON](#flaperon)
-- [TURN ASSIST](#turn-assist)
+- [HEADADJ](#headadj)
+- [HEADFREE](#headfree)
+- [HEADING LOCK](#heading-lock)
+- [HORIZON](#horizon)
+- [LEDLOW](#ledlow)
+- [MAG](#MAG)
 - [NAV LAUNCH](#launch---airplane-launch-assistant)
+- [OSD SW](#osd-sw)
+- [PASSTHRU](#passthru)
 - [SERVO AUTOTRIM](#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight)
+- [SURFACE](#surface)
+- [TELEMETRY](#telemetry)
+- [TURN ASSIST](#turn-assist)
 
 ## Default flight mode ( No mode selected )
 
@@ -28,34 +28,6 @@ The default flight mode does not self level the aircraft around the roll and the
 
 
 ## Mode details
-
-### Angle
-
-In this auto-leveled mode the roll and pitch channels control the angle between the relevant axis and the vertical, achieving leveled flight just by leaving the sticks centered.
-Maximum banking angle is limited by `max_angle_inclination_rll` and `max_angle_inclination_pit`
-
-### Horizon
-
-This hybrid mode works exactly like the previous ANGLE mode with centered roll and pitch sticks (thus enabling auto-leveled flight), then gradually behaves more and more like the default RATE mode as the sticks are moved away from the center position. Which means it has no limitation on banking angle and can do flips.
-
-### MAG
-
-The magnetometer is used in this mode.
-
-When Mag Mode is enabled, if there is no yaw input, the copter will point forever to the same direction. MAG can be activated in all flight stabilization methods. Without this mode, you will still have a light deviation (drifting around the Z axis due to the imperfection of the gyro).
-
-MAG MODE needs: gyro + acc + mag sensors (acc is needed also because it is used in heading angle determination)
-
-
-### Headfree
-
-In this mode, the "head" of the multicopter is always pointing to the same direction as when the feature was activated. This means that when the multicopter rotates around the Z axis (yaw), the controls will always respond according the same "head" direction.
-
-With this mode it is easier to control the multicopter, even fly it with the physical head towards you since the controls always respond the same. This is a friendly mode to new users of multicopters and can prevent losing the control when you don't know the head direction. 
-
-### HeadAdj
-
-It allows you to set a new yaw origin for HEADFREE mode.
 
 ### Air mode
 
@@ -75,6 +47,58 @@ motors spooling up on the ground. Also the Iterm will be reset above 70% of stic
 quick Iterm windups during finishes of rolls and flips, which will provide much cleaner and more natural stops
 of flips and rolls what again opens the ability to have higher I gains for some.
 
+### Angle
+
+In this auto-leveled mode the roll and pitch channels control the angle between the relevant axis and the vertical, achieving leveled flight just by leaving the sticks centered.
+Maximum banking angle is limited by `max_angle_inclination_rll` and `max_angle_inclination_pit`
+
+### BLACKBOX
+
+If you're recording to an onboard flash chip, you probably want to disable Blackbox recording when not required in order to save storage space. To do this, you can add a Blackbox flight mode to one of your AUX channels on the Configurator's modes tab. Once you've added a mode, Blackbox will only log flight data when the mode is active.
+
+A log header will always be recorded at arming time, even if logging is paused. You can freely pause and resume logging while in flight.
+
+See [`BLACKBOX`](/iNavFlight/inav/blob/master/docs/Blackbox.md) for more infomation
+
+### FAILSAFE
+
+Lets you activate flight controller failsafe with an aux channel.
+Read [Failsafe page](https://github.com/iNavFlight/inav/wiki/Failsafe) for more info.
+
+### FLAPERON
+
+Activating it moves both ailerons down (or up) by predefined offset.
+
+Configuration besides activating FLAPERON mode is pretty simple, and consists of 2 CLI variables:
+- `flaperon_throw_offset` defines throw range in us for both ailerons that will be applied (before scaling) when FLAPERON mode is activated. By default it 250 with max at 400
+- `flaperon_throw_inverted` [ON, OFF] inverts throw offset on both ailerons. Can be used to create SPOILERON or just to change throw direction
+
+### HeadAdj
+
+It allows you to set a new yaw origin for HEADFREE mode.
+
+### Headfree
+
+In this mode, the "head" of the multicopter is always pointing to the same direction as when the feature was activated. This means that when the multicopter rotates around the Z axis (yaw), the controls will always respond according the same "head" direction.
+
+With this mode it is easier to control the multicopter, even fly it with the physical head towards you since the controls always respond the same. This is a friendly mode to new users of multicopters and can prevent losing the control when you don't know the head direction. 
+
+### HEADING LOCK
+This flight mode affects on yaw axis and can be enabled together with any other flight mode. 
+It helps to maintain current heading without pilots input and  magnetometer's support. When yaw stick is neutral position, Heading Lock tries to keep total amount on rotation on yaw at zero. When pilot moves yaw stick, Heading Lock is not used.
+It is a equivalent of [TauLabs Axis Lock mode](https://github.com/TauLabs/TauLabs/wiki/Flightmode-Settings#axislock) 
+
+### Horizon
+
+This hybrid mode works exactly like the previous ANGLE mode with centered roll and pitch sticks (thus enabling auto-leveled flight), then gradually behaves more and more like the default RATE mode as the sticks are moved away from the center position. Which means it has no limitation on banking angle and can do flips.
+
+### MAG
+
+The magnetometer is used in this mode.
+
+When Mag Mode is enabled, if there is no yaw input, the copter will point forever to the same direction. MAG can be activated in all flight stabilization methods. Without this mode, you will still have a light deviation (drifting around the Z axis due to the imperfection of the gyro).
+
+MAG MODE needs: gyro + acc + mag sensors (acc is needed also because it is used in heading angle determination)
 
 ### LAUNCH - airplane launch assistant
 This flight mode is intended to provide assistance for launching the fixed-wing UAVs. Launch detection works by monitoring airplane acceleration - once it breaches the threshold for a certain amount of time launch sequence is started.
@@ -114,20 +138,6 @@ You may want to inspect your new midpoints after landing, if the servo ofset is 
 
 This is not to be confused with tuning your aircraft for leveled flight in `ANGLE` mode, to do this you need to adjust your board aligment so straight flight for that aircraft is board aligment = 0 pitch and 0 roll.
 
-### HEADING LOCK
-This flight mode affects on yaw axis and can be enabled together with any other flight mode. 
-It helps to maintain current heading without pilots input and  magnetometer's support. When yaw stick is neutral position, Heading Lock tries to keep total amount on rotation on yaw at zero. When pilot moves yaw stick, Heading Lock is not used.
-It is a equivalent of [TauLabs Axis Lock mode](https://github.com/TauLabs/TauLabs/wiki/Flightmode-Settings#axislock) 
-
-### FLAPERON
-
-Activating it moves both ailerons down (or up) by predefined offset.
-
-Configuration besides activating FLAPERON mode is pretty simple, and consists of 2 CLI variables:
-- `flaperon_throw_offset` defines throw range in us for both ailerons that will be applied (before scaling) when FLAPERON mode is activated. By default it 250 with max at 400
-- `flaperon_throw_inverted` [ON, OFF] inverts throw offset on both ailerons. Can be used to create SPOILERON or just to change throw direction
-
-
 ### TURN ASSIST
 
 Normally YAW stick makes a turn around a vertical axis of the craft - this is why when you fly forward in RATE and do a 180-deg turn using only YAW you'll end up looking upwards and flying backwards. In ANGLE mode this also causes an effect known as a pirouetting where turn is not smooth the horizon line is not maintained.
@@ -139,21 +149,6 @@ TURN ASSISTANT mode calculates this additional ROLL command required to maintain
 In RATE mode it allows one to makes a perfect yaw-stick only turn without changing attitude of the machine. There might be slight drift due to not instant response of PID control, but still much easier to pilot for a RATE-mode beginners.
 
 In ANGLE mode it also makes yaw turns smoother and completely pirouette-less. This is because TURN ASSIST introduces feed-forward control in pitch/roll and maintains attitude naturally and without delay.
-
-
-### FAILSAFE
-
-Lets you activate flight controller failsafe with an aux channel.
-Read [Failsafe page](https://github.com/iNavFlight/inav/wiki/Failsafe) for more info.
-
-
-### BLACKBOX
-
-If you're recording to an onboard flash chip, you probably want to disable Blackbox recording when not required in order to save storage space. To do this, you can add a Blackbox flight mode to one of your AUX channels on the Configurator's modes tab. Once you've added a mode, Blackbox will only log flight data when the mode is active.
-
-A log header will always be recorded at arming time, even if logging is paused. You can freely pause and resume logging while in flight.
-
-See [`BLACKBOX`](/iNavFlight/inav/blob/master/docs/Blackbox.md) for more infomation
 
 ## Auxillary Configuration
 
@@ -190,4 +185,3 @@ aux 0 0 0 1700 2100
 ```
 
 You can display the AUX configuration by using the `aux` command with no arguments.
-
