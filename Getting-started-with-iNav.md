@@ -43,7 +43,7 @@ Also be aware that some of our flight controllers can cause interference with th
 
 * iNav does not show "GPS Signal Strength" for each satellite in the Cleanflight configurator, instead only the first one is used to show [HDOP](https://en.wikipedia.org/wiki/Dilution_of_precision_%28GPS%29)
 
-* iNav has only one PID controller called fp-pid. This is a modified version of luxfloat, and will show up as luxfloat in cleanflight configurator.
+* iNav has only one PID controller called fp-pid.
 
 * iNav has extra safety feature that prevents you from arming your aircraft if certain condition are met, or not met. This is controlled by CLI variable "Nav_extra_arming_safety" which is default turned on.
 
