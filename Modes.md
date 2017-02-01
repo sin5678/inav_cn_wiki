@@ -100,7 +100,7 @@ When Mag Mode is enabled, if there is no yaw input, the copter will point foreve
 
 MAG MODE needs: gyro + acc + mag sensors (acc is needed also because it is used in heading angle determination)
 
-### LAUNCH - Airplane launch assistant
+### NAV LAUNCH - Airplane launch assistant
 This flight mode is intended to provide assistance for launching the fixed-wing UAVs. Launch detection works by monitoring airplane acceleration - once it breaches the threshold for a certain amount of time launch sequence is started.
 
 
