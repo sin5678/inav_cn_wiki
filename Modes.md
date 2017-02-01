@@ -104,9 +104,9 @@ MAG MODE needs: gyro + acc + mag sensors (acc is needed also because it is used 
 This flight mode is intended to provide assistance for launching the fixed-wing UAVs. Launch detection works by monitoring airplane acceleration - once it breaches the threshold for a certain amount of time launch sequence is started.
 
 
-The entire time `NAV LAUNCH` mode it will try and stabilize plane, it will target zero roll, zero yaw and predefined climb angle. The I-gain of the PID regulator is also disabled to prevent I-gain growing during launch until motor is started. When succesfull launch is detected it waits for preconfigured amount of time before starting motor.
+The entire time `NAV LAUNCH` mode it will try and stabilize plane, it will target zero roll, zero yaw and predefined climb angle. The I-gain of the PID regulator is also disabled to prevent I-gain growing during launch until motor is started. When succesful launch is detected it waits for preconfigured amount of time before starting motor.
 
-`NAV LAUNCH` is automatically aborted after 5 seconds or by any pilot input on PITCH/ROLL stick. When it has aborted it goes to whichever selected mode, which can be Angle, Rate, Horzion, RTH or a waypoint mission (if no other mode is selected it will go to Rate mode).
+`NAV LAUNCH` is automatically aborted after 5 seconds or by any pilot input on PITCH/ROLL stick. When it has aborted it goes to whichever selected mode, which can be Angle, Rate, Horizon, RTH or a waypoint mission (if no other mode is selected it will go to Rate mode).
 
 The `NAV LAUNCH` mode cannot be activated again in flight while armed. So its safe to keep it activated. 
 
@@ -134,9 +134,9 @@ How to use:
 3. Enable `SERVO AUTOTRIM` mode, and keep flying straight for 5 seconds. After 5 seconds it will set new midpoints based on average servo position during those 5 seconds.
 4. If your are NOT happy with new midpoints disable `SERVO AUTOTRIM` mode and it will revert back to old settings. If you want to keep new midpoints keep `SERVO AUTOTRIM` turned on, land aircraft and disarm. New midpoints will be saved.
 
-You may want to inspect your new midpoints after landing, if the servo ofset is alot you may alter your linkage mechanicaly and redo servo midpoint. 
+You may want to inspect your new midpoints after landing, if the servo offset is a lot you may alter your linkage mechanically and redo servo midpoint. 
 
-This is not to be confused with tuning your aircraft for leveled flight in `ANGLE` mode, to do this you need to adjust your board aligment so straight flight for that aircraft is board aligment = 0 pitch and 0 roll.
+This is not to be confused with tuning your aircraft for leveled flight in `ANGLE` mode, to do this you need to adjust your board alignment so straight flight for that aircraft is board alignment = 0 pitch and 0 roll.
 
 ### TURN ASSIST
 
