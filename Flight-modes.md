@@ -34,16 +34,16 @@ The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-m
 |  Mode name | Description |
 |  ------ | ------ |
 |  [`ARM`](/iNavFlight/inav/wiki/Modes) | Used to switch arm aircraft |
-|  [`CAMSTAB`](/iNavFlight/inav/wiki/Modes) | Used to stabilize SERVO GIMBAL outputs |
+|  [`CAMSTAB`](/iNavFlight/inav/wiki/Modes) | CAMera STABilisation. Used to stabilize SERVO GIMBAL outputs |
 |  [`BEEPER`](/iNavFlight/inav/wiki/Modes) | Used to activate beeper |
 |  [`LEDLOW`](/iNavFlight/inav/wiki/Modes) | Turns LEDs OFF|
 |  [`OSD SW`](/iNavFlight/inav/wiki/Modes) | Turns on and off OSD overlay |
-|  [`TELEMETRY`](/iNavFlight/inav/wiki/Modes) | Normally telemetry is always enabled, enabling this mode allows you to turn on and off telemetry at will |
-|  [`BLACKBOX`](/iNavFlight/inav/blob/master/docs/Blackbox.md) | Normally blackbox is logging as soon as you arm, configure this mode blackbox will only log flight data when the mode is active. ) |
+|  [`TELEMETRY`](/iNavFlight/inav/wiki/Modes) | Normally telemetry is always enabled, using this mode allows you to turn telemetry on and off at will |
+|  [`BLACKBOX`](/iNavFlight/inav/blob/master/docs/Blackbox.md) | Normally blackbox is logging as soon as you arm, using this mode blackbox will only log flight data when the mode is active. ) |
 |  [`FAILSAFE`](/iNavFlight/inav/wiki/Modes) | Used to manually initate FAILSAFE |
-|  [`HOME RESET`](/iNavFlight/inav/wiki/Navigation-modes) | Used to set new home position at aircraft current position. |
+|  [`HOME RESET`](/iNavFlight/inav/wiki/Navigation-modes) | Used to set a new home position at the current aircraft position. |
 |  [`GCS NAV`](/iNavFlight/inav/wiki/Navigation-modes) | Used to allow ground station to control aircraft to do stuff like `Follow me` |
-|  [`FLAPERON`](/iNavFlight/inav/wiki/Modes) | Used to activate flaperons on fixed-wings |
-|  [`NAV LAUNCH`](/iNavFlight/inav/wiki/Modes) | Used to detect and automatic launch fixed-wings. |
-|  [`SERVO AUTOTRIM`](/iNavFlight/inav/wiki/Modes) | Used to trim midpoint for servos to maintain straight. |
+|  [`FLAPERON`](/iNavFlight/inav/wiki/Modes) | Used to activate flaperons on fixed-wing aircraft. |
+|  [`NAV LAUNCH`](/iNavFlight/inav/wiki/Modes) | Used to detect and automatic launch fixed-wing aircraft. |
+|  [`SERVO AUTOTRIM`](/iNavFlight/inav/wiki/Modes) | Used to trim midpoint for servos to maintain straight and level flight |
 
