@@ -31,6 +31,9 @@ Note to change magnetic declination manually on F3 or newer board you have to tu
 
 
 ##Getting started with DJI NAZA GPS
+NOTE: By default F1 processors do not support DJI GPS. Most F3 processors do - check hardware support map.
+F1 can support DJI if you compile your own build with unused features removed.
+
 - Physically connect your GPS to your FC using UART. Connect RX from GPS to TX on FC, TX from GPS to RX on FC
 - Activate GPS in the ports tab in cleanflight/iNav configurator and set it to 115 200 on correct UART
 - Type this in CLI
@@ -41,7 +44,9 @@ Note to change magnetic declination manually on F3 or newer board you have to tu
 
 `set mag_hardware = GPSMAG`
 
-Also the cli align_mag must be set correctly. Play around with it. It should be CW0FLIP, CW90FLIP, CW180FLIP or CW270FLIP
+`set align_mag = CW180FLIP`
+
+Default DJI GPS puck pointing forward is set with CW180FLIP, but can be changed with CW0FLIP, CW90FLIP, CW180FLIP or CW270FLIP
 
  * F3 based board and newer uses default automatic magnetic declination, if your on F1 board or want to change magnetic declination manually you have to set correct declination of your spesific location, which can be found here: www.magnetic-declination.com. If your magnetic declination readings are e.g. +3° 34' , the value entered in the iNav configurator is 3.34 (3,34 in some locales). In the CLI, the same effect would be `set mag_declination = 334`. For west declination, use a minus value, e.g. for 1° 32' W, `set mag_declination = -132`. In all cases (both CLI and GUI), the least significant digits are **minutes**, not decimal degrees.
  * Calibrate your compass according to [compass calibration](https://github.com/iNavFlight/inav/wiki/Sensor-calibration#compass-calibration)
