@@ -36,7 +36,7 @@
 ### Step 3, Setting up your remote, endpoints and reverse of servos.
 
 * Setup receiver/transmitter according to what you are using.
-* If using GPS setup UART2 for GPS at baud 57500 and enable GPS in configurations.
+* If using GPS setup UART2 for GPS at baud 57600 and enable GPS in configurations.
 * Your TX should use NO mixing at all, check that when moving the sticks, the right channels moves in the receiver window. Also everything should be centered at 1500us, and full stick movement should be 1000-2000us. Use subtrim and travel range on TX to set this up. 
 
 The correct way is:
