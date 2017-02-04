@@ -116,7 +116,7 @@ iNAV’s parameters for fixed wing:
   
   
   
-## POSHOLD - Horizontal position hold
+## NAV POSHOLD - Horizontal position hold
 When activated, the quad/plane keeps its horizontal (2D) position, throttle still controls up and down movements (z-axis).
 You can use your roll and pitch stick to move around. The position hold will be resumed when you center the roll/pitch stick again.      
 Please note that you have to use this with **ALTHOLD** to get a full 3D position hold!  
@@ -131,13 +131,8 @@ Hints for safe operation:
 - Try yawing 180 deg in PH - will instantly reveal incorrect mag operation (e.g. wrong align_mag, interference, loose cables, ...)
 - Always check POSHOLD working correctly, before you use RTH or start a WP mission.
 
-// TODO: explain relevant settings. CRUISE ATTI
-// TODO: explain what happens when you are in POSHOLD mode and GPS fails.
+For Fixedwing it will try and loiter in circle defined by the `nav_fw_loiter_radius` variable. And it will keep throttle based on `nav_fw_*_thr` parameters.
 
-Activated by **POSHOLD** flight mode.
-
-
-// TODO: explain if this works for FW w/o magnetometer.
 
 ## RTH - Return to home
 RTH will attempt to bring copter/plane to launch position. Launch position is defined as a point where aircraft was ARMed. RTH Will control both position and altitude. You will have to manually control altitude if your aircraft does not have an altitude sensor (barometer). In the case of fixed wing, altitude comes from the GPS, so you dont need a barometer in your FC (CC3D for example).
