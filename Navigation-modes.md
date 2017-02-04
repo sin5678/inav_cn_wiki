@@ -117,8 +117,11 @@ iNAV’s parameters for fixed wing:
   
   
 ## NAV POSHOLD - Horizontal position hold
-When activated, the quad/plane keeps its horizontal (2D) position, throttle still controls up and down movements (z-axis).
+For multirotor it will hold horizontal (2D) position, throttle still controls up and down movements (z-axis).
 You can use your roll and pitch stick to move around. The position hold will be resumed when you center the roll/pitch stick again.      
+
+For Fixedwing it will try and loiter in circle defined by the `nav_fw_loiter_radius` variable.
+
 Please note that you have to use this with **ALTHOLD** to get a full 3D position hold!  
   
 POSHOLD = 2D position hold  
@@ -131,7 +134,7 @@ Hints for safe operation:
 - Try yawing 180 deg in PH - will instantly reveal incorrect mag operation (e.g. wrong align_mag, interference, loose cables, ...)
 - Always check POSHOLD working correctly, before you use RTH or start a WP mission.
 
-For Fixedwing it will try and loiter in circle defined by the `nav_fw_loiter_radius` variable. And it will keep throttle based on `nav_fw_*_thr` parameters.
+
 
 
 ## RTH - Return to home
