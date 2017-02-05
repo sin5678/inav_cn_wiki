@@ -177,6 +177,19 @@ smix 5 5 2 -100 0 0 100 0
 smix 6 6 8 -100 0 0 100 0
 smix 7 7 9 -100 0 0 100 0
 ```
+
+## Skyhunter Nano (no rudder)
+
+```
+mixer CUSTOMAIRPLANE
+mmix reset
+mmix 0 1.000 0.000 0.000 0.000
+smix reset
+smix 0 3 0 -100 0 0 100 0
+smix 1 4 0 -100 0 0 100 0
+smix 2 2 1 -100 0 0 100 0
+```
+
 # Setups that were never implemented in Baseflight, Cleanflight or any of it's derivatives
 
 # Disabled setups
