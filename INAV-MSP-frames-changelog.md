@@ -1,5 +1,19 @@
 ## INAV 1.6 MSP API Version 1.24
 
+### MSP_WP_MISSION_LOAD / MSP_WP_MISSION_SAVE
+
+Load/save waypoint mission to non-volatile storage
+
+Frame IDs:
+
+* MSP_WP_MISSION_LOAD, Frame ID _18_
+* MSP_WP_MISSION_SAVE, Frame ID _19_
+
+| Length        | Notes                         |
+| -----         | -----                         |
+| 1             | Mission ID (reserved)         |
+
+
 ### MSP_POSITION_ESTIMATION_CONFIG
 
 Frame IDs:
