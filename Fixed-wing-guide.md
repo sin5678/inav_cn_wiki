@@ -17,18 +17,18 @@
 * Servo and ESC/MOTOR.
 
     * Airplane
-        * Output 1 Motor/ESC
-        * Output 2 Empty
-        * Output 3 Elevator
-        * Output 4 Aileron
-        * Output 5 Aileron
-        * Output 6 Rudder
+        * Output 1 - Motor/ESC
+        * Output 2 - Empty
+        * Output 3 - Elevator
+        * Output 4 - Aileron
+        * Output 5 - Aileron
+        * Output 6 - Rudder
 
     * Flying Wing
-        * Output 1 Motor/ESC
-        * Output 2 Empty
-        * Output 3 Port Aileron
-        * Output 4 Starboard Aileron
+        * Output 1 - Motor/ESC
+        * Output 2 - Empty
+        * Output 3 - Port Aileron
+        * Output 4 - Starboard Aileron
 
 * If using GPS connect it to UART 2.
 * If using Sbus connect it to UART 3. (Note this requires newer board like SPRACING F3)
