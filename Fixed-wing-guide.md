@@ -27,8 +27,8 @@
     * Flying Wing
         * Output 1 - Motor/ESC
         * Output 2 - Empty
-        * Output 3 - Port Aileron
-        * Output 4 - Starboard Aileron
+        * Output 3 - Port Elevon
+        * Output 4 - Starboard Elevon
 
 * If using GPS connect it to UART 2.
 * If using Sbus connect it to UART 3. (Note this requires newer board like SPRACING F3)
