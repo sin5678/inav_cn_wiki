@@ -81,7 +81,7 @@ At this point everything should do as expected.
 
 * Use Airmode mode to get full stabilitation and servo throw with no throttle applied.
 * [Setting up failsafe with return to home.](https://github.com/iNavFlight/inav/wiki/Failsafe#setting-up-failsafe-with-return-to-home)
-* Disable compass (if present) so it uses GPS heading instead. Cli command `set mag_hardware = none`
+* If your compass is not 100% properly setupe just disable it instead. INAV uses GPS heading normally, Only on ground before GPS speed has been high enough or if error between GPS heading and compass heading exceed 60deg will it use compass heading.  
 * Zero out D-Term of Pitch/Roll/Yaw PID Controller (set d_pitch = 0; set d_roll = 0; set d_yaw = 0) [Explanation](https://www.rcgroups.com/forums/showpost.php?p=36645260&postcount=10462)
 * Setup your TPA correctly. [PID Attenuation and scaling](https://github.com/iNavFlight/inav/wiki/PID-Attenuation-and-scaling)
 
