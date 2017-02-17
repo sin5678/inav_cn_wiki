@@ -143,13 +143,13 @@ Also use subtrim to get center value of 1500us and use travel adjustment to get 
 
 After this follow to the Motors tab, rock your plane and notice what levels are moving depending on PITCH, ROLL and YAW angles. You can remember it or write it down. ROLL - 4,5; PITCH - 3, YAW - 6.
 
-![Motors tab](http://s8.hostingkartinok.com/uploads/images/2016/02/bb1293fb31f72ea57b11487172a87407.png)
+![Motors tab](http://s8.hostingkartinok.com/uploads/images/2017/02/6996d5db9400c8d5330fc10bde0817a8.png)
 
 Turn on your transmitter, switch to the Angle or Horizon flight mode and follow the Servos tab.
 
 ### Servo setup
 
-![Servo tab](http://s8.hostingkartinok.com/uploads/images/2017/02/6996d5db9400c8d5330fc10bde0817a8.png)
+![Servo tab](http://s8.hostingkartinok.com/uploads/images/2017/02/baafb90dc93d5553a945b684dd2f4ac8.png)
 
 Here you need to be very attentive. In this tab you set up endpoints, neutral, rates and reverse for stabilization modes. Servo numbering in the tab starts from 0!
 
