@@ -182,15 +182,21 @@ This way if one servo get stuck and draws alot of amps you shouldnt risk your fl
 
 ### PID Settings
 Constantine wrote about the PIFF controller setup:
+
 If you have inflight adjustments - this will be easier for you. I tuned like this:
 
 0) Fly ANGLE mode, LOS, calm day. Started with these PIFFs: P=5, I=10, D/FF = 20
+
 1) Give hard roll command, watch how plane executes it. It should be smooth from start to finish, without (or with minilal) oscillation at the end of the roll, without much wobble. If it oscillates at the end of maneuver - reduce FF; if it starts fast, then slows down and after a moment pushes it further - that's indication of too low FF
+
 2) Repeat for pitch
+
 3) I dialed up FF as much as possible until I started to get oscillations at the end of maneuver and backed about 20%
+
 4) If it doesn't reach commanded angle - increase I-gain (best verifiable with OSD indication for roll/pitch angles
 
 5) Wait for some wind (to get some turbulence) 
+
 6) Dial up P to fight turbulence better. In ANGLE mode I+FF will keep aircraft nice and level, but P will improve turbulence handling. WARNING - increasing P will cause much more active servos and reduce their life expectancy.
 
 
