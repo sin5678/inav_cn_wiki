@@ -1,3 +1,5 @@
+# Overview
+
 Blackbox is a valuable tool for analyzing the flight dynamics of our airborne vehicles and as such it can be useful for troubleshooting and debugging purposes.
 
 In INAV we use a set of specific variables, each variable may contain multiple arrays, for example - navPos[0-2]. 
@@ -8,6 +10,8 @@ North and East are fused from accelerometer and GPS data, while Up is fused from
 "Point of origin" might be different from "Home". "Home" is defined as position at the time of arming. While "Point of origin" is recorded after a valid GPS fix is aquired.
 
 For further information about the coordinate system used please read the [[Coordinate systems|Coordinate-systems]] page.
+
+#iNav Variables 
 
 Variables listed below with a short description of each:
 
@@ -37,3 +41,15 @@ set blackbox_device = SPIFLASH # instead of SERIAL
 set blackbox_rate_num = 1  
 set blackbox_rate_denom = 2  
 This will make it work and store every second value.
+
+# iNav Logging Intervals
+
+Blackbox logs several types of frames - flight behaviour is written using I- and P-frames. I-frames are fairly big and contain absolute values, P-frames are delta-encoded to save space. Blackbox denominator only reduces P-frame rate, the I-frame rate is constant.
+
+Originally I-frames were logged every 32 iterations, P-frame is logged every blackbox_rate_denom after I-frame. This doesn't give you exactly 1 / blackbox_rate_denom rate, i.e. for 1/16 - 1/31 rates it's going to be c. 16 iterations between frames on average.
+
+For iNav 1.6 and later, the I-frame interval is set dynamically at 1/32, 1/64, 1/128 and 1/256 based on the blackbox_rate_denom chosen.
+
+For example, if a blackbox_rate_denom of 50 is used, INav will select 64 as the I-frame interval, meaning c. 1/32 actual logging rate.
+
+
