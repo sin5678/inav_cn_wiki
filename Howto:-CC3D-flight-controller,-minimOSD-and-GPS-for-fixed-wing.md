@@ -49,6 +49,7 @@ First you need to download a precompiled firmware for the board [here](https://g
 
 ## 4. Basic settings
 ### Flight controller orientation.
+![Orientation](http://s8.hostingkartinok.com/uploads/images/2017/02/5fc75e098b96313009ac4a192954b714.png)
 This can be done only from CLI because you can not use GUI to enter angles more than 360, but iNAV uses deg*10 for angles. So in order to place the CC3D flight controller with USB plug to the left you need to navigate to CLI and enter the following:
 
 `set align_board_yaw=900`
@@ -62,7 +63,7 @@ To save all the settings you did in the CLI it is needed to enter the command 's
 Follow steps in the [Quick setup guide](https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide)
 
 ### Port settings
-It is done using Ports tab ![Ports tab](http://s8.hostingkartinok.com/uploads/images/2016/02/6f1a56073c11418b2020b59e9d036c55.png).
+It is done using Ports tab ![Ports tab](http://s8.hostingkartinok.com/uploads/images/2017/02/631dc2afa3f22266a8308532735b836e.png).
 
 - UART1 - leave default value. You'll connect here either OSD or FTDI to setup the FC.
 - UART3 - for GPS. Switch on the option and select the correct port speed. Of course, previously you need to setup your GPS receiver to output NMEA or UBX (preferred) packets, UART speed, update rate, according to the [Gps.md article](https://github.com/iNavFlight/inav/blob/master/docs/Gps.md)
@@ -81,7 +82,7 @@ PPM Receiver
 Of course, according to the receiver used you need to enable one of the features: `feature RX_PPM` for the PPM receiver. For more information about CC3D pinout check the [CC3D](https://github.com/iNavFlight/inav/blob/master/docs/Board%20-%20CC3D.md) page
 
 On the Configuration tab in the Mixer group select the Airplane.
-![Airplane](http://s8.hostingkartinok.com/uploads/images/2016/02/1bf925af382a8746ae8395a0efe22342.png)
+![Airplane](http://s8.hostingkartinok.com/uploads/images/2017/02/cbcafe5219dcc85798b0cf2e2a86fcde.png)
 Do not pay attention on the servo numbering! It will be described later.
 
 If you don't want the motor rotation on arm, then switch on the MOTOR_STOP feature.
@@ -89,7 +90,7 @@ If you don't want the motor rotation on arm, then switch on the MOTOR_STOP featu
 By default iNav won't arm without GPS fix. To disable use CLI: "set nav_extra_arming_safety = OFF"
 
 Switch on the GPS feature, and select the protocol.
-![GPS and other settings](http://s8.hostingkartinok.com/uploads/images/2016/02/4f30a0ab600a47fb19522436a98ce677.png)
+![GPS and other settings](http://s8.hostingkartinok.com/uploads/images/2017/02/299f7c79a6293db997088e129a696caf.png)
 
 In the Other Features group you need to enable the Telemetry feature.
 
@@ -118,7 +119,7 @@ On the Modes tab set up the flight modes according to the position of the AUX ch
 - middle value - Angle or Horizon.
 - maximum value - RTH+Angle (or RTH+Horizon). Return to home with stabilization.
 
-![Flight modes](http://s8.hostingkartinok.com/uploads/images/2016/02/6d23377ca96046a5f62542105b4ce878.png)
+![Flight modes](http://s8.hostingkartinok.com/uploads/images/2017/02/60c42df3c50ead25347f0252b51f55da.png)
 
 ### Failsafe
 
@@ -148,7 +149,7 @@ Turn on your transmitter, switch to the Angle or Horizon flight mode and follow 
 
 ### Servo setup
 
-![Servo tab](http://s8.hostingkartinok.com/uploads/images/2016/02/4774905124ad93e7fe9fe476baba3c1c.png)
+![Servo tab](http://s8.hostingkartinok.com/uploads/images/2017/02/6996d5db9400c8d5330fc10bde0817a8.png)
 
 Here you need to be very attentive. In this tab you set up endpoints, neutral, rates and reverse for stabilization modes. Servo numbering in the tab starts from 0!
 
