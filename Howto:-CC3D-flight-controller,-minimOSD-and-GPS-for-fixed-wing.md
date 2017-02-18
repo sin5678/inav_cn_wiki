@@ -48,9 +48,16 @@ OSD setup
 First you need to download a precompiled firmware for the board [here](https://github.com/iNavFlight/inav/releases). Next, you can check [numerous guides](https://www.youtube.com/watch?v=nb0ZSVMW4cQ) how to flash CC3D with third party firmware. Of course you need to specify the previously downloaded firmware for the flashing. For now, if you have servos, it is not advisable to flash with them attached, because there is high frequency sent with default configuration, and you can burn them (the way -for now- is flash, configure plane and then attach servos).
 
 ## 4. Basic settings
+
+### Port settings
+It is done using Ports tab ![Ports tab](http://s8.hostingkartinok.com/uploads/images/2017/02/631dc2afa3f22266a8308532735b836e.png).
+
+- UART1 - leave default value. You'll connect here either OSD or FTDI to setup the FC.
+- UART3 - for GPS. Switch on the option and select the correct port speed (38400 or 57600). Please pay attention that when using a ublox GPS receiver family 6-8 you don't need to make any configurations in the u-center. The flight controller under iNAV will do everything what is needed.
+
 ### Flight controller orientation.
 ![Orientation](http://s8.hostingkartinok.com/uploads/images/2017/02/5fc75e098b96313009ac4a192954b714.png)
-This can be done only from CLI because you can not use GUI to enter angles more than 360, but iNAV uses deg*10 for angles. So in order to place the CC3D flight controller with USB plug to the left you need to navigate to CLI and enter the following:
+This can be done of in the iNAV GUI only from CLI because you can not use GUI to enter angles more than 360, but iNAV uses deg*10 for angles. So in order to place the CC3D flight controller with USB plug to the left you need to navigate to CLI and enter the following:
 
 `set align_board_yaw=900`
 
@@ -62,13 +69,12 @@ To save all the settings you did in the CLI it is needed to enter the command 's
 
 Follow steps in the [Quick setup guide](https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide)
 
-### Port settings
-It is done using Ports tab ![Ports tab](http://s8.hostingkartinok.com/uploads/images/2017/02/631dc2afa3f22266a8308532735b836e.png).
-
-- UART1 - leave default value. You'll connect here either OSD or FTDI to setup the FC.
-- UART3 - for GPS. Switch on the option and select the correct port speed. Of course, previously you need to setup your GPS receiver to output NMEA or UBX (preferred) packets, UART speed, update rate, according to the [Gps.md article](https://github.com/iNavFlight/inav/blob/master/docs/Gps.md)
-
 ### Configuration
+On the Configuration tab in the Mixer group select the Airplane.
+![Airplane](http://s8.hostingkartinok.com/uploads/images/2017/02/cbcafe5219dcc85798b0cf2e2a86fcde.png)
+Do not pay attention on the servo numbering! It will be described later.
+
+
 Next, connect your hardware according to the schemes:
 
 Parallel PWM Receiver ([click here](http://s8.hostingkartinok.com/uploads/images/2016/02/a47fb019c7783371053239a3d23a8d46.jpg) to see the real hardware photo)
@@ -80,10 +86,6 @@ PPM Receiver
 <img src="http://s8.hostingkartinok.com/uploads/images/2016/02/c98cfcf64df8a8a7645429dc7ac4c0ea.png" width="400" height="300" />
 
 Of course, according to the receiver used you need to enable one of the features: `feature RX_PPM` for the PPM receiver. For more information about CC3D pinout check the [CC3D](https://github.com/iNavFlight/inav/blob/master/docs/Board%20-%20CC3D.md) page
-
-On the Configuration tab in the Mixer group select the Airplane.
-![Airplane](http://s8.hostingkartinok.com/uploads/images/2017/02/cbcafe5219dcc85798b0cf2e2a86fcde.png)
-Do not pay attention on the servo numbering! It will be described later.
 
 If you don't want the motor rotation on arm, then switch on the MOTOR_STOP feature.
 
