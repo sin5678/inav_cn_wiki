@@ -55,27 +55,18 @@ It is done using Ports tab ![Ports tab](http://s8.hostingkartinok.com/uploads/im
 - UART1 - leave default value. You'll connect here either OSD or FTDI to setup the FC.
 - UART3 - for GPS. Switch on the option and select the correct port speed (38400 or 57600). Please pay attention that when using a ublox GPS receiver family 6-8 you don't need to make any configurations in the u-center. The flight controller under iNAV will do everything what is needed.
 
-### Flight controller orientation.
-![Orientation](http://s8.hostingkartinok.com/uploads/images/2017/02/5fc75e098b96313009ac4a192954b714.png)
-This can be done of in the iNAV GUI only from CLI because you can not use GUI to enter angles more than 360, but iNAV uses deg*10 for angles. So in order to place the CC3D flight controller with USB plug to the left you need to navigate to CLI and enter the following:
-
-`set align_board_yaw=900`
-
-If you need to place the FC with USB plug facing right, then:
-
-`set align_board_yaw=2700`
-
-To save all the settings you did in the CLI it is needed to enter the command 'save' and hit enter.
-
-Follow steps in the [Quick setup guide](https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide)
-
 ### Configuration
-On the Configuration tab in the Mixer group select the Airplane.
+On the Configuration tab in the Mixer group select the Airplane or Flying Wing depending on the airframe you are using.
 ![Airplane](http://s8.hostingkartinok.com/uploads/images/2017/02/cbcafe5219dcc85798b0cf2e2a86fcde.png)
 Do not pay attention on the servo numbering! It will be described later.
+Now you need to make the accelerometer calibration. It is mandatory to fulfill it and it is better to do it before installing the FC into airframe. Please follow the [instructions](https://github.com/iNavFlight/inav/wiki/Sensor-calibration) to perform the 6 point accelerometer calibration.
 
+### Flight controller orientation.
+After the calibration is done you may select the sutable board orientation
+![Orientation](http://s8.hostingkartinok.com/uploads/images/2017/02/5fc75e098b96313009ac4a192954b714.png)
+If you need to install your FC board into airplane such a way that the forward arrow points to some other direction, you need to change the FC orientation. This can be done or in the iNAV GUI or from CLI. I prefer doing it from GUI. Follow the Configuration tab and Board and sensor Alignment. If you want to mount the CC3D flight controller with USB plug to the left you need to set the Yaw Degrees parameter to 90. If you are going to mount the FC with USB plug facing right, then the Yaw Degrees = 270, etc.
 
-Next, connect your hardware according to the schemes:
+Now you are ready to connect your hardware according to the schemes:
 
 Parallel PWM Receiver ([click here](http://s8.hostingkartinok.com/uploads/images/2016/02/a47fb019c7783371053239a3d23a8d46.jpg) to see the real hardware photo)
 
@@ -85,41 +76,26 @@ PPM Receiver
 
 <img src="http://s8.hostingkartinok.com/uploads/images/2016/02/c98cfcf64df8a8a7645429dc7ac4c0ea.png" width="400" height="300" />
 
-Of course, according to the receiver used you need to enable one of the features: `feature RX_PPM` for the PPM receiver. For more information about CC3D pinout check the [CC3D](https://github.com/iNavFlight/inav/blob/master/docs/Board%20-%20CC3D.md) page
+Of course, according to the receiver used you need to use the aproppriate firmware for CC3D - inav_1.6.0_CC3D.hex for parallel PWM or inav_1.6.0_CC3D_PPM1.hex PPM receiver. For more information about CC3D pinout check the [CC3D](https://github.com/iNavFlight/inav/blob/master/docs/Board%20-%20CC3D.md) page
 
-If you don't want the motor rotation on arm, then switch on the MOTOR_STOP feature.
+I usually don't like the motor rotation on arm, so I switch on the "Don't spin motors when armed" feature.
 
-By default iNav won't arm without GPS fix. To disable use CLI: "set nav_extra_arming_safety = OFF"
+The new iNAV firmware has all PWM outputs disable until you switch on the "Enable motor and servo output"
 
 Switch on the GPS feature, and select the protocol.
 ![GPS and other settings](http://s8.hostingkartinok.com/uploads/images/2017/02/299f7c79a6293db997088e129a696caf.png)
 
-In the Other Features group you need to enable the Telemetry feature.
+By default iNav won't arm without GPS fix if the GPS feature is ON. To disable it use CLI: "set nav_extra_arming_safety = OFF". And it is highly recomended to switch it back ON before real flights.
 
-If your receiver connection is other than Parallel PWM Receiver, then you'll be able to setup battery voltage, current, RSSI monitoring. For example, to switch on the battery monitoring navigate to CLI and enter:
+If your receiver connection is other than Parallel PWM Receiver, then you'll be able to setup battery voltage, current, RSSI monitoring. It is very userful. So IMHO a PPM is a must for CC3D FC.
 
-`feature VBAT`
-
-`set vbat_scale = xxx`
-
-instead of the xxx you need to enter the value that corresponds to resistor divider to get 3.3V from Ubat. You can use trial and error approach and after each new vbat_scale value you can check the calculated voltage using 'status' command.
-Do not use GUI for vbat_scale settings! It doesn't work! Use for the purpose CLI only.
-
-RSSI monitoring:
-
-`feature RSSI_ADC`
-
-`set RSSI_SCALE = xxx`
-
-instead of xxx you need to enter the scale coefficient (1...255). With this coefficient the RSSI value equals to 100% when the transmitter is close to the receiver. You need to find such value of the RSSI_SCALE coefficient which when incremented by one gives RSSI value less than 100%. Don't forget to save your settings made in CLI by `save` command.
-
-On the Receiver tab set up the channel order and their correspondence to a TX sticks movements.
+On the Receiver tab set up the channel order and their correspondence to TX sticks movements.
 
 On the Modes tab set up the flight modes according to the position of the AUX channels. For example, if you have a 3pos switch for the AUX1 you can get at minimum the following:
 
-- minimum channel value - do not select any mode - only gyros will work. The hand launch take off in this mode is excellent.
-- middle value - Angle or Horizon.
-- maximum value - RTH+Angle (or RTH+Horizon). Return to home with stabilization.
+* minimum channel value - do not select any mode - only gyros will work. The hand launch take off in this mode is excellent.
+* middle value - Angle or Horizon.
+* maximum value - RTH. Automatic return home.
 
 ![Flight modes](http://s8.hostingkartinok.com/uploads/images/2017/02/60c42df3c50ead25347f0252b51f55da.png)
 
@@ -127,7 +103,11 @@ On the Modes tab set up the flight modes according to the position of the AUX ch
 
 See here for RTH failsafe https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide#4-setting-up-failsafe-with-return-to-home
 
-For more information check the [failsafe](https://github.com/iNavFlight/inav/blob/master/docs/Failsafe.md) page
+Starting from iNav 1.6 the Filesafe feature is very transparent and clear. For the failsafe to work you'll need:
+* Setup the receiver output no signal when your TX is off
+* OR assign the Failsafe mode to one of the channels and force it to trigger when your TX is off
+
+Set the desired Failsafe behavior. I prefer RTH.
 
 ###Transmitter setup
 
@@ -183,13 +163,13 @@ This way if one servo get stuck and draws alot of amps you shouldnt risk your fl
 ![Real life example](http://s28.postimg.org/jjg5paz65/Real_life_example_power_supply.png)
 
 ### PID Settings
-Constantine wrote about the PIFF controller setup:
+Constantine wrote about the PIFF controller setup procedure the following:
 
 If you have inflight adjustments - this will be easier for you. I tuned like this:
 
 0) Fly ANGLE mode, LOS, calm day. Started with these PIFFs: P=5, I=10, D/FF = 20
 
-1) Give hard roll command, watch how plane executes it. It should be smooth from start to finish, without (or with minilal) oscillation at the end of the roll, without much wobble. If it oscillates at the end of maneuver - reduce FF; if it starts fast, then slows down and after a moment pushes it further - that's indication of too low FF
+1) Give hard roll command, watch how plane executes it. It should be smooth from start to finish, without (or with minimal) oscillation at the end of the roll, without much wobble. If it oscillates at the end of maneuver - reduce FF; if it starts fast, then slows down and after a moment pushes it further - that's indication of too low FF
 
 2) Repeat for pitch
 
@@ -203,7 +183,7 @@ If you have inflight adjustments - this will be easier for you. I tuned like thi
 
 
 ### OSD setup
-You need to upload [MWOSD](http://www.mwosd.com/) firmware to your minimOSD. You can find pretty straight forward install guide following the [link](https://github.com/ShikOfTheRa/scarab-osd/blob/master/OTHER/DOCUMENTATION/FirmwareFlashing.md). As usual you use Arduino IDE for global OSD config. All changes are done in the Config.h file
+I prefer using MW-OSD. It supports many protocols and also has native support of iNAV. Say you have a minimOSD or micro minimOSD. So first you need to upload [MWOSD](http://www.mwosd.com/) firmware to your minimOSD. You can find pretty straight forward install guide following the [link](https://github.com/ShikOfTheRa/scarab-osd/blob/master/OTHER/DOCUMENTATION/FirmwareFlashing.md). As usual you use Arduino IDE for global OSD config. All changes are done in the Config.h file. In our case we need to leave uncommented the following lines:
 
 OSD HARDWARE settings:
 
@@ -217,9 +197,11 @@ AIRCRAFT/INSTALLATION TYPE settings
 
 `#define FIXEDWING`
 
-Serial speed settings
+Usualy it is enough.
 
-`#define BAUDRATE 115200`
+You may enable also rather helpful '#define MAPMODE' under FEATURES that allows you to see the map indication of relative positions of home and aircraft.
+
+All other settings are done in MWOSD configurator. Everything you need is to select the font you like, OSD indicators' positions. As iNAV takes care of voltage/current/rssi monitoring you'll need to ask the MWOSD to take these values from the FC (see the fig) 
 
 The screenshot of the MWOSD configuration is shown below:
 ![MWOSD config](http://s8.hostingkartinok.com/uploads/images/2016/02/17582422170a13c2169af18d16623129.png)
