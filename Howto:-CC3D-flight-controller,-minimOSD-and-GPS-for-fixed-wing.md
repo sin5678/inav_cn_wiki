@@ -85,6 +85,9 @@ The new iNAV firmware has all PWM outputs disable until you switch on the "Enabl
 Switch on the GPS feature, and select the protocol.
 ![GPS and other settings](http://s8.hostingkartinok.com/uploads/images/2017/02/299f7c79a6293db997088e129a696caf.png)
 
+If your GPS receiver have enough satellites visible you'll be able to check the 3D fix in GPS tab
+![3D fix] (http://s8.hostingkartinok.com/uploads/images/2017/02/2db676b5f03d436480919b1cbc945fb5.png)
+
 By default iNav won't arm without GPS fix if the GPS feature is ON. To disable it use CLI: "set nav_extra_arming_safety = OFF". And it is highly recomended to switch it back ON before real flights.
 
 If your receiver connection is other than Parallel PWM Receiver, then you'll be able to setup battery voltage, current, RSSI monitoring. It is very userful. So IMHO a PPM is a must for CC3D FC.
@@ -162,8 +165,12 @@ This way if one servo get stuck and draws alot of amps you shouldnt risk your fl
 ![Connection Diagram](http://s13.postimg.org/5kpkb9ppz/Connection_Diagram.png)
 ![Real life example](http://s28.postimg.org/jjg5paz65/Real_life_example_power_supply.png)
 
-### PID Settings
-Constantine wrote about the PIFF controller setup procedure the following:
+### PID/PIFF Settings
+The default PID settings that are set using Presets tab are a good starting point but usually you may need to chnge them if you want yor plane to fly really stable.
+Here are my PIFF settings for a small 800mm flying wing - EPP Rainbow.
+![My PID settings](http://s8.hostingkartinok.com/uploads/images/2017/02/317e88fbcaee882142291b81260a5e3d.png) 
+
+DigitalEntity wrote about the PIFF controller setup procedure the following, I have nothing to add:
 
 If you have inflight adjustments - this will be easier for you. I tuned like this:
 
@@ -180,7 +187,6 @@ If you have inflight adjustments - this will be easier for you. I tuned like thi
 5) Wait for some wind (to get some turbulence) 
 
 6) Dial up P to fight turbulence better. In ANGLE mode I+FF will keep aircraft nice and level, but P will improve turbulence handling. WARNING - increasing P will cause much more active servos and reduce their life expectancy.
-
 
 ### OSD setup
 I prefer using MW-OSD. It supports many protocols and also has native support of iNAV. Say you have a minimOSD or micro minimOSD. So first you need to upload [MWOSD](http://www.mwosd.com/) firmware to your minimOSD. You can find pretty straight forward install guide following the [link](https://github.com/ShikOfTheRa/scarab-osd/blob/master/OTHER/DOCUMENTATION/FirmwareFlashing.md). As usual you use Arduino IDE for global OSD config. All changes are done in the Config.h file. In our case we need to leave uncommented the following lines:
@@ -204,7 +210,7 @@ You may enable also rather helpful '#define MAPMODE' under FEATURES that allows 
 All other settings are done in MWOSD configurator. Everything you need is to select the font you like, OSD indicators' positions. As iNAV takes care of voltage/current/rssi monitoring you'll need to ask the MWOSD to take these values from the FC (see the fig) 
 
 The screenshot of the MWOSD configuration is shown below:
-![MWOSD config](http://s8.hostingkartinok.com/uploads/images/2016/02/17582422170a13c2169af18d16623129.png)
+![MWOSD config](http://s8.hostingkartinok.com/uploads/images/2017/02/57085e4054b03a4ee52179224bc5f337.png)
 
 Watch this demo video of the iNAV flight and RTH function:
 
