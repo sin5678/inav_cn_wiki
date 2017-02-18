@@ -111,6 +111,7 @@ Starting from iNav 1.6 the Filesafe feature is very transparent and clear. For t
 * OR assign the Failsafe mode to one of the channels and force it to trigger when your TX is off
 
 Set the desired Failsafe behavior. I prefer RTH.
+![My failsafe](http://s8.hostingkartinok.com/uploads/images/2017/02/f91f666e2b97dce17462bb6534592519.png)
 
 ###Transmitter setup
 
@@ -123,6 +124,7 @@ In reciever tab:
 * Roll (Ailerons) stick right - increased value
 
 Also use subtrim to get center value of 1500us and use travel adjustment to get at lowest value 1000us and highest 2000us when moving sticks.
+![My receiver settings](http://s8.hostingkartinok.com/uploads/images/2017/02/b2199bbbb760c7c7c1b3699c89cc4883.png)
 
 ### Motors
 
