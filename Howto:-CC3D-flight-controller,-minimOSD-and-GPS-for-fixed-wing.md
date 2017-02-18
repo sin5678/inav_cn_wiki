@@ -104,7 +104,7 @@ On the Modes tab set up the flight modes according to the position of the AUX ch
 
 ### Failsafe
 
-See here for RTH failsafe https://github.com/iNavFlight/inav/wiki/%5BWiP%5D-Quick-setup-guide#4-setting-up-failsafe-with-return-to-home
+Check [this link](https://github.com/iNavFlight/inav/wiki/Failsafe) for RTH failsafe
 
 Starting from iNav 1.6 the Filesafe feature is very transparent and clear. For the failsafe to work you'll need:
 * Setup the receiver output no signal when your TX is off
