@@ -19,3 +19,7 @@ Applies the following settings:
 List of exact values that changed in form of CLI values:  
 
 set looptime = 1000
+
+https://github.com/iNavFlight/inav-configurator/edit/master/tabs/profiles.js
+
+https://github.com/iNavFlight/inav-configurator/blob/master/js/fc.js#L468
