@@ -21,8 +21,8 @@ There is no need to place copter perfectly aligned, the algorithm does not care 
 
 Make sure if you have your board rotated in any way, you change Board Aligment to match. Verify this by banking your your aircraft left and right, forward and back and rotate left and right. In all examples the 3D model in configurator **must** move accordignly.
 
-Accelerometer calibration does not record leveled aircraft. For level flight and navigation features to work you need to trim the firmware to level flight using "Board Alignment" on the "Configuration" tab. The readings should show close to 0.0 on all axis when the aircraft is laying flat.
-
+Accelerometer calibration does not record leveled aircraft. For level flight and navigation features to work you need to trim the firmware to level flight using "Board Alignment" on the "Configuration" tab. The readings should show close to 0.0 on all axis when the aircraft is laying flat.  
+To trim out unleveled flight / drift using stick commands is really useful.
 
 **NOTE!** If using CLI to set up board alignment unlike in Cleanflight firmware board alignment angles are set in degrees*10, so if you need to trim your board 1.5 degrees you should enter "15".
 
