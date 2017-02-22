@@ -1,3 +1,5 @@
+[YouTube Video showing the steps below](https://youtu.be/WN0UEmIJLX4)
+
 1. Download and install [VirtualBox](https://www.virtualbox.org/)
 1. Download [Arch-anywhere](https://arch-anywhere.org/download/) ISO.
 1. Install Arch-anywhere in a new virtualbox
