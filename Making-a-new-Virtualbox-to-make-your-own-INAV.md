@@ -7,3 +7,7 @@
 1. Install the requirred packages. By running this in terminal: sudo pacman -S git make gcc arm-none-eabi-gcc arm-none-eabi-newlib
 1. Download a fresh copy of INAV by running this in terminal. git clone https://github.com/inavflight/inav)
 1. Enter INAV folder and type make TARGET=TARGET_YOU_WANT_TO_MAKE
+
+And heres some hints how to modify INAV to fit your needs.
+
+https://github.com/iNavFlight/inav/blob/master/docs/Features%20safe%20to%20remove%20and%20add.md
