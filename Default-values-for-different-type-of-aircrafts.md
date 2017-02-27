@@ -277,7 +277,7 @@ _Other Values:_
 ```
 set mag_hardware = 1
 set auto_disarm_delay = 0
-set small_angl e= 70
+set small_angle= 70
 ```
 
 **Flying wing**
