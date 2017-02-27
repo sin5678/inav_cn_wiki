@@ -23,3 +23,9 @@ Now add example 10 P-gain and 15 I-gain to Roll, Pitch and Yaw axis.
 **4: Want to calm your airplane down? Now is the time to reduce rates to fit your needs.**
 
 * Note: Yes it`s normal to get reduced servo throw when reducing rates at this point, if you got full servo throw at this stages you would overshoot the target deg/s you wanted.
+
+**5: Tune Angle / Horizon mode**
+
+* Enter `Angle` mode, if aircraft doesnt fly straight and level you need to trim you board aligment.
+* If your unhappy with amount of maximum bank angle / pitch angle, adjust them in CLI, max_angle_inclination_rll and max_angle_inclination_pit. ( Be aware of you want the same amount of maximum angle for poshold / althold you will also need to increase theyr values in [CLI](https://github.com/iNavFlight/inav/blob/master/docs/Cli.md))
+* If you unhappy with the strenght of the Angle mode, example it yerks itself to quick up to level, adjust P-gain of the level controller.
