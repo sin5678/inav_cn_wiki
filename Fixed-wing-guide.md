@@ -9,8 +9,9 @@
 
 * Do entire [sensor calibration](https://github.com/iNavFlight/inav/wiki/Sensor-calibration). (Level should be the angle of the plane itself when flying straight)
 
-* Select your Mixer. (Airplane, Flying Wing or custom airplane)
+* Select an preset that fits your airplane the best. ( INAV 1.6 ) 
 
+* Select your Mixer. (Airplane, Flying Wing or custom airplane)
 
 ### Step 2, hooking everything up.
 
@@ -67,6 +68,7 @@ At this point everything should do as expected.
 
 ### Step 4, Replace default values.
 
+* [Tune our PIFF controller](https://github.com/iNavFlight/inav/wiki/Tune-INAV-PIFF-controller-for-fixedwing.) ( INAV 1.6 )
 * Default PIDs in iNav are mainly for multirotors. Find some PIDs [here](https://github.com/iNavFlight/inav/wiki/Default-values-for-different-type-of-aircrafts) to use instead and tune from there.
 * If you are flying a plane with rudder, use "set i_yaw = 0".
 * Use switch arming or [fixed_wing_auto_arm](https://github.com/iNavFlight/inav/blob/master/docs/Cli.md). Stick arming is considered unsafe for fixedwings.
