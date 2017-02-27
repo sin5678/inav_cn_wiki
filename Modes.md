@@ -14,7 +14,7 @@ Index:
 - [HORIZON](#horizon)
 - [LEDLOW](#ledlow)
 - [MAG](#MAG)
-- [NAV LAUNCH](#launch---airplane-launch-assistant)
+- [NAV LAUNCH](#nav-launch---airplane-launch-assistant)
 - [OSD SW](#osd-sw)
 - [PASSTHRU](#passthru)
 - [SERVO AUTOTRIM](#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight)
