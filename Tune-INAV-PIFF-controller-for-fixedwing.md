@@ -1,4 +1,8 @@
-##  Method 1.
+### Description of PIFF controller:
+
+Link to [inavflight article](http://inavflight.com/news/pages/2017/02/14/PIFF-controller.html)
+
+###  Method 1.
 
 Tune for maximum performance.  
 Have the FF-gain do most of the work steering the airplane, leaving only P and I controller to fight turbulence and drift.  
