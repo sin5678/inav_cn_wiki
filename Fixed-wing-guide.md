@@ -9,7 +9,7 @@
 
 * Do entire [sensor calibration](https://github.com/iNavFlight/inav/wiki/Sensor-calibration). (Level should be the angle of the plane itself when flying straight)
 
-* Select an preset that fits your airplane the best.
+* Select an preset that fits your aircraft the best.
 
 
 ### Step 2, hooking everything up.
