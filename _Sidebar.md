@@ -6,7 +6,6 @@
  - [Multirotor guide](/iNavFlight/inav/wiki/Multirotor-guide)
  - [Fixed-Wing Guide](/iNavFlight/inav/wiki/Fixed-wing-guide)
  - [YouTube video guides](/iNavFlight/inav/wiki/YouTube-video-guides)
- - [Default values for different type of aircrafts](/iNavFlight/inav/wiki/Default-values-for-different-type-of-aircrafts)
  - [Failsafe](/iNavFlight/inav/wiki/Failsafe)
 
 # Sensors setup and calibration
@@ -37,5 +36,4 @@
  - [MSP Navigation Messages](/iNavFlight/inav/wiki/MSP-Navigation-Messages)
  - [PID Attenuation and scaling](/iNavFlight/inav/wiki/PID-Attenuation-and-scaling)
  - [Howto: CC3D flight controller, minimOSD and GPS for fixed wing](/iNavFlight/inav/wiki/Howto:-CC3D-flight-controller,-minimOSD-and-GPS-for-fixed-wing)
-
-
+ - [Tune INAV PIFF controller for fixedwing](/iNavFlight/inav/wiki/Tune-INAV-PIFF-controller-for-fixedwing)
