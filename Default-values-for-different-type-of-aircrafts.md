@@ -1,3 +1,5 @@
+**This is outdated, INAV 1.6 is out and is using PRESET. Values here are old.**
+
 **Values written here must be based on 1.2 or later!**
 
 This is not a replacement for tuning your PIDs, this is only a starting point from you to tune from. There are various tutorials on the internet on how to tune your PIDs.
