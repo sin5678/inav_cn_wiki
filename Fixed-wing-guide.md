@@ -1,7 +1,7 @@
 # The basic of getting iNav working on airplane
 
 
-* One limitation of iNav(And all other Cleanflight based) is it cannot be flown longer than 1 hour and 15 minutes. This is expected to be corrected by iNav 1.6
+* One limitation of iNav(And all other Cleanflight based) is it cannot be flown longer than 1 hour and 15 minutes. This is fixed on INAV 1.6 with F3 boards and newer.
 
 ### Step 1, getting your flight controller ready.
 
