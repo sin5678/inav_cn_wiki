@@ -40,6 +40,6 @@ This is default, if you download and compile your own firmware you can example a
 |               |      |      |           |      |        |              |                 |         |                |              |       |       |      |            |
 | SERIAL RX     | X    | X    |           | X    | X      | X            | X               | X       | X              | X            | X     | X     | X    | X          |
 | MSP RX        |      |      |           | X    | X      | X            | X               | X       | X              | X            | X     | X     | X    | X          |
-| BLACKBOX      | X    | X    |           | X    | X      | X            | X               | X       | X              | X            | X     | X     | X    | X          |
+| BLACKBOX      | X    |      |           | X    | X      | X            | X               | X       | X              | X            | X     | X     | X    | X          |
 |               |      |      |           |      |        |              |                 |         |                |              |       |       |      |            |
 | SONAR         |      |      |           | X    |        | X            |                 | X       | X              | X            |       | X     | X    | X          |
