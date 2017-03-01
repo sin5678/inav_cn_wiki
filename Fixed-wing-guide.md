@@ -58,7 +58,7 @@ Roll (Ailerons) stick right - increased value
 1. The servo midpoint has control surfaces perfectly at center.
 
 If they go reverse, change "Direction and rate" from +100 to -100  
-If they exceed maximum wanted deflection reduce min/max
+If they exceed maximum wanted deflection reduce min/max  
 If control surfaces is not perfectly centered adjust servo midpoint. (This is after setting them up as close as possible mechanically )  
 
 Servo 2: Elevator
