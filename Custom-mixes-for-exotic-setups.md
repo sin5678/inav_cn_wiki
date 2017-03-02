@@ -165,17 +165,17 @@ mmix reset
 mmix 0 1.0 0.0 0.0 0.0
 
 smix reset
-smix 0 2 0 -100 0 0 100 0
-smix 1 3 0 -100 0 0 100 0
+smix 0 2 0 -100 0 0 100 
+smix 1 3 0 -100 0 0 100 
 
-smix 2 4 1 100 0 0 100 0
-smix 3 5 1 -100 0 0 100 0
+smix 2 4 1 100 0 0 100 
+smix 3 5 1 -100 0 0 100 
 
-smix 4 4 2 -100 0 0 100 0
-smix 5 5 2 -100 0 0 100 0
+smix 4 4 2 -100 0 0 100 
+smix 5 5 2 -100 0 0 100 
 
-smix 6 6 8 -100 0 0 100 0
-smix 7 7 9 -100 0 0 100 0
+smix 6 6 8 -100 0 0 100 
+smix 7 7 9 -100 0 0 100 
 ```
 
 ## Skyhunter Nano (no rudder)
@@ -185,9 +185,9 @@ mixer CUSTOMAIRPLANE
 mmix reset
 mmix 0 1.000 0.000 0.000 0.000
 smix reset
-smix 0 3 0 -100 0 0 100 0
-smix 1 4 0 -100 0 0 100 0
-smix 2 2 1 -100 0 0 100 0
+smix 0 3 0 -100 0 0 100 
+smix 1 4 0 -100 0 0 100 
+smix 2 2 1 -100 0 0 100 
 ```
 
 # Setups that were never implemented in Baseflight, Cleanflight or any of it's derivatives
@@ -218,12 +218,12 @@ mixer CUSTOMAIRPLANE
 mmix reset
 
 smix reset
-smix 0 3 2 100 0 0 100 0
-smix 1 3 1 100 0 0 100 0
-smix 2 4 2 100 0 0 100 0
-smix 3 4 1 100 0 0 100 0
-smix 4 5 2 100 0 0 100 0
-smix 5 5 0 100 0 0 100 0
-smix 6 6 2 100 0 0 100 0
-smix 7 6 0 100 0 0 100 0
+smix 0 3 2 100 0 0 100 
+smix 1 3 1 100 0 0 100 
+smix 2 4 2 100 0 0 100 
+smix 3 4 1 100 0 0 100 
+smix 4 5 2 100 0 0 100 
+smix 5 5 0 100 0 0 100 
+smix 6 6 2 100 0 0 100 
+smix 7 6 0 100 0 0 100 
 ```
