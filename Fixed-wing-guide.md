@@ -71,7 +71,7 @@ Servo 5: Rudder
 
 At this point everything should do as expected.  
 1: When moving sticks on TX the control surfaces should move correctly, do an [High Five](https://www.youtube.com/watch?v=Gf74geZyKYk) test  
-2: When moving the airplane in the air in angle mode control surfaces should counter-act movement correctly. The controls surfaces needs to move the same way as the airplane is moved to counteract and stabilize the airplane. You may need to **temporarly** tripple the amount on P-gain on Roll, Pitch and Yaw axis. (So its easy to see movement.)  
+2: When moving the airplane in the air in angle mode control surfaces should counter-act movement correctly. The controls surfaces needs to move the same way as the airplane is moved to counteract and stabilize the airplane. You may need to **temporarily** triple the amount on P-gain on Roll, Pitch and Yaw axis. (So its easy to see movement.)  
 
 ### Step 4, Replace default values.
 
@@ -85,7 +85,7 @@ At this point everything should do as expected.
 
 * Use Airmode mode to get full stabilitation and servo throw with no throttle applied.
 * [Setting up failsafe with return to home.](https://github.com/iNavFlight/inav/wiki/Failsafe#setting-up-failsafe-with-return-to-home)
-* If your compass is not 100% properly setup just disable it instead. INAV uses GPS heading normally, Only on ground before GPS speed has been high enough or if error between GPS heading and compass heading exceed 60deg will it use compass heading.  
+* If your compass is not 100% properly setup just disable it instead. INAV uses GPS heading normally, Only on ground before GPS speed has been high enough or if error between GPS heading and compass heading exceed 60deg will it use compass heading
 
 
 
@@ -102,7 +102,7 @@ At this point everything should do as expected.
     * Tune your PIDs if necessary.
 
 * For GPS features
-    * Test `NAV ALTHOLD` and se that it holds altitude.
+    * Test `NAV ALTHOLD` and see that it holds altitude.
     * Test `NAV ALTHOLD` and `NAV POSHOLD` combined
     * Test `RTH` flight mode
     * Test [failsafe](https://github.com/iNavFlight/inav/wiki/Failsafe)
