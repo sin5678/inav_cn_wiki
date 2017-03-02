@@ -40,10 +40,6 @@ Set receiver to send out `NO PULSES`
 
 Go to `Failsafe` tab, and enable `RTH` as Stage 2 failsafe.
 
-Stage 1 is default safe to use. You can also make sure AUX channels on `Failsafe` tab are set to `Hold`, Throttle channel is set to `Hold` as well, Roll, Pitch and Yaw channels are set to `Auto`.
-
-It will to contuinue what the pilot was doing.
-
 Behavior of RTH can also be configured.
  - [iNav Flight modes / Navigation Modes](/iNavFlight/inav/wiki/Navigation-modes#rth-altitude-control-modes)
 
