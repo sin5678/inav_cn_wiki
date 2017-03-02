@@ -14,7 +14,7 @@ One got two options on how to configure receiver.
 
 **Option one**
 
-Set receiver to send out `NO PULSES`
+Set receiver to send out `NO PULSES` on a failsafe event.
 
 **Option two**
 
