@@ -49,8 +49,10 @@ Verify that your failsafe works.
 
 * Remove all props  
 
-* Go outside, arm and apply throttle, walk with it 20meter away from home (normally the place where you armed it) and then turn off transmitter. The aircraft should now try to climb (increase throttle). Also verify that you're able to regain control by turning on transmitter again.  
+* Go outside, arm and apply throttle, walk with it 20meter away from home (normally the place where you armed it) and then turn off transmitter. The aircraft should now try to climb (increase throttle). Also verify that you're able to regain control by turning on transmitter again, and move the ROLL/PITCH stick more than.  
 
 * Real test: Take the props on again. Take off, fly at least 20 meters from home, and turn off transmitter. Tip: Do this over soft grass. If it's an airplane it's better to have some altitude.  
 
 Note: If you are using fixedwing without magnetometer enabled you will need to run with airplane before turning off transmitter to test failsafe. This is because GPS speed needs to be above a certain threshold to aquirre a valid heading. Without a valid heading failsafe will not initated.
+
+Note: To regain controll after failsafe event `failsafe_stick_threshold` is default turned on, and requirres you to move the Roll/pitch sticks to regain control.  
