@@ -17,4 +17,4 @@ INAV have some settings that are different than stock cleanflight, and simply re
 
 - [Fixed wing guide](https://github.com/iNavFlight/inav/wiki/Fixed-wing-guide) if your going to use it in a fixed wing.
 
-- [Hardware support map](https://github.com/iNavFlight/inav/wiki/Hardware-and-feature-support-map)
+- [Supported boards](Supported-boards)
