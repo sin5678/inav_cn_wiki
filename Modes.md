@@ -125,7 +125,7 @@ Sequence for launching airplane using `NAV LAUNCH` mode looks like this:
 ### SERVO AUTOTRIM - In flight adjustment of servo midpoint for straight flight
 The purpose of this mode is to set new midpoints for `SERVO_ELEVATOR`, `SERVO_FLAPERON_1`, `SERVO_FLAPERON_2` and `SERVO_RUDDER`.
 
-This is so when switching into passthrough mode the plane will fly straight, its also to help the PID controller know where the plane is expected to fly straight.
+This is so when switching into passthrough mode the plane will fly straight, its also to help the PIFF controller know where the plane is expected to fly straight.
 
 How to use:
 
