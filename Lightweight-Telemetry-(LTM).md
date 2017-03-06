@@ -103,7 +103,7 @@ The payload is 14 bytes
 | ---- | ---- |
 | Latitude | int32 decimal degrees * 10,000,000 (1E7) |
 | Longitude | int32 decimal degrees * 10,000,000 (1E7) |
-| Altitude, uint32, cm (m / 100) [always 0 in iNav] |
+| Altitude | uint32, cm (m / 100) [always 0 in iNav] |
 | OSD on | uchar (always 1) |
 | Fix | uchar, home fix status (0 == no fix) |
 
