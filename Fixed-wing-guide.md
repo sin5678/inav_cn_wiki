@@ -78,7 +78,7 @@ At this point everything should do as expected.
 * [Tune your PIFF controller](https://github.com/iNavFlight/inav/wiki/Tune-INAV-PIFF-controller-for-fixedwing) ( INAV 1.6 )
 * Use switch arming or [fixed_wing_auto_arm](https://github.com/iNavFlight/inav/blob/master/docs/Cli.md). Stick arming is considered unsafe for fixedwings.
 * Increase small angle (let you arm in any position; set small_angle = 180)
-* Read through the iNav CLI commands, especially ALL marked with " fw_ "
+* Read through the iNav CLI commands, especially ALL marked with " fw_ " This will give you hints how the modes for fixedwings works.  
 
 
 ### Step 5, optional but recommended:
