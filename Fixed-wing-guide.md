@@ -57,6 +57,7 @@ Roll (Ailerons) stick right - increased value
 1. The servo movement does not exceed wanted maximum deflection of control surfaces. [Guide on setting up linkages](http://www.modelairplanenews.com/total-control-the-right-way-to-set-up-servos/)
 1. The servo midpoint has control surfaces perfectly at center.
 
+In Servos Tab:  
 If they go reverse, change "Direction and rate" from +100 to -100  
 If they exceed maximum wanted deflection reduce min/max  
 If control surfaces is not perfectly centered adjust servo midpoint. (This is after setting them up as close as possible mechanically )  
