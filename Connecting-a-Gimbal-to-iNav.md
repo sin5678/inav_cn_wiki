@@ -33,7 +33,7 @@ See map below:
 | NAZE               | QuadX       | Output Pin 1       | Output Pin 2       | Output 3-6           |
 | SP RACING F3       | QuadX       | Output Pin 7       | Output Pin 8       | Output 1-4           |
 | SP RACING F3       | QuadX       | Output Pin 7       | Output Pin 8       | Output 1-4           |
-| SP RACING F3       | Flyingwing  | Output Pin 5       | Output Pin 6       | Output 1-4           |
+| SP RACING F3       | Flying wing | Output Pin 5       | Output Pin 6       | Output 1-4           |
 
 
 
