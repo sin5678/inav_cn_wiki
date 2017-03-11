@@ -28,10 +28,12 @@ Because boards are different, the pinout may be different. It also depends on wh
 Also be aware that on some boards when using `SERVO GIMBAL` feature motor outputs can get moved to new outputs.  
 See map below:  
 
-| Board              | Mixer       | SERVO 0 Output pin | SERVO 1 Output pin | Motor Output |
-|--------------------|:-----------:|:------------------:|:------------------:|:------------:|
-| NAZE               | QuadX       | Output Pin 1       | Output Pin 2       | Output 3-6   |
-| SP RACING F3       | QuadX       | Output Pin 7       | Output Pin 8       | Output 1-4   |
+| Board              | Mixer       | SERVO 0 Output pin | SERVO 1 Output pin | Motor / Servo Output |
+|--------------------|:-----------:|:------------------:|:------------------:|:--------------------:|
+| NAZE               | QuadX       | Output Pin 1       | Output Pin 2       | Output 3-6           |
+| SP RACING F3       | QuadX       | Output Pin 7       | Output Pin 8       | Output 1-4           |
+| SP RACING F3       | QuadX       | Output Pin 7       | Output Pin 8       | Output 1-4           |
+| SP RACING F3       | Flyingwing  | Output Pin 5       | Output Pin 6       | Output 1-4           |
 
 
 
