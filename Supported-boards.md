@@ -6,6 +6,11 @@ These boards are not recommended for new setups. They are very limited in memory
 
 These boards are powerfull and in general support everything INAV is capable of. Limitations are qute rate and are usually caused by hardware design issues.
 
+### Boards documentation
+
+See the [docs](https://github.com/iNavFlight/inav/tree/master/docs) folder for addiotional infomation regards to many targets in INAV, to example help in finding pinout and features.  
+_Feel free to help improve the docs._
+
 ### Recommended boards
 
 These boards are well tested with INAV and are known to be of good quality and reliability.
