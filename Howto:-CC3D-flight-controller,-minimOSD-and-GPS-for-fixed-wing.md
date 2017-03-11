@@ -45,7 +45,10 @@ OSD setup
 - FPV hardware, airframe, RC
 
 ## 3. Flashing iNAV firmware to CC3D.
-First you need to download a precompiled firmware for the board [here](https://github.com/iNavFlight/inav/releases). Next, you can check [numerous guides](https://www.youtube.com/watch?v=eClp-YBeSms&t=0s) how to flash CC3D with third party firmware (Attention, you'll need a FTDI adapter for the purpose). Of course you need to specify the previously downloaded firmware for the flashing. For now, if you have servos, it is not advisable to flash with them attached, because there is high frequency sent with default configuration, and you can burn them (the way -for now- is flash, configure plane and then attach servos).
+First you need to download a precompiled firmware for the board [here](https://github.com/iNavFlight/inav/releases). Select one of the releases precompiled for CC3D:
+- _inav_x.x.x_CC3D.hex_ for PWM receiver
+- _inav_x.x.x_CC3D_PPM1.hex_ for PPM receiver
+Next, you can check [numerous guides](https://www.youtube.com/watch?v=eClp-YBeSms&t=0s) how to flash CC3D with third party firmware (Attention, you'll need a FTDI adapter for the purpose). Of course you need to specify the previously downloaded firmware for the flashing. For now, if you have servos, it is not advisable to flash with them attached, because there is high frequency sent with default configuration, and you can burn them (the way -for now- is flash, configure plane and then attach servos).
 
 ## 4. Basic settings
 
