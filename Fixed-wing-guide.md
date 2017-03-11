@@ -86,7 +86,7 @@ At this point everything should do as expected.
 * Use Airmode mode to get full stabilitation and servo throw with no throttle applied.
 * [Setting up failsafe with return to home.](https://github.com/iNavFlight/inav/wiki/Failsafe#setting-up-failsafe-with-return-to-home)
 * If your compass is not 100% properly setup just disable it instead. INAV uses GPS heading normally, Only on ground before GPS speed has been high enough or if error between GPS heading and compass heading exceed 60deg will it use compass heading
-
+* Have `passthrough` mode configured so if it happens anything with gyro / accelerometer in air you can go manual controll, this includes example if your flight controller resets during flight because of example an brownout.  
 
 
 ### Last step, tesflight!:
