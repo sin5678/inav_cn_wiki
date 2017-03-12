@@ -11,9 +11,11 @@ These boards are powerfull and in general support everything INAV is capable of.
 See the [docs](https://github.com/iNavFlight/inav/tree/master/docs) folder for addiotional infomation regards to many targets in INAV, to example help in finding pinout and features.  
 _Feel free to help improve the docs._
 
-### Recommended boards
+### Sponsored and recommended boards
 
-These boards are well tested with INAV and are known to be of good quality and reliability.
+These boards come from companies that support INAV development. Buying one of these boards you make your small contribution for improving INAV as well. 
+
+Also these boards are tested by INAV development team and usually flown on daily basis.
 
 | Board name                | CPU Family | Target name(s)            | GPS  | Compass | Barometer      | Telemetry | RX                             | Blackbox             |
 |---------------------------|:----------:|:-------------------------:|:----:|:-------:|:--------------:|:---------:|:------------------------------:|:--------------------:|
@@ -22,9 +24,18 @@ These boards are well tested with INAV and are known to be of good quality and r
 | [Airbot OMNIBUS AIO F4](http://shop.myairbot.com/index.php/flight-control/cleanflight-baseflight/omnibusf4v2.html)| F4         | OMNIBUSF4, OMNIBUSF4PRO   | All  | All     | All            | All       | All                            | SERIAL, SD, SPIFLASH |
 | [Airbot F4 / Flip F4](http://shop.myairbot.com/index.php/flight-control/apm/airbotf4v1.html)                      | F4         | AIRBOTF4                  | All  | All     | All            | All       | All                            | SERIAL, SPIFLASH     |
 
+### Recommended boards
+
+These boards are well tested with INAV and are known to be of good quality and reliability.
+
+| Board name                | CPU Family | Target name(s)            | GPS  | Compass | Barometer      | Telemetry | RX                             | Blackbox             |
+|---------------------------|:----------:|:-------------------------:|:----:|:-------:|:--------------:|:---------:|:------------------------------:|:--------------------:|
+| SPRacing F3               | F3         | SPRACINGF3                | All  | All     | All            | All       | All                            | SERIAL, SPIFLASH     |
+| SPRacing F3 MINI          | F3         | SPRACINGF3MINI            | All  | All     | All            | All       | All                            | SERIAL, SD           |
+
 ### Other supported boards
 
-These boards work with INAV but might be not well tested or of random quality.
+These boards work with INAV but might be not well tested.
 
 | Board name                | CPU Family | Target name(s)            | GPS  | Compass | Barometer      | Telemetry | RX                             | Blackbox             |
 |---------------------------|:----------:|:-------------------------:|:----:|:-------:|:--------------:|:---------:|:------------------------------:|:--------------------:|
@@ -32,9 +43,7 @@ These boards work with INAV but might be not well tested or of random quality.
 | FURY F3                   | F3         | FURYF3, FURYF3_SPIFLASH   | All  | All     | All            | All       | All                            | SERIAL, SD, SPIFLASH |
 | RCExplorer F3FC Tricopter | F3         | RCEXPLORERF3              | All  | All     | All            | All       | All                            | SERIAL               |
 | Taulabs Sparky            | F3         | SPARKY                    | All  | All     | All            | All       | All                            | SERIAL               |
-| SPRacing F3               | F3         | SPRACINGF3                | All  | All     | All            | All       | All                            | SERIAL, SPIFLASH     |
 | SPRacing F3 EVO           | F3         | SPRACINGF3EVO             | All  | All     | All            | All       | All                            | SERIAL, SD           |
-| SPRacing F3 MINI          | F3         | SPRACINGF3MINI            | All  | All     | All            | All       | All                            | SERIAL, SD           |
 | Taulabs Sparky 2          | F4         | SPARKY2, SPARKY2_OPBL     | All  | All     | All            | All       | All                            | SERIAL, SPIFLASH     |
 | Taulabs QUANTON           | F4         | QUANTON                   | All  | All     | All            | All       | All                            | SERIAL, SPIFLASH     |
 | BlueJay F4                | F4         | BLUEJAYF4                 | All  | All     | All            | All       | All                            | SERIAL, SPIFLASH     |
