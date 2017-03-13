@@ -34,7 +34,7 @@ See map below:
 | SP RACING F3       | QuadX       | Output Pin 7       | Output Pin 8       | Output 1-4           |
 | SP RACING F3       | QuadX       | Output Pin 7       | Output Pin 8       | Output 1-4           |
 | SP RACING F3       | Flying wing | Output Pin 5       | Output Pin 6       | Output 1-4           |
-
+| SP RACING F3       | Airplane    | Output Pin 7       | Output Pin 8       | Output 1-6           |
 
 
 ### Servo Tilt usage
