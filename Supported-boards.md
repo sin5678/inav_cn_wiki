@@ -31,6 +31,7 @@ These boards are well tested with INAV and are known to be of good quality and r
 | Board name                | CPU Family | Target name(s)            | GPS  | Compass | Barometer      | Telemetry | RX                             | Blackbox             |
 |---------------------------|:----------:|:-------------------------:|:----:|:-------:|:--------------:|:---------:|:------------------------------:|:--------------------:|
 | SPRacing F3               | F3         | SPRACINGF3                | All  | All     | All            | All       | All                            | SERIAL, SPIFLASH     |
+| RMRC Seriously DODO       | F3         | RMDO                      | All  | All     | All            | All       | All                            | SERIAL               |
 
 
 ### Other supported boards
@@ -60,6 +61,5 @@ These boards will work with INAV but are either end-of-life, limited on features
 | PARIS Sirius™ AIR HERO    | F1         | AIRHERO3                  | NMEA | HMC5883 | MS5611, BMP280 | LTM, FRSKY | PWM, PPM, SBUS, IBUS, SPEKTRUM | SERIAL               |
 | OpenPilot CC3D            | F1         | CC3D, CC3D_PPM1           | NMEA | HMC5883 | BMP085, BMP280 | LTM       | PWM, PPM, SBUS, IBUS, SPEKTRUM | no                   |
 | AfroFlight NAZE32         | F1         | NAZE                      | NMEA | HMC5883 | MS5611, BMP280 | LTM, FRSKY | PWM, PPM, SBUS, IBUS, SPEKTRUM | SERIAL, SPIFLASH     |
-| RMRC Seriously DODO       | F3         | RMDO                      | All  | All     | All            | All       | All                            | SERIAL               |
 | ANYFC                     | F4         | ANYFC                     | All  | All     | All            | All       | All                            | SERIAL               |
 | YuPiF4 by RcNet           | F4         | YUPIF4                    | All  | All     | All            | All       | All                            | SERIAL, SD           |
