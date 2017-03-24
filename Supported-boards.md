@@ -32,6 +32,7 @@ These boards are well tested with INAV and are known to be of good quality and r
 |---------------------------|:----------:|:-------------------------:|:----:|:-------:|:--------------:|:---------:|:------------------------------:|:--------------------:|
 | SPRacing F3               | F3         | SPRACINGF3                | All  | All     | All            | All       | All                            | SERIAL, SPIFLASH     |
 | RMRC Seriously DODO       | F3         | RMDO                      | All  | All     | All            | All       | All                            | SERIAL               |
+| SPRacing F3 EVO           | F3         | SPRACINGF3EVO             | All  | All     | All            | All       | All                            | SERIAL, SD           |
 
 
 ### Other supported boards
@@ -44,7 +45,6 @@ These boards work with INAV but might be not well tested.
 | FURY F3                   | F3         | FURYF3, FURYF3_SPIFLASH   | All  | All     | All            | All       | All                            | SERIAL, SD, SPIFLASH |
 | RCExplorer F3FC Tricopter | F3         | RCEXPLORERF3              | All  | All     | All            | All       | All                            | SERIAL               |
 | Taulabs Sparky            | F3         | SPARKY                    | All  | All     | All            | All       | All                            | SERIAL               |
-| SPRacing F3 EVO           | F3         | SPRACINGF3EVO             | All  | All     | All            | All       | All                            | SERIAL, SD           |
 | SPRacing F3 MINI          | F3         | SPRACINGF3MINI            | All  | All     | All            | All       | All                            | SERIAL, SD           |
 | Taulabs Sparky 2          | F4         | SPARKY2, SPARKY2_OPBL     | All  | All     | All            | All       | All                            | SERIAL, SPIFLASH     |
 | Taulabs QUANTON           | F4         | QUANTON                   | All  | All     | All            | All       | All                            | SERIAL, SPIFLASH     |
