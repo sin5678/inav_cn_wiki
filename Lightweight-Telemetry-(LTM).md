@@ -62,7 +62,7 @@ The payload is 7 bytes
 | Data | Format |
 | ---- | ---- |
 | Vbat | uint16, mV |
-| Current | uint16, mA (not implemented in iNav) |
+| Current | uint16, mAh |
 | RSSI | uchar |
 | Airspeed | uchar, m/s |
 | Status | uchar |
