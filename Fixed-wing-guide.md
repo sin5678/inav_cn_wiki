@@ -30,8 +30,9 @@
         * Output 3 - Port Elevon
         * Output 4 - Starboard Elevon
 
+Example when using Spracingf3:. 
 * If using GPS connect it to UART 2.
-* If using Sbus connect it to UART 3. (Note this requires newer board like SPRACING F3)
+* If using Sbus connect it to UART 3 / or the uart which are dedicated for sbus on your board.
 * If using regular PPM connect it to IO 1 pin 1.
 * If using telemetry connect it with softserial. ( If using Smartport read [this](https://github.com/iNavFlight/inav/blob/master/docs/Board%20-%20Airbot%20F4%20and%20Flip32%20F4.md#frsky-smartport-using-softwareserial) )
 
