@@ -1,14 +1,14 @@
 ### Boards based on F1 CPUs
 
-These boards are not recommended for new setups. They are very limited in memory and don't support many features of the INAV. In general F1 boards are limited to only UBLOX GPS protocol, don't have BLHeli Passthrough, don't have LEDSTRIP, only support a few felemetries (LTM and maybe FrSky) etc.
+These boards are not recommended for new setups. They are very limited in memory and don't support many features of the INAV. In general F1 boards are limited to only UBLOX GPS protocol, don't have BLHeli Passthrough, don't have LEDSTRIP, only support a few telemetries (LTM and maybe FrSky) etc.
 
 ### Boards based on F3/F4/F7 CPUs
 
-These boards are powerfull and in general support everything INAV is capable of. Limitations are qute rate and are usually caused by hardware design issues.
+These boards are powerful and in general support everything INAV is capable of. Limitations are qute rare and are usually caused by hardware design issues.
 
 ### Boards documentation
 
-See the [docs](https://github.com/iNavFlight/inav/tree/master/docs) folder for addiotional infomation regards to many targets in INAV, to example help in finding pinout and features.  
+See the [docs](https://github.com/iNavFlight/inav/tree/master/docs) folder for additional information regards to many targets in INAV, to example help in finding pinout and features.  
 _Feel free to help improve the docs._
 
 ### Sponsored and recommended boards
