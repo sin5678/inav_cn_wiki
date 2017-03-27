@@ -58,7 +58,7 @@ In order to transfer missions from the GCS to the flight controller, and to moni
 * Bluetooth
 * 3DR (433Mhz / 915Mhz)
 * WiFi (ESP8266)
-* HR-12 (433Mhz, similar to 3DR)
+* HC-12 (433Mhz, similar to 3DR)
 * Openlrs/Openlrsng devices (such orangerx 433 tx/rx combo)
  
 ## Bluetooth
@@ -85,9 +85,9 @@ There is an ezgui [howto](http://ez-gui.com/manual/multiwii-clearflight-wifi-to-
 
 Another, highly detailed how-to for ESP8266 and Cleanflight/Baseflight/INAV is available [here](https://quadmeup.com/wifi-telemetry-for-cleanflight-with-ez-gui-and-esp8266/). This reports very poor results, possibly due to the native WiFi capability in the phone hosting ezgui (vice the laptop adaptor for the mwp test).
 
-## HR-12
+## HC-12
 
-HR-12 is a comparable radio technology to 3DR with similar range and performance characteristics. Its configuration and usage with iNav is well documented https://quadmeup.com/diy-wireless-telemetry-link-for-uav/ and https://quadmeup.com/hc-12-433mhz-wireless-serial-communication-module-configuration/. The configuration documented would work equally well in ezgui and mwp.
+HC-12 is a comparable radio technology to 3DR with similar range and performance characteristics. Its configuration and usage with iNav is well documented https://quadmeup.com/diy-wireless-telemetry-link-for-uav/ and https://quadmeup.com/hc-12-433mhz-wireless-serial-communication-module-configuration/. The configuration documented would work equally well in ezgui and mwp. These small radios work really well with good range in FU3 mode / 9600 baud (and very cheap). 
 
 ## Openlrsng
 
