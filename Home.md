@@ -13,8 +13,8 @@ INAV have some settings that are different than stock cleanflight, and simply re
 
 - [Sensor calibration](https://github.com/iNavFlight/inav/wiki/Sensor-calibration)
 
-- [Multirotor guide](https://github.com/iNavFlight/inav/wiki/Multirotor-guide) if your going to use it in a multirotor.
+- [Multirotor guide](https://github.com/iNavFlight/inav/wiki/Multirotor-guide) if you're going to use it in a multirotor.
 
-- [Fixed wing guide](https://github.com/iNavFlight/inav/wiki/Fixed-wing-guide) if your going to use it in a fixed wing.
+- [Fixed wing guide](https://github.com/iNavFlight/inav/wiki/Fixed-wing-guide) if you're going to use it in a fixed wing.
 
 - [Supported boards](Supported-boards)
