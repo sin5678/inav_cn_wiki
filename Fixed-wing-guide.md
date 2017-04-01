@@ -100,7 +100,7 @@ At this point everything should do as expected.
 
 * Arm and launch your aircraft using prefered mode, example `Horizon`.
     * If airplane is not flying leveled when in self leveling mode like `Horizon` you need to trim your [board aligment](https://github.com/iNavFlight/inav/wiki/Sensor-calibration#board-orientation-and-level-calibration)
-    * If airplane flies leveled, do an [Servo Autotrim](https://github.com/iNavFlight/inav/wiki/Navigation-modes#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight)
+    * If airplane flies leveled, do an [Servo Autotrim](https://github.com/iNavFlight/inav/wiki/Modes#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight)
     * Tune your PIDs if necessary.
 
 * For GPS features
