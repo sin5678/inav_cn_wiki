@@ -53,7 +53,7 @@ The payload is 6 bytes
 | ---- | ---- |
 | Pitch | int16, degrees |
 | Roll | int16, degrees |
-| Heading | int16, degrees |
+| Heading | int16, degrees. Course over ground |
 
 ## Status Frame (S)
 
