@@ -6,6 +6,8 @@ First basic PIFF controller:
 * I-gain will change your servo movement when it sees an error between wanted motion ( deg/s ) and actual motion ( deg/s ), however I-gain also knows the concept of time, and therefor will contuinue to increase servo movement until wanted motion is the same as actual motion.
 * FF-gain doesnt not care about actual motion, and does only move servos based on wanted motion.
 
+Also Angle mode itself have an P-gain and I-gain to level the aircraft back to level.
+
 Also an sidenote is that I-gain is suppressed before takeoff and without throttle, EVEN with airmode enable you need to first have had some throttle to see the I-gain working, this is important to know if you want to "bench" test behavior.
 
 Passthrough bypasses all this an moves servos directly.
