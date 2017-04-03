@@ -39,3 +39,6 @@ Sum up:
 You dont **need** full servo throw! It all depends how you want to [tune](https://github.com/iNavFlight/inav/wiki/Tune-INAV-PIFF-controller-for-fixedwing) your airplane.
 
 IF you want full throw basically wanted Rates settings should be the same as what your airplane can actually manage, and then turn up P-gain and / or FF-gain untill you have what you want
+
+
+Sidenote, want to calm down you airplane is passthrough mode? Then and programmable TX should be used, where on the same switch that turns on passthrough mode enables wanted EXPO and limited range of channels.
