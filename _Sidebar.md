@@ -35,5 +35,5 @@
  - [Lightweight Telemetry (LTM)](/iNavFlight/inav/wiki/Lightweight-Telemetry-(LTM))
  - [MSP Navigation Messages](/iNavFlight/inav/wiki/MSP-Navigation-Messages)
  - [PID Attenuation and scaling](/iNavFlight/inav/wiki/PID-Attenuation-and-scaling)
- - [Howto: CC3D flight controller, minimOSD and GPS for fixed wing](/iNavFlight/inav/wiki/Howto:-CC3D-flight-controller,-minimOSD-and-GPS-for-fixed-wing)
+ - [Howto: CC3D flight controller, minimOSD, GPS and LTM telemetry for fixed wing](/iNavFlight/inav/wiki/Howto:-CC3D-flight-controller,-minimOSD,-GPS-and-LTM-telemetry-for-fixed-wing)
  - [Tune INAV PIFF controller for fixedwing](/iNavFlight/inav/wiki/Tune-INAV-PIFF-controller-for-fixedwing)
