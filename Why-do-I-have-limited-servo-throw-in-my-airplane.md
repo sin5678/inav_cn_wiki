@@ -18,7 +18,7 @@ In other words, the only thing that will limit passthrough servo limits and rate
 
 In passthrough everything is easy, you move sticks on radio, the FC does some mixing according to which airplane/flying wing you have, and then you move the servos directly.
 
-In stabiliation mode however you dont control the servos at **ALL**. Everything is controlled by actual motion, and wanted motion. When you move the sticks you are commanding and motion, example 30deg/s roll.
+In stabiliation mode however you dont control the servos at **ALL**. Everything is controlled by actual motion, and wanted motion. When you move the sticks you are commanding motion, example 30deg/s roll.
 
 Then the P-gain will start working, the I-gain will start working and the FF-gain will start working, if tuned properly it will hit the wanted motion.
 
