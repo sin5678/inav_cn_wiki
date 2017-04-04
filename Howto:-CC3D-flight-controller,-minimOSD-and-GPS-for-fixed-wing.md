@@ -217,9 +217,18 @@ AIRCRAFT/INSTALLATION TYPE settings
 
 `#define FIXEDWING`
 
+TELEMETRY LTM settings
+
+`#define FORCE_MSP`                 // Uncomment to enable use of MSP as well as telemetry. Uses more memory
+ 
+`#define PROTOCOL_LTM`              // To use LTM protocol instead of MSP
+
+`#define BAUDRATE 9600`
+
+
 Usualy it is enough.
 
-You may enable also rather helpful '#define MAPMODE' under FEATURES that allows you to see the map indication of relative positions of home and aircraft.
+You may enable also rather helpful `#define MAPMODE` under FEATURES that allows you to see the map indication of relative positions of home and aircraft.
 
 Configure config.h allowing LTM if you want to share USART1 with your telemetry system, as explained above.
 
