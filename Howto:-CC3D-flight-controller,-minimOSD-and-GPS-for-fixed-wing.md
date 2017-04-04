@@ -17,6 +17,8 @@ Configuration
 
 Failsafe
 
+Telemetry (LTM)
+
 Transmitter setup
 
 Motors
