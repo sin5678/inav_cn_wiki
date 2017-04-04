@@ -41,4 +41,4 @@ You dont **need** full servo throw! It all depends how you want to [tune](https:
 IF you want full throw, your rate settings ( deg/s ) should match what your plane is able to do at full servo throw. Then in stabilitation mode you increase your P-gain or FF-gain untill you get full throw on servos.
 
 
-Sidenote: If you want to calm your airplane is passthrough mode, you will need an programmable TX. Program it so when enabling `passthrough` on a switch, the switch also reduce channel range and adds expo.
+Sidenote: If you want to calm your airplane in passthrough mode, you will need an programmable TX. Program it so when enabling `passthrough` on a switch, the switch also reduce channel range and adds expo.
