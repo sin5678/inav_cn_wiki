@@ -1,6 +1,6 @@
 # Setting up Failsafe for RTH
 
-##Forewords
+## Forewords
 
 The goal is to configured both your flight controller and radio receiver so failsafe does as expected in every situation.
 
@@ -8,7 +8,7 @@ For failsafe to work optimal iNav needs to know it's in a failsafe event and not
 
 Also this assumes you have regular GPS modes like `RTH` working already.
 
-###Configuration of receiver
+### Configuration of receiver
 
 One got two options on how to configure receiver.
 
@@ -36,7 +36,7 @@ Set receiver to send out `NO PULSES` on a failsafe event.
 
 1. Configure failsafe on your receiver to the above conditions on link loss (consult manual for your receiver on how to do it)
 
-###Configuration of iNav
+### Configuration of iNav
 
 Go to `Failsafe` tab, and enable `RTH` as Stage 2 failsafe.
 
