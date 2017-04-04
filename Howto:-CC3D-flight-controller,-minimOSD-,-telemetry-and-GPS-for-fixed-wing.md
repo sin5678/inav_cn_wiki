@@ -36,11 +36,13 @@ OSD setup
 - Battery monitoring
 - RSSI monitoring
 - Failsafe
+- Telemetry
 - etc
 
 ## 2. What is needed
 - Flight controller (one from the list, this guide shows how to setup CC3D)
 - OSD (minimOSD or any other that supports Cleanflight)
+- RX with telemetry support (just in case you want also telemetry). And a telemetry capable ground system.
 - GPS receiver (any that supports at least 5Hz update)
 - FPV hardware, airframe, RC
 
@@ -56,7 +58,7 @@ Next, you can check [numerous guides](https://www.youtube.com/watch?v=eClp-YBeSm
 ### Port settings
 It is done using Ports tab ![Ports tab](http://s8.hostingkartinok.com/uploads/images/2017/02/631dc2afa3f22266a8308532735b836e.png).
 
-- UART1 - leave default value. You'll connect here either OSD or FTDI to setup the FC.
+- UART1 - leave default value. You'll connect here either OSD or FTDI to setup the FC. If you want telemetry select it in Inav configurator, so you can have telemetry when the aircraft is armed. In this case, your OSD should be capable to read LTM, in order to mantain working OSD and telemetry at the same time. You have to connect the TX line from CC3D to both OSD and RX telemetry capable receiver (as openlrsng systems). MWOSD can read both MSP and LTM telemetry.
 - UART3 - for GPS. Switch on the option and select the correct port speed (38400 or 57600). Please pay attention that when using a ublox GPS receiver family 6-8 you don't need to make any configurations in the u-center. The flight controller under iNAV will do everything what is needed.
 
 ### Configuration
@@ -116,6 +118,10 @@ Starting from iNav 1.6 the Filesafe feature is very transparent and clear. For t
 
 Set the desired Failsafe behavior. I prefer RTH.
 ![My failsafe](http://s8.hostingkartinok.com/uploads/images/2017/02/f91f666e2b97dce17462bb6534592519.png)
+
+###Telemetry
+
+Connect your TX line and configure FC as explained above. Nowadays you can use several telemetry systems as [mwptools](https://github.com/stronnag/mwptools), [EZGUI](http://ez-gui.com/), [LTM Telemetry OLED](https://github.com/sppnk/LTM-Telemetry-OLED) and possibly others. The USART port can be shared with a OSD or used only for one of both features. For example, you can fly FPV w/o telemetry (just in your googles) or fly thermal soaring 3rd view w/o OSD. Or have both. Amazing you can do this with a simple cc3d, isnt it?.
 
 ###Transmitter setup
 
@@ -212,6 +218,8 @@ AIRCRAFT/INSTALLATION TYPE settings
 Usualy it is enough.
 
 You may enable also rather helpful '#define MAPMODE' under FEATURES that allows you to see the map indication of relative positions of home and aircraft.
+
+Configure config.h allowing LTM if you want to share USART1 with your telemetry system, as explained above.
 
 All other settings are done in MWOSD configurator. Everything you need is to select the font you like, OSD indicators' positions. As iNAV takes care of voltage/current/rssi monitoring you'll need to ask the MWOSD to take these values from the FC (see the fig) 
 
