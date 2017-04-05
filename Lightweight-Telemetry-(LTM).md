@@ -62,7 +62,7 @@ The payload is 7 bytes
 | Data | Format |
 | ---- | ---- |
 | Vbat | uint16, mV |
-| Current | uint16, mAh |
+| Battery Consumption | uint16, mAh |
 | RSSI | uchar |
 | Airspeed | uchar, m/s |
 | Status | uchar |
@@ -185,7 +185,9 @@ The payload is 6 bytes.
 | ---- | ---- |
 | HDOP | uint16 HDOP * 100 |
 | hw status | 1 byte |
-| (spare) | 3 bytes | 
+| LTM_X_counter | 1 byte |
+| Disarm Reason | 1 byte |
+| (spare) | 1 bytes | 
 
 Note that hw status (hardware sensor status) is iNav 1.5 and later. If the value is non-zero, then a sensor has failed. 
 A complementary update has been made to MSP_STATUS (https://github.com/iNavFlight/inav/wiki/INAV-MSP-frames-changelog).
