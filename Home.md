@@ -7,7 +7,7 @@ It currently supports position hold, RTH with predefined climb height, [[waypoin
 
 INAV have some settings that are different than stock cleanflight, and simply restoring settings from older cleanflight won't work.
 
-##It is ABSOLUTELY mandatory to read these pages.
+**It is ABSOLUTELY mandatory to read these pages:**
 
 - [Getting started with iNav](https://github.com/iNavFlight/inav/wiki/Getting-started-with-iNav)
 
