@@ -53,7 +53,7 @@ First you need to download a precompiled firmware for the board [here](https://g
 - _inav_x.x.x_CC3D.hex_ for PWM receiver
 - _inav_x.x.x_CC3D_PPM1.hex_ for PPM receiver
 
-Next, you can check [numerous guides](https://www.youtube.com/watch?v=eClp-YBeSms&t=0s) how to flash CC3D with third party firmware (Attention, you'll need a FTDI adapter for the purpose). Of course you need to specify the previously downloaded firmware for the flashing. For now, if you have servos, it is not advisable to flash with them attached, because there is high frequency sent with default configuration, and you can burn them (the way -for now- is flash, configure plane and then attach servos).
+Next, you can check [numerous guides](https://www.youtube.com/watch?v=eClp-YBeSms&t=0s) how to flash CC3D with third party firmware (Attention, you'll need a FTDI adapter for the purpose). Of course you need to specify the previously downloaded firmware for the flashing. 
 
 ## 4. Basic settings
 
@@ -68,6 +68,7 @@ On the Configuration tab in the Mixer group select the Airplane or Flying Wing d
 ![Airplane](http://s8.hostingkartinok.com/uploads/images/2017/02/cbcafe5219dcc85798b0cf2e2a86fcde.png)
 Do not pay attention on the servo numbering! It will be described later.
 Now you need to make the accelerometer calibration. It is mandatory to fulfill it and it is better to do it before installing the FC into airframe. Please follow the [instructions](https://github.com/iNavFlight/inav/wiki/Sensor-calibration) to perform the 6 point accelerometer calibration.
+Do not activate "enable motor and servo otput" until you are sure the kind of airplane has been selected correctly. Otherwise, servos can receive high frecuencies (as for ESCs) and burn.
 
 ### Flight controller orientation.
 After the calibration is done you may select the sutable board orientation
