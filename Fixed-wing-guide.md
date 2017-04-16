@@ -112,7 +112,7 @@ At this point everything should do as expected.
 
 ### Optional / Guides related to Fixed Wing:
 
-* Using a seperate BEC for servos to prevent the FC from restarting due to brownouts or interferences of the servos. [Example](http://www.rcgroups.com/forums/showpost.php?p=34254665&postcount=4006)
+* Using a seperate BEC for servos to prevent the FC from restarting due to brownouts or interferences of the servos. [Example](http://www.rcgroups.com/forums/showpost.php?p=34254665&postcount=4006) INAV will not be able to function after an brownout, Pilot must switch into Passthrough mode and fly manually and land the airplane.
 
 * [Using a minimosd](https://github.com/iNavFlight/inav/wiki/Howto:-CC3D-flight-controller,-minimOSD-and-GPS-for-fixed-wing#osd-setup)
 
