@@ -14,7 +14,7 @@
 
 ### Step 2, hooking everything up.
 
-* Servo and ESC/MOTOR.
+* Servo and ESC/MOTOR. ( Keep in mind servos positive wire **should** go to an independent BEC instead of connecting to the flightcontroller itself. )
 
     * Airplane
         * Output 1 - Motor/ESC
