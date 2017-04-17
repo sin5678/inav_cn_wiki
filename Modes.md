@@ -20,7 +20,7 @@ Index:
 - [SURFACE](#surface)
 - [TELEMETRY](#telemetry)
 - [TURN ASSIST](#turn-assist)
-- [AUTO TUNE](#AUTO-TUNE)
+- [AUTOTUNE](#AUTOTUNE)
 
 ## Default flight mode ( No mode selected )
 
@@ -133,7 +133,7 @@ You may want to inspect your new midpoints after landing, if the servo offset is
 
 This is not to be confused with tuning your aircraft for leveled flight in `ANGLE` mode, to do this you need to adjust your board alignment so straight flight for that aircraft is show the board being level ( 0 pitch and 0 roll ).
 
-### AUTO TUNE
+### AUTOTUNE
 
 AUTOTUNE will attempt to tune roll and pitch P, I and FF gains on a fixed-wing airplane.
 
