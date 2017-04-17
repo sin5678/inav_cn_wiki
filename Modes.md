@@ -20,6 +20,7 @@ Index:
 - [SURFACE](#surface)
 - [TELEMETRY](#telemetry)
 - [TURN ASSIST](#turn-assist)
+- [AUTO TUNE](#AUTO-TUNE)
 
 ## Default flight mode ( No mode selected )
 
@@ -131,6 +132,22 @@ How to use:
 You may want to inspect your new midpoints after landing, if the servo offset is a lot you may alter your linkage mechanically and redo servo midpoint. 
 
 This is not to be confused with tuning your aircraft for leveled flight in `ANGLE` mode, to do this you need to adjust your board alignment so straight flight for that aircraft is show the board being level ( 0 pitch and 0 roll ).
+
+### AUTO TUNE
+
+AUTOTUNE will attempt to tune roll and pitch P, I and FF gains on a fixed-wing airplane.
+
+Autotune will monitor behavior of the airplane when you fly it and adjust P, I and FF gains to reach optimal performance.
+
+How to use:
+
+Fly in ANGLE mode. Enable AUTOTUNE mode. Do hard maneuvers on each axis separately. For roll - bank hard left/hard right. For pitch - fast climb, steep dive. Initially you probably will notice very soft response - make sure your flying field is big enough for slow turns.
+
+The more maneuvers you will do - the better results AUTOTUNE will be able to reach.
+
+AUTOTUNE will adjust gains constantly but it will take a snapshot of current gains every 5 seconds. When you disable AUTOTUNE gains from last snapshot will be restored. If you turn AUTOTUNE on and off before 5 seconds elapse - PIFF gains won't be changed.
+
+Currently AUTOTUNE don't save gains to EEPROM - you have to save manually, using a [stick combo](https://github.com/iNavFlight/inav/blob/master/docs/Controls.md).
 
 ### TURN ASSIST
 
