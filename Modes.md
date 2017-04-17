@@ -151,6 +151,12 @@ In RATE mode it allows one to makes a perfect yaw-stick only turn without changi
 
 In ANGLE mode it also makes yaw turns smoother and completely pirouette-less. This is because TURN ASSIST introduces feed-forward control in pitch/roll and maintains attitude naturally and without delay.
 
+From INAV 1.7 turn assist will work one planes, copy paste from pull request:
+
+This extends TURN_ASSIST flight mode on airplanes - when doing a turn on an airplane it will calcualte required yaw and pitch rate to keep airplane pointed at horizon.
+
+TAS (from airspeed sensor) will be used for calculation if available - otherwise code will use cruise airspeed defined by fw_reference_airspeed.
+
 ## AUXILIARY CONFIGURATION
 
 Spare auxiliary receiver channels can be used to enable/disable modes.  Some modes can only be enabled this way.
