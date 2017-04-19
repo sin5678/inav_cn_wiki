@@ -15,7 +15,7 @@ Index:
 - [LEDLOW](#ledlow)
 - [NAV LAUNCH](#nav-launch---airplane-launch-assistant)
 - [OSD SW](#osd-sw)
-- [PASSTHRU](#passthru)
+- [Passthrough](#Passthrough)
 - [SERVO AUTOTRIM](#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight)
 - [SURFACE](#surface)
 - [TELEMETRY](#telemetry)
@@ -116,6 +116,12 @@ Sequence for launching airplane using `NAV LAUNCH` mode looks like this:
 1. Throw the airplane
 1. Motors will start at pre-configured `nav_fw_launch_thr` (default 1700) after `nav_fw_launch_motor_delay` (500ms)
 1. Launch sequence will finish when pilot switch off the NAV LAUNCH mode or move the 
+
+### Passthrough - Direct servo control in fixed-wing.
+
+In this mode there is no stabiliation.
+
+What FC does in Passthrough mode is: Motor mixing, Servo Mixing, Expo settings. Also Failsafe is still active so it wont overwrite that function.  
 
 ### SERVO AUTOTRIM - In flight adjustment of servo midpoint for straight flight
 The purpose of this mode is to set new midpoints for `SERVO_ELEVATOR`, `SERVO_FLAPERON_1`, `SERVO_FLAPERON_2` and `SERVO_RUDDER`.
