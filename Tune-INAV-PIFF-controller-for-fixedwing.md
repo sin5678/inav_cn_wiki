@@ -38,4 +38,4 @@ Now add example 10 P-gain and 15 I-gain to Roll, Pitch and Yaw axis.
 
 * Setup your TPA correctly. [PID Attenuation and scaling](https://github.com/iNavFlight/inav/wiki/PID-Attenuation-and-scaling)
 
-* If your plane over corrects when RTH is engaged, try increasing "nav_navr_p" and/or increasing "nav_navr_i". Good values to start: "set nav_navr_p = 50"; "set nav_navr_i = 5". Also you can lower "nav_navr_d". The behaviour of the plane is very different with or w/o wind, so it is necessary to test and tweak parameters in both scenarios.
+* If your plane over corrects when RTH is engaged, try increasing ``nav_fw_pos_xy_p`` and/or increasing ``nav_fw_pos_xy_i``. Good values to start: "set nav_fw_pos_xy_p = 50"; "set nav_fw_pos_xy_i = 5". Also you can lower "nav_fw_pos_xy_d". The behaviour of the plane is very different with or w/o wind, so it is necessary to test and tweak parameters in both scenarios.
