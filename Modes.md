@@ -20,7 +20,7 @@ Index:
 - [SURFACE](#surface)
 - [TELEMETRY](#telemetry)
 - [TURN ASSIST](#turn-assist)
-- [AUTOTUNE](#AUTOTUNE)
+- [AUTOTUNE](#autotune)
 
 ## Default flight mode ( No mode selected )
 
