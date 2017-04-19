@@ -15,7 +15,7 @@ Index:
 - [LEDLOW](#ledlow)
 - [NAV LAUNCH](#nav-launch---airplane-launch-assistant)
 - [OSD SW](#osd-sw)
-- [PASSTHROUGH](#passthrough)
+- [PASSTHROUGH](#passthrough---direct-servo-control-in-fixed-wing)
 - [SERVO AUTOTRIM](#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight)
 - [SURFACE](#surface)
 - [TELEMETRY](#telemetry)
