@@ -15,7 +15,7 @@ Index:
 - [LEDLOW](#ledlow)
 - [NAV LAUNCH](#nav-launch---airplane-launch-assistant)
 - [OSD SW](#osd-sw)
-- [Passthrough](#passthrough)
+- [PASSTHROUGH](#passthrough)
 - [SERVO AUTOTRIM](#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight)
 - [SURFACE](#surface)
 - [TELEMETRY](#telemetry)
@@ -117,7 +117,7 @@ Sequence for launching airplane using `NAV LAUNCH` mode looks like this:
 1. Motors will start at pre-configured `nav_fw_launch_thr` (default 1700) after `nav_fw_launch_motor_delay` (500ms)
 1. Launch sequence will finish when pilot switch off the NAV LAUNCH mode or move the 
 
-### Passthrough - Direct servo control in fixed-wing.
+### PASSTHROUGH - Direct servo control in fixed-wing.
 
 In this mode there is no stabiliation.
 
