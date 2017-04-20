@@ -43,6 +43,6 @@ The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-m
 |  [`HOME RESET`](/iNavFlight/inav/wiki/Navigation-modes) | Used to set a new home position at the current aircraft position. |
 |  [`GCS NAV`](/iNavFlight/inav/wiki/Navigation-modes) | Used to allow ground station to control aircraft to do stuff like `Follow me` |
 |  [`FLAPERON`](/iNavFlight/inav/wiki/Modes#flaperon) | Used to activate flaperons on fixed-wing aircraft. |
-|  [`NAV LAUNCH`](/iNavFlight/inav/wiki/Modes#launch---airplane-launch-assistant) | Used to detect and automatic launch fixed-wing aircraft. |
+|  [`NAV LAUNCH`](/iNavFlight/inav/wiki/Modes#nav-launch) | Used to detect and automatic launch fixed-wing aircraft. |
 |  [`SERVO AUTOTRIM`](/iNavFlight/inav/wiki/Modes#servo-autotrim) | Used to trim midpoint for servos to maintain straight flight |
 
