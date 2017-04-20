@@ -126,7 +126,9 @@ In this mode there is no stabiliation.
 
 What FC does in PASSTHRU mode is: Motor mixing, Servo Mixing, Expo settings. Also Failsafe is still active so it wont overwrite that function.  
 
-### SERVO AUTOTRIM - In flight adjustment of servo midpoint for straight flight
+### SERVO AUTOTRIM
+In flight adjustment of servo midpoint for straight flight
+
 The purpose of this mode is to set new midpoints for `SERVO_ELEVATOR`, `SERVO_FLAPERON_1`, `SERVO_FLAPERON_2` and `SERVO_RUDDER`.
 
 This is so when switching into passthrough mode the plane will fly straight, its also to help the PIFF controller know where the plane is expected to fly straight.
