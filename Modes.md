@@ -13,10 +13,10 @@ Index:
 - [HEADING HOLD](#heading-hold)
 - [HORIZON](#horizon)
 - [LEDLOW](#ledlow)
-- [NAV LAUNCH](#nav-launch---airplane-launch-assistant)
+- [NAV LAUNCH](#nav-launch)
 - [OSD SW](#osd-sw)
-- [PASSTHRU](#passthru---direct-servo-control-in-fixed-wing)
-- [SERVO AUTOTRIM](#servo-autotrim---in-flight-adjustment-of-servo-midpoint-for-straight-flight)
+- [PASSTHRU](#passthru)
+- [SERVO AUTOTRIM](#servo-autotrim)
 - [SURFACE](#surface)
 - [TELEMETRY](#telemetry)
 - [TURN ASSIST](#turn-assist)
@@ -95,7 +95,9 @@ Heading hold only uses yaw control (rudder) so it won't work on a flying wing wh
 
 This hybrid mode works exactly like the previous ANGLE mode with centered roll and pitch sticks (thus enabling auto-leveled flight), then gradually behaves more and more like the default RATE mode as the sticks are moved away from the center position. Which means it has no limitation on banking angle and can do flips.
 
-### NAV LAUNCH - Airplane launch assistant
+### NAV LAUNCH
+Airplane launch assistant
+
 This flight mode is intended to provide assistance for launching the fixed-wing UAVs. Launch detection works by monitoring airplane acceleration - once it breaches the threshold for a certain amount of time launch sequence is started.
 
 
@@ -117,7 +119,8 @@ Sequence for launching airplane using `NAV LAUNCH` mode looks like this:
 1. Motors will start at pre-configured `nav_fw_launch_thr` (default 1700) after `nav_fw_launch_motor_delay` (500ms)
 1. Launch sequence will finish when pilot switch off the NAV LAUNCH mode or move the 
 
-### PASSTHRU - Direct servo control in fixed-wing.
+### PASSTHRU
+Direct servo control in fixed-wing.
 
 In this mode there is no stabiliation.
 
