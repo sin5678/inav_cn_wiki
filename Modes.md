@@ -146,6 +146,8 @@ This is not to be confused with tuning your aircraft for leveled flight in `ANGL
 
 ### AUTOTUNE
 
+For detailed description go to https://github.com/iNavFlight/inav/blob/development/docs/Autotune%20-%20fixedwing.md
+
 AUTOTUNE will attempt to tune roll and pitch P, I and FF gains on a fixed-wing airplane.
 
 Autotune will monitor behavior of the airplane when you fly it and adjust P, I and FF gains to reach optimal performance.
