@@ -45,4 +45,4 @@ The default flight mode is [`RATE`](/iNavFlight/inav/wiki/Modes#default-flight-m
 |  [`FLAPERON`](/iNavFlight/inav/wiki/Modes#flaperon) | Used to activate flaperons on fixed-wing aircraft. |
 |  [`NAV LAUNCH`](/iNavFlight/inav/wiki/Modes#nav-launch) | Used to detect and automatic launch fixed-wing aircraft. |
 |  [`SERVO AUTOTRIM`](/iNavFlight/inav/wiki/Modes#servo-autotrim) | Used to trim midpoint for servos to maintain straight flight |
-
+|  [`AUTOTUNE`](/iNavFlight/inav/wiki/Modes#autotune) | Automaticle tune fixed-wing PIFF gains. |
