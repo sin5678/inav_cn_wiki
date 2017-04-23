@@ -1,4 +1,4 @@
-# Explanation of why you have limited throw in example Angle mode
+# Explanation of why you have limited throw in any stabilisation mode. ( Including Rate / Acro )
 
 First basic PIFF controller:
 
@@ -14,7 +14,7 @@ Passthrough bypasses all this an moves servos directly.
 
 In other words, the only thing that will limit passthrough servo limits and rates set up in the Servos tab.
 
-# What is stabiliations, and how do you as pilot actual control airplane in Angle mode?
+# What is stabiliations, and how do you as pilot actual control airplane in an stabilisation mode?
 
 In passthrough everything is easy, you move sticks on radio, the FC does some mixing according to which airplane/flying wing you have, and then you move the servos directly.
 
@@ -32,7 +32,7 @@ An typical wing can example manage 500 deg/s, default rate values for INAV is 20
 
 QUIZ: You command 100% right roll, which would be 200deg/s. What would happend if it did give you full servo throw?
 
-Yes, it would have hitted 500deg/s instead and overshooted target motion.
+Yes, it would have hit 500deg/s instead and overshoot target motion.
 
 Sum up:
 
