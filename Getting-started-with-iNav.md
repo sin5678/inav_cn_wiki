@@ -3,6 +3,8 @@
 ## Where to download?!
 Install the latest chrome app [iNav Configurator](https://chrome.google.com/webstore/detail/inav-configurator/fmaidjmgkdkpafmbnmigkpdnpdhopgel) and use that tool to download and flash firmware. 
 
+Be aware that on first boot after an reflash / Clean erase INAV tries to auto detect MAG, BARO and SPEED ( Pitot-tube ), if not any detected it will give indicate it with red icons on the sensor bar, also it will give fail on `Hardware health` on the Pre-arming checks, just do new reboot and its fine.
+
 Go through the index on the right side to find useful information.
 
 ### Hardware needed for GPS assisted modes.
