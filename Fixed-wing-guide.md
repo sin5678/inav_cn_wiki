@@ -77,6 +77,10 @@ At this point everything should do as expected.
 
 ### Step 4, Replace default values.
 
+* Type this and save in CLI:  
+``set max_angle_inclination_rll = 600``    
+``set max_angle_inclination_pit = 450``  
+  
 * [Tune your PIFF controller](https://github.com/iNavFlight/inav/wiki/Tune-INAV-PIFF-controller-for-fixedwing) ( INAV 1.6 )
 * Use switch arming or [fixed_wing_auto_arm](https://github.com/iNavFlight/inav/blob/master/docs/Cli.md). Stick arming is considered unsafe for fixedwings.
 * Increase small angle (let you arm in any position; set small_angle = 180)
