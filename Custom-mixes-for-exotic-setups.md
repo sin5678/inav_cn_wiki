@@ -175,7 +175,7 @@ smix 4 4 2 -100 0 0 100         # servo 4 takes Stabilised YAW
 smix 5 5 2 -100 0 0 100         # servo 5 takes Stabilised YAW
 
 smix 6 6 8 -100 0 0 100         # servo 6 takes RC AUX 1 (camera yaw)
-smix 7 7 9 -100 0 0 100         # servo 7 takes RC AUX 2
+smix 7 7 9 -100 0 0 100         # servo 7 takes RC AUX 2 (drop bomb :-))
 ```
 
 ## Skyhunter Nano (no rudder)
