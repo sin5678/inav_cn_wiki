@@ -162,20 +162,20 @@ Tested in a Mini talon UAV.
 # mixer
 mixer CUSTOMAIRPLANE
 mmix reset
-mmix 0 1.0 0.0 0.0 0.0
+mmix 0 1.0 0.0 0.0 0.0         # motor
 
 smix reset
-smix 0 2 0 -100 0 0 100 
-smix 1 3 0 -100 0 0 100 
+smix 0 2 0 -100 0 0 100         # servo 2 takes Stabilised ROLL
+smix 1 3 0 -100 0 0 100         # servo 3 takes Stabilised ROLL
 
-smix 2 4 1 100 0 0 100 
-smix 3 5 1 -100 0 0 100 
+smix 2 4 1 100 0 0 100          # servo 4 takes Stabilised PITCH
+smix 3 5 1 -100 0 0 100         # servo 5 takes Stabilised -PITCH
 
-smix 4 4 2 -100 0 0 100 
-smix 5 5 2 -100 0 0 100 
+smix 4 4 2 -100 0 0 100         # servo 4 takes Stabilised YAW
+smix 5 5 2 -100 0 0 100         # servo 5 takes Stabilised YAW
 
-smix 6 6 8 -100 0 0 100 
-smix 7 7 9 -100 0 0 100 
+smix 6 6 8 -100 0 0 100         # servo 6 takes RC AUX 1 (camera yaw)
+smix 7 7 9 -100 0 0 100         # servo 7 takes RC AUX 2
 ```
 
 ## Skyhunter Nano (no rudder)
