@@ -14,7 +14,7 @@ If you want to use the external magnetometer (built in in your GPS) and you have
 
 Otherwise just use the internal FC magnetometer, but keep aware of magnetic interference (not recommended).
 
-##Getting started with Ublox GPS
+## Getting started with Ublox GPS
 - Physically connect your GPS to your FC using UART or softserial. Connect RX from GPS to TX on FC, TX from GPS to RX on FC
 - Activate GPS in the ports tab in cleanflight/iNav configurator and set it to 57600 using UART or 19200 using softserial (on your chosen port)
 - Activate GPS in the configuration tab, set it to ublox.
@@ -30,7 +30,7 @@ Otherwise just use the internal FC magnetometer, but keep aware of magnetic inte
 Note to change magnetic declination manually on F3 or newer board you have to turn off automatic function. `set inav_auto_mag_decl = OFF`.
 
 
-##Getting started with DJI NAZA GPS
+## Getting started with DJI NAZA GPS
 NOTE: By default F1 processors do not support DJI GPS. Most F3 processors do - check hardware support map.
 F1 can support DJI if you compile your own build with unused features removed.
 
