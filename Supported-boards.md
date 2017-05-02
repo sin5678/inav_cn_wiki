@@ -4,7 +4,7 @@ These boards are not recommended for new setups. They are very limited in memory
 
 ### Boards based on F3/F4/F7 CPUs
 
-These boards are powerful and in general support everything INAV is capable of. Limitations are qute rare and are usually caused by hardware design issues.
+These boards are powerful and in general support everything INAV is capable of. Limitations are quite rare and are usually caused by hardware design issues.
 
 ### Boards documentation
 
