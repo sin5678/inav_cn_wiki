@@ -117,7 +117,7 @@ Sequence for launching airplane using `NAV LAUNCH` mode looks like this:
 1. Put throttle stick to desired throttle value to be set **after** launch is finished.
 1. Throw the airplane
 1. Motors will start at pre-configured `nav_fw_launch_thr` (default 1700) after `nav_fw_launch_motor_delay` (500ms)
-1. Launch sequence will finish when pilot switch off the NAV LAUNCH mode or move the 
+1. Launch sequence will finish when pilot switch off the NAV LAUNCH mode or move the sticks.
 
 ### PASSTHRU
 Direct servo control in fixed-wing.
