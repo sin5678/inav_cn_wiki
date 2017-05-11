@@ -51,6 +51,7 @@ These boards work with INAV but might be not well tested.
 | BlueJay F4                | F4         | BLUEJAYF4                 | All  | All     | All            | All       | All                            | SERIAL, SPIFLASH     |
 | F4BY                      | F4         | F4BY                      | All  | All     | All            | All       | All                            | SERIAL, SD           |
 | OpenPilot REVO            | F4         | REVO, REVO_OPBL           | All  | All     | All            | All       | All                            | SERIAL, SPIFLASH     |
+| BeeRotor F4               | F4         | BEEROTORF4                | All  | All     | All            | All       | All                            | SERIAL, SD           |
 
 ### Not recommended for new setups
 
