@@ -1,44 +1,43 @@
-## Overview
+## 概览
 
-GPS Systems can occasionally drop the signal (lose FIX) or provide significantly inaccurate position information (glitch). While errors are more likely in conditions where the GPS signal can bounce off multiple paths before reaching the receiver (multipathing), errors can occasionally occur even with clear sky.
+GPS系统有时候会丢失信号（失去定位）或者是提供了明显错误的定位（跳变）。这通常是因为GPS信号在被接收之前经过了多次的反射，这种错误有时候深圳出现在完全开阔的空域。
 
-Without updates from GPS System, the inertial position estimation allow approximately 1.5 seconds of position information but after this the horizontal position drift becomes so large that the horizontal position cannot be maintained at all. At this point the position estimator will report invalid position to the navigation core. If you still have RC radio control it is recommended to take back control using ANGLE, HORIZON, ALTHOLD or ACRO as soon as possible.
+当GPS系统不在有效的时候，惯性导航系统可以继续估算大约1.5秒内的位置信息。一旦超过这段时间，飞行器的水平位置信息就会因为漂移太大变的不再可用。这个时候飞控的位置估算系统就对核心导航系统报告当前定位不可用。如果你此时还有遥控信号的话，建议尽快使用ANGLE, HORIZON, ALTHOLD 或者 ACRO模式夺回控制权。飞行器当前的飞行模式决定了其丢失定位后的行为。
 
-Action taken on invalid position is dependent on current flight mode.
+## GPS 跳变保护
 
-## GPS glitch protection
+就算处于定位状态而且卫星数量良好的情况下，有时候GPS还是会提供明显错误的位置信息。这通常被称作“GPS跳变”。iNav有相应的逻辑来探测和忽略此类错误的GPS位置更新。上次的定位更新所在的位置会结合飞行器速度计算出一个新的位置，通过将这个计算出的位置和接收到的新位置做对比，从而判定GPS跳变。
 
-Sometimes GPS provides very inaccurate position information despite having the fix and the good satellite count. This event is usually called a "GPS glitch". iNav has logic to detect and ignore inaccurate/inconsistent GPS position updates. Glitches are detected by comparing the new position update received from the GPS unit with a position projected out from the previous update's position and velocity.
+新GPS位置只有在如下情况下才会被认为是正确的：
 
-The new GPS position is accepted as “good” if:
+1. 两个位置的间距在一个硬编码值 INAV_GPS_GLITCH_RADIUS 之内（现在是2.5M）
+2. 以当前的速度到达新位置的加速度小于 10m/s/s (达到新位置的时间使用GPS更新的间隔时间)
 
-1. the two positions are within the hard coded INAV_GPS_GLITCH_RADIUS (currently 2.5m)
-1. the new position is within a radius that is 10m/s/s (INAV_GPS_GLITCH_ACCEL) * dt * dt.  Where “dt” is the time difference between the two GPS samples.
+位置估算系统是吧GPS跳变当作丢失定位来处理的。
 
-GPS glitches are treated by the position estimator in the same way as losing GPS fix.
+**当前该代码还是实验性质的，跳变后的位置还没有被忽略**
 
-**At the moment the code is experimental and "glitched" GPS positions are not ignored.**
 
-## Action taken on invalid position event
+## 定位异常后的行为
 
-### ANGLE, HORIZON, ACRO, ALTHOLD mode
-These modes are not GPS-dependent, nothing will happen but you will be unable to switch into an autopilot flight mode (POSHOLD, RTH, WP) until the failure clears.
+### ANGLE, HORIZON, ACRO, ALTHOLD 模式
+这几种模式都是不依赖GPS的。所以没什么事，但是你将不能切换到需要自动导航的飞行模式（POSHOLD, RTH, WP）直到异常被清除。
 
-### POSHOLD mode
-The copter will be forced into ANGLE mode, pilot will have complete control over copter attitude. If ALTHOLD mode was selected it will remain active. When failure clears POSHOLD more will resume.
+### POSHOLD（定点）模式
+飞行器将会强制进入ANGLE（自稳）模式，飞手还是可以完全控制飞行物的姿态。如果选中的是ALTHOLD模式，它将不受影响。一旦异常清楚，飞行器就会重新回到POSHOLD模式。
 
-### RTH and WP modes (including failsafe RTH)
-RTH and WP are considered full-auto modes. It is assumed that pilot might have no control over the copter so the safest action in case of invalid position is landing the machine. Copter will enter Emergency Landing state if failure is consistent for over 2 seconds.
+### RTH 和 WP 模式 （自动返航和航点模式）(包含 failsafe RTH)
 
-## Emergency Landing
-In case of critical failure, Emergency Landing is triggered. In Emergency Landing state copter is forced into ANGLE mode, ROLL and PITCH input is centered to maintain level, pilot stick input is ignored and copter enters a controlled descent.
+RTH和WP模式被认为是完全自动飞行的模式。它假定了飞手此时已经失去了对飞行器的控制，所以此时最安全的做法就是立即降落。当异常持续2S之后，飞行器将会进入紧急降落状态。
 
-While Emergency Landing is active pilot is unable to switch into ALTHOLD, POSHOLD, RTH or WP mode. If pilot wants to regain control of the copter he should switch to ANGLE, HORIZON or ACRO more.
+## 紧急降落
+当出现极端错误的时候，就会触发紧急降落。在紧急降落模式下，飞行器会被强制进入自稳模式，俯仰和横滚会被自动放到中位以便保证飞行器的水平，飞手的摇杆输入会被忽略，飞行器自动下降。
+当进入紧急降落之后，飞手无法切换到ALTHOLD, POSHOLD, RTH 和 WP 模式.如果飞手想重新获取控制权，可以切换到ANGLE, HORIZON 和 ACRO 模式。
 
-## Tips to improve GPS reception and avoid GPS outages and glitches
+## 一些提高GPS稳定性和抗干扰，抗跳变的建议
 
-1. Place the GPS module on the outside of your vehicle (in an elevated position or on a mast if appropriate) with a clear view of the sky. 
-1. If GPS module is combined with a compass sensor, place it as far as possible from the motors, ESCs and power wires (at lest 10 cm)
-1. 1.2-1.3 GHz FPV video transmitters are know to be interfering with GPS reception. If you use such transmitter place it as far as possible from GPS module and expect some degradation in GPS quality
-1. Select a GPS module with biggest GPS antenna. Bigger GPS antenna - better reception.
-1. Use a two-system receiver is possible. For example uBlox NEO-M8N is GPS/GLONASS capable receiver. More systems means better noise resistance, more satellites, better accuracy.
+1. 将你的GPS模块放在飞行器的外部，（放在一个高的位置，如果可以的话使用支架支撑起来。）让其对着尽可能开阔的天空。
+2. 如果GPS模块是和指南针传感器结合在一起的，那么尽可能的将其放到远离马达 电调和电源线的地方（至少10CM）。
+3. 1.2-1.3GHz FPV 图传模块会影响到GPS的稳定性，如果你正在使用这些模块那么将其放在尽可能的原理GPS的位置，防止其影响GPS信号的质量。
+4. 选择一个天线最大的GPS模块，天线越大，越抗干扰。
+5. 尽量选择双模GPS，例如uBlox NEO-M8N 就是一个 GPS/GLONASS 兼容的接收器。多模意味着更强的抗干扰能力，更多的卫星数量，更高的定位精度。

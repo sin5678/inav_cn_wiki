@@ -1,4 +1,4 @@
-Index:
+索引:
 
 - [AIR MODE](#air-mode)
 - [ANGLE](#angle)
@@ -22,14 +22,15 @@ Index:
 - [TURN ASSIST](#turn-assist)
 - [AUTOTUNE](#autotune)
 
-## Default flight mode ( No mode selected )
+## 默认飞行模式 ( 未选择任何飞行模式 )
 
+在默认飞行模式下，飞行器不会在俯仰和横滚面保持自身水平（自稳）。也就是说即使你把遥控器的俯仰和横滚杆放在中心位置，飞行器也不会保持水平状态。这有点像调整飞机的航向角：摇杆直接控制了对应动作的程度，摇杆回中的时候，飞控直接保留飞行器在当前的状态（也就是俯仰角和横滚角的调整方式变的和航向角一样了，调整完自动保持在调整后的状态而不是随摇杆回中而复原）。这个默认模式被叫做“Rate”模式，有时也叫做“Acro”（特技）模式或者是手动模式。当没有其他支持自稳的模式启用的时候，默认使用该模式。
 The default flight mode does not self level the aircraft around the roll and the pitch axes. That is, the aircraft does not level on its own if you center the pitch and roll sticks on the radio. Rather, they work just like the yaw axis: the rate of rotation of each axis is controlled directly by the related stick on the radio, and by leaving them centered the flight controller will just try to keep the aircraft in whatever orientation it's in. This default mode is called "Rate" mode, also sometime called "Acro" (from "acrobatic") or "Manual" mode, and is active whenever no auto-leveled mode is enabled.
 
 
-## Mode details
+## 模式详解
 
-### AIR MODE
+### AIR 模式
 
 In the standard mixer / mode, when the roll, pitch and yaw gets calculated and saturates a motor, all motors
 will be reduced equally. When motor goes below minimum it gets clipped off.
@@ -62,8 +63,8 @@ See [`BLACKBOX`](/iNavFlight/inav/blob/master/docs/Blackbox.md) for more infomat
 
 ### FAILSAFE
 
-Lets you activate flight controller failsafe with an aux channel.
-Read [Failsafe page](https://github.com/iNavFlight/inav/wiki/Failsafe) for more info.
+让你能够使用一个 AUX 通道启用 failsafe。
+阅读 [Failsafe 页面](https://github.com/iNavFlight/inav/wiki/Failsafe) 获取更多信息.
 
 ### FLAPERON
 
