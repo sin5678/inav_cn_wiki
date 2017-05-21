@@ -120,7 +120,6 @@ At this point everything should do as expected.
 
 * [Using a minimosd](https://github.com/iNavFlight/inav/wiki/Howto:-CC3D-flight-controller,-minimOSD-and-GPS-for-fixed-wing#osd-setup)
 
-* Setting up flaps in iNav. [Youtube Link](https://www.youtube.com/watch?v=Ui7Y0UVedDQ)
 
 * Howto in flight trim servos. [Aileron example at rcgroups.com](http://www.rcgroups.com/forums/showpost.php?p=35059861&postcount=6741) [Fixed wing example](https://www.rcgroups.com/forums/showpost.php?p=36039077&postcount=8732)
 
